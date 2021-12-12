@@ -1,0 +1,799 @@
+<html>
+    <head>
+
+        <title>Declarative Processes Specification</title>
+
+        <!-- Meta tag -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!--Link foglio di stile css Bootstrap online-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        
+        <!--Link javascript Bootstrap online-->
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        
+        <!--Link foglio di stile css locale-->
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+
+        <!--Link foglio di stile icone Bootstrap css online-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+
+
+        
+        
+    </head>
+
+    <body>
+
+        <!--Navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+
+            <!--Logo-->
+            <a class="navbar-brand mx-5" href="../../index.html">
+
+                <img src="../../Contenuti/minerful-logo-standard.png" style="background-color: white;" class="d-inline-block align-top" alt="">
+
+            </a>
+
+            <!--bottone menu collassabile in base alla grandezza pagina-->
+            <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        
+                <!--Icona Bottone collassabile-->
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+            <!--Contenitore voci navbar collassabili-->
+            <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+
+                <!--Voci nella navbar-->
+                <ul class="navbar-nav">
+
+                    <li class="nav-item mx-1">
+
+                        <a class="nav-link" href="../../index.html">
+                            <i class="fas fa-home"></i> Home
+                        </a>
+                        
+                    </li>
+
+                    <!--Voce con sottomenu-->
+                    <li class="nav-item dropdown mx-1" >
+
+                        <a class="nav-link dropdown-toggle "  id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-play"></i> Guide
+                        </a>
+
+                        <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown" >
+
+                            <li ><a class="nav-link" href="../../Guide/Installation/index.html">Installation</a></li>
+
+                            <li><a class="nav-link" href="../../Guide/MINERfulAPIs/index.html" >MINERful APIs</a></li>
+
+                            <li><a class="nav-link" href="../../Guide/RunningTheJAR/index.html" >Running the JAR</a></li>
+
+                            <li ><a class="nav-link" href="../../Guide/RunningWithShellScripts/index.html" >With Shell Scripts</a></li>
+
+                            <li ><a class="nav-link" href="../../Guide/RunningExample/index.html" >Running Example</a></li>
+                           
+                        </ul>
+
+                    </li>
+
+                    
+
+                    <!--Voce con sottomenu-->
+                    <li class="nav-item dropdown mx-1" >
+
+                        <a class="nav-link dropdown-toggle "  id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fab fa-cc-discover"></i> Functionality
+                        </a>
+
+                        <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown" >
+
+                            <li ><a class="nav-link" href="../../Functionality/CreatingEventLogs/index.html">Creating Event Logs</a></li>
+                           
+                        </ul>
+
+                    </li>
+
+                    
+
+                    <!--Voce con sottomenu-->
+                    <li class="nav-item dropdown mx-1" >
+
+                        <a class="nav-link dropdown-toggle "  id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-microchip"></i> Declarative Processes
+                        </a>
+
+                        <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown" >
+
+                            <li ><a class="nav-link" href="../Examples/index.html" >Examples</a></li>
+
+                            <li ><a class="nav-link" href="index.html" >Declare Process Specification</a></li>
+
+                            <li ><a class="nav-link" href="../DeclareTemplate/index.html" >Declare Template</a></li>
+
+                            <li ><a class="nav-link" href="../AutomatedDiscovery/index.html" >Automated Discovery</a></li>
+
+
+
+                        </ul>
+
+                    </li>
+
+                    
+
+                    <!--Voce con sottomenu-->
+                    <li class="nav-item dropdown mx-1" >
+
+                        <a class="nav-link dropdown-toggle "  id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-info-circle"></i> About
+                        </a>
+
+                        <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown" >
+
+                            <li><a class="nav-link" href="../../About/Publications/index.html">Publications</a></li>
+
+                            <li><a class="nav-link" href="../../About/RelatedProjects/index.html">Related Projects</a></li>
+
+                            <li><a class="nav-link" href="../../About/License/index.html">License</a></li>
+
+                            <li><a class="nav-link" href="../../About/Contact/index.html">Contact</a></li>
+  
+                            
+                        </ul>
+
+                    </li>
+
+                    <!--Bottone cliccabile-->
+                    <button type="button" id=b1 class="btn btn-outline-secondary"><a target="_blank"href="https://github.com/cdc08x/MINERful">Download</a> </button>
+            
+                </ul>
+
+            </div>
+
+        </nav>
+
+
+
+        <!--Contenitore Grigio-->
+        <div class="container-fluid" id="boxG" >
+
+            <!--Tabella-->
+            <div class="row justify-content-center" >
+
+                <!--Colonna vuota grigia-->
+                <div class="col-sm-12 col-md-12 " id=boxG>
+
+                </div>
+
+                
+                <!--Colonna-->
+                <div class="col-sm-12 col-md-5 ">
+
+                    <p>
+                        Declarative process models consist of a set of constraints exerted over the execution of process activities. DECLARE is a declarative process modelling
+                        language that specifies a set of constraint templates along with their graphical notation. The automated discovery of DECLARE models aims at finding those 
+                        constraints that are verified throughout a given event log. 
+
+                        <br>
+                        There are three important focuses :
+
+                        <br>
+                        Open model
+
+                        <br>
+                        Specify constraints for permitted behaviour
+
+                        <br>
+                        Every execution that complies with them is acceptable.
+                    </p>
+                    
+                </div>
+
+                <!--Colonna-->
+                <div class="col-sm-12 col-md-3 ">
+
+                    <img src="../../Contenuti/declarative1.png" class="img-fluid" alt="Responsive image" >
+
+                </div>
+
+            </div>
+                
+        </div>
+
+        
+
+        <!--Contenitore Grigio-->
+        <div class="container-fluid" id="boxW" >
+
+            <!--Tabella-->
+            <div class="row justify-content-center" >
+
+                <!--Colonna-->
+                <div class="col-sm-12 col-md-12 ">
+
+                    <h2 style="text-align: center;">Examples of declarative specifications</h2>
+                    
+                </div>
+
+                <!--Colonna-->
+                <div class="col-sm-12 col-md-5 ">
+
+                    <img src="../../Contenuti/declarative2.jpg" class="img-fluid" alt="Responsive image" >
+                    
+                </div>
+
+                <!--Colonna-->
+                <div class="col-sm-12 col-md-5 ">
+
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+
+                    <br>
+                    <br>
+
+                    <img src="../../Contenuti/declarative3.png" class="img-fluid" alt="Responsive image" >
+                    
+                </div>
+
+            </div>
+                
+        </div>
+
+        <!--Contenitore Grigio-->
+        <div class="container-fluid" id="boxG" >
+
+            <!--Tabella-->
+            <div class="row justify-content-center" >
+
+                <!--Colonna-->
+                <div class="col-sm-12 col-md-12 ">
+                
+                    <h2>Declarative programming vs Imperative programming</h2>
+
+                </div>
+                
+
+                <!--Colonna-->
+                <div class="col-sm-12 col-md-4 ">
+
+                    <p>
+                        Declarative programming is a programming paradigm that expresses the logic of a computation(What do) without describing its control flow(How do). 
+                        Some well-known examples of declarative domain specific languages (DSLs) include CSS, regular expressions, and a subset of SQL (SELECT queries, for example) 
+                        Many markup languages such as HTML, MXML, XAML, XSLT... are often declarative. The declarative programming try to blur the distinction between a program as a 
+                        set of instructions and a program as an assertion about the desired answer.
+                    </p>
+                    
+                </div>
+
+                <!--Colonna vuota grigia-->
+                <div class="col-sm-12 col-md-1 " id=boxG>
+
+                </div>
+
+                <!--Colonna-->
+                <div class="col-sm-12 col-md-4 ">
+
+                    <p>
+                        Imperative programming is a programming paradigm that describes computation in terms of statements that change a program state. The imperative programs can be 
+                        dually viewed as programming commands or mathematical assertions.
+                    </p>
+                    
+                </div>
+
+                
+
+            </div>
+                
+        </div>
+
+
+        <!--Contenitore Grigio-->
+        <div class="container-fluid" id="boxW" >
+
+            <!--Tabella-->
+            <div class="row justify-content-center" >
+
+                <!--Colonna-->
+                <div class="col-sm-12 col-md-12 ">
+                
+                    <h2>Declarative specification of a process model</h2>
+
+                </div>
+                
+
+                <!--Colonna-->
+                <div class="col-sm-12 col-md-5 ">
+
+                    <p>
+                        <strong>1)</strong>Check stock availability must occur right after the start.
+
+                        <br>
+                        <br>
+                        Right after Check stock availability, either <strong>1.2)</strong>Manufacture product or <strong>1.3)</strong>Retrieve product from warehouse will occur.
+                    
+                        <br>
+                        <br>
+                        <strong>2)</strong>Confirm order may occur once only after Manufacture product or Retrieve product from warehouse. 
+    
+                        <br>
+                        <br>
+                        <strong>2.1)</strong>Emit invoice and <strong>2.3)</strong>Ship product must occur once after Confirm order.
+    
+                        <br>
+                        <br>
+                        <strong>2.2)</strong>Receive payment will occur once after Emit invoice
+    
+                        <br>
+                        <br>
+                        <strong>3)</strong>Archive order may occur once only after Emit invoice and Confirm order. Archive order must occur right before the end
+                    </p>
+                    
+                </div>
+
+                <!--Colonna-->
+                <div class="col-sm-12 col-md-3 ">
+
+                    <img src="../../Contenuti/declarative4.png" class="img-fluid" alt="Responsive image" >
+
+                </div>
+
+            </div>
+                
+        </div>
+
+
+        <!--Contenitore Grigio-->
+        <div class="container-fluid" id="boxG" >
+
+            <!--Tabella-->
+            <div class="row justify-content-center" >
+
+                <!--Colonna-->
+                <div class="col-sm-12 col-md-12 ">
+
+                    <h2 style="text-align: center;">A declarative process specification in Declare</h2>
+                    
+
+                </div>
+
+                <!--Colonna vuota bianca-->
+                <div class="col-sm-12 col-md-1 " id=boxG>
+
+                </div>
+
+                <!--Colonna-->
+                <div class="col-sm-12 col-md-11 ">
+
+                    <img src="../../Contenuti/declarative5.png" class="img-fluid" alt="Responsive image">
+
+                    If an abstract is submitted, a new paper had been written or will be written
+
+                    <strong>RespondedExistence(Submit abstract, Write new paper)</strong>
+                    
+                </div>
+
+                <!--Colonna vuota bianca-->
+                <div class="col-sm-12 col-md-1 " id=boxG>
+
+                </div>
+
+                <!--Colonna-->
+                <div class="col-sm-12 col-md-11 ">
+
+                    <img src="../../Contenuti/declarative6.png" class="img-fluid" alt="Responsive image">
+
+                    After the paper submission, a confirmation email is sent
+
+                    <strong>Response(Submit paper, Send confirmation email)</strong>
+                    
+                </div>
+
+                <!--Colonna vuota bianca-->
+                <div class="col-sm-12 col-md-1 " id=boxG>
+
+                </div>
+
+                <!--Colonna-->
+                <div class="col-sm-12 col-md-11 ">
+
+                    <img src="../../Contenuti/declarative7.png" class="img-fluid" alt="Responsive image">
+
+                    Only after the paper submission, the paper will be reviewed
+
+                    <strong>Succession(Submit paper, Review paper)</strong>
+                    
+                </div>
+
+                <!--Colonna vuota bianca-->
+                <div class="col-sm-12 col-md-1 " id=boxG>
+
+                </div>
+
+                <!--Colonna-->
+                <div class="col-sm-12 col-md-11 ">
+
+                    <img src="../../Contenuti/declarative8.png" class="img-fluid" alt="Responsive image">
+                    
+                    A paper can be accepted only after it has been reviewed
+
+                    <strong>Precedence(Review paper, Accept paper)</strong>
+                    
+                </div>
+
+                <!--Colonna vuota bianca-->
+                <div class="col-sm-12 col-md-1 " id=boxG>
+
+                </div>
+
+                <!--Colonna-->
+                <div class="col-sm-12 col-md-11 ">
+
+                    <img src="../../Contenuti/declarative9.png" class="img-fluid" alt="Responsive image">
+
+                    After the rejection, no further submission follows
+
+                    <strong>NotSuccession(Reject paper, Submit paper)</strong>
+                    
+                </div>
+
+                <!--Colonna vuota bianca-->
+                <div class="col-sm-12 col-md-1 " id=boxG>
+
+                </div>
+
+                <!--Colonna-->
+                <div class="col-sm-12 col-md-11 ">
+
+                    <img src="../../Contenuti/declarative10.png" class="img-fluid" alt="Responsive image">
+
+                    Paper cannot be both accepted and rejected
+
+                    <strong>NotCoExistence(Accept paper, Reject paper)</strong>
+                    
+                </div>
+
+
+                <!--Colonna vuota bianca-->
+                <div class="col-sm-12 col-md-12 " id=boxG>
+
+                </div>
+
+                <!--Colonna-->
+                <div class="col-sm-12 col-md-12 text-center">
+
+                    <img src="../../Contenuti/declarative11.png" class="img-fluid" alt="Responsive image">
+
+                </div>
+
+            </div>
+                
+        </div>
+
+        
+        <!--Contenitore Grigio-->
+        <div class="container-fluid" id="boxW" >
+
+            <!--Tabella-->
+            <div class="row justify-content-center" >
+
+                <!--Colonna-->
+                <div class="col-sm-12 col-md-12 ">
+                
+                    <h2>Extendibility of Declare</h2>
+
+                </div>
+
+                <!--Colonna-->
+                <div class="col-sm-12 col-md-4 ">
+
+                    <p>Linear temporal logics semantics</p>
+
+                    <img src="../../Contenuti/semantic0.png" class="img-fluid" alt="Responsive image" >
+                    
+                </div>
+
+                <!--Colonna vuota grigia-->
+                <div class="col-sm-12 col-md-1 " id=boxW>
+
+                </div>
+                
+
+                <!--Colonna-->
+                <div class="col-sm-12 col-md-4 ">
+
+                    <p>Semantics of DECLARE: LTLf</p>
+
+                    <img src="../../Contenuti/semantic1.png" class="img-fluid" alt="Responsive image" >
+                    
+                </div>
+
+                <!--Colonna vuota grigia-->
+                <div class="col-sm-12 col-md-12 " id=boxW>
+
+                </div>
+
+                <!--Colonna-->
+                <div class="col-sm-12 col-md-4 ">
+
+                    <p>Semantics of DECLARE: sCIFF</p>
+                    
+                    <img src="../../Contenuti/semantic2.png" class="img-fluid" alt="Responsive image" >
+
+                </div>
+
+                <!--Colonna vuota grigia-->
+                <div class="col-sm-12 col-md-1 " id=boxW>
+
+                </div>
+
+                
+
+                <!--Colonna-->
+                <div class="col-sm-12 col-md-4 ">
+
+                    <p>Semantics of DECLARE: RI/nets</p>
+                    
+                    <img src="../../Contenuti/semantic3.png" class="img-fluid" alt="Responsive image" >
+
+                </div>
+
+                <!--Colonna vuota grigia-->
+                <div class="col-sm-12 col-md-12 " id=boxW>
+
+                </div>
+                
+
+                <!--Colonna-->
+                <div class="col-sm-12 col-md-4 ">
+
+                    <p>Semantics of DECLARE: FOL over finite trace</p>
+                    
+                    <img src="../../Contenuti/semantic4.png" class="img-fluid" alt="Responsive image" >
+
+                </div>
+
+                <!--Colonna vuota grigia-->
+                <div class="col-sm-12 col-md-1 " id=boxW>
+
+                </div>
+
+
+                <!--Colonna-->
+                <div class="col-sm-12 col-md-4">
+
+                    <p>Semantics of DECLARE: Regular expressions</p>
+                    
+                    <img src="../../Contenuti/semantic5.png" class="img-fluid" alt="Responsive image" >
+
+                </div>
+
+                <!--Colonna vuota grigia-->
+                <div class="col-sm-12 col-md-12 " id=boxW>
+
+                </div>
+
+            </div>
+                
+        </div>
+
+        
+
+        
+
+        <!-- Footer -->
+        <footer class="bg-dark text-center text-white">
+            
+            <!-- Contenitore Social -->
+            <div class="container p-4">
+
+                <!-- Sezione: Social media -->
+                <section class="mb-4">
+
+                    <!-- Facebook -->
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+            
+                
+                    <!-- Google -->
+                    <a class="btn btn-outline-light btn-floating m-1" href="dc.claudio@gmail.com" role="button">
+                        <i class="fab fa-google"></i>
+                    </a>
+            
+                    <!-- Instagram -->
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+            
+                    <!-- Linkedin -->
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+            
+                    <!-- Github -->
+                    <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/cdc08x/MINERful" role="button">
+                        <i class="fab fa-github"></i>
+                    </a>
+
+                </section>
+            
+        
+                
+        
+                <!-- Sezione: Testo -->
+                <section class="mb-4">
+                    
+                    <p>
+                        MINERful is a process mining, simulation, and analysis tool for declarative process specifications.
+                    </p>
+
+                </section>
+            
+        
+                <!-- Sezione: Links -->
+                <section class="">
+
+                    <!--Tabella-->
+                    <div class="row">
+                        
+                        <!--Colonna-->
+                        <div class="col-sm-12 col-md-3">
+
+                            <h5>Guide</h5>
+                
+                            <ul class="list-unstyled mb-0">
+
+                                <li>
+                                    <a href="../../Guide/Installation/index.html" class="text-white">Installation</a>
+                                </li>
+
+                                <li>
+                                    <a href="../../Guide/MINERfulAPIs/index.html" class="text-white">MINERful APIs</a>
+                                </li>
+
+                                <li>
+                                    <a href="../../Guide/RunningTheJAR/index.html" class="text-white">Running the JAR</a>
+                                </li>
+
+                                <li>
+                                    <a href="../../Guide/RunningWithShellScripts/index.html" class="text-white">Running with Shell Scripts</a>
+                                </li>
+
+                                <li>
+                                    <a href="../../Guide/RunningExample/index.html" class="text-white">Running Examples</a>
+                                </li>
+
+                            </ul>
+
+                            <br>
+
+                        </div>
+                    
+            
+                        <!--Colonna-->
+                        <div class="col-sm-12 col-md-3">
+
+                            <h5>Functionality</h5>
+                
+                            <ul class="list-unstyled mb-0">
+
+                                <li>
+                                    <a href="../../Functionality/CreatingEventLogs/index.html" class="text-white">Creating Event Logs</a>
+                                </li>
+
+                                <li>
+                                    <a href="#!" class="text-white">Link 2</a>
+                                </li>
+
+                                <li>
+                                    <a href="#!" class="text-white">Link 3</a>
+                                </li>
+
+                                <li>
+                                    <a href="#!" class="text-white">Link 4</a>
+                                </li>
+
+                            </ul>
+
+                            <br>
+
+                        </div>
+                    
+            
+                        <!--Colonna-->
+                        <div class="col-sm-12 col-md-3">
+
+                            <h5>Declarative Processes</h5>
+                
+                            <ul class="list-unstyled mb-0">
+
+                                <li>
+                                    <a href="../Examples/index.html" class="text-white">Examples</a>
+                                </li>
+
+                                <li>
+                                    <a href="index.html" class="text-white">Declare Process Specification</a>
+                                </li>
+
+                                <li>
+                                    <a href="../DeclareTemplate/index.html" class="text-white">Declare Template</a>
+                                </li>
+
+                                <li>
+                                    <a href="../AutomatedDiscovery/index.html" class="text-white">Automated Discovery</a>
+                                </li>
+
+                            </ul>
+
+                            <br>
+
+                        </div>
+                    
+            
+                        <!--Colonna-->
+                        <div class="col-sm-12 col-md-3">
+
+                            <h5>About</h5>
+                
+                            <ul class="list-unstyled mb-0">
+
+                                <li>
+                                    <a href="../../index.html" class="text-white">Home</a>
+                                </li>
+
+                                <li>
+                                    <a href="../../About/Publications/index.html" class="text-white">Publication</a>
+                                </li>
+
+                                <li>
+                                    <a href="../../About/RelatedProjects/index.html" class="text-white">Related Projects</a>
+                                </li>
+
+                                <li>
+                                    <a href="../../About/License/index.html" class="text-white">License</a>
+                                </li>
+
+                                <li>
+                                    <a href="../../About/Contact/index.html" class="text-white">Contact</a>
+                                </li>
+
+                                <li>
+                                    <a href="../../About/Disclaimer/index.html" class="text-white">Disclaimer</a>
+                                </li>
+
+                            </ul>
+
+                        </div>
+                    
+                    </div>
+                    
+                </section>
+            
+            </div>
+            
+        
+            <!-- Copyright -->
+            <div class="text-center p-3" id="Copyright">
+            
+                <p>MINERful | Webdesign by Matteo Missanelli</p>
+
+            </div>
+            
+        </footer>
+
+
+
+    </body>
+
+</html>

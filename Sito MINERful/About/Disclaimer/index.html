@@ -1,0 +1,439 @@
+<html>
+    <head>
+
+        <title>Disclaimer</title>
+
+        <!-- Meta tag -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!--Link foglio di stile css Bootstrap online-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        
+        <!--Link javascript Bootstrap online-->
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        
+        <!--Link foglio di stile css locale-->
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+
+        <!--Link foglio di stile icone Bootstrap css online-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+
+
+        
+        
+    </head>
+
+    <body>
+
+        <!--Navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+
+            <!--Logo-->
+            <a class="navbar-brand mx-5" href="../../index.html">
+
+                <img src="../../Contenuti/minerful-logo-standard.png" style="background-color: white;" class="d-inline-block align-top" alt="">
+
+            </a>
+
+            <!--bottone menu collassabile in base alla grandezza pagina-->
+            <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        
+                <!--Icona Bottone collassabile-->
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+            <!--Contenitore voci navbar collassabili-->
+            <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+
+                <!--Voci nella navbar-->
+                <ul class="navbar-nav">
+
+                    <li class="nav-item mx-1">
+
+                        <a class="nav-link" href="../../index.html">
+                            <i class="fas fa-home"></i> Home
+                        </a>
+                        
+                    </li>
+
+                    <!--Voce con sottomenu-->
+                    <li class="nav-item dropdown mx-1" >
+
+                        <a class="nav-link dropdown-toggle "  id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-play"></i> Guide
+                        </a>
+
+                        <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown" >
+
+                            <li ><a class="nav-link" href="../../Guide/Installation/index.html">Installation</a></li>
+
+                            <li><a class="nav-link" href="../../Guide/MINERfulAPIs/index.html" >MINERful APIs</a></li>
+
+                            <li><a class="nav-link" href="../../Guide/RunningTheJAR/index.html" >Running the JAR</a></li>
+
+                            <li ><a class="nav-link" href="../../Guide/RunningWithShellScripts/index.html" >With Shell Scripts</a></li>
+
+                            <li ><a class="nav-link" href="../../Guide/RunningExample/index.html" >Running Example</a></li>
+                           
+                        </ul>
+
+                    </li>
+
+                    
+
+                    <!--Voce con sottomenu-->
+                    <li class="nav-item dropdown mx-1" >
+
+                        <a class="nav-link dropdown-toggle "  id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fab fa-cc-discover"></i> Functionality
+                        </a>
+
+                        <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown" >
+
+                            <li ><a class="nav-link" href="../../Functionality/CreatingEventLogs/index.html">Creating Event Logs</a></li>
+                           
+                        </ul>
+
+                    </li>
+
+                    
+
+                    <!--Voce con sottomenu-->
+                    <li class="nav-item dropdown mx-1" >
+
+                        <a class="nav-link dropdown-toggle "  id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-microchip"></i> Declarative Processes
+                        </a>
+
+                        <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown" >
+
+                            <li ><a class="nav-link" href="../../DeclarativeProcesses/Examples/index.html" >Examples</a></li>
+
+                            <li ><a class="nav-link" href="../../DeclarativeProcesses/DeclareProcessSpecification/index.html" >Declare Process Specification</a></li>
+
+                            <li ><a class="nav-link" href="../../DeclarativeProcesses/DeclareTemplate/index.html" >Declare Template</a></li>
+
+                            <li ><a class="nav-link" href="../../DeclarativeProcesses/AutomatedDiscovery/index.html" >Automated Discovery</a></li>
+
+
+
+                        </ul>
+
+                    </li>
+
+                    
+
+                    <!--Voce con sottomenu-->
+                    <li class="nav-item dropdown mx-1" >
+
+                        <a class="nav-link dropdown-toggle "  id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-info-circle"></i> About
+                        </a>
+
+                        <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown" >
+
+                            <li><a class="nav-link" href="../Publications/index.html">Publications</a></li>
+
+                            <li><a class="nav-link" href="../RelatedProjects/index.html">Related Projects</a></li>
+
+                            <li><a class="nav-link" href="../License/index.html">License</a></li>
+
+                            <li><a class="nav-link" href="../Contact/index.html">Contact</a></li>
+  
+                            
+                        </ul>
+
+                    </li>
+
+                    <!--Bottone cliccabile-->
+                    <button type="button" id=b1 class="btn btn-outline-secondary"><a target="_blank"href="https://github.com/cdc08x/MINERful">Download</a> </button>
+            
+                </ul>
+
+            </div>
+
+        </nav>
+
+        <br>
+        <br>
+        
+        
+        <!--Contenitore Grigio-->
+        <div class="container">
+
+            <!--Tabella-->
+            <div class="row justify-content-center" >
+
+                <!--Colonna vuota bianca-->
+                <div class="col-sm-12 col-md-12 " id=boxW>
+
+                </div>
+
+                <!--Colonna-->
+                <div class="col-sm-12 col-md-7 " id=boxG>
+
+                    <h3>Content of the online offer</h3>
+
+                    <p>
+                        The author assumes no liability for the topicality, correctness and completeness of the information provided on our website. Liability claims against the 
+                        author relating to material or immaterial damage caused by the use or non-use of the information provided or by the use of incorrect and incomplete 
+                        information are fundamentally excluded, unless the author can be shown to have acted willfully or grossly negligent Is at fault.
+                        All offers are non-binding. The author expressly reserves the right to change, add to, or delete parts of the pages or the entire offer, or to cease 
+                        publication temporarily or permanently, without prior notice.
+                    </p>
+
+                    <h3>References and links</h3>
+
+                    <p>
+                        In the case of direct or indirect references to external websites (“hyperlinks”) that are outside the author's area of responsibility, liability would only 
+                        come into effect if the author was aware of the content and it was technically possible and reasonable for him to prevent use in the event of illegal content.
+                        The author hereby expressly declares that at the time the link was set, no illegal content was recognizable on the linked pages. The author has no influence 
+                        on the current and future design, content or authorship of the linked pages. Therefore, he hereby expressly distances himself from all content on all 
+                        linked / connected pages that was changed after the link was set. This statement applies to all links and references set within the company's own website 
+                        as well as to third-party entries in guest books, discussion forums, link directories, mailing lists and in all other forms of databases to the content 
+                        of which external write access is possible. For illegal, incorrect or incomplete content and in particular for damage resulting from the use or non-use 
+                        of information presented in this way, only the provider of the page to which reference was made is liable, not the person who merely refers to the 
+                        respective publication via links.
+                    </p>
+
+                    <h3>Copyright and trademark law</h3>
+
+                    <p>
+                        The author endeavors to observe the copyrights of the images, graphics, sound documents, video sequences and texts used in all publications, to use images, 
+                        graphics, sound documents, video sequences and texts created by him. itself or to use unlicensed graphics, sound documents, video sequences and texts.
+                        All brands and trademarks mentioned in the Internet offer and possibly protected by third parties are subject without restriction to the provisions of 
+                        the respectively valid trademark law and the ownership rights of the respective registered owners. Mere mention does not lead to the conclusion that 
+                        trademarks are not protected by the rights of third parties! The copyright for published objects created by the author himself remains exclusively 
+                        with the author of the pages. Any duplication or use of such graphics, sound documents, video sequences and texts in other electronic or printed 
+                        publications is not permitted without the express consent of the author.
+                    </p>
+
+                    <h3>Privacy</h3>
+
+                    <p>
+                        If the possibility exists to enter personal or business data (e-mail addresses, names, addresses) within the Internet offer, the disclosure of this data by 
+                        the user takes place on an expressly voluntary basis. The use and payment of all services offered is - as far as technically possible and reasonable - 
+                        permitted even without specification of such data or under specification of anonymous data or a pseudonym. The use of the contact data published in the 
+                        imprint or comparable information such as postal addresses, telephone and fax numbers as well as e-mail addresses of third parties for the transmission 
+                        of information not expressly requested is not permitted. We expressly reserve the right to take legal action against the senders of so-called spam e-mails 
+                        in case of violation of this prohibition.
+                    </p>
+                    
+                </div>
+
+                <!--Colonna vuota bianca-->
+                <div class="col-sm-12 col-md-12 " id=boxW>
+
+                </div>
+
+            </div>
+                
+        </div>
+
+
+
+        <!-- Footer -->
+        <footer class="bg-dark text-center text-white">
+            
+            <!-- Contenitore Social -->
+            <div class="container p-4">
+
+                <!-- Sezione: Social media -->
+                <section class="mb-4">
+
+                    <!-- Facebook -->
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+            
+                
+                    <!-- Google -->
+                    <a class="btn btn-outline-light btn-floating m-1" href="dc.claudio@gmail.com" role="button">
+                        <i class="fab fa-google"></i>
+                    </a>
+            
+                    <!-- Instagram -->
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+            
+                    <!-- Linkedin -->
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+            
+                    <!-- Github -->
+                    <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/cdc08x/MINERful" role="button">
+                        <i class="fab fa-github"></i>
+                    </a>
+
+                </section>
+        
+                <!-- Sezione: Testo -->
+                <section class="mb-4">
+                    
+                    <p>
+                        MINERful is a process mining, simulation, and analysis tool for declarative process specifications.
+                    </p>
+
+                </section>
+
+        
+                <!-- Sezione: Links -->
+                <section class="">
+
+                    <!--Tabella-->
+                    <div class="row">
+                        
+                        <!--Colonna-->
+                        <div class="col-sm-12 col-md-3">
+
+                            <h5>Guide</h5>
+                
+                            <ul class="list-unstyled mb-0">
+
+                                <li>
+                                    <a href="../../Guide/Installation/index.html" class="text-white">Installation</a>
+                                </li>
+
+                                <li>
+                                    <a href="../../Guide/MINERfulAPIs/index.html" class="text-white">MINERful APIs</a>
+                                </li>
+
+                                <li>
+                                    <a href="../../Guide/RunningTheJAR/index.html" class="text-white">Running the JAR</a>
+                                </li>
+
+                                <li>
+                                    <a href="../../Guide/RunningWithShellScripts/index.html" class="text-white">Running with Shell Scripts</a>
+                                </li>
+
+                                <li>
+                                    <a href="../../Guide/RunningExample/index.html" class="text-white">Running Examples</a>
+                                </li>
+
+                            </ul>
+
+                            <br>
+
+                        </div>
+                    
+            
+                        <!--Colonna-->
+                        <div class="col-sm-12 col-md-3">
+
+                            <h5>Functionality</h5>
+                
+                            <ul class="list-unstyled mb-0">
+
+                                <li>
+                                    <a href="../../Functionality/CreatingEventLogs/index.html" class="text-white">Creating Event Logs</a>
+                                </li>
+
+                                <li>
+                                    <a href="#!" class="text-white">Link 2</a>
+                                </li>
+
+                                <li>
+                                    <a href="#!" class="text-white">Link 3</a>
+                                </li>
+
+                                <li>
+                                    <a href="#!" class="text-white">Link 4</a>
+                                </li>
+
+                            </ul>
+
+                            <br>
+
+                        </div>
+                    
+            
+                        <!--Colonna-->
+                        <div class="col-sm-12 col-md-3">
+
+                            <h5>Declarative Processes</h5>
+                
+                            <ul class="list-unstyled mb-0">
+
+                                <li>
+                                    <a href="../../DeclarativeProcesses/Examples/index.html" class="text-white">Examples</a>
+                                </li>
+
+                                <li>
+                                    <a href="../../DeclarativeProcesses/DeclareProcessSpecification/index.html" class="text-white">Declare Process Specification</a>
+                                </li>
+
+                                <li>
+                                    <a href="../../DeclarativeProcesses/DeclareTemplate/index.html" class="text-white">Declare Template</a>
+                                </li>
+
+                                <li>
+                                    <a href="../../DeclarativeProcesses/AutomatedDiscovery/index.html" class="text-white">Automated Discovery</a>
+                                </li>
+
+                            </ul>
+
+                            <br>
+
+                        </div>
+                    
+            
+                        <!--Colonna-->
+                        <div class="col-sm-12 col-md-3">
+
+                            <h5>About</h5>
+                
+                            <ul class="list-unstyled mb-0">
+
+                                <li>
+                                    <a href="../../index.html" class="text-white">Home</a>
+                                </li>
+
+                                <li>
+                                    <a href="../Publications/index.html" class="text-white">Publication</a>
+                                </li>
+
+                                <li>
+                                    <a href="../RelatedProjects/index.html" class="text-white">Related Projects</a>
+                                </li>
+
+                                <li>
+                                    <a href="../License/index.html" class="text-white">License</a>
+                                </li>
+
+                                <li>
+                                    <a href="../Contact/index.html" class="text-white">Contact</a>
+                                </li>
+
+                                <li>
+                                    <a href="index.html" class="text-white">Disclaimer</a>
+                                </li>
+
+                            </ul>
+
+                        </div>
+                    
+                    </div>
+                    
+                </section>
+            
+            </div>
+            
+        
+            <!-- Copyright -->
+            <div class="text-center p-3" id="Copyright">
+            
+                <p>MINERful | Webdesign by Matteo Missanelli</p>
+
+            </div>
+            
+        </footer>
+  
+
+
+    </body>
+    
+</html>
