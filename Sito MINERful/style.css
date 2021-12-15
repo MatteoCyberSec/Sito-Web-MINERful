@@ -40,36 +40,6 @@ a
     
 }
 
-#b1 a
-{
-    color: rgba(255,255,255,.55);
-}
-
-#b1 a:hover
-{
-    color: rgba(255,255,255,.55);
-}
-
-#b1:hover
-{
-    background-color: rgba(128, 128, 128, 0.171);
-}
-
-#b2 a 
-{
-    color: black;
-    
-}
-
-#b2:hover
-{
-    background-color: #7474748f;
-}
-
-#b2 a:hover
-{
-    color: black;
-}
 
 h2
 {
