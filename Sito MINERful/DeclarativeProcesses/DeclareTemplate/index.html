@@ -32,7 +32,7 @@
             <!--Logo-->
             <a class="navbar-brand mx-5" href="../../index.html">
 
-                <img src="../../Contenuti/minerful-logo-standard.png" style="background-color: white;" class="d-inline-block align-top" alt="">
+                <img src="../../Contents/minerful-logo-standard.png" style="background-color: white;" class="d-inline-block align-top" alt="">
 
             </a>
 
@@ -73,7 +73,7 @@
 
                             <li><a class="nav-link" href="../../Guide/RunningTheJAR/index.html" >Running the JAR</a></li>
 
-                            <li ><a class="nav-link" href="../../Guide/RunningWithShellScripts/index.html" >With Shell Scripts</a></li>
+                            <li ><a class="nav-link" href="../../Guide/RunningWithShellScripts/index.html" >Running with Shell Scripts</a></li>
 
                             <li ><a class="nav-link" href="../../Guide/RunningExample/index.html" >Running Example</a></li>
                            
@@ -148,7 +148,14 @@
                     </li>
 
                     <!--Bottone cliccabile-->
-                    <button type="button" id=b1 class="btn btn-outline-secondary"><a target="_blank"href="https://github.com/cdc08x/MINERful">Download</a> </button>
+                    <button type="button" id=b1 class="btn btn-outline-secondary" onclick="apriSchedaNuova()">Download</button>
+            
+                    <script>
+                        function apriSchedaNuova() 
+                        { 
+                            window.open("https://github.com/cdc08x/MINERful", "_blank"); 
+                        } 
+                    </script>
             
                 </ul>
 
@@ -185,7 +192,7 @@
                 <!--Colonna-->
                 <div class="col-sm-12 col-md-5 ">
 
-                    <img src="../../Contenuti/template1.png" class="img-fluid" alt="Responsive image" >
+                    <img src="../../Contents/template1.png" class="img-fluid" alt="Responsive image" >
 
                     <strong>Init(a)</strong>: Every process instance starts with activity <strong>a</strong>.
                     
@@ -198,7 +205,7 @@
 
                     
                     
-                    <img src="../../Contenuti/template2.png" class="img-fluid" alt="Responsive image" >
+                    <img src="../../Contents/template2.png" class="img-fluid" alt="Responsive image" >
 
                     <strong>Init(a)</strong>: Every process instance starts with activity <strong>a</strong>.
 
@@ -227,7 +234,7 @@
 
                     
                     
-                    <img src="../../Contenuti/template3.png" class="img-fluid" alt="Responsive image" >
+                    <img src="../../Contents/template3.png" class="img-fluid" alt="Responsive image" >
 
                     <strong>Participation(a)</strong>: Activity <strong>a</strong> occurs at least once.
 
@@ -240,7 +247,7 @@
 
                     
                     
-                    <img src="../../Contenuti/template4.png" class="img-fluid" alt="Responsive image" >
+                    <img src="../../Contents/template4.png" class="img-fluid" alt="Responsive image" >
 
                     <strong>AtMostOne(a)</strong>: Activity <strong>a</strong> occurs at most once.
 
@@ -281,7 +288,7 @@
                 <!--Colonna-->
                 <div class="col-sm-12 col-md-5 ">
 
-                    <img src="../../Contenuti/template5.png" class="img-fluid" alt="Responsive image" >
+                    <img src="../../Contents/template5.png" class="img-fluid" alt="Responsive image" >
 
                     <strong>Init(a)</strong>: Every process instance starts with activity <strong>a</strong>.
                     
@@ -294,7 +301,7 @@
 
                     
                     
-                    <img src="../../Contenuti/template6.png" class="img-fluid" alt="Responsive image" >
+                    <img src="../../Contents/template6.png" class="img-fluid" alt="Responsive image" >
 
                     <strong>Init(a)</strong>: Every process instance starts with activity <strong>a</strong>.
 
@@ -323,7 +330,7 @@
 
                     
                     
-                    <img src="../../Contenuti/template7.png" class="img-fluid" alt="Responsive image" >
+                    <img src="../../Contents/template7.png" class="img-fluid" alt="Responsive image" >
 
                     <strong>Participation(a)</strong>: Activity <strong>a</strong> occurs at least once.
 
@@ -336,7 +343,7 @@
 
                     
                     
-                    <img src="../../Contenuti/template8.png" class="img-fluid" alt="Responsive image" >
+                    <img src="../../Contents/template8.png" class="img-fluid" alt="Responsive image" >
 
                     <strong>AtMostOne(a)</strong>: Activity <strong>a</strong> occurs at most once.
 
@@ -367,7 +374,7 @@
                 <!--Colonna-->
                 <div class="col-sm-12 col-md-10 offset-md-2">
 
-                    <img src="../../Contenuti/template8.png" class="img-fluid" alt="Responsive image" >
+                    <img src="../../Contents/template8.png" class="img-fluid" alt="Responsive image" >
 
                     <strong>RespondedExistence(b, a)</strong>: If <strong>b</strong> occurs, <strong>a</strong> has to occur at some point, no matter when
 
@@ -381,7 +388,7 @@
                 <!--Colonna-->
                 <div class="col-sm-12 col-md-10 offset-md-2">
 
-                    <img src="../../Contenuti/template10.png" class="img-fluid" alt="Responsive image" >
+                    <img src="../../Contents/template10.png" class="img-fluid" alt="Responsive image" >
 
                     <strong>Precedence(a, b)</strong>: If b occurs, then <strong>a</strong> has to occur before <strong>b</strong>
 
@@ -396,7 +403,7 @@
                 <!--Colonna-->
                 <div class="col-sm-12 col-md-10 offset-md-2">
 
-                    <img src="../../Contenuti/template11.png" class="img-fluid" alt="Responsive image" >
+                    <img src="../../Contents/template11.png" class="img-fluid" alt="Responsive image" >
 
                     <strong>AlternatePrecedence(a, b)</strong>: Each time <strong>b</strong> occurs, it is preceded by <strong>a</strong>, with no <strong>b</strong> in-between
                 
@@ -410,7 +417,7 @@
                 <!--Colonna-->
                 <div class="col-sm-12 col-md-10 offset-md-2">
 
-                    <img src="../../Contenuti/template12.png" class="img-fluid" alt="Responsive image" >
+                    <img src="../../Contents/template12.png" class="img-fluid" alt="Responsive image" >
 
                     <strong>ChainPrecedence(a, b)</strong>: If <strong>b</strong> occurs, then <strong>a</strong> has to occur immediately beforehand
 
@@ -437,7 +444,7 @@
                 <!--Colonna-->
                 <div class="col-sm-12 col-md-10 offset-md-2">
 
-                    <img src="../../Contenuti/template13.png" class="img-fluid" alt="Responsive image" >
+                    <img src="../../Contents/template13.png" class="img-fluid" alt="Responsive image" >
 
                     <strong>CoExistence(a, b)</strong>: RespondedExistence <strong>(a, b)</strong> and RespondedExistence <strong>(b, a)</strong> hold
 
@@ -451,7 +458,7 @@
                 <!--Colonna-->
                 <div class="col-sm-12 col-md-10 offset-md-2">
 
-                    <img src="../../Contenuti/template14.png" class="img-fluid" alt="Responsive image" >
+                    <img src="../../Contents/template14.png" class="img-fluid" alt="Responsive image" >
 
                     <strong>Succession(a, b)</strong>: Response <strong>(a, b)</strong> and Precedence <strong>(b, a)</strong> hold
 
@@ -468,7 +475,7 @@
                 <!--Colonna-->
                 <div class="col-sm-12 col-md-10 offset-md-2">
 
-                    <img src="../../Contenuti/template15.png" class="img-fluid" alt="Responsive image" >
+                    <img src="../../Contents/template15.png" class="img-fluid" alt="Responsive image" >
 
                     <strong>AlternateSuccession(a, b)</strong>: AlternateResponse <strong>(a, b)</strong> and AlternatePrecedence <strong>(b, a)</strong> hold
 
@@ -485,7 +492,7 @@
                 <!--Colonna-->
                 <div class="col-sm-12 col-md-10 offset-md-2">
 
-                    <img src="../../Contenuti/template16.png" class="img-fluid" alt="Responsive image" >
+                    <img src="../../Contents/template16.png" class="img-fluid" alt="Responsive image" >
 
                     <strong>ChainSuccession(a, b)</strong>: ChainResponse <strong>(a, b)</strong> and ChainPrecedence <strong>(b, a)</strong> hold
 
@@ -514,7 +521,7 @@
                 <!--Colonna-->
                 <div class="col-sm-12 col-md-10 offset-md-2">
 
-                    <img src="../../Contenuti/template17.png" class="img-fluid" alt="Responsive image" >
+                    <img src="../../Contents/template17.png" class="img-fluid" alt="Responsive image" >
 
                     <strong>NotCoExistence(a, b)</strong>: <strong>a</strong> and <strong>b</strong> cannot co-occur
 
@@ -528,7 +535,7 @@
                 <!--Colonna-->
                 <div class="col-sm-12 col-md-10 offset-md-2">
 
-                    <img src="../../Contenuti/template18.png" class="img-fluid" alt="Responsive image" >
+                    <img src="../../Contents/template18.png" class="img-fluid" alt="Responsive image" >
 
                     <strong>NotSuccession(a, b)</strong>: <strong>b</strong> cannot occur after <strong>a</strong> and <strong>a</strong> cannot occur before <strong>b</strong>
 
@@ -543,7 +550,7 @@
                 <!--Colonna-->
                 <div class="col-sm-12 col-md-10 offset-md-2">
 
-                    <img src="../../Contenuti/template19.png" class="img-fluid" alt="Responsive image" >
+                    <img src="../../Contents/template19.png" class="img-fluid" alt="Responsive image" >
 
                     <strong>NotChainSuccession(a, b)</strong>: <strong>b</strong> cannot occur immediately after <strong>a</strong>
 
@@ -566,7 +573,7 @@
                 
                     <h2>Constraints subsumption (strictness) hierarchy</h2>
 
-                    <img src="../../Contenuti/template20.png" class="img-fluid" alt="Responsive image" >
+                    <img src="../../Contents/template20.png" class="img-fluid" alt="Responsive image" >
 
                 </div>
 
