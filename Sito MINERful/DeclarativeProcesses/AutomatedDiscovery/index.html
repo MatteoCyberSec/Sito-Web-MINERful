@@ -19,9 +19,10 @@
         <!--Link style sheet icon font-awesome online-->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 
+        <!--Script JavaScript-->
+        <script type="text/javascript" lang="javascript" src="../../main.js"></script>
 
-        
-        
+
     </head>
 
     <body>
@@ -92,7 +93,13 @@
 
                         <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown" >
 
+                            <li ><a class="nav-link" href="../../Functionality/DiscoverProcessMap/index.html">Discover Process Map</a></li>
+
                             <li ><a class="nav-link" href="../../Functionality/CreatingEventLogs/index.html">Creating Event Logs</a></li>
+
+                            <li ><a class="nav-link" href="../../Functionality/PerformFitnessCheck/index.html">Perform Fitness Check</a></li>
+
+                            <li ><a class="nav-link" href="../../Functionality/GenerateAutomaton/index.html">Generate Automaton</a></li>
                            
                         </ul>
 
@@ -109,11 +116,11 @@
 
                         <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown" >
 
-                            <li ><a class="nav-link" href="../Examples/index.html" >Examples</a></li>
-
                             <li ><a class="nav-link" href="../DeclareProcessSpecification/index.html" >Declare Process Specification</a></li>
 
-                            <li ><a class="nav-link" href="../DeclareTemplate/index.html" >Declare Template</a></li>
+                            <li ><a class="nav-link" href="../Examples/index.html" >Examples</a></li>
+
+                            <li ><a class="nav-link" href="../DeclareTemplates/index.html" >Declare Templates</a></li>
 
                             <li ><a class="nav-link" href="index.html" >Automated Discovery</a></li>
 
@@ -149,14 +156,6 @@
 
                     <!--Click Button-->
                     <button type="button" id=b1 class="btn btn-outline-secondary" onclick="apriSchedaNuova()">Download</button>
-            
-                    <script>
-                        //opens a link in a new tab
-                        function apriSchedaNuova() 
-                        { 
-                            window.open("https://github.com/cdc08x/MINERful", "_blank"); 
-                        } 
-                    </script>
             
                 </ul>
 
@@ -213,44 +212,32 @@
         <!-- Footer -->
         <footer class="bg-dark text-center text-white">
             
-            <!-- Contenitore Social -->
+            <!--Social Container-->
             <div class="container p-4">
 
-                <!-- Sezione: Social media -->
+                <!-- Section: Social media -->
                 <section class="mb-4">
 
-                    <!-- Facebook -->
-                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
-                        <i class="fab fa-facebook-f"></i>
+                    <!-- Github -->
+                    <a target="_blank" class="btn btn-outline-light btn-floating m-1" href="https://github.com/cdc08x/MINERful" role="button">
+                        <i class="fab fa-github"></i>
                     </a>
-            
-                
+                    
+                    <!-- Linkedin -->
+                    <a target="_blank" class="btn btn-outline-light btn-floating m-1" href="https://it.linkedin.com/in/claudiodiciccio" role="button">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+
                     <!-- Google -->
-                    <a class="btn btn-outline-light btn-floating m-1" href="dc.claudio@gmail.com" role="button">
+                    <a target="_blank" class="btn btn-outline-light btn-floating m-1" href="mailto:diciccio@di.uniroma1.it" role="button">
                         <i class="fab fa-google"></i>
                     </a>
             
-                    <!-- Instagram -->
-                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-            
-                    <!-- Linkedin -->
-                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
-            
-                    <!-- Github -->
-                    <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/cdc08x/MINERful" role="button">
-                        <i class="fab fa-github"></i>
-                    </a>
 
                 </section>
             
         
-                
-        
-                <!-- Sezione: Testo -->
+                <!-- Section: Text -->
                 <section class="mb-4">
                     
                     <p>
@@ -258,15 +245,15 @@
                     </p>
 
                 </section>
-            
-        
-                <!-- Sezione: Links -->
+
+                
+                <!-- Section: Links -->
                 <section class="">
 
                     <!--Table-->
                     <div class="row">
                         
-                        <!--Column-->
+                        <!--Guide Column-->
                         <div class="col-sm-12 col-md-3">
 
                             <h5>Guide</h5>
@@ -300,7 +287,7 @@
                         </div>
                     
             
-                        <!--Column-->
+                        <!--Functionality Column-->
                         <div class="col-sm-12 col-md-3">
 
                             <h5>Functionality</h5>
@@ -308,19 +295,19 @@
                             <ul class="list-unstyled mb-0">
 
                                 <li>
+                                    <a href="../../Functionality/DiscoverProcessMap/index.html" class="text-white">Discover Process Map</a>
+                                </li>
+
+                                <li>
                                     <a href="../../Functionality/CreatingEventLogs/index.html" class="text-white">Creating Event Logs</a>
                                 </li>
 
                                 <li>
-                                    <a href="#!" class="text-white">Link 2</a>
+                                    <a href="../../Functionality/PerformFitnessCheck/index.html" class="text-white">Perform Fitness Check</a>
                                 </li>
 
                                 <li>
-                                    <a href="#!" class="text-white">Link 3</a>
-                                </li>
-
-                                <li>
-                                    <a href="#!" class="text-white">Link 4</a>
+                                    <a href="../../Functionality/GenerateAutomaton/index.html" class="text-white">Generate Automaton</a>
                                 </li>
 
                             </ul>
@@ -330,7 +317,7 @@
                         </div>
                     
             
-                        <!--Column-->
+                        <!--Declarative Processes Column-->
                         <div class="col-sm-12 col-md-3">
 
                             <h5>Declarative Processes</h5>
@@ -338,15 +325,15 @@
                             <ul class="list-unstyled mb-0">
 
                                 <li>
-                                    <a href="../Examples/index.html" class="text-white">Examples</a>
-                                </li>
-
-                                <li>
                                     <a href="../DeclareProcessSpecification/index.html" class="text-white">Declare Process Specification</a>
                                 </li>
 
                                 <li>
-                                    <a href="../DeclareTemplate/index.html" class="text-white">Declare Template</a>
+                                    <a href="../Examples/index.html" class="text-white">Examples</a>
+                                </li>
+
+                                <li>
+                                    <a href="../DeclareTemplates/index.html" class="text-white">Declare Templates</a>
                                 </li>
 
                                 <li>
@@ -360,7 +347,7 @@
                         </div>
                     
             
-                        <!--Column-->
+                        <!--About Column-->
                         <div class="col-sm-12 col-md-3">
 
                             <h5>About</h5>
@@ -372,7 +359,7 @@
                                 </li>
 
                                 <li>
-                                    <a href="../../About/Publications/index.html" class="text-white">Publication</a>
+                                    <a href="../../About/Publications/index.html" class="text-white">Publications</a>
                                 </li>
 
                                 <li>
@@ -410,10 +397,6 @@
             </div>
             
         </footer>
-
-                
-
-
         
 
 

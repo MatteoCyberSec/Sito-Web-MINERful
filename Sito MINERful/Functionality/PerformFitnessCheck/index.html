@@ -1,7 +1,7 @@
 <html>
     <head>
 
-        <title>MINERful APIs</title>
+        <title>Perform Fitness Check</title>
 
         <!-- Meta tag -->
         <meta charset="utf-8">
@@ -21,6 +21,7 @@
 
         <!--Script JavaScript-->
         <script type="text/javascript" lang="javascript" src="../../main.js"></script>
+
         
     </head>
 
@@ -67,15 +68,15 @@
 
                         <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown" >
 
-                            <li ><a class="nav-link" href="../Installation/index.html">Installation</a></li>
+                            <li ><a class="nav-link" href="../../Guide/Installation/index.html">Installation</a></li>
 
-                            <li><a class="nav-link" href="index.html" >MINERful APIs</a></li>
+                            <li><a class="nav-link" href="../../Guide/MINERfulAPIs/index.html" >MINERful APIs</a></li>
 
-                            <li><a class="nav-link" href="../RunningTheJAR/index.html" >Running the JAR</a></li>
+                            <li><a class="nav-link" href="../../Guide/RunningTheJAR/index.html" >Running the JAR</a></li>
 
-                            <li ><a class="nav-link" href="../RunningWithShellScripts/index.html" >Running with Shell Scripts</a></li>
+                            <li ><a class="nav-link" href="../../Guide/RunningWithShellScripts/index.html" >Running with Shell Scripts</a></li>
 
-                            <li ><a class="nav-link" href="../RunningExample/index.html" >Running Example</a></li>
+                            <li ><a class="nav-link" href="../../Guide/RunningExample/index.html" >Running Example</a></li>
                            
                         </ul>
 
@@ -92,13 +93,13 @@
 
                         <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown" >
 
-                            <li ><a class="nav-link" href="../../Functionality/DiscoverProcessMap/index.html">Discover Process Map</a></li>
+                            <li ><a class="nav-link" href="../DiscoverProcessMap/index.html">Discover Process Map</a></li>
 
-                            <li ><a class="nav-link" href="../../Functionality/CreatingEventLogs/index.html">Creating Event Logs</a></li>
+                            <li ><a class="nav-link" href="../CreatingEventLogs/index.html">Creating Event Logs</a></li>
 
-                            <li ><a class="nav-link" href="../../Functionality/PerformFitnessCheck/index.html">Perform Fitness Check</a></li>
+                            <li ><a class="nav-link" href="index.html">Perform Fitness Check</a></li>
 
-                            <li ><a class="nav-link" href="../../Functionality/GenerateAutomaton/index.html">Generate Automaton</a></li>
+                            <li ><a class="nav-link" href="../GenerateAutomaton/index.html">Generate Automaton</a></li>
                            
                         </ul>
 
@@ -156,7 +157,6 @@
                     <!--Click Button-->
                     <button type="button" id=b1 class="btn btn-outline-secondary" onclick="apriSchedaNuova()">Download</button>
             
-            
                 </ul>
 
             </div>
@@ -172,7 +172,7 @@
             <!--Table-->
             <div class="row justify-content-center" >
 
-                <!--Empty White Column-->
+                <!--Empty white column-->
                 <div class="col-sm-12 col-md-12 " id=boxW>
 
                 </div>
@@ -180,106 +180,26 @@
                 <!--Grey Column-->
                 <div class="col-sm-12 col-md-4 " id="boxG">
 
-                    <h3>Usage</h3>
+                    <h3>Perform Fitness Check</h3>
 
                     <p>
-                        You can run MINERful as a stand-alone software by
-
-                        <a target="_blank" href="https://github.com/cdc08x/MINERful/wiki/Usage#minerful-as-a-stand-alone-application-with-sh-files">invoking the command shell scripts </a> 
-
-                        or directly
-
-                        <a target="_blank" href="https://github.com/cdc08x/MINERful/wiki/Usage#usage-examples-of-minerful-as-a-stand-alone-application-running-the-jar">running the JAR</a> 
-
-                        with your Java installation.If you are a developer, you can include the JAR in your Java project and use
-
-                        <a href="../API MINERful/index.html">use the MINERful APIs.</a>.
+                        Perform Fitness Check consists of selecting the process map, as well as the event log, the map must be verified and that the suitability check has been 
+                        effectively carried out. The user is then able to analyze and export the result.
                     </p>
 
                 </div>
 
-                <!--Empty White Column-->
+                <!--Empty white column-->
                 <div class="col-sm-12 col-md-12 " id=boxW>
 
                 </div>
-   
-            </div>
-                
-        </div>
 
-
-        <!--Container-->
-        <div class="container" >
-
-            <!--Table-->
-            <div class="row justify-content-center" >
-
-                
-
-                <!--Grey Column-->
-                <div class="col-sm-12 col-md-12 " id="boxG">
-
-                    <h2>MINERful APIs</h2>
-
-                    <p>
-                        For advanced users: You can use MINERful as a Java package and integrate it with your software! 
-
-                        <br>
-                        Check out the <a target="_blank" href="https://github.com/cdc08x/MINERful/tree/master/src/minerful/examples/api">minerful.examples.api</a> 
-                        source code to see some examples. 
-                        
-                        <br>
-                        In particular: 
-                    </p>
-
-                    <p>
-                        <a target="_blank" href="https://github.com/cdc08x/MINERful/blob/master/src/minerful/examples/api/discovery/MinerFulObserverInvokerOnXesFile.java">discovery.MinerFulObserverInvokerOnXesFile</a> 
-    
-                        demonstrates how to invoke the MINERful miner as an API, and subsequently observe the changes that are applied to the process model in a
-
-                        <a target="_blank" href="https://en.wikipedia.org/wiki/Publish%E2%80%93subscribe_pattern">publish/subscribe</a> fashion. Lastly, the model is saved as a Declare Map file.
-                    </p>
-
-                    <p>
-                        <a target="_blank" href="https://github.com/cdc08x/MINERful/blob/master/src/minerful/examples/api/discovery/MinerFulCallerOnStringFile.java">discovery.MinerFulCallerOnStringFile</a>
-    
-                        demonstrates how to call MINERful to discover a process model out of strings saved on a file.
-    
-                    </p>
-
-                    <p>
-                        <a target="_blank" href="https://github.com/cdc08x/MINERful/blob/master/src/minerful/examples/api/io/FromDeclareMapToJSONandXMLandCSV.java">io.FromDeclareMapToJSONandXMLandCSV</a> 
-    
-                        demonstrates how to call MINERful to load a process model stored as a Declare map XML file, and then store it converted into MINERful XML, CSV, and JSON formats.
-    
-                    </p>
-
-                    <p>
-                        <a target="_blank" href="https://github.com/cdc08x/MINERful/blob/master/src/minerful/examples/api/logmaking/FromStringsProcessModelToLog.java">logmaking.FromCharactersProcessModelToLog</a> 
-    
-                        demonstrates how to generate XES logs starting from the definitions of new constraints. It can be interesting also because it shows how to create a process model on the fly.
-    
-                    </p>
-
-                    <p>
-                        <a target="_blank" href="https://github.com/cdc08x/MINERful/blob/master/src/minerful/examples/api/logmaking/FromStringsProcessModelToLog.java">logmaking.FromStringsProcessModelToLog</a> 
-    
-                        demonstrates how to generate XES logs starting from the definitions of constraints exerted on activities identified by single characters (more or less the same as above).
-    
-                    </p>
-
-                </div>
-
-                <!--Empty White Column-->
-                <div class="col-sm-12 col-md-12 " id=boxW>
-
-                </div>
-   
             </div>
                 
         </div>
 
         
+         
 
 
         <!-- Footer -->
@@ -334,23 +254,23 @@
                             <ul class="list-unstyled mb-0">
 
                                 <li>
-                                    <a href="../Installation/index.html" class="text-white">Installation</a>
+                                    <a href="../../Guide/Installation/index.html" class="text-white">Installation</a>
                                 </li>
 
                                 <li>
-                                    <a href="index.html" class="text-white">MINERful APIs</a>
+                                    <a href="../../Guide/MINERfulAPIs/index.html" class="text-white">MINERful APIs</a>
                                 </li>
 
                                 <li>
-                                    <a href="../RunningTheJAR/index.html" class="text-white">Running the JAR</a>
+                                    <a href="../../Guide/RunningTheJAR/index.html" class="text-white">Running the JAR</a>
                                 </li>
 
                                 <li>
-                                    <a href="../RunningWithShellScripts/index.html" class="text-white">Running with Shell Scripts</a>
+                                    <a href="../../Guide/RunningWithShellScripts/index.html" class="text-white">Running with Shell Scripts</a>
                                 </li>
 
                                 <li>
-                                    <a href="../RunningExample/index.html" class="text-white">Running Examples</a>
+                                    <a href="../../Guide/RunningExample/index.html" class="text-white">Running Examples</a>
                                 </li>
 
                             </ul>
@@ -368,19 +288,19 @@
                             <ul class="list-unstyled mb-0">
 
                                 <li>
-                                    <a href="../../Functionality/DiscoverProcessMap/index.html" class="text-white">Discover Process Map</a>
+                                    <a href="../DiscoverProcessMap/index.html" class="text-white">Discover Process Map</a>
                                 </li>
 
                                 <li>
-                                    <a href="../../Functionality/CreatingEventLogs/index.html" class="text-white">Creating Event Logs</a>
+                                    <a href="../CreatingEventLogs/index.html" class="text-white">Creating Event Logs</a>
                                 </li>
 
                                 <li>
-                                    <a href="../../Functionality/PerformFitnessCheck/index.html" class="text-white">Perform Fitness Check</a>
+                                    <a href="index.html" class="text-white">Perform Fitness Check</a>
                                 </li>
 
                                 <li>
-                                    <a href="../../Functionality/GenerateAutomaton/index.html" class="text-white">Generate Automaton</a>
+                                    <a href="../GenerateAutomaton/index.html" class="text-white">Generate Automaton</a>
                                 </li>
 
                             </ul>
@@ -470,9 +390,9 @@
             </div>
             
         </footer>
-        
+  
 
-        
+
     </body>
     
 </html>

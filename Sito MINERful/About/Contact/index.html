@@ -19,7 +19,9 @@
         <!--Link style sheet icon font-awesome online-->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 
-        
+        <!--Script JavaScript-->
+        <script type="text/javascript" lang="javascript" src="../../main.js"></script>
+
         
     </head>
 
@@ -91,7 +93,13 @@
 
                         <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown" >
 
+                            <li ><a class="nav-link" href="../../Functionality/DiscoverProcessMap/index.html">Discover Process Map</a></li>
+
                             <li ><a class="nav-link" href="../../Functionality/CreatingEventLogs/index.html">Creating Event Logs</a></li>
+
+                            <li ><a class="nav-link" href="../../Functionality/PerformFitnessCheck/index.html">Perform Fitness Check</a></li>
+
+                            <li ><a class="nav-link" href="../../Functionality/GenerateAutomaton/index.html">Generate Automaton</a></li>
                            
                         </ul>
 
@@ -108,11 +116,11 @@
 
                         <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown" >
 
-                            <li ><a class="nav-link" href="../../DeclarativeProcesses/Examples/index.html" >Examples</a></li>
-
                             <li ><a class="nav-link" href="../../DeclarativeProcesses/DeclareProcessSpecification/index.html" >Declare Process Specification</a></li>
 
-                            <li ><a class="nav-link" href="../../DeclarativeProcesses/DeclareTemplate/index.html" >Declare Template</a></li>
+                            <li ><a class="nav-link" href="../../DeclarativeProcesses/Examples/index.html" >Examples</a></li>
+
+                            <li ><a class="nav-link" href="../../DeclarativeProcesses/DeclareTemplates/index.html" >Declare Templates</a></li>
 
                             <li ><a class="nav-link" href="../../DeclarativeProcesses/AutomatedDiscovery/index.html" >Automated Discovery</a></li>
 
@@ -148,14 +156,6 @@
 
                     <!--Click Button-->
                     <button type="button" id=b1 class="btn btn-outline-secondary" onclick="apriSchedaNuova()">Download</button>
-            
-                    <script>
-                        //opens a link in a new tab
-                        function apriSchedaNuova() 
-                        { 
-                            window.open("https://github.com/cdc08x/MINERful", "_blank"); 
-                        } 
-                    </script>
             
                 </ul>
 
@@ -220,19 +220,9 @@
                 </div>
 
                 <!--Empty White Column-->
-                <div class="col-sm-12 col-md-12 " id=boxW>
+                <div class="col-sm-12 col-md-1 " id=boxW>
 
                 </div>
-   
-            </div>
-                
-        </div>
-
-        <!--Container-->
-        <div class="container" >
-
-            <!--Table-->
-            <div class="row justify-content-center" >
 
                 <!--Grey Column-->
                 <div class="col-sm-12 col-md-4 " id="boxG">
@@ -242,18 +232,6 @@
                 </div>
 
                 <!--Empty White Column-->
-                <div class="col-sm-12 col-md-1 " id=boxW>
-
-                </div>
-
-                <!--Grey Column-->
-                <div class="col-sm-12 col-md-4 text-center" id="boxG">
-
-                    <img src="../../Contents/contact2.jpg" class="img-fluid" alt="Responsive image">
-
-                </div>
-
-                <!--Empty White Column-->
                 <div class="col-sm-12 col-md-12 " id=boxW>
 
                 </div>
@@ -261,6 +239,7 @@
             </div>
                 
         </div>
+
         
         
         
@@ -268,42 +247,32 @@
         <!-- Footer -->
         <footer class="bg-dark text-center text-white">
             
-            <!-- Contenitore Social -->
+            <!--Social Container-->
             <div class="container p-4">
 
-                <!-- Sezione: Social media -->
+                <!-- Section: Social media -->
                 <section class="mb-4">
 
-                    <!-- Facebook -->
-                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
-                        <i class="fab fa-facebook-f"></i>
+                    <!-- Github -->
+                    <a target="_blank" class="btn btn-outline-light btn-floating m-1" href="https://github.com/cdc08x/MINERful" role="button">
+                        <i class="fab fa-github"></i>
                     </a>
-            
-                
+                    
+                    <!-- Linkedin -->
+                    <a target="_blank" class="btn btn-outline-light btn-floating m-1" href="https://it.linkedin.com/in/claudiodiciccio" role="button">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+
                     <!-- Google -->
-                    <a class="btn btn-outline-light btn-floating m-1" href="dc.claudio@gmail.com" role="button">
+                    <a target="_blank" class="btn btn-outline-light btn-floating m-1" href="mailto:diciccio@di.uniroma1.it" role="button">
                         <i class="fab fa-google"></i>
                     </a>
             
-                    <!-- Instagram -->
-                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-            
-                    <!-- Linkedin -->
-                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
-            
-                    <!-- Github -->
-                    <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/cdc08x/MINERful" role="button">
-                        <i class="fab fa-github"></i>
-                    </a>
 
                 </section>
             
         
-                <!-- Sezione: Testo -->
+                <!-- Section: Text -->
                 <section class="mb-4">
                     
                     <p>
@@ -311,15 +280,15 @@
                     </p>
 
                 </section>
-            
-        
-                <!-- Sezione: Links -->
+
+                
+                <!-- Section: Links -->
                 <section class="">
 
                     <!--Table-->
                     <div class="row">
                         
-                        <!--Grey Column-->
+                        <!--Guide Column-->
                         <div class="col-sm-12 col-md-3">
 
                             <h5>Guide</h5>
@@ -353,7 +322,7 @@
                         </div>
                     
             
-                        <!--Grey Column-->
+                        <!--Functionality Column-->
                         <div class="col-sm-12 col-md-3">
 
                             <h5>Functionality</h5>
@@ -361,19 +330,19 @@
                             <ul class="list-unstyled mb-0">
 
                                 <li>
+                                    <a href="../../Functionality/DiscoverProcessMap/index.html" class="text-white">Discover Process Map</a>
+                                </li>
+
+                                <li>
                                     <a href="../../Functionality/CreatingEventLogs/index.html" class="text-white">Creating Event Logs</a>
                                 </li>
 
                                 <li>
-                                    <a href="#!" class="text-white">Link 2</a>
+                                    <a href="../../Functionality/PerformFitnessCheck/index.html" class="text-white">Perform Fitness Check</a>
                                 </li>
 
                                 <li>
-                                    <a href="#!" class="text-white">Link 3</a>
-                                </li>
-
-                                <li>
-                                    <a href="#!" class="text-white">Link 4</a>
+                                    <a href="../../Functionality/GenerateAutomaton/index.html" class="text-white">Generate Automaton</a>
                                 </li>
 
                             </ul>
@@ -383,7 +352,7 @@
                         </div>
                     
             
-                        <!--Grey Column-->
+                        <!--Declarative Processes Column-->
                         <div class="col-sm-12 col-md-3">
 
                             <h5>Declarative Processes</h5>
@@ -391,15 +360,15 @@
                             <ul class="list-unstyled mb-0">
 
                                 <li>
-                                    <a href="../../DeclarativeProcesses/Examples/index.html" class="text-white">Examples</a>
-                                </li>
-
-                                <li>
                                     <a href="../../DeclarativeProcesses/DeclareProcessSpecification/index.html" class="text-white">Declare Process Specification</a>
                                 </li>
 
                                 <li>
-                                    <a href="../../DeclarativeProcesses/DeclareTemplate/index.html" class="text-white">Declare Template</a>
+                                    <a href="../../DeclarativeProcesses/Examples/index.html" class="text-white">Examples</a>
+                                </li>
+
+                                <li>
+                                    <a href="../../DeclarativeProcesses/DeclareTemplates/index.html" class="text-white">Declare Templates</a>
                                 </li>
 
                                 <li>
@@ -413,7 +382,7 @@
                         </div>
                     
             
-                        <!--Grey Column-->
+                        <!--About Column-->
                         <div class="col-sm-12 col-md-3">
 
                             <h5>About</h5>
@@ -425,7 +394,7 @@
                                 </li>
 
                                 <li>
-                                    <a href="../Publications/index.html" class="text-white">Publication</a>
+                                    <a href="../Publications/index.html" class="text-white">Publications</a>
                                 </li>
 
                                 <li>
