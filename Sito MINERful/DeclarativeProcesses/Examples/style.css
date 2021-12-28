@@ -60,16 +60,45 @@ a
     
 }
 
+p
+{
+    font-family: 'Times New Roman', Times, serif;
+
+    font-size: 13px;
+}
+
+
 h2
 {
-    color: #261a1a ;
-  
+    color:#261a1a;
+
+    font-family: 'Times New Roman', Times, serif;
 }
+
+
 
 h3
 {
-    color: #261a1a ;
-  
+    color:#2d3079; 
+    
+    font-size: 16px;
+
+    font-weight: 700;
+    
+    line-height: 1.5;
+
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+section a
+{
+    color: rgba(255,255,255,.55); 
+}
+
+section a:hover
+{
+    color: rgba(255,255,255,.75); 
 }
 
 #copyright

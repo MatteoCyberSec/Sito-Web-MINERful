@@ -64,8 +64,20 @@ a
 
 p
 {
+    font-family: 'Times New Roman', Times, serif;
+
     font-size: 13px;
 }
+
+
+h2
+{
+    color:#261a1a;
+
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
 
 h3
 {
@@ -77,6 +89,17 @@ h3
     
     line-height: 1.5;
 
+    font-family: 'Times New Roman', Times, serif;
+}
+
+section a
+{
+    color: rgba(255,255,255,.55); 
+}
+
+section a:hover
+{
+    color: rgba(255,255,255,.75); 
 }
 
 .container .bg-dark

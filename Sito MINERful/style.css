@@ -62,10 +62,27 @@ a
     
 }
 
+p
+{
+    font-family: 'Times New Roman', Times, serif;
+}
+
 
 h2
 {
     color:#261a1a;
+
+    font-family: 'Times New Roman', Times, serif;
+}
+
+section a
+{
+    color: rgba(255,255,255,.55); 
+}
+
+section a:hover
+{
+    color: rgba(255,255,255,.75); 
 }
 
 #copyright
