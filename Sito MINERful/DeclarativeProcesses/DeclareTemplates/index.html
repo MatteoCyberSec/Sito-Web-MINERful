@@ -253,7 +253,8 @@
 
                         <br>
                         <br>
-                        <strong>Init(a)</strong>: Every process instance starts with activity <strong>a</strong>.
+                        <strong>End(a)</strong>: Every process instance ends with activity <strong>a</strong>.
+
 
                     </p>
                     
@@ -346,7 +347,7 @@
                     <p>
                         <br>
                         
-                        <strong>Init(a)</strong>: Every process instance starts with activity <strong>a</strong>.
+                        <strong>RespondedExistence(a, b)</strong>: If <strong>a</strong> occurs, <strong>b</strong> has to occur at some point, no matter when.
                     </p>
                     
                 </div>
@@ -369,7 +370,7 @@
                     <p>
                         <br>
                         
-                        <strong>Init(a)</strong>: Every process instance starts with activity <strong>a</strong>.
+                        <strong>Response(a, b)</strong>: if <strong>a</strong> occurs, <strong>b</strong> has to occur after <strong>a</strong>.
                     </p>
                     
                 </div>
@@ -393,7 +394,8 @@
                     <p>
                         <br>
                         
-                        <strong>Participation(a)</strong>: Activity <strong>a</strong> occurs at least once.
+                        <strong>AlternateResponse(a, b)</strong>: If <strong>a</strong> occurs, <strong>b</strong> has to occur after <strong>a</strong>, with no a in-between.
+
                     </p>
                     
                 </div>
@@ -416,7 +418,7 @@
                     <p>
                         <br>
                         
-                        <strong>AtMostOne(a)</strong>: Activity <strong>a</strong> occurs at most once.
+                        <strong>ChainResponse(a, b)</strong>: <strong>b</strong> has to occur immediately after <strong>a</strong>.
                     </p>
                     
                 </div>
