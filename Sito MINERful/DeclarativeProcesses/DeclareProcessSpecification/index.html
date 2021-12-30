@@ -22,6 +22,11 @@
         <!--Script JavaScript-->
         <script type="text/javascript" lang="javascript" src="../../main.js"></script>
 
+        <!--Link Google Font style Roboto-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
 
     </head>
 
@@ -202,7 +207,9 @@
                 <!--Column-->
                 <div class="col-sm-12 col-md-5 ">
 
-                    <h2>What is declarative process?</h2>
+                    <h2>What is a declarative process?</h2>
+
+                    <br>
 
                     <p>
                         Declarative process models consist of a set of constraints exerted over the execution of process activities. DECLARE is a declarative process modelling
@@ -244,19 +251,17 @@
             <div class="row justify-content-center" >
 
                 <!--Column-->
-                <div class="col-sm-12 col-md-12 ">
+                <div class="col-sm-12 col-md-5 ">
 
                     <h2>Examples of declarative specifications</h2>
-                    
-                </div>
 
-                <!--Column-->
-                <div class="col-sm-12 col-md-5 ">
+                    <br>
 
                     <img src="../../Contents/declarative2.png" class="img-fluid" alt="Responsive image" >
                     
                 </div>
 
+                
                 <!--Column-->
                 <div class="col-sm-12 col-md-4 ">
 
@@ -288,15 +293,11 @@
             <div class="row justify-content-center" >
 
                 <!--Column-->
-                <div class="col-sm-12 col-md-12 ">
-                
-                    <h2>Declarative programming vs Imperative programming</h2>
-
-                </div>
-                
-
-                <!--Column-->
                 <div class="col-sm-12 col-md-4 ">
+
+                    <h2>Declarative programming</h2>
+
+                    <br>
 
                     <p>
                         Declarative programming is a programming paradigm that expresses the logic of a computation(What do) without describing its control flow(How do). 
@@ -307,13 +308,19 @@
                     
                 </div>
 
-                <!--Empty Grey Column-->
-                <div class="col-sm-12 col-md-1 " id=boxG>
+                <!--Column-->
+                <div class="col-sm-12 col-md-1 " >
+
+                    <h2>vs</h2>
 
                 </div>
 
                 <!--Column-->
                 <div class="col-sm-12 col-md-4 ">
+
+                    <h2>Imperative programming</h2>
+
+                    <br>
 
                     <p>
                         Imperative programming is a programming paradigm that describes computation in terms of statements that change a program state. The imperative programs can be 
@@ -321,8 +328,6 @@
                     </p>
                     
                 </div>
-
-                
 
             </div>
                 
@@ -335,45 +340,88 @@
             <!--Table-->
             <div class="row justify-content-center" >
 
-                <!--Column-->
-                <div class="col-sm-12 col-md-12 ">
                 
+                <!--Column-->
+                <div class="col-sm-12 col-md-10 offset-md-1 ">
+
                     <h2>Declarative specification of a process model</h2>
 
+                    <br>
+
+                    <!--Numered List-->
+                    <ol>
+                        <li>
+                            <p>
+                                Check stock availability must occur right after the start.
+                            </p>
+
+                            <ol type="i">
+                                <li>
+                                    <p>
+                                        Right after Check stock availability, either Manufacture product
+                                    </p>
+                                </li>
+
+                                <br>
+
+                                <li>
+                                    <p>
+                                        Retrieve product from warehouse will occur.
+                                    </p>
+                                </li>
+                            </ol>
+                        </li>
+
+                        <br>
+
+                        <li>
+                            <p>
+                                Confirm order may occur once only after Manufacture product or Retrieve product from warehouse. 
+                            </p>
+
+                            <br>
+
+                            <ol type="i">
+                                <li>
+                                    <p>
+                                        Emit invoice
+                                    </p>
+                                </li>
+
+                                <br>
+
+                                <li>
+                                    <p>
+                                        Receive payment will occur once after Emit invoice
+                                    </p>
+                                </li>
+
+                                <br>
+
+                                <li>
+                                    <p>
+                                        Ship product must occur once after Confirm order.
+                                    </p>
+                                </li>
+                            </ol>
+                        </li>
+
+                        <br>
+
+                        <li>
+                            <p>
+                                Archive order may occur once only after Emit invoice and Confirm order. Archive order must occur right before the end
+                            </p>
+                        </li>
+
+                    </ol>
+                    
                 </div>
-                
 
                 <!--Column-->
-                <div class="col-sm-12 col-md-5 ">
+                <div class="col-sm-12 col-md-12 text-center">
 
-                    <p>
-                        <strong>1)</strong>Check stock availability must occur right after the start.
-
-                        <br>
-                        <br>
-                        Right after Check stock availability, either <strong>1.2)</strong>Manufacture product or <strong>1.3)</strong>Retrieve product from warehouse will occur.
-                    
-                        <br>
-                        <br>
-                        <strong>2)</strong>Confirm order may occur once only after Manufacture product or Retrieve product from warehouse. 
-    
-                        <br>
-                        <br>
-                        <strong>2.1)</strong>Emit invoice and <strong>2.3)</strong>Ship product must occur once after Confirm order.
-    
-                        <br>
-                        <br>
-                        <strong>2.2)</strong>Receive payment will occur once after Emit invoice
-    
-                        <br>
-                        <br>
-                        <strong>3)</strong>Archive order may occur once only after Emit invoice and Confirm order. Archive order must occur right before the end
-                    </p>
-                    
-                </div>
-
-                <!--Column-->
-                <div class="col-sm-12 col-md-4 ">
+                    <br>
 
                     <img src="../../Contents/declarative4.png" class="img-fluid" alt="Responsive image" >
 
@@ -390,17 +438,18 @@
             <!--Table-->
             <div class="row justify-content-center" >
 
-                <!--Column-->
-                <div class="col-sm-12 col-md-12 ">
+                <div class="col-sm-12 col-md-10 offset-md-1">
 
-                    <h2 style="text-align: center;">A declarative process specification in Declare</h2>
-                    
+                    <h2>A declarative process specification in Declare</h2>
+
+                    <br>
+
                 </div>
-
 
                 <!--Column-->
                 <div class="col-sm-12 col-md-3 ">
 
+                
                     <img src="../../Contents/declarative5.png" class="img-fluid" alt="Responsive image">
 
                 </div>
@@ -567,7 +616,16 @@
             <div class="row justify-content-center" >
 
                 <!--Column-->
-                <div class="col-sm-12 col-md-12 text-center">
+                <div class="col-sm-12 col-md-10 offset-md-1">
+
+                    <h2>A declarative process specification</h2>
+
+                    <br>
+
+                </div>
+
+                <!--Column-->
+                <div class="col-sm-12 col-md-7">
 
                     <img src="../../Contents/declarative11.png" class="img-fluid" alt="Responsive image">
 

@@ -21,6 +21,11 @@
 
         <!--Script JavaScript-->
         <script type="text/javascript" lang="javascript" src="../../main.js"></script>
+
+        <!--Link Google Font style Roboto-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
         
     </head>
 
@@ -198,7 +203,9 @@
                 <!--Grey Column-->
                 <div class="col-sm-12 col-md-4 " id="boxG">
 
-                    <h3>Usage</h3>
+                    <h2>Usage</h2>
+
+                    <br>
 
                     <p>
                         You can run MINERful as a stand-alone software by
@@ -238,54 +245,97 @@
                 <div class="col-sm-12 col-md-12 " id="boxG">
 
                     <h2>MINERful APIs</h2>
+                    
+                    <br>
 
                     <p>
                         For advanced users: You can use MINERful as a Java package and integrate it with your software! 
 
                         <br>
-                        Check out the <a target="_blank" href="https://github.com/cdc08x/MINERful/tree/master/src/minerful/examples/api">minerful.examples.api</a> 
+                        Check out the 
+                        
+                        <a target="_blank" href="https://github.com/cdc08x/MINERful/tree/master/src/minerful/examples/api">minerful.examples.api</a> 
+
                         source code to see some examples. 
                         
                         <br>
-                        In particular: 
+                        
                     </p>
 
-                    <p>
-                        <a target="_blank" href="https://github.com/cdc08x/MINERful/blob/master/src/minerful/examples/api/discovery/MinerFulObserverInvokerOnXesFile.java">discovery.MinerFulObserverInvokerOnXesFile</a> 
+                    <ul>
+                        <li>
+                            <a target="_blank" href="https://github.com/cdc08x/MINERful/blob/master/src/minerful/examples/api/discovery/MinerFulObserverInvokerOnXesFile.java">discovery.MinerFulObserverInvokerOnXesFile</a> 
     
-                        demonstrates how to invoke the MINERful miner as an API, and subsequently observe the changes that are applied to the process model in a
+                            demonstrates how to invoke the MINERful miner as an 
 
-                        <a target="_blank" href="https://en.wikipedia.org/wiki/Publish%E2%80%93subscribe_pattern">publish/subscribe</a> fashion. Lastly, the model is saved as a Declare Map file.
-                    </p>
+                            <a target="_blank" href="https://it.wikipedia.org/wiki/Application_programming_interface">API</a>
 
-                    <p>
-                        <a target="_blank" href="https://github.com/cdc08x/MINERful/blob/master/src/minerful/examples/api/discovery/MinerFulCallerOnStringFile.java">discovery.MinerFulCallerOnStringFile</a>
+                            , and subsequently observe the changes that are applied to the process model in a
     
-                        demonstrates how to call MINERful to discover a process model out of strings saved on a file.
-    
-                    </p>
+                            <a target="_blank" href="https://en.wikipedia.org/wiki/Publish%E2%80%93subscribe_pattern">publish/subscribe</a> 
+                            
+                            fashion. Lastly, the model is saved as a Declare Map file.
+                        </li>
 
-                    <p>
-                        <a target="_blank" href="https://github.com/cdc08x/MINERful/blob/master/src/minerful/examples/api/io/FromDeclareMapToJSONandXMLandCSV.java">io.FromDeclareMapToJSONandXMLandCSV</a> 
-    
-                        demonstrates how to call MINERful to load a process model stored as a Declare map XML file, and then store it converted into MINERful XML, CSV, and JSON formats.
-    
-                    </p>
+                        <br>
 
-                    <p>
-                        <a target="_blank" href="https://github.com/cdc08x/MINERful/blob/master/src/minerful/examples/api/logmaking/FromStringsProcessModelToLog.java">logmaking.FromCharactersProcessModelToLog</a> 
+                        <li>
+                            <a target="_blank" href="https://github.com/cdc08x/MINERful/blob/master/src/minerful/examples/api/discovery/MinerFulCallerOnStringFile.java">discovery.MinerFulCallerOnStringFile</a>
     
-                        demonstrates how to generate XES logs starting from the definitions of new constraints. It can be interesting also because it shows how to create a process model on the fly.
-    
-                    </p>
+                            demonstrates how to call MINERful to discover a process model out of strings saved on a file.
+                        </li>
 
-                    <p>
-                        <a target="_blank" href="https://github.com/cdc08x/MINERful/blob/master/src/minerful/examples/api/logmaking/FromStringsProcessModelToLog.java">logmaking.FromStringsProcessModelToLog</a> 
-    
-                        demonstrates how to generate XES logs starting from the definitions of constraints exerted on activities identified by single characters (more or less the same as above).
-    
-                    </p>
+                        <br>
 
+                        <li>
+                            <a target="_blank" href="https://github.com/cdc08x/MINERful/blob/master/src/minerful/examples/api/io/FromDeclareMapToJSONandXMLandCSV.java">io.FromDeclareMapToJSONandXMLandCSV</a> 
+    
+                            demonstrates how to call MINERful to load a process model stored as a Declare map 
+
+                            <a target="_blank" href="https://it.wikipedia.org/wiki/XML">XLM</a>
+
+                            file, and then store it converted into MINERful 
+                            
+                            <a target="_blank" href="https://it.wikipedia.org/wiki/XML">XLM</a> ,
+                            
+                            <a target="_blank" href="https://it.wikipedia.org/wiki/Comma-separated_values">CSV</a> 
+                            
+                            and 
+                            
+                            <a target="_blank" href="https://www.json.org/json-en.html">JSON</a> 
+                            
+                            formats.
+    
+                        </li>
+
+                        <br>
+
+                        <li>
+                            <a target="_blank" href="https://github.com/cdc08x/MINERful/blob/master/src/minerful/examples/api/logmaking/FromStringsProcessModelToLog.java">logmaking.FromCharactersProcessModelToLog</a> 
+    
+                            demonstrates how to generate 
+
+                            <a target="_blank" href="http://www.xes-standard.org/">XES</a>
+
+                            logs starting from the definitions of new constraints. It can be interesting also because it shows how to create a process model on the fly.
+    
+                        </li>
+
+                        <br>
+
+                        <li>
+                            <a target="_blank" href="https://github.com/cdc08x/MINERful/blob/master/src/minerful/examples/api/logmaking/FromStringsProcessModelToLog.java">logmaking.FromStringsProcessModelToLog</a> 
+    
+                            demonstrates how to generate 
+
+                            <a target="_blank" href="http://www.xes-standard.org/">XES</a>
+
+                             logs starting from the definitions of constraints exerted on activities identified by single characters (more or less the same as above).
+    
+                        </li>
+
+                    </ul>
+ 
                 </div>
 
                 <!--Empty White Column-->

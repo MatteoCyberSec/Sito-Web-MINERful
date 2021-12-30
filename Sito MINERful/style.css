@@ -64,7 +64,8 @@ a
 
 p
 {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Roboto', sans-serif;
+
 }
 
 
@@ -72,7 +73,14 @@ h2
 {
     color:#261a1a;
 
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+h3
+{
+    color:#261a1a;
+
+    font-family: 'Roboto', sans-serif;
 }
 
 section a

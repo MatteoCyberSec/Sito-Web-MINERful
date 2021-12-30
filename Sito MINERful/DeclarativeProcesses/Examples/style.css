@@ -60,11 +60,9 @@ a
     
 }
 
-p
+pp
 {
-    font-family: 'Times New Roman', Times, serif;
-
-    font-size: 13px;
+    font-family: 'Roboto', sans-serif;
 }
 
 
@@ -72,23 +70,16 @@ h2
 {
     color:#261a1a;
 
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Roboto', sans-serif;
 }
-
-
 
 h3
 {
-    color:#2d3079; 
-    
-    font-size: 16px;
+    color:#261a1a;
 
-    font-weight: 700;
-    
-    line-height: 1.5;
-
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Roboto', sans-serif;
 }
+
 
 
 section a

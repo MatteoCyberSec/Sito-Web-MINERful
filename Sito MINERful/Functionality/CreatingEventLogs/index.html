@@ -22,6 +22,11 @@
         <!--Script JavaScript-->
         <script type="text/javascript" lang="javascript" src="../../main.js"></script>
 
+        <!--Link Google Font style Roboto-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
         
     </head>
 
@@ -201,7 +206,9 @@
                 <!--Grey Column-->
                 <div class="col-sm-12 col-md-4 " id="boxG">
 
-                    <h3>What does it do?</h3>
+                    <h2>What does it do?</h2>
+
+                    <br>
 
                     <p>
                         MINERful can be used also to create event logs that comply with a given declarative workflow specification. There are two ways to do that: either via 
@@ -229,6 +236,8 @@
                 <div class="col-sm-12 col-md-12 " id="boxG">
 
                     <h2>Creating event logs via command line</h2>
+
+                    <br>
 
                     <p>
                         Suppose you have a declarative process specification as follows:
@@ -359,37 +368,46 @@
                 <div class="col-sm-12 col-md-12 " id="boxG">
 
                     <h2>Creating event logs via API</h2>
+
+                    <br>
                     
-
-                    <p>
-                        <a target="_blank" href="https://github.com/cdc08x/MINERful/blob/master/src/minerful/examples/api/logmaking/FromDeclareMapToLog.java">logmaking.FromDeclareMapToLog </a> 
+                    <ul>
+                        <li>
+                            <a target="_blank" href="https://github.com/cdc08x/MINERful/blob/master/src/minerful/examples/api/logmaking/FromDeclareMapToLog.java">logmaking.FromDeclareMapToLog </a> 
                         
-                        emonstrates how to generate XES logs from an existing Declare map XML file. It is worth having a look at it to see how to convert process models from the Declare 
-                        Maps Miner format, for those who used that tool in
-    
-                        <a target="_blank" href="http://www.promtools.org/doku.php">ProM</a>.
-                    </p>
+                            emonstrates how to generate XES logs from an existing Declare map XML file. It is worth having a look at it to see how to convert process models from the Declare 
+                            Maps Miner format, for those who used that tool in
+        
+                            <a target="_blank" href="http://www.promtools.org/doku.php">ProM</a>.
+                        </li>
 
-                    <p>
-                        <a target="_blank" href="https://github.com/cdc08x/MINERful/blob/master/src/minerful/examples/api/logmaking/FromJsonProcessModelToLog.java">logmaking.FromJsonProcessModelToLog</a> 
+                        <br>
+
+                        <li>
+                            <a target="_blank" href="https://github.com/cdc08x/MINERful/blob/master/src/minerful/examples/api/logmaking/FromJsonProcessModelToLog.java">logmaking.FromJsonProcessModelToLog</a> 
                         
-                        demonstrates how to generate XES logs starting with the definitions of constraints specified with
-    
-                        <a target="_blank" href="https://www.json.org/json-en.html">JSON</a> objects.
-                    </p>
+                            demonstrates how to generate XES logs starting with the definitions of constraints specified with
+        
+                            <a target="_blank" href="https://www.json.org/json-en.html">JSON</a> objects.
 
-                    <p>
-                        <a target="_blank" href="https://github.com/cdc08x/MINERful/blob/master/src/minerful/examples/api/simplification/MinerFulSimplificationInvokerOnDeclareMapFile.java">
-                            simplification.MinerFulSimplificationInvokerOnDeclareMapFile
-                        </a> 
-                       
-                        demonstrates how to load a Declare Map file as a process model, then run the simplification engine of MINERful to remove the redundant constraints.
-                    </p>
+                        </li>
+
+                        <br>
+
+                        <li>
+                            <a target="_blank" href="https://github.com/cdc08x/MINERful/blob/master/src/minerful/examples/api/simplification/MinerFulSimplificationInvokerOnDeclareMapFile.java">
+                                simplification.MinerFulSimplificationInvokerOnDeclareMapFile
+                            </a> 
+                           
+                            demonstrates how to load a Declare Map file as a process model, then run the simplification engine of MINERful to remove the redundant constraints.
+                        </li>
+
+                    </ul>
 
                 </div>
 
             </div>
-                
+              
         </div>
 
 
@@ -410,18 +428,26 @@
 
                     <h2>Publications</h2>
 
+                    <br>
+
                     <h3>Simulation of declarative models:</h3>
 
-                    <p>
-                        Claudio Di Ciccio, Mario Luca Bernardi, Marta Cimitile, Fabrizio Maria Maggi: Generating Event Logs Through the Simulation of Declare Models. EOMAS@CAiSE 2015: 20-36
-                        
-                        <br>
-                        <br>
-                        DOI:<a target="_blank" href="https://link.springer.com/chapter/10.1007%2F978-3-319-24626-0_2">10.1007/978-3-319-24626-0_2</a>
+                    <br>
 
-                        <br>
-                        Pre-print: <a target="_blank" href="http://www.diciccio.net/claudio/preprints/DiCiccio-etal-EOMAS2015.pdf">diciccio.net/claudio/preprints/DiCiccio-etal-EOMAS2015.pdf</a>
-                    </p>
+                    <ul>
+                        <li>
+                            Claudio Di Ciccio, Mario Luca Bernardi, Marta Cimitile, Fabrizio Maria Maggi: Generating Event Logs Through the Simulation of Declare Models. EOMAS@CAiSE 2015: 20-36
+                        
+                            <br>
+                            <br>
+                            DOI:<a target="_blank" href="https://link.springer.com/chapter/10.1007%2F978-3-319-24626-0_2">10.1007/978-3-319-24626-0_2</a>
+
+                            <br>
+                            Pre-print: <a target="_blank" href="http://www.diciccio.net/claudio/preprints/DiCiccio-etal-EOMAS2015.pdf">diciccio.net/claudio/preprints/DiCiccio-etal-EOMAS2015.pdf</a>
+                        
+                        </li>
+
+                    </ul>
 
                 </div>
 
@@ -431,16 +457,22 @@
                 
                     <h3>Testing the sensitivity of constraints to noise:</h3>
 
-                    <p>
-                        Claudio Di Ciccio, Massimo Mecella, Jan Mendling: The Effect of Noise on Mined Declarative Constraints. SIMPDA 2015: 1-24
-                        
-                        <br>
-                        <br>
-                        DOI: <a target="_blank" href="https://link.springer.com/chapter/10.1007%2F978-3-662-46436-6_1">10.1007/978-3-662-46436-6_1</a>
+                    <br>
 
-                        <br>
-                        Pre-print: <a target="_blank" href="http://www.diciccio.net/claudio/preprints/DiCiccio-etal-SIMPDApp2015-EffectofNoise.pdf">diciccio.net/claudio/preprints/DiCiccio-etal-SIMPDApp2015-EffectofNoise.pdf</a>
-                    </p>
+                    <ul>
+                        <li>
+                            Claudio Di Ciccio, Massimo Mecella, Jan Mendling: The Effect of Noise on Mined Declarative Constraints. SIMPDA 2015: 1-24
+                        
+                            <br>
+                            <br>
+                            DOI: <a target="_blank" href="https://link.springer.com/chapter/10.1007%2F978-3-662-46436-6_1">10.1007/978-3-662-46436-6_1</a>
+
+                            <br>
+                            Pre-print: <a target="_blank" href="http://www.diciccio.net/claudio/preprints/DiCiccio-etal-SIMPDApp2015-EffectofNoise.pdf">diciccio.net/claudio/preprints/DiCiccio-etal-SIMPDApp2015-EffectofNoise.pdf</a>
+                        
+                        </li>
+
+                    </ul>
 
                 </div>
 
