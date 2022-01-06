@@ -10,11 +10,16 @@
     
     padding-left: 60px;
 
-    background-image: URL(Contents/home0.jpg);
+    
+    
+    background-image: URL(Contents/home0.svg);
 
     background-repeat: no-repeat;
     
-    background-size: cover ;
+    
+    background-size: cover;
+
+    
     
 }
 
