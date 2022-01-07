@@ -106,7 +106,7 @@
 
                             <li ><a class="nav-link" href="../../Functionality/GenerateAutomaton/index.html">Generate Automaton</a></li>
 
-                            <li ><a class="nav-link" href="../../Functionality/SimplificationModels/index.html">Simplification Models</a></li>
+                            <li ><a class="nav-link" href="../../Functionality/ModelSimplification/index.html">Model Simplification</a></li>
                            
                         </ul>
 
@@ -164,7 +164,7 @@
                     </li>
 
                     <!--Click Button-->
-                    <button type="button" id=b1 class="btn btn-outline-secondary" onclick="apriSchedaNuova()">Download</button>
+                    <button type="button" title="Download MINERful package on github" id=b1 class="btn btn-outline-secondary" onclick="apriSchedaNuova()">Download</button>
             
                     
                 </ul>
@@ -215,15 +215,15 @@
                     <p>
                         You can run MINERful a stand-alone software by
 
-                        <a target="_blank" href="../RunningWithShellScripts/index.html">invoking the command shell scripts </a> 
+                        <a title="Visit the page about running with shell scripts" href="../RunningWithShellScripts/index.html">invoking the command shell scripts </a> 
 
                         or directly
 
-                        <a target="_blank" href="../RunningTheJAR/index.html">running the JAR</a> 
+                        <a title="Visit the page about running the JAR" href="../RunningTheJAR/index.html">running the JAR</a> 
 
                         with your Java installation.If you are a developer, you can include the JAR in your Java project and use
 
-                        <a href="../API MINERful/index.html">use the MINERful APIs.</a>.
+                        <a title="Visit the page about MINERful APIs" href="../API MINERful/index.html">use the MINERful APIs.</a>.
                     </p>
 
                 </div>
@@ -255,22 +255,37 @@
                         This is a little bit trickier, but necessary, in case you have a Microsoft Windows system. From your prompt, type:
                     </p>
 
+                    
                     <!--Code Container-->
                     <div class="container bg-dark">
                         
-                        <pre>
-                            java -jar MINERful.jar minerful.<LAUNCHER_CLASS> -h      
-                        </pre>
+                        <br>
+                        
+                        <pre><p>java -cp ".\lib\*;MINERful.jar" minerful.<LAUNCHER_CLASS> -h</p></pre>
+                        
 
                     </div>
 
                     <p>
-                        where the LAUNCHER_CLASS can be either MinerFulMinerStarter to launch the miner, or MinerFulTracesMakerStarter to launch the builder of synthetic logs.
+                        <br>
+                        where the 
+                        
+                        <code>LAUNCHER_CLASS</code> can be either <code>MinerFulMinerStarter</code>
+                        
+                        to launch the miner, or <code>MinerFulTracesMakerStarter</code> to launch the builder of synthetic logs.
+
+                        <code>MinerFulSimplificationStarter</code> to use the 
+                        
+                        <a title="Visit the page about model simplification" href="../../Functionality/ModelSimplification/index.html">simplification</a> engine, 
+                        
+                        and so on (kudos to <a target="_blank" title="Visit the Ralph A page on github" href="https://github.com/R4Lpf">Ralph A.</a> for testing the commands on Windows).
 
                         <br>
                         <br>
 
-                        The -h parameter appended at the end of the prompt shows and explains the parameters you can pass. They are exactly the same as the Linux/MacOS version.
+                        The <code>-h</code>
+                        
+                        parameter appended at the end of the prompt shows and explains the parameters you can pass. They are exactly the same as the Linux/MacOS version.
                     </p>
 
 
@@ -389,7 +404,7 @@
                                 </li>
 
                                 <li>
-                                    <a href="../../Functionality/SimplificationModels/index.html">Simplification Models</a>
+                                    <a href="../../Functionality/ModelSimplification/index.html">Model Simplification</a>
                                 </li>
 
                             </ul>

@@ -106,7 +106,7 @@
 
                             <li ><a class="nav-link" href="../../Functionality/GenerateAutomaton/index.html">Generate Automaton</a></li>
 
-                            <li ><a class="nav-link" href="../../Functionality/SimplificationModels/index.html">Simplification Models</a></li>
+                            <li ><a class="nav-link" href="../../Functionality/ModelSimplification/index.html">Model Simplification</a></li>
                            
                         </ul>
 
@@ -162,7 +162,7 @@
                     </li>
 
                     <!--Click Button-->
-                    <button type="button" id=b1 class="btn btn-outline-secondary" onclick="apriSchedaNuova()">Download</button>
+                    <button type="button" title="Download MINERful package on github" id=b1 class="btn btn-outline-secondary" onclick="apriSchedaNuova()">Download</button>
             
                     
                 </ul>
@@ -212,15 +212,15 @@
                     <p>
                         You can run MINERful a stand-alone software by
 
-                        <a target="_blank" href="../RunningWithShellScripts/index.html">invoking the command shell scripts </a> 
+                        <a title="Visit the page about running with shell scripts" href="../RunningWithShellScripts/index.html">invoking the command shell scripts </a> 
 
                         or directly
 
-                        <a target="_blank" href="../RunningTheJAR/index.html">running the JAR</a> 
+                        <a title="Visit the page about running the JAR" href="../RunningTheJAR/index.html">running the JAR</a> 
 
                         with your Java installation.If you are a developer, you can include the JAR in your Java project and use
 
-                        <a href="../API MINERful/index.html">use the MINERful APIs.</a>.
+                        <a title="Visit the page about MINERful APIs" href="../API MINERful/index.html">use the MINERful APIs.</a>.
                     </p>
 
                 </div>
@@ -249,100 +249,56 @@
                     <br>
 
                     <p>
-                        The easiest way to launch MINERful is to make use of the <strong>.sh</strong> files.
+                        The easiest way to launch MINERful is to make use of the <code>.sh</code> files.
                     </p>
 
-                    <!--Numbered List-->
-                    <ol>
+                    <!--Dot List-->
+                    <ul>
                         <li>
-                            To launch the miner: 
-
-                            <br>
-                            <br>
-                            
-                            <!--Code Container-->
-                            <div class="container bg-dark">
-                                
-                                <pre>
-                                    run-MINERful.sh
-                                </pre>
-
-                            </div>
+                            To launch the miner: <code>run-MINERful.sh</code>
 
                         </li>
 
                         <br>
 
                         <li>
-                            To reduce the number of constraints in a process model: 
+                            To reduce the number of constraints in a process model: <code>run-MINERfulSimplifier.sh</code>
 
-                            <br>
-                            <br>
+                        </li>
 
-                            <!--Code Container-->
-                            <div class="container bg-dark">
-                                
-                                <pre>
-                                    run-MINERfulSimplifier.sh
-                                </pre>
-                                
-                            </div>
+                        <br>
+
+                        <li>
+                            To create synthetic logs: <code> run-MINERfulTracesMaker.sh</code>
                             
                         </li>
 
                         <br>
 
                         <li>
-                            To create synthetic logs: 
-                            
-                            <br>
-                            <br>
-
-                            <!--Code Container-->
-                            <div class="container bg-dark">
-                                
-                                <pre>
-                                    run-MINERfulTracesMaker.sh
-                                </pre>
-                                
-                            </div>
+                            To run tests (as we did for the evaluation sections of our papers): <code>test-launchers/*.sh</code>
                             
                         </li>
 
-                        <br>
-
-                        <li>
-                            To run tests (as we did for the evaluation sections of our papers): 
-                            
-                            <br>
-                            <br>
-
-                            <!--Code Container-->
-                            <div class="container bg-dark">
-                                
-                                <pre>
-                                    test-launchers/*.sh
-                                </pre>
-                                
-                            </div>
-                            
-                        </li>
-
-                    </ol>
+                    </ul>
 
 
                     <p>
                         <br>
 
-                        Each of those launchers can be invoked with the -h parameter. An explanation of all possible parameters that can be passed is written there (beware, they are 
-                        quite an amount so take your time). Depending on the case, some parameters are specified in the .sh files, whereas others are left free. In case, feel free 
-                        to modify the constants declared at the beginning of the script, so as to customise them.
+                        Each of those launchers can be invoked with the <code>-h</code> parameter. An explanation of all possible parameters that can be passed is written 
+                        there (beware, they are quite an amount so take your time). Depending on the case, some parameters are specified in the <code>.sh</code> files, where as 
+                        others are left free. In case, feel free to modify the constants declared at the beginning of the script, so as to customise them.
 
                         <br>
                         <br>
 
-                        The scripts that end with the -unstable.sh suffix does not launch MINERful via its JAR, but directly using bytecode files. In this way, we can immediately try 
-                        the modified source code without overwriting the JAR version.
+                        The scripts that end with the <code>-unstable.sh</code> suffix does not launch MINERful via its 
+
+                        <a target="_blank" title="Visit the JAR description page" href="https://en.wikipedia.org/wiki/JAR_(file_format)"><i class="fas fa-external-link-alt"></i>JAR</a>,
+                        
+                        but directly using bytecode files. 
+                        In this way, we can immediately try the modified source code without overwriting the JAR version.
                     </p>
 
                 </div>
@@ -368,7 +324,7 @@
                 <!--Grey Column-->
                 <div class="col-sm-12 col-md-12 " id="boxG">
 
-                    <h2>Usage examples of MINERful a stand-alone application (with .sh files)</h2>
+                    <h2>Usage examples of MINERful a stand-alone application (with <code>.sh</code> files)</h2>
 
                     <br>
 
@@ -376,9 +332,9 @@
                         <li>
                             Mine an 
 
-                            <a target="_blank" href="http://www.xes-standard.org/">XES</a>
+                            <a target="_blank" title="Visit the XES standard portal" href="http://www.xes-standard.org/"><i class="fas fa-external-link-alt"></i>XES</a>
                             
-                            log file located in /home/user/file.xes:
+                            log file located in <code>/home/user/file.xes</code>:
 
                             <br>
                             <br>
@@ -386,9 +342,8 @@
                             <!--Code Container-->
                             <div class="container bg-dark">
                                 
-                                <pre>
-                                    run-MINERful.sh -iLF '/home/user/file.xes' 
-                                </pre>
+                                <pre><p>run-MINERful.sh -iLF '/home/user/file.xes'</p></pre>
+
                             </div>
 
                         </li>
@@ -404,9 +359,8 @@
                             <!--Code Container-->
                             <div class="container bg-dark">
                                 
-                                <pre>
-                                    run-MINERful.sh -h 
-                                </pre>
+                                <pre><p>run-MINERful.sh -h</p></pre>
+
                             </div>
 
                         </li>
@@ -416,17 +370,22 @@
                         <li>
                             Mine an
 
-                            <a target="_blank" href="http://www.xes-standard.org/">XES</a>
+                            <a target="_blank" title="Visit the XES standard portal" href="http://www.xes-standard.org/"><i class="fas fa-external-link-alt"></i>XES</a>
                             
-                            log file located in /home/user/file.xes and export the discovered model in an 
+                            log file located in <code>/home/user/file.xes</code> and export the discovered model in an 
                             
-                            <a target="_blank" href="https://en.wikipedia.org/wiki/XML">XLM</a>
+                            <a target="_blank" title="Visit the XLM description page" href="https://en.wikipedia.org/wiki/XML"><i class="fas fa-external-link-alt"></i>XLM</a>
                             
-                            file located in /home/user/model-condec.xml, formatted  
+                            file located in <code>/home/user/model-condec.xml</code>, formatted  
                             Declare/ConDec.Set a support threshold of 0.95, a confidence level threshold of 0.25, and an interest factor threshold of 0.125 (if you have no idea what 
                             these parameters are about,check 
 
-                            <a target="_blank" href="https://dl.acm.org/doi/10.1145/2629447">this paper</a> out):
+                            <a target="_blank" title="Visit the paper about Discovery of Declarative Control Flows for Artful Processes" href="https://dl.acm.org/doi/10.1145/2629447">
+                                
+                                <i class="fas fa-external-link-alt"></i>
+                                this paper
+                            
+                            </a> out):
 
                             <br>
                             <br>
@@ -434,9 +393,7 @@
                             <!--Code Container-->
                             <div class="container bg-dark">
                                 
-                                <pre>
-                                    run-MINERful.sh -iLF '/home/user/file.xes' -condec '/home/user/model-condec.xml' -s 0.95 -c 0.25 -i 0.125
-                                </pre>
+                                <pre><p>run-MINERful.sh -iLF '/home/user/file.xes' -condec '/home/user/model-condec.xml' -s 0.95 -c 0.25 -i 0.125</p></pre>
                             </div>
 
                         </li>
@@ -446,9 +403,9 @@
                         <li>
                             Mine an
 
-                            <a target="_blank" href="http://www.xes-standard.org/">XES</a>
+                            <a target="_blank" title="Visit the XES standard portal" href="http://www.xes-standard.org/"><i class="fas fa-external-link-alt"></i>XES</a>
                             
-                            log file located in /home/user/file.xes, with comprehensive debug lines:
+                            log file located in <code>/home/user/file.xes</code>, with comprehensive debug lines:
 
                             <br>
                             <br>
@@ -456,9 +413,7 @@
                             <!--Code Container-->
                             <div class="container bg-dark">
                                 
-                                <pre>
-                                    run-MINERful.sh -d all -iLF '/home/user/file.xes'    
-                                </pre>
+                                <pre><p>run-MINERful.sh -d all -iLF '/home/user/file.xes'</p></pre>
                             </div>
                             
                         </li>
@@ -468,9 +423,11 @@
                         <li>
                             Mine an
 
-                            <a target="_blank" href="http://www.xes-standard.org/">XES</a>
+                            <a target="_blank" title="Visit the XES standard portal" href="http://www.xes-standard.org/"><i class="fas fa-external-link-alt"></i>XES</a>
                             
-                            log file located in /home/user/file.xes, with comprehensive debug lines. Let results be exported in a CSV file located in /home/user/output.csv:
+                            log file located in <code>/home/user/file.xes</code>, with comprehensive debug lines. Let results be exported in a CSV file located in 
+                            
+                            <code>/home/user/output.csv</code>:
 
                             <br>
                             <br>
@@ -478,9 +435,7 @@
                             <!--Code Container-->
                             <div class="container bg-dark">
                                 
-                                <pre>
-                                    run-MINERful.sh -d all -iLF '/home/user/file.xes' -CSV '/home/user/output.csv'  
-                                </pre>
+                                <pre><p>run-MINERful.sh -d all -iLF '/home/user/file.xes' -CSV '/home/user/output.csv'</p></pre>
                             </div>
                             
                         </li>
@@ -490,12 +445,19 @@
                         <li>
                             Mine an
                             
-                            <a target="_blank" href="http://www.xes-standard.org/">XES</a>
+                            <a target="_blank" title="Visit the XES standard portal" href="http://www.xes-standard.org/"><i class="fas fa-external-link-alt"></i>XES</a>
                             
-                            log file located in /home/user/file.xes, with comprehensive debug lines. Set a support threshold of 0.95, a confidence level threshold of 0.25, 
+                            log file located in <code>/home/user/file.xes</code>, with comprehensive debug lines. Set a support threshold of 0.95, a confidence level threshold of 0.25, 
                             and an interest factor threshold of 0.125 (if you have no idea what these parameters are about, check
                         
-                            <a target="_blank" href="https://dl.acm.org/doi/10.1145/2629447">this paper</a> out). Let results be exported in a CSV file located in /home/user/output.csv:
+                            <a target="_blank" title="Visit the paper about Discovery of Declarative Control Flows for Artful Processes" href="https://dl.acm.org/doi/10.1145/2629447">
+                                
+                                <i class="fas fa-external-link-alt"></i>
+                                this paper
+                            
+                            </a> out).
+                            
+                            Let results be exported in a CSV file located in <code>/home/user/output.csv</code>:
                             
                             <br>
                             <br>
@@ -503,9 +465,7 @@
                             <!--Code Container-->
                             <div class="container bg-dark">
                                 
-                                <pre>
-                                    run-MINERful.sh -d all -iLF '/home/user/file.xes' -CSV '/home/user/output.csv' -s 0.95 -c 0.25 -i 0.125 
-                                </pre>
+                                <pre><p>run-MINERful.sh -d all -iLF '/home/user/file.xes' -CSV '/home/user/output.csv' -s 0.95 -c 0.25 -i 0.125</p></pre>
                             </div>
                             
                         </li>
@@ -628,7 +588,7 @@
                                 </li>
 
                                 <li>
-                                    <a href="../../Functionality/SimplificationModels/index.html">Simplification Models</a>
+                                    <a href="../../Functionality/ModelSimplification/index.html">Model Simplification</a>
                                 </li>
 
                             </ul>

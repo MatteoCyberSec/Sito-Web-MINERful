@@ -86,17 +86,9 @@ section a:hover
     color: rgba(255,255,255,.75); 
 }
 
-code
+.container .bg-dark
 {
-    background-color: #80808080;
-
-    color: #F4F4F4;
-    
-    border-radius: 6px;
-    
-    padding: 3px 5px;
-
-    
+    color: #A5D6FF;
 }
 
 #copyright

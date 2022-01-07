@@ -106,7 +106,7 @@
 
                             <li ><a class="nav-link" href="../../Functionality/GenerateAutomaton/index.html">Generate Automaton</a></li>
 
-                            <li ><a class="nav-link" href="../../Functionality/SimplificationModels/index.html">Simplification Models</a></li>
+                            <li ><a class="nav-link" href="../../Functionality/ModelSimplification/index.html">Model Simplification</a></li>
                            
                         </ul>
 
@@ -164,7 +164,7 @@
                     </li>
 
                     <!--Click Button-->
-                    <button type="button" id=b1 class="btn btn-outline-secondary" onclick="apriSchedaNuova()">Download</button>
+                    <button type="button" title="Download MINERful package on github" id=b1 class="btn btn-outline-secondary" onclick="apriSchedaNuova()">Download</button>
             
                     
                 </ul>
@@ -213,12 +213,19 @@
                     <p>
                         Download from the
 
-                        <a target="_blank" href="https://data.4tu.nl/">4TU datacenter website</a> the real-world event log of the
+                        <a target="_blank" title="Visit the 4TU datacenter description page" href="https://data.4tu.nl/"><i class="fas fa-external-link-alt"></i>4TU datacenter website</a>
+                        
+                        the real-world event log of the
 
-                        <a target="_blank" href="https://www.win.tue.nl/bpi/doku.php?id=2012:challenge&redirect=1id=2012/challenge">Business Process Intelligence Challenge (BPIC) 2012</a>. 
+                        <a target="_blank" title="Visit the Business Process Intelligence Challenge (BPIC) description page" href="https://www.win.tue.nl/bpi/doku.php?id=2012:challenge&redirect=1id=2012/challenge">
+                            
+                            <i class="fas fa-external-link-alt"></i>
+                            Business Process Intelligence Challenge (BPIC) 2012
+                        
+                        </a>. 
                         
                        
-                        .logs/BPIC2012/financial_log.xes.gz  
+                        <code>.logs/BPIC2012/financial_log.xes.gz</code>
                         
                     </p>
 
@@ -237,65 +244,72 @@
                     <br>
                         
                     <p>
-                        To run MINERful, we locate our command shell in the working directory, and launch run-MINERful.sh follows.
+                        To run MINERful, we locate our command shell in the working directory, and launch <code>run-MINERful.sh follows</code>.
                     </p>
 
                     <!--Code Container-->
                     <div class="container bg-dark">
             
-                        <pre>
-                            ./run-MINERful.sh --in-log-file logs/BPIC2012/financial_log.xes.gz --in-log-evt-classifier 'logspec' --support 0.95 --confidence 0.5 --interest-factor 0.125 --prune-with 'hierarchyconflictredundancydouble' --save-as-csv models/bpic2012-declarative-model.csv --save-as-xml models/bpic2012-declarative-model.xml --save-as-json models/bpic2012-declarative-model.json
-                        </pre>
+                        <pre><p>./run-MINERful.sh --in-log-file logs/BPIC2012/financial_log.xes.gz --in-log-evt-classifier 'logspec' --support 0.95 --confidence 0.5 --interest-factor 0.125 --prune-with 'hierarchyconflictredundancydouble' --save-as-csv models/bpic2012-declarative-model.csv --save-as-xml models/bpic2012-declarative-model.xml --save-as-json models/bpic2012-declarative-model.json</p></pre>
 
                     </div>
 
                     <p>
+                        <br>
                         Alternatively, short names for options can be used:
                     </p>
 
                     <!--Code Container-->
                     <div class="container bg-dark">
             
-                        <pre>
-                            ./run-MINERful.sh -iLF logs/BPIC2012/financial_log.xes.gz -iLClassif 'logspec' -s 0.95 -c 0.5 -i 0.125 -prune 'hierarchyconflictredundancydouble' -oCSV models/bpic2012-declarative-model.csv -oXML models/bpic2012-declarative-model.xml -oJSON models/bpic2012-declarative-model.json
-                        </pre>
+                        <pre><p>./run-MINERful.sh -iLF logs/BPIC2012/financial_log.xes.gz -iLClassif 'logspec' -s 0.95 -c 0.5 -i 0.125 -prune 'hierarchyconflictredundancydouble' -oCSV models/bpic2012-declarative-model.csv -oXML models/bpic2012-declarative-model.xml -oJSON models/bpic2012-declarative-model.json</p></pre>
 
                     </div>
 
                     <p>
                         <br>
 
-                        The rationale for those abbreviations is that the parameter prefixes pertain to the context: -iL for the input (event) Log, -o… for the output format in which 
-                        discovered models are saved.
+                        The rationale for those abbreviations is that the parameter prefixes pertain to the context: <code>-iL</code> for the 
+                        
+                        <code>i</code>nput (event) <code>L</code>og, <code>-o…</code> for the <code>o</code>utput format in which discovered models are saved.
 
                         <br>
                         <br>
 
-                        The mandatory --in-log-file (or -iLF) option locates the input event log. It should be in the XML-based
+                        The mandatory <code>--in-log-file</code> (or <code>-iLF</code>) option locates the input event log. It should be in the XML-based
 
-                        <a target="_blank" href="http://www.xes-standard.org/">XES format</a>
+                        <a target="_blank" title="Visit the XES standard portal" href="http://www.xes-standard.org/"><i class="fas fa-external-link-alt"></i>XES format</a>
 
-                        The --in-log-evt-classifier (or -iLClassif) option dictates whether to consider as classifiers for events the sole activity names (default), or the pattern 
-                        specified within the event log itself (in this case, the junction of activity name and lifecycle transition). The default thresholds for support, confidence 
-                        level and interest factor of the returned constraints are by default 0.95, 0.25, and 0.125, respectively, but can be modified with the --support, --confidence-level,
-                        and --interest-factor option. More information on these metrics and how they are computed can be found in the paper at
+                        The <code>--in-log-evt-classifier</code> (or <code>-iLClassif</code>) option dictates whether to consider as classifiers for events the sole activity 
+                        names (default), or the pattern specified within the event log itself (in this case, the junction of activity name and lifecycle transition). 
+                        The default thresholds for support, confidence level and interest factor of the returned constraints are by default 0.95, 0.25, and 0.125, respectively, 
+                        but can be modified with the <code>--support</code>, <code>--confidence-level</code>,and <code>--interest-factor</code> option.
+                        More information on these metrics and how they are computed can be found in the paper at
 
-                        <a target="_blank" href="https://dl.acm.org/doi/10.1145/2629447">DOI:10.1145/2629447</a>. 
+                        <a target="_blank" title="Visit the paper about Discovery of Declarative Control Flows for Artful Processes" href="https://dl.acm.org/doi/10.1145/2629447">
+                            
+                            <i class="fas fa-external-link-alt"></i>
+                            
+                            DOI:10.1145/2629447
+                        
+                        </a>. 
                         
                         Some post-processing can be required to polish the returned set of constraints from redundancies or possible internal inconsistencies (the lower the thresholds, 
-                        the higher their amount). Here we select the most effective and time consuming strategy (-prune), that is to say, the double-pass hierarchyconflictredundancydouble. 
-                        The --save-as-csv (-oCSV), save-as-xml (-oXML), and save-as-json (-oJSON) options state where the 
+                        the higher their amount). Here we select the most effective and time consuming strategy (<code>-prune</code>), that is to say, the double-pass 
+                        <code>hierarchyconflictredundancydouble</code>. 
+                        The <code>--save-as-csv</code> (<code>-oCSV</code>), <code>save-as-xml</code>(<code>-oXML</code>), and <code>save-as-json</code>(<code>-oJSON</code>)
+                        options state where the 
                         
-                        <a target="_blank" href="https://en.wikipedia.org/wiki/Comma-separated_values">CSV</a>, 
+                        <a target="_blank" title="Visit the CSV description page" href="https://en.wikipedia.org/wiki/Comma-separated_values"><i class="fas fa-external-link-alt"></i>CSV</a>, 
                         
-                        <a target="_blank" href="https://en.wikipedia.org/wiki/XML">XML</a>,and 
+                        <a target="_blank" title="Visit the XLM description page" href="https://en.wikipedia.org/wiki/XML"><i class="fas fa-external-link-alt"></i>XML</a>,and 
                         
-                        <a target="_blank" href="https://it.wikipedia.org/wiki/JavaScript_Object_Notation">JSON</a>
+                        <a target="_blank" title="Visit the JSON description page" href="https://it.wikipedia.org/wiki/JavaScript_Object_Notation"><i class="fas fa-external-link-alt"></i>JSON</a>
                         
                         versions of the discovered constraints should 
                         be saved. The 
                         
-                        <a target="_blank" href="https://en.wikipedia.org/wiki/Comma-separated_values">CSV</a>
+                        <a target="_blank" title="Visit the CSV description page" href="https://en.wikipedia.org/wiki/Comma-separated_values"><i class="fas fa-external-link-alt"></i>CSV</a>
                         
                         file should show something like this:
                     </p>
@@ -1043,9 +1057,9 @@
                     <br>
 
                     <p>
-                        To speed up the post-processing, other techniques than hierarchyconflictredundancydouble (say, hierarchyconflictredundancy, or just hierarchy, the default) 
-                        can be used. However, this implies less accuracy in the detection (and removal) of the redundant constraints. Generally, the mining per se is very fast. 
-                        The post-processing takes most of the computation time.
+                        To speed up the post-processing, other techniques than <code>hierarchyconflictredundancydouble</code> (say,<code>hierarchyconflictredundancy</code>,
+                        or just <code>hierarchy</code>, the default) can be used. However, this implies less accuracy in the detection (and removal) of the redundant constraints.
+                        Generally, the mining per se is very fast. The post-processing takes most of the computation time.
 
                     </p>
 
@@ -1171,7 +1185,7 @@
                                 </li>
 
                                 <li>
-                                    <a href="../../Functionality/SimplificationModels/index.html">Simplification Models</a>
+                                    <a href="../../Functionality/ModelSimplification/index.html">Model Simplification</a>
                                 </li>
 
                             </ul>

@@ -106,7 +106,7 @@
 
                             <li ><a class="nav-link" href="../GenerateAutomaton/index.html">Generate Automaton</a></li>
 
-                            <li ><a class="nav-link" href="../SimplificationModels/index.html">Simplification Models</a></li>
+                            <li ><a class="nav-link" href="../ModelSimplification/index.html">Model Simplification</a></li>
                            
                         </ul>
 
@@ -164,7 +164,7 @@
                     </li>
 
                     <!--Click Button-->
-                    <button type="button" id=b1 class="btn btn-outline-secondary" onclick="apriSchedaNuova()">Download</button>
+                    <button type="button" title="Download MINERful package on github" id=b1 class="btn btn-outline-secondary" onclick="apriSchedaNuova()">Download</button>
             
                 </ul>
 
@@ -212,7 +212,16 @@
 
                     <p>
                         MINERful can be used also to create event logs that comply with a given declarative workflow specification. There are two ways to do that: either via 
-                        command line, or using MINERful as a Java package to be integrated in your software project.
+                        command line, or using MINERful as a 
+                        
+                        <a target="_blank" title="Visit the Java package description page" href="https://en.wikipedia.org/wiki/Java_package">
+                            
+                            <i class="fas fa-external-link-alt"></i>
+                            Java package
+                        
+                        </a>
+                            
+                        to be integrated in your software project.
                     </p>
 
                 </div>
@@ -266,12 +275,20 @@
                     <br>
 
                     <p>
-                        Let us assume this file is saved in /home/claudio/Desktop/exampleprocess.json. To generate an event log consisting of 2000 traces, the length of whose 
+                        Let us assume this file is saved in 
+
+                        <code>/home/claudio/Desktop/exampleprocess.json</code>.
+                        
+                        To generate an event log consisting of 2000 traces, the length of whose 
                         traces are between 2 and 24 tasks, and store it in 
 
-                        <a target="_blank" href="http://www.xes-standard.org/">XES</a> 
+                        <a target="_blank" title="Visit the XES standard portal" href="http://www.xes-standard.org/"><i class="fas fa-external-link-alt"></i>XES</a> 
 
-                        format in /home/claudio/Desktop/examplelog.xes, run the following command
+                        format in 
+                        
+                        <code>/home/claudio/Desktop/examplelog.xes</code>,
+                        
+                        run the following command
 
                     </p>
 
@@ -324,12 +341,12 @@
                     <p>
                         Indeed, one can use other formats for the input process model (for instance, the native MINERful 
                         
-                        <a target="_blank" href="http://www.processmining.org/logs/mxml">MXML</a> 
+                        <a target="_blank" title="Visit the MXML description page" href="http://www.processmining.org/logs/mxml"><i class="fas fa-external-link-alt"></i>MXML</a> 
                     
                         format, just out of a previous mining task) or the output log (for instance, the MXML old process mining input format). Because the event log is for all means 
                         and purposes a full-fledged 
                     
-                        <a target="_blank" href="http://www.xes-standard.org/">XES</a> 
+                        <a target="_blank" title="Visit the XES standard portal" href="http://www.xes-standard.org/"><i class="fas fa-external-link-alt"></i>XES</a> 
                     
                         event log, you can run the discovery algorithm of MINERful to see what model comes out. This turns out to be very useful for testing purposes:
                     </p>
@@ -373,49 +390,69 @@
                     
                     <ul>
                         <li>
-                            <a target="_blank" href="https://github.com/cdc08x/MINERful/blob/master/src/minerful/examples/api/logmaking/FromDeclareMapToLog.java">logmaking.FromDeclareMapToLog </a> 
+                            <a target="_blank" title="Visit the github code of the class logmaking.FromDeclareMapToLog" href="https://github.com/cdc08x/MINERful/blob/master/src/minerful/examples/api/logmaking/FromDeclareMapToLog.java">
+                                
+                                <i class="fas fa-external-link-alt"></i>
+                                logmaking.FromDeclareMapToLog 
+                            
+                            </a> 
                         
                             demonstrates how to generate 
                             
-                            <a target="_blank" href="http://www.xes-standard.org/">XES</a>
+                            <a target="_blank" title="Visit the XES standard portal" href="http://www.xes-standard.org/"><i class="fas fa-external-link-alt"></i>XES</a>
                             
-                            logs from an existing Declare map XML file. It is worth having a look at it to see how to convert process models from the Declare 
-                            Maps Miner format, for those who used that tool in
+                            logs from an existing 
+                            
+                            <a title="Visit the page about discover process map" href="../DiscoverProcessMap/index.html">Declare Map </a>
+                            
+                            <a target="_blank" title="Visit the XLM description page" href="https://en.wikipedia.org/wiki/XML"><i class="fas fa-external-link-alt"></i>XLM file</a>. 
+                            
+                            It is worth having a look at it to see how to convert process models from the 
+                            
+                            Declare Maps Miner format, for those who used that tool in
         
-                            <a target="_blank" href="http://www.promtools.org/doku.php">ProM</a>.
+                            <a target="_blank" title="Visit the ProM description page" href="http://www.promtools.org/doku.php"><i class="fas fa-external-link-alt"></i>ProM</a>.
                         </li>
 
                         <br>
 
                         <li>
-                            <a target="_blank" href="https://github.com/cdc08x/MINERful/blob/master/src/minerful/examples/api/logmaking/FromJsonProcessModelToLog.java">logmaking.FromJsonProcessModelToLog</a> 
+                            <a target="_blank" title="Visit the github code of the class logmaking.FromJsonProcessModelToLog" href="https://github.com/cdc08x/MINERful/blob/master/src/minerful/examples/api/logmaking/FromJsonProcessModelToLog.java">
+                                
+                                <i class="fas fa-external-link-alt"></i>
+                                logmaking.FromJsonProcessModelToLog
+                            
+                            </a> 
                         
                             demonstrates how to generate
 
-                            <a target="_blank" href="http://www.xes-standard.org/">XES</a>
+                            <a target="_blank" title="Visit the XES standard portal" href="http://www.xes-standard.org/"><i class="fas fa-external-link-alt"></i>XES</a>
                             
                             logs starting the definitions of constraints specified with
         
-                            <a target="_blank" href="https://www.json.org/json-en.html">JSON</a> objects.
+                            <a target="_blank" title="Visit the JSON description page" href="https://www.json.org/json-en.html"><i class="fas fa-external-link-alt"></i>JSON</a> objects.
 
                         </li>
 
                         <br>
 
                         <li>
-                            <a target="_blank" href="https://github.com/cdc08x/MINERful/blob/master/src/minerful/examples/api/simplification/MinerFulSimplificationInvokerOnDeclareMapFile.java">
+                            <a target="_blank" title="Visit the github code of the class simplification.MinerFulSimplificationInvokerOnDeclareMapFile" href="https://github.com/cdc08x/MINERful/blob/master/src/minerful/examples/api/simplification/MinerFulSimplificationInvokerOnDeclareMapFile.java">
+                                
+                                <i class="fas fa-external-link-alt"></i>
                                 simplification.MinerFulSimplificationInvokerOnDeclareMapFile
+                                
                             </a> 
                            
                             demonstrates how to load a 
                             
-                            <a target="_blank" href="../DiscoverProcessMap/index.html">Declare Map file as a process model</a>, 
+                            <a title="Visit the page about discover process map" href="../DiscoverProcessMap/index.html">Declare Map file as a process model</a>, 
                             
                             then run the 
                             
-                            <a target="_blank" href="../SimplificationModels/index.html">simplification</a>
+                            <a title="Visit the page about model simplification" href="../ModelSimplification/index.html">simplification</a>
                             
-                             engine of MINERful to remove the redundant constraints.
+                            engine of MINERful to remove the redundant constraints.
                         </li>
 
                     </ul>
@@ -456,10 +493,22 @@
                         
                             <br>
                             <br>
-                            DOI:<a target="_blank" href="https://link.springer.com/chapter/10.1007%2F978-3-319-24626-0_2">10.1007/978-3-319-24626-0_2</a>
+                            DOI:
+                            <a target="_blank" title="Visit the paper about Generating Event Logs Through the Simulation of Declare Models" href="https://link.springer.com/chapter/10.1007%2F978-3-319-24626-0_2">
+                                
+                                <i class="fas fa-external-link-alt"></i>
+                                10.1007/978-3-319-24626-0_2
+                            
+                            </a>
 
                             <br>
-                            Pre-print: <a target="_blank" href="http://www.diciccio.net/claudio/preprints/DiCiccio-etal-EOMAS2015.pdf">diciccio.net/claudio/preprints/DiCiccio-etal-EOMAS2015.pdf</a>
+                            Pre-print: 
+                            <a target="_blank" title="Visit the pdf about EOMAS2015" href="http://www.diciccio.net/claudio/preprints/DiCiccio-etal-EOMAS2015.pdf">
+                                
+                                <i class="fas fa-external-link-alt"></i>
+                                diciccio.net/claudio/preprints/DiCiccio-etal-EOMAS2015.pdf
+                            
+                            </a>
                         
                         </li>
 
@@ -481,10 +530,22 @@
                         
                             <br>
                             <br>
-                            DOI: <a target="_blank" href="https://link.springer.com/chapter/10.1007%2F978-3-662-46436-6_1">10.1007/978-3-662-46436-6_1</a>
+                            DOI: 
+                            <a target="_blank" title="Visit the paper about The Effect of Noise on Mined Declarative Constraints" href="https://link.springer.com/chapter/10.1007%2F978-3-662-46436-6_1">
+                                
+                                <i class="fas fa-external-link-alt"></i>
+                                10.1007/978-3-662-46436-6_1
+                            
+                            </a>
 
                             <br>
-                            Pre-print: <a target="_blank" href="http://www.diciccio.net/claudio/preprints/DiCiccio-etal-SIMPDApp2015-EffectofNoise.pdf">diciccio.net/claudio/preprints/DiCiccio-etal-SIMPDApp2015-EffectofNoise.pdf</a>
+                            Pre-print: 
+                            <a target="_blank" title="Visit the pdf about SIMPDApp2015-EffectofNoise" href="http://www.diciccio.net/claudio/preprints/DiCiccio-etal-SIMPDApp2015-EffectofNoise.pdf">
+                                
+                                <i class="fas fa-external-link-alt"></i>
+                                diciccio.net/claudio/preprints/DiCiccio-etal-SIMPDApp2015-EffectofNoise.pdf
+                            
+                            </a>
                         
                         </li>
 
@@ -606,7 +667,7 @@
                                 </li>
 
                                 <li>
-                                    <a href="../SimplificationModels/index.html">Simplification Models</a>
+                                    <a href="../ModelSimplification/index.html">Model Simplification</a>
                                 </li>
 
                             </ul>
