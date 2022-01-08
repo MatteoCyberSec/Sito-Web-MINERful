@@ -68,7 +68,7 @@
                     <li class="nav-item dropdown mx-1" >
 
                         <a class="nav-link dropdown-toggle "  id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            <i class="fas fa-play"></i> Guide
+                            <i class="fas fa-hourglass-start"></i> Guide
                         </a>
 
                         <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown" >
@@ -77,11 +77,11 @@
 
                             <li><a class="nav-link" href="../../Guide/MINERfulAPIs/index.html" >MINERful APIs</a></li>
 
-                            <li><a class="nav-link" href="../../Guide/RunningTheJAR/index.html" >Running the JAR</a></li>
+                            <li><a class="nav-link" href="../../Guide/RunTheJAR/index.html" >Run the JAR</a></li>
 
-                            <li ><a class="nav-link" href="../../Guide/RunningWithShellScripts/index.html" >Running with Shell Scripts</a></li>
+                            <li ><a class="nav-link" href="../../Guide/RunWithShellScripts/index.html" >Run with Shell Scripts</a></li>
 
-                            <li ><a class="nav-link" href="../../Guide/RunningExample/index.html" >Running Example</a></li>
+                            <li ><a class="nav-link" href="../../Guide/RunExample/index.html" >Run Example</a></li>
                            
                         </ul>
 
@@ -93,20 +93,20 @@
                     <li class="nav-item dropdown mx-1" >
 
                         <a class="nav-link dropdown-toggle "  id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            <i class="fab fa-cc-discover"></i> Functionality
+                            <i class="fas fa-star"></i> Functionality
                         </a>
 
                         <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown" >
 
                             <li ><a class="nav-link" href="../../Functionality/DiscoverProcessMap/index.html">Discover Process Map</a></li>
 
-                            <li ><a class="nav-link" href="../../Functionality/CreatingEventLogs/index.html">Creating Event Logs</a></li>
+                            <li ><a class="nav-link" href="../../Functionality/CreateEventLogs/index.html">Create Event Logs</a></li>
 
                             <li ><a class="nav-link" href="../../Functionality/PerformFitnessCheck/index.html">Perform Fitness Check</a></li>
 
                             <li ><a class="nav-link" href="../../Functionality/GenerateAutomaton/index.html">Generate Automaton</a></li>
 
-                            <li ><a class="nav-link" href="../../Functionality/ModelSimplification/index.html">Model Simplification</a></li>
+                            <li ><a class="nav-link" href="../../Functionality/SimplifyModel/index.html">Simplify Model</a></li>
                            
                         </ul>
 
@@ -118,7 +118,7 @@
                     <li class="nav-item dropdown mx-1" >
 
                         <a class="nav-link dropdown-toggle "  id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            <i class="fas fa-microchip"></i> Declarative Processes
+                            <i class="fas fa-book"></i> Declarative Processes
                         </a>
 
                         <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown" >
@@ -358,6 +358,10 @@
                         
                         are often declarative. The declarative programming tries to blur the distinction between a program as a set of instructions and a program as an assertion 
                         about the desired answer.
+
+                        <br>
+                        (Open Model).
+
                     </p>
                     
                 </div>
@@ -379,7 +383,35 @@
                     <p>
                         Imperative programming is a programming paradigm that describes computation in terms of statements that change a program state. The imperative programs can be 
                         duly viewed as programming commands or mathematical assertions.
+
+                        <br>
+                        (Closed Model).
                     </p>
+
+                    
+                </div>
+
+                <!--Column-->
+                <div class="col-sm-12 col-md-12 " >
+
+                </div>
+
+                <!--Column-->
+                <div class="col-sm-12 col-md-4 ">
+
+                    <img src="../../Contents/declarative2-1.png" class="img-fluid" alt="Responsive image" > 
+
+                </div>
+
+                <!--Column-->
+                <div class="col-sm-12 col-md-1 " >
+
+                </div>
+
+                <!--Column-->
+                <div class="col-sm-12 col-md-4 ">
+
+                    <img src="../../Contents/declarative2-2.png" class="img-fluid" alt="Responsive image" >
                     
                 </div>
 
@@ -406,13 +438,13 @@
                     <ol>
                         <li>
                             <p>
-                                Check stock availability must occur right after the start.
+                                <strong>Check stock availability</strong> must occur right after the start.
                             </p>
 
                             <ol type="i">
                                 <li>
                                     <p>
-                                        Right after Check stock availability, either Manufacture product
+                                        Right after Check stock availability, either <strong>Manufacture product</strong>.
                                     </p>
                                 </li>
 
@@ -420,7 +452,7 @@
 
                                 <li>
                                     <p>
-                                        Retrieve product from the warehouse will occur.
+                                        Right after Check stock availability, <strong>Retrieve product from the warehouse</strong> will occur.
                                     </p>
                                 </li>
                             </ol>
@@ -430,7 +462,7 @@
 
                         <li>
                             <p>
-                                Confirm order may occur once only after Manufacture product or Retrieve product from the warehouse. 
+                                <strong>Confirm order</strong> may occur once only after Manufacture product or Retrieve product from the warehouse. 
                             </p>
 
                             <br>
@@ -438,23 +470,24 @@
                             <ol type="i">
                                 <li>
                                     <p>
-                                        Emit invoice
+                                        <strong>Emit invoice</strong> must occur once after Confirm order.
                                     </p>
                                 </li>
 
+                                <ol style="list-style:lower-alpha;">
+                                    <li>
+                                        <p>
+                                            <strong>Receive payment</strong> will occur once after Emit invoice.
+                                        </p>
+                                    </li>
+                                </ol>
+                                
+                                
                                 <br>
 
                                 <li>
                                     <p>
-                                        Receive payment will occur once after Emit invoice
-                                    </p>
-                                </li>
-
-                                <br>
-
-                                <li>
-                                    <p>
-                                        Ship product must occur once after Confirm order.
+                                        <strong>Ship product</strong> must occur once after Confirm order.
                                     </p>
                                 </li>
                             </ol>
@@ -464,7 +497,7 @@
 
                         <li>
                             <p>
-                                Archive order may occur once only after Emit invoice and Confirm order. Archive order must occur right before the end
+                                <strong>Archive order</strong> may occur once only after Emit invoice and Confirm order. Archive order must occur right before the end.
                             </p>
                         </li>
 
@@ -758,15 +791,15 @@
                                 </li>
 
                                 <li>
-                                    <a href="../../Guide/RunningTheJAR/index.html">Running the JAR</a>
+                                    <a href="../../Guide/RunTheJAR/index.html">Run the JAR</a>
                                 </li>
 
                                 <li>
-                                    <a href="../../Guide/RunningWithShellScripts/index.html">Running with Shell Scripts</a>
+                                    <a href="../../Guide/RunWithShellScripts/index.html">Run with Shell Scripts</a>
                                 </li>
 
                                 <li>
-                                    <a href="../../Guide/RunningExample/index.html">Running Examples</a>
+                                    <a href="../../Guide/RunExample/index.html">Run Examples</a>
                                 </li>
 
                             </ul>
@@ -788,7 +821,7 @@
                                 </li>
 
                                 <li>
-                                    <a href="../../Functionality/CreatingEventLogs/index.html">Creating Event Logs</a>
+                                    <a href="../../Functionality/CreateEventLogs/index.html">Create Event Logs</a>
                                 </li>
 
                                 <li>
@@ -800,7 +833,7 @@
                                 </li>
 
                                 <li>
-                                    <a href="../../Functionality/ModelSimplification/index.html">Model Simplification</a>
+                                    <a href="../../Functionality/SimplifyModel/index.html">Simplify Model</a>
                                 </li>
 
                             </ul>

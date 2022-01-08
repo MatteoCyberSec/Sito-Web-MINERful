@@ -68,7 +68,7 @@
                     <li class="nav-item dropdown mx-1" >
 
                         <a class="nav-link dropdown-toggle "  id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            <i class="fas fa-play"></i> Guide
+                            <i class="fas fa-hourglass-start"></i> Guide
                         </a>
 
                         <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown" >
@@ -77,11 +77,11 @@
 
                             <li><a class="nav-link" href="../../Guide/MINERfulAPIs/index.html" >MINERful APIs</a></li>
 
-                            <li><a class="nav-link" href="../../Guide/RunningTheJAR/index.html" >Running the JAR</a></li>
+                            <li><a class="nav-link" href="../../Guide/RunTheJAR/index.html" >Run the JAR</a></li>
 
-                            <li ><a class="nav-link" href="../../Guide/RunningWithShellScripts/index.html" >Running with Shell Scripts</a></li>
+                            <li ><a class="nav-link" href="../../Guide/RunWithShellScripts/index.html" >Run with Shell Scripts</a></li>
 
-                            <li ><a class="nav-link" href="../../Guide/RunningExample/index.html" >Running Example</a></li>
+                            <li ><a class="nav-link" href="../../Guide/RunExample/index.html" >Run Example</a></li>
                            
                         </ul>
 
@@ -93,20 +93,20 @@
                     <li class="nav-item dropdown mx-1" >
 
                         <a class="nav-link dropdown-toggle "  id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            <i class="fab fa-cc-discover"></i> Functionality
+                            <i class="fas fa-star"></i> Functionality
                         </a>
 
                         <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown" >
 
                             <li ><a class="nav-link" href="../../Functionality/DiscoverProcessMap/index.html">Discover Process Map</a></li>
 
-                            <li ><a class="nav-link" href="../../Functionality/CreatingEventLogs/index.html">Creating Event Logs</a></li>
+                            <li ><a class="nav-link" href="../../Functionality/CreateEventLogs/index.html">Create Event Logs</a></li>
 
                             <li ><a class="nav-link" href="../../Functionality/PerformFitnessCheck/index.html">Perform Fitness Check</a></li>
 
                             <li ><a class="nav-link" href="../../Functionality/GenerateAutomaton/index.html">Generate Automaton</a></li>
 
-                            <li ><a class="nav-link" href="../../Functionality/ModelSimplification/index.html">Model Simplification</a></li>
+                            <li ><a class="nav-link" href="../../Functionality/SimplifyModel/index.html">Simplify Model</a></li>
                            
                         </ul>
 
@@ -118,7 +118,7 @@
                     <li class="nav-item dropdown mx-1" >
 
                         <a class="nav-link dropdown-toggle "  id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            <i class="fas fa-microchip"></i> Declarative Processes
+                            <i class="fas fa-book"></i> Declarative Processes
                         </a>
 
                         <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown" >
@@ -204,7 +204,27 @@
 
                     <h2 style="text-align: center;">From description to specification</h2>
 
+                </div>
+
+                <!--Grey Column-->
+                <div class="col-sm-12 col-md-8 " >
+
+                    <p style="text-align: center;">
+                        A <strong>description</strong> consists in exposing in natural language the reality to be modeled. Given a description you can proceed by creating a 
+                        <strong>specification</strong>, which will have to respect and model in a logical and precise way the reality exposed by the description, minimizing ambiguities.
+                        It is represented through 
+                        
+                        <a title="Visit the page about Declare templates" href="../DeclareTemplates/index.html">declare templates</a>.
+                    </p>
+
                     <br>
+
+
+                </div>
+
+
+                <!--Empty Column-->
+                <div class="col-sm-12 col-md-12 ">
 
                 </div>
 
@@ -216,26 +236,47 @@
 
                     <br>
 
-                    <p>
-                        Every process instance starts with receiving an invoice.
+                    <ul>
+                        <li>
+                            <p>
+                                Every process instance starts with receiving an invoice.  --> <strong>Receive invoice</strong>
+                            </p>
+                        </li>
 
                         <br>
-                        <br>
-                        Whenever an invoice is recorded into the database, it was received beforehand.
+
+                        <li>
+                            <p>
+                                Whenever an invoice is recorded into the database, it was received beforehand.  --> <strong>Record invoice in database</strong>
+                            </p>
+                        </li>
 
                         <br>
-                        <br>
-                        When an invoice is received, the current account will be checked at some point afterwards. No current account is checked, unless an invoice
-                        was received at some point before.
+
+                        <li>
+                            <p>
+                                When an invoice is received, the current account will be checked at some point afterwards. No current account is checked, unless an invoice
+                                was received at some point before.  --> <strong>Check current account</strong>
+                            </p>
+                        </li>
 
                         <br>
-                        <br>
-                        The account will be checked at least once in every process instance.
+
+                        <li>
+                            <p>
+                                The account will be checked at least once in every process instance.  --> <strong>Check current account(for every process instance 1..*)</strong>
+                            </p>
+                        </li>
 
                         <br>
-                        <br>
-                        Every single time an invoice is settled, the current account was checked before.
-                    </p>
+
+                        <li>
+                            <p>
+                                Every single time an invoice is settled, the current account was checked before.  --> <strong>Settle invoice</strong>
+                            </p>
+                        </li>
+
+                    </ul>
                     
                 </div>
 
@@ -275,6 +316,25 @@
                     
                 </div>
 
+                <!--Grey Column-->
+                <div class="col-sm-12 col-md-8 " >
+
+                    <p style="text-align: center;">
+                        Given a <strong>specification</strong>, then a logical modeling based on declare templates of a reality described above, you get the <strong>cases</strong>
+                        that are the possible combinations that may occur from the specifications of the model in question.
+                    </p>
+
+                    <br>
+
+
+                </div>
+
+
+                <!--Empty Column-->
+                <div class="col-sm-12 col-md-12 ">
+
+                </div>
+
 
                 <!--Column-->
                 <div class="col-sm-12 col-md-5 ">
@@ -295,25 +355,45 @@
 
                     <br>
 
-                    <p>
-                        cbda
+                    <ul>
+                        <li>
+                            <p>
+                                cbda
+                            </p>
+                        </li>
 
-                        <br>
-                        cba
+                        <li>
+                            <p>
+                                cda
+                            </p>
+                        </li>
 
-                        <br>                        
-                        cda
+                        <li>
+                            <p>
+                                c
+                            </p>
+                        </li>
 
-                        <br>
-                        c
+                        <li>
+                            <p>
+                                cbdaabaaadaa
+                            </p>
+                        </li>
 
-                        <br>
-                        cbdaabaaadaa
+                        <li>
+                            <p>
+                                caadabda
+                            </p>
+                        </li>
 
-                        <br>
-                        caadabda
+                        <li>
+                            <p>
+                                ...
+                            </p>
+                        </li>
 
-                    </p>
+                    </ul>
+                    
                 </div>
 
                 <!--Column-->
@@ -333,24 +413,49 @@
                 <!--Column-->
                 <div class="col-sm-12 col-md-3 ">
                         
-                    <p>
-                        bdca
+                    <ul>
+                        <li>
+                            <p>
+                                bdca
+                            </p>
+                        </li>
 
-                        <br>
-                        bea
+                        <li>
+                            <p>
+                                bea
+                            </p>
+                        </li>
 
-                        <br>
-                        dbdca
+                        <li>
+                            <p>
+                                dbdca
+                            </p>
+                        </li>
 
-                        <br>
-                        ebca
+                        <li>
+                            <p>
+                                ebca
+                            </p>
+                        </li>
 
-                        <br>
-                        bcaeeca
+                        <li>
+                            <p>
+                                bcaeeca
+                            </p>
+                        </li>
 
-                        <br>
-                        ddbddcca
-                    </p>
+                        <li>
+                            <p>
+                                ddbddcca
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                ...
+                            </p>
+                        </li>
+                    </ul>
                     
                 </div>
 
@@ -370,8 +475,25 @@
 
                     <h2 style="text-align: center;">Compliance checking</h2>
 
+                </div>
+
+                <!--Grey Column-->
+                <div class="col-sm-12 col-md-8 " >
+
+                    <p style="text-align: center;">
+                        In this example is used a Workflow net that is a particular Petri net (P,T,F) where : .........
+
+                        
+                    </p>
+
                     <br>
-                    
+
+
+                </div>
+
+
+                <!--Empty Column-->
+                <div class="col-sm-12 col-md-12 ">
 
                 </div>
 
@@ -394,7 +516,7 @@
 
                     <br>
 
-                    <p>
+                    <p style="font-variant: small-caps;">
                         
 
                         <i class="far fa-check-circle"></i>
@@ -478,7 +600,8 @@
 
                     <br>
 
-                    <p>
+                    <p style="font-variant: small-caps;">
+                        
                         <i class="far fa-check-circle"></i>
                         Init(a)
 
@@ -580,15 +703,15 @@
                                 </li>
 
                                 <li>
-                                    <a href="../../Guide/RunningTheJAR/index.html">Running the JAR</a>
+                                    <a href="../../Guide/RunTheJAR/index.html">Run the JAR</a>
                                 </li>
 
                                 <li>
-                                    <a href="../../Guide/RunningWithShellScripts/index.html">Running with Shell Scripts</a>
+                                    <a href="../../Guide/RunWithShellScripts/index.html">Run with Shell Scripts</a>
                                 </li>
 
                                 <li>
-                                    <a href="../../Guide/RunningExample/index.html">Running Examples</a>
+                                    <a href="../../Guide/RunExample/index.html">Run Examples</a>
                                 </li>
 
                             </ul>
@@ -610,7 +733,7 @@
                                 </li>
 
                                 <li>
-                                    <a href="../../Functionality/CreatingEventLogs/index.html">Creating Event Logs</a>
+                                    <a href="../../Functionality/CreateEventLogs/index.html">Create Event Logs</a>
                                 </li>
 
                                 <li>
@@ -622,7 +745,7 @@
                                 </li>
 
                                 <li>
-                                    <a href="../../Functionality/ModelSimplification/index.html">Model Simplification</a>
+                                    <a href="../../Functionality/SimplifyModel/index.html">Simplify Model</a>
                                 </li>
 
                             </ul>
