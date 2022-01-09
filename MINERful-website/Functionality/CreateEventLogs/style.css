@@ -97,6 +97,16 @@ section a:hover
 .container .bg-dark
 {
     color: #A5D6FF;
+
+    padding: 16px;
+
+    padding-left: 50px;
+    
+    border-radius: 6px;
+
+    padding-top: 50px;
+
+    padding-right: 50px;
 }
 
 code
