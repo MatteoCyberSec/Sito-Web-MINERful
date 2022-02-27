@@ -61,7 +61,6 @@ a
 }
 
 
-
 p
 {
     font-family: 'Roboto', sans-serif;
@@ -74,6 +73,14 @@ h2
 
     font-family: 'Roboto', sans-serif;
 }
+
+h3
+{
+    color:#261a1a;
+
+    font-family: 'Roboto', sans-serif;
+}
+
 
 
 
@@ -90,6 +97,29 @@ section a:hover
 .container .bg-dark
 {
     color: #A5D6FF;
+
+    padding: 16px;
+
+    padding-left: 50px;
+    
+    border-radius: 6px;
+
+    padding-top: 50px;
+
+    padding-right: 50px;
+}
+
+code
+{
+    background-color: #80808080;
+
+    color: #F4F4F4;
+    
+    border-radius: 6px;
+    
+    padding: 3px 5px;
+
+    
 }
 
 #copyright

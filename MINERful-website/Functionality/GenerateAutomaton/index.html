@@ -218,16 +218,76 @@
 
                 </div>
 
+            </div>
+                
+        </div>
+
+        
+        <!--Container-->
+        <div class="container" >
+
+            <!--Table-->
+            <div class="row justify-content-center" >
+
+                <!--Empty white column-->
+                <div class="col-sm-12 col-md-12 " id=boxW>
+
+                </div>
+
+                <!--Grey Column-->
+                <div class="col-sm-12 col-md-12 " id="boxG">
+
+                    <h2>Generate automaton through command line</h2>
+
+                    <br>
+
+                    <p>
+                        Suppose you have a declarative process specification as follows:
+                    </p>
+
+                    <!--JSON Code Container-->
+                    <div class="container bg-dark">
+                        
+                        <pre>
+                            {   name: "Scientific paper evaluation process",
+                                constraints: [
+                                    {template: "respondedexistence", parameters: [["Submit abstract"],["Write new paper"]]},
+                                    {template: "response", parameters: [["Submit paper"],["Send confirmation email"]]},
+                                    {template: "succession", parameters: [["Submit paper"],["Review paper"]]},
+                                    {template: "precedence", parameters: [["Review paper"],["Accept paper"]]},
+                                    {template: "notsuccession", parameters: [["Reject paper"],["Submit paper"]]},
+                                    {template: "notcoexistence", parameters: [["Accept paper"],["Reject paper"]]}
+                                            ] 
+                            }
+
+                        </pre>
+
+                    </div>
+
+                    <br>
+                    <br>
+
+                    <p>
+                        Let us assume this file is saved in 
+
+                        <code>/home/claudio/Desktop/exampleprocess.json</code>.
+                        
+                        .....
+                        
+                        run the following command
+
+                    </p>
+
+                </div>
+
                 <!--Empty white column-->
                 <div class="col-sm-12 col-md-12 " id=boxW>
 
                 </div>
 
             </div>
-                
-        </div>
 
-        
+        </div>
          
 
         <!-- Footer -->

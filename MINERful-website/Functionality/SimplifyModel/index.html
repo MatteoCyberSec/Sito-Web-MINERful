@@ -212,9 +212,197 @@
 
                     <p>
                         The theory of model simplification is presented as a means of increasing model understanding. Simplification is based on a selection of the behavior modes 
-                        defined by the linearized representation of the model and results in a smaller and more easily understood model. To allow understanding, the variables in 
-                        the simplified model must be easy to interpret relative to those in the original model.
+                        ,that is of the constraints defined by the linearized representation of the model and results in a smaller and more easily understood model. To allow 
+                        understanding, the variables in the simplified model must be easy to interpret relative to those in the original model.
                     </p>
+
+                </div>
+
+            </div>
+                
+        </div>
+
+
+        <!--Container-->
+        <div class="container" >
+
+            <!--Table-->
+            <div class="row justify-content-center" >
+
+                <!--Empty white column-->
+                <div class="col-sm-12 col-md-12 " id=boxW>
+
+                </div>
+
+                <!--Grey Column-->
+                <div class="col-sm-12 col-md-12 " id="boxG">
+
+                    <h2>Simplify model through command line</h2>
+
+                    <br>
+
+                    <p>
+                        Suppose you have a declarative process specification as follows:
+                    </p>
+
+                    <!--JSON Code Container-->
+                    <div class="container bg-dark">
+                        
+                        <pre>
+                            {   name: "Scientific paper evaluation process",
+                                constraints: [
+                                    {template: "respondedexistence", parameters: [["Submit abstract"],["Write new paper"]]},
+                                    {template: "response", parameters: [["Submit paper"],["Send confirmation email"]]},
+                                    {template: "succession", parameters: [["Submit paper"],["Review paper"]]},
+                                    {template: "precedence", parameters: [["Review paper"],["Accept paper"]]},
+                                    {template: "notsuccession", parameters: [["Reject paper"],["Submit paper"]]},
+                                    {template: "notcoexistence", parameters: [["Accept paper"],["Reject paper"]]}
+                                            ] 
+                            }
+
+                        </pre>
+
+                    </div>
+
+                    <br>
+                    <br>
+
+                    <p>
+                        Let us assume this file is saved in 
+
+                        <code>/home/claudio/Desktop/exampleprocess.json</code>.
+                        
+                        To generate a simplified model and store it in XES format in
+
+                        <a target="_blank" title="Visit the XES standard portal" href="http://www.xes-standard.org/"><i class="fas fa-external-link-alt"></i>XES</a> 
+
+                        format in 
+                        
+                        <code>/home/claudio/Desktop/exampleSimplification.xes</code>,
+                        
+                        run the following command
+
+                    </p>
+
+                    <!--Code Container -->
+                    <div class="container bg-dark">
+                        
+                        <pre><p>run-MINERfulSimplifier.sh --input-model-file '/home/claudio/Desktop/exampleprocess.json' --input-model-encoding json --out-log-encoding xes --out-log-file '/home/claudio/Desktop/exampleSimplification.xes'</p></pre>
+
+                    </div>
+
+                    <br>
+                    <br>
+
+                    <p>
+                        The same result can be achieved with a shorthand notation for passing parameters:
+                    </p>
+
+                    <!--Code Container-->
+                    <div class="container bg-dark">
+                        
+                        <pre><p>run-MINERfulSimplifier.sh -iMF '/home/claudio/Desktop/exampleprocess.json' -iME json -oLE xes -oLF '/home/claudio/Desktop/exampleSimplification.xes'</p></pre>
+
+                    </div>
+
+                    <br>
+                    <br>
+
+                    <p>
+                        The rationale for those abbreviations is that the parameter prefixes pertain to the context: -iM for the input Model, -oL for the output (event) Log. As usual, 
+                        to have an overview of the parameters, their meaning and their default, you can run:
+                    </p>
+
+                    <!--Code Container-->
+                    <div class="container bg-dark">
+                        
+                        <pre><p>run-MINERfulSimplifier.sh -h</p></pre>
+
+                    </div>
+
+                    <br>
+                    <br>
+
+                    <p>
+                        This is the result:
+                    </p>
+
+                    <!--Code Container-->
+                    <div class="container bg-dark">
+                        
+                        <pre>usage: cmd_name [-autoDOT &lt;path&gt;] [-autoReplayTrimXML &lt;path&gt;] [-autoReplayXML &lt;path&gt;] [-autoTSML &lt;path&gt;] [-c &lt;threshold&gt;] [-d &lt;debug_level&gt;] [-h] [-i&lt;threshold&gt;] 
+                                  [-iME &lt;language&gt;] [-iMF &lt;path&gt;] [-keep] [-oConDec &lt;path&gt;] [-oCSV &lt;path&gt;] [-oJSON &lt;path&gt;] [-oNuSMV &lt;path&gt;] [-oXML &lt;path&gt;] [-prune &lt;type&gt;]
+                                  [-pruneRnk &lt;policy&gt;] [-s &lt;threshold&gt;] [-subautosDOT &lt;path&gt;] [-subautosReplayXML &lt;path&gt;] [-vMachine] [-vNoFold] [-vShush] [-vSort &lt;type&gt;]
+
+                      -autoDOT,--save-automaton-dot &lt;path&gt;                  write a Graphviz DOT format of a finite state automaton representing the declarative process
+                      -autoReplayTrimXML,--print-replay-trim-autom &lt;path&gt;   *** WARNING: experimental development stage of implementation!
+                                                                            print the discovered process in weighted automaton XML format, into the specified file. Remove the
+                                                                            transitions (and states) that have weight 0. The weight is computed based on the number of times the
+                                                                            event log replay traverses the transition.
+                      -autoReplayXML,--print-replay-autom &lt;path&gt;            *** WARNING: experimental development stage of implementation!
+                                                                            print the discovered process in weighted automaton XML format, into the specified file. The weight is
+                                                                            computed based on the number of times the event log replay traverses the transition.
+                      -autoTSML,--save-automaton-tsml &lt;path&gt;                write a TSML format of a finite state automaton representing the mined process on the given file
+                      -c,--confidence &lt;threshold&gt;                           threshold for confidence level (relevance); it must be a real value ranging from 0.0 to 1.0.
+                                                                            Default is: '0.25'
+                      -d,--debug &lt;debug_level&gt;                              debug level {'none','info','debug','trace','all'}.
+                                                                            Default is: 'info'
+                      -h,--help                                             print help
+                      -i,--interest-factor &lt;threshold&gt;                      threshold for interest factor (relevance); it must be a real value ranging from 0.0 to 1.0.
+                                                                            Default is: '0.125'
+                      -iME,--input-model-encoding &lt;language&gt;                input model encoding language {'declare-map','minerful','json'} (default: 'minerful')
+                      -iMF,--input-model-file &lt;path&gt;                        path of the file from which the process model should be read
+                      -keep,--keep-constraints                              do not physically remove the redundant or inconsistent constraints from the model
+                      -oConDec,--save-as-condec &lt;path&gt;                      print the discovered process as a Declare map (ConDec) into the specified file
+                      -oCSV,--save-as-csv &lt;path&gt;                            print results in CSV format into the specified file
+                      -oJSON,--save-as-json &lt;path&gt;                          path of the file in which to save the discovered process model as JSON
+                      -oNuSMV,--print-replay-autom &lt;path&gt;                   print the discovered process as an input script for NuSMV into the specified file
+                      -oXML,--save-as-xml &lt;path&gt;                            path of the file in which to save the discovered process model as XML
+                      -prune,--prune-with &lt;type&gt;                            type of post-processing analysis over constraints. It can be one of the following:
+                                                                            {'none','hierarchy','hierarchyconflict','hierarchyconflictredundancy','hierarchyconflictredundancydouble'
+                                                                            }.
+                                                                            Default is: 'hierarchy'
+                      -pruneRnk,--prune-ranking-by &lt;policy&gt;                 type of ranking of constraints for post-processing analysis. It can be a :-separated list of the
+                                                                            following:{'supportconfidenceinterestfactor','familyhierarchy','activationtargetbonds','default','random'}.
+                      -s,--support &lt;threshold&gt;                              threshold for support (reliability); it must be a real value ranging from 0.0 to 1.0.
+                                                                            Default is: '0.95'
+                      -subautosDOT,--subautom-folder &lt;path&gt;                 write the Graphviz DOT format of activities' finite state sub-automata on separate files, within the
+                                                                            given folder
+                      -subautosReplayXML,--xml-subautom-folder &lt;path&gt;       *** WARNING: experimental development stage of implementation!
+                                                                            write the weighted automaton XML format of activities' finite state sub-automata on separate files,
+                                                                            within the given folder
+                      -vMachine,--machine-readable                          print a machine-readable list of supports, for each constraint template and constrained activities in the
+                                                                            print-out.
+                                                                            Default is: 'false'
+                      -vNoFold,--no-folding                                 avoid the discovered constraints to be folded under activation tasks.
+                                                                            Default is: 'false'
+                      -vShush,--no-screen-print-out                         suppresses the print-out of constraints on screen.
+                                                                            Default is: 'false'
+                      -vSort,--sort-constraints &lt;type&gt;                      Sorting policy for constraints of the discovered process: {'type','support','interest'}.
+                                                                            Default is: 'type'
+                        </pre>
+
+                    </div>
+
+                    <br>
+                    <br>
+
+                    <p>
+                        Indeed, one can use other formats for the input process model (for instance, the native MINERful 
+                        
+                        <a target="_blank" title="Visit the MXML description page" href="http://processmining.org/old-version/mxml.html"><i class="fas fa-external-link-alt"></i>MXML</a> 
+                    
+                        format, just out of a previous mining task) or the output log (for instance, the MXML old process mining input format).
+                        
+                        This turns out to be very useful for testing purposes:
+                    </p>
+
+                    <!--Code Container-->
+                    <div class="container bg-dark">
+                        
+                        <pre><p>run-MINERful.sh -iLF '/home/claudio/Desktop/examplelog.xes'</p></pre>
+
+                    </div>
 
                 </div>
 
@@ -224,7 +412,7 @@
                 </div>
 
             </div>
-                
+
         </div>
 
         
