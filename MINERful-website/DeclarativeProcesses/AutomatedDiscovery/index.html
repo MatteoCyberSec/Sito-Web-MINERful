@@ -209,19 +209,12 @@
                 <div class="col-sm-12 col-md-8">
 
                     <p style="text-align: center;">
-                        Automated business process discovery (ABPD), as the name suggests, uses 
-                        
-                        <a target="_blank" title="Visit the Artificial Intelligence (AI) description page" href="https://en.wikipedia.org/wiki/Artificial_intelligence">
-                            
-                            <i class="fas fa-external-link-alt"></i>
-                            Artificial Intelligence (AI)
-                        
-                        </a>,
-                        
-                        computer vision and computational logic to automate the entire process discovery lifecycle. Automated discovery solutions, essentially pull data from all of the 
-                        various applications involved in executing a business process from beginning to end. Using what’s called a discovery algorithm, it then analyzes the data 
-                        to identify patterns as well as determine process definitions and models. Using this empirical data, ABPD then maps out the entirety of an organization's 
-                        current business processes and its major process variations. 
+                        Automated process discovery techniques enable users to generate business process models from event logs extracted from enterprise information systems. 
+                        Traditional techniques in this field generate procedural process models (e.g., in the BPMN notation). When dealing with highly variable processes, 
+                        the resulting procedural models are often too complex to be practically usable. An alternative approach is to discover declarative process models, 
+                        which represent the behavior of the process as a set of constraints. Declarative process discovery techniques have been shown to produce simpler 
+                        models than procedural ones, particularly for processes with high variability. However, the bulk of approaches for automated discovery of declarative 
+                        process models focus on the control-flow perspective, ignoring the data perspective.
    
                     </p>
 
@@ -236,66 +229,39 @@
                 
         </div>
 
-
         <!--Grey Container-->
         <div class="container-fluid" id="boxW" >
 
             <!--Table-->
             <div class="row justify-content-center" >
 
-                
-
                 <!--Column-->
-                <div class="col-sm-12 col-md-4 " id="boxW">
+                <div class="col-sm-12 col-md-12 " id="boxW">
                 
-                    <h2>Process Mining</h2>
+                    <h2 style="text-align: center;">How does an Automated Discovery work?</h2>
 
-                    <br>
-
-                    <p>
-                        Process mining is a data-driven approach that derives from process management and data science. It is designed to help organizations recognize, monitor and 
-                        improve business processes. Use event logs, which are task lists start and end stamps from 
-                        
-                        <a target="_blank" title="Visit the  IT systems description page" href="https://en.wikipedia.org/wiki/Information_technology">
-                            
-                            <i class="fas fa-external-link-alt"></i>
-                            IT systems
-                        
-                        </a>.
-                        
-                        Event logs can include activities such as receiving an order, delivering a product, a customer contacted, a payment made, and more. This data-driven 
-                        approach provides an overview of what people, systems and organizations actually do, not what they think they are doing.
-                        
-                    </p>
-
-                
                 </div>
 
                 <!--Column-->
-                <div class="col-sm-12 col-md-1 " id="boxW">
+                <div class="col-sm-12 col-md-8">
 
-                    <h2>vs</h2>
+                    <p style="text-align: center;">
+                        Automated process discovery techniques take as input an event log recording the execution of instances of a business process over a period of time, 
+                        and produce as output a process model that captures the behavior observed in the log. The process models produced by automated process discovery 
+                        techniques mainly fall into two categories: procedural and declarative. The dichotomy procedural versus declarative when choosing the most suitable 
+                        language to represent the output of a process discovery technique has been widely studied: procedural languages are suitable for processes 
+                        with low variability (i.e., relatively low number of variants), whereas declarative languages are suitable for processes with high variability.
 
-                </div>
-
-                
-
-                <!--Column-->
-                <div class="col-sm-12 col-md-4 " id="boxW">
-                
-                    <h2>Automated Discovery</h2>
-
-                    <br>
-
-                    <p>
-                        The automated process discovery, on the other hand, are AI-powered power tools designed to track user behavior and use that data to create a digital 
-                        representation of enterprise processes from end-to-end.
-                        The goal of ABPD(Automated Business process discovery) is to show how processes within an organization are executed and provide organizations the 
-                        ability to analyze processes as they are. Unlike process mining, process discovery does not require any logs, databases, API access or systems integration. 
-                        
+                        <br>
+                        We find two approaches for automated discovery of declarative process models with correlated data conditions. Both techniques start by discovering a 
+                        set of frequent constraints from an event log. A frequent constraint is a constraint having a high number of constraint instances, i.e., pairs of 
+                        events (one activation and one target) satisfying it. In the first approach, we cluster the target payloads to find groups of targets with similar 
+                        payloads. These groups are used as labels for rule mining. In particular, the labels together with the features extracted from the activation 
+                        payloads are used as input of a classification problem to discover correlations between the activation payloads and the target payloads. 
+                        In the second approach, we apply redescription mining to sets of activation and target payloads to find the rules that correlate these two sets.
+   
                     </p>
 
-                
                 </div>
 
                 <!--Empty Column-->
@@ -314,65 +280,65 @@
             <!--Table-->
             <div class="row justify-content-center" >
 
+                
+
+                <!--Column-->
+                <div class="col-sm-12 col-md-4 " id="boxG">
+                
+                    <h2>Clustering + Rule Mining</h2>
+
+                    <br>
+
+                    <p>
+                        the target payloads of previously obtained fulfillment feature vectors are clustered to find groups of targets with similar 
+                        payloads. For each cluster its description is discovered. These descriptions are used as labels in combination with the activation payloads to 
+                        generate a set of labeled fulfillment feature vectors. The labeled violation and fulfillment feature vectors are then used as input for rule mining. 
+                        This procedure allows for finding correlations between the activation payloads and the target payloads.
+                        
+                    </p>
+
+                
+                </div>
+
+                <!--Column-->
+                <div class="col-sm-12 col-md-1 " id="boxG">
+
+                    <h2>vs</h2>
+
+                </div>
+
+                
+
+                <!--Column-->
+                <div class="col-sm-12 col-md-4 " id="boxG">
+                
+                    <h2>Redescription Mining</h2>
+
+                    <br>
+
+                    <p>
+                        We apply redescription mining algorithms using both the features of activation and target payloads. There are two major types 
+                        of redescription mining algorithms. The first family of algorithms proposes to grow two decision trees in an alternating way and then join them in the 
+                        leaves. By traversing the obtained trees, we can get the correlations between activation and target payloads. An alternative technique is to extend the 
+                        correlations greedily starting from the simplest ones (containing one literal from each side). In this paper, we consider both approaches. Note that 
+                        the core parts of our approaches are independent of the procedure used to extract constraint instances. Thus they can be used in combination with any 
+                        approach for constraint instances extraction.
+                    </p>
+
+                
+                </div>
+
                 <!--Empty Column-->
                 <div class="col-sm-12 col-md-12" id="boxG">
 
-                    <h2 style="text-align: center;">Conclusion</h2>
-
-                    <br>
-
-                </div>
-
-                <!--Column-->
-                <div class="col-sm-12 col-md-9 ">
-                
-                    <p>
-                        So, the basic idea of process mining is to extract knowledge from event logs recorded by an information system. The goal is to understand and improve actual 
-                        processes based on factual information that was collected during the execution of these processes.
-
-                    </p>
-
-                </div>
-
-                <!--Column-->
-                <div class="col-sm-12 col-md-4">
-
-                    <img src="../../Contents/automated1.png" class="img-fluid" alt="Responsive image" >
-
                 </div>
 
                 <!--Empty Column-->
-                <div class="col-sm-12 col-md-9">
-
-                    <p>
-                        One of the most widely studied process mining operations is automated process discovery. An automated process discovery method takes as input an event log, 
-                        and produces as output a business process model that captures the control-flow relations between tasks that are observed in or implied by the event log. 
-                        Various automated process discovery methods have been proposed in the past two decades, striking different tradeoffs between scalability, accuracy, and 
-                        complexity of the resulting models.
-                    </p>
+                <div class="col-sm-12 col-md-6" id="boxG">
                     
-                </div>
-
-
-                <!--Column-->
-                <div class="col-sm-12 col-md-4">
-
-                    <br>
-
-                    <img src="../../Contents/automated2.png" class="img-fluid" alt="Responsive image" >
-
-                    <br>
-                        Image sourced from “Process Mining versus Process Discovery”
-
-                        <a target="_blank" title="Visit the Process Mining versus Process Discovery website" href="https://www.skan.ai/process-mining-insights/process-mining-versus-process-discovery">
-                            
-                            <i class="fas fa-external-link-alt"></i>
-                            https://www.skan.ai/process-mining-insights/process-mining-versus-process-discovery
-                            
-                        </a>
+                    <img src="../../Contents/automated1.png" class="img-fluid" alt="Responsive image" >
 
                 </div>
-                
 
                 <!--Empty Column-->
                 <div class="col-sm-12 col-md-12" id="boxG">
@@ -382,6 +348,8 @@
             </div>
                 
         </div>
+
+
 
 
         <!--White Container-->
