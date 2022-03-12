@@ -1,0 +1,1 @@
+run-MINERfulEventLogMaker.sh -iMF '/home/claudio/Desktop/exampleprocess.json' -iME json -oLL 2000 -oLm 2 -oLM 24 -oLE xes -oLF '/home/claudio/Desktop/examplelog.xes'

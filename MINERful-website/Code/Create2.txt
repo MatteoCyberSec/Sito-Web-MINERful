@@ -1,0 +1,1 @@
+run-MINERfulEventLogMaker.sh --input-model-file '/home/claudio/Desktop/exampleprocess.json' --input-model-encoding json  --size 2000 --minlen 2 --maxlen 24 --out-log-encoding xes --out-log-file '/home/claudio/Desktop/examplelog.xes'

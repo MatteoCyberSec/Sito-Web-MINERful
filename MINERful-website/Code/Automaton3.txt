@@ -1,0 +1,334 @@
+[A_ACCEPTED] => {
+  100.000% AtMost1(A_ACCEPTED)                                              conf.:   0.420;  int'f:   0.176; 
+  100.000% NotChainSuccession(A_ACCEPTED, A_DECLINED)                       conf.:   0.420;  int'f:   0.218; 
+  100.000% AlternateSuccession(A_ACCEPTED, A_FINALIZED)                     conf.:   0.420;  int'f:   0.176; 
+  100.000% NotSuccession(A_ACCEPTED, A_PARTLYSUBMITTED)                     conf.:   0.420;  int'f:   0.420; 
+  100.000% NotSuccession(A_ACCEPTED, A_PREACCEPTED)                         conf.:   0.420;  int'f:   0.277; 
+  100.000% NotSuccession(A_ACCEPTED, A_SUBMITTED)                           conf.:   0.420;  int'f:   0.420; 
+  100.000% Succession(A_ACCEPTED, O_CREATED)                                conf.:   0.420;  int'f:   0.176; 
+  100.000% AlternateResponse(A_ACCEPTED, O_CREATED)                         conf.:   0.420;  int'f:   0.176; 
+  100.000% NotChainSuccession(A_ACCEPTED, O_CREATED)                        conf.:   0.420;  int'f:   0.176; 
+  100.000% Succession(A_ACCEPTED, O_SELECTED)                               conf.:   0.420;  int'f:   0.176; 
+  100.000% AlternateResponse(A_ACCEPTED, O_SELECTED)                        conf.:   0.420;  int'f:   0.176; 
+  100.000% Succession(A_ACCEPTED, O_SENT)                                   conf.:   0.420;  int'f:   0.176; 
+  100.000% AlternateResponse(A_ACCEPTED, O_SENT)                            conf.:   0.420;  int'f:   0.176; 
+  100.000% NotChainSuccession(A_ACCEPTED, O_SENT)                           conf.:   0.420;  int'f:   0.176; 
+  100.000% NotSuccession(A_ACCEPTED, W_Afhandelen leads)                    conf.:   0.300;  int'f:   0.126; 
+  100.000% AlternateResponse(A_ACCEPTED, W_Completeren aanvraag)            conf.:   0.420;  int'f:   0.277; 
+  100.000% NotChainSuccession(A_ACCEPTED, W_Completeren aanvraag)           conf.:   0.420;  int'f:   0.277; 
+  100.000% Succession(A_ACCEPTED, W_Nabellen offertes)                      conf.:   0.420;  int'f:   0.176; 
+  100.000% AlternateResponse(A_ACCEPTED, W_Nabellen offertes)               conf.:   0.420;  int'f:   0.176; 
+  100.000% NotChainSuccession(A_ACCEPTED, W_Nabellen offertes)              conf.:   0.420;  int'f:   0.176; 
+  100.000% AlternatePrecedence(A_PARTLYSUBMITTED, A_ACCEPTED)               conf.:   1.000;  int'f:   0.420; 
+  100.000% AlternatePrecedence(A_PREACCEPTED, A_ACCEPTED)                   conf.:   0.660;  int'f:   0.277; 
+  100.000% AlternatePrecedence(A_SUBMITTED, A_ACCEPTED)                     conf.:   1.000;  int'f:   0.420; 
+  100.000% ChainPrecedence(W_Completeren aanvraag, A_ACCEPTED)              conf.:   0.660;  int'f:   0.277; 
+  
+ }
+
+ [A_ACTIVATED] => {
+  100.000% AlternatePrecedence(A_PARTLYSUBMITTED, A_ACTIVATED)              conf.:   1.000;  int'f:   0.200; 
+  100.000% AlternatePrecedence(A_PREACCEPTED, A_ACTIVATED)                  conf.:   0.660;  int'f:   0.132; 
+  100.000% AlternatePrecedence(A_SUBMITTED, A_ACTIVATED)                    conf.:   1.000;  int'f:   0.200; 
+  100.000% AlternatePrecedence(W_Completeren aanvraag, A_ACTIVATED)         conf.:   0.660;  int'f:   0.132; 
+  
+ }
+
+ [A_APPROVED] => {
+  100.000% AlternatePrecedence(A_PARTLYSUBMITTED, A_APPROVED)               conf.:   1.000;  int'f:   0.200; 
+  100.000% AlternatePrecedence(A_PREACCEPTED, A_APPROVED)                   conf.:   0.660;  int'f:   0.132; 
+  100.000% AlternatePrecedence(A_SUBMITTED, A_APPROVED)                     conf.:   1.000;  int'f:   0.200; 
+  100.000% AlternatePrecedence(W_Completeren aanvraag, A_APPROVED)          conf.:   0.660;  int'f:   0.132; 
+  
+ }
+
+[A_CANCELLED] => {
+  100.000% NotCoExistence(A_CANCELLED, A_DECLINED)                          conf.:   0.280;  int'f:   0.146; 
+  100.000% NotSuccession(A_CANCELLED, A_PARTLYSUBMITTED)                    conf.:   0.280;  int'f:   0.280; 
+  100.000% NotSuccession(A_CANCELLED, A_PREACCEPTED)                        conf.:   0.280;  int'f:   0.185; 
+  100.000% NotSuccession(A_CANCELLED, A_SUBMITTED)                          conf.:   0.280;  int'f:   0.280; 
+   96.313% NotSuccession(A_CANCELLED, W_Completeren aanvraag)               conf.:   0.270;  int'f:   0.178; 
+  100.000% AlternatePrecedence(A_PARTLYSUBMITTED, A_CANCELLED)              conf.:   1.000;  int'f:   0.280; 
+  100.000% AlternatePrecedence(A_PREACCEPTED, A_CANCELLED)                  conf.:   0.660;  int'f:   0.185; 
+  100.000% AlternatePrecedence(A_SUBMITTED, A_CANCELLED)                    conf.:   1.000;  int'f:   0.280; 
+  100.000% AlternatePrecedence(W_Completeren aanvraag, A_CANCELLED)         conf.:   0.660;  int'f:   0.185; 
+  
+ }
+
+ [A_DECLINED] => {
+  100.000% AtMost1(A_DECLINED)                                              conf.:   0.520;  int'f:   0.270; 
+  100.000% NotSuccession(A_DECLINED, A_ACCEPTED)                            conf.:   0.420;  int'f:   0.218; 
+  100.000% NotCoExistence(A_DECLINED, A_CANCELLED)                          conf.:   0.280;  int'f:   0.146; 
+  100.000% NotSuccession(A_DECLINED, A_FINALIZED)                           conf.:   0.420;  int'f:   0.218; 
+  100.000% NotSuccession(A_DECLINED, A_PARTLYSUBMITTED)                     conf.:   0.520;  int'f:   0.520; 
+  100.000% NotSuccession(A_DECLINED, A_PREACCEPTED)                         conf.:   0.520;  int'f:   0.343; 
+  100.000% NotSuccession(A_DECLINED, A_SUBMITTED)                           conf.:   0.520;  int'f:   0.520; 
+  100.000% NotSuccession(A_DECLINED, O_CREATED)                             conf.:   0.420;  int'f:   0.218; 
+  100.000% NotSuccession(A_DECLINED, O_SELECTED)                            conf.:   0.420;  int'f:   0.218; 
+  100.000% NotSuccession(A_DECLINED, O_SENT)                                conf.:   0.420;  int'f:   0.218; 
+   98.995% NotSuccession(A_DECLINED, W_Nabellen offertes)                   conf.:   0.416;  int'f:   0.216; 
+  100.000% AlternatePrecedence(A_PARTLYSUBMITTED, A_DECLINED)               conf.:   1.000;  int'f:   0.520; 
+  100.000% AlternatePrecedence(A_SUBMITTED, A_DECLINED)                     conf.:   1.000;  int'f:   0.520; 
+  
+ }
+
+[A_FINALIZED] => {
+  100.000% AtMost1(A_FINALIZED)                                             conf.:   0.420;  int'f:   0.176; 
+  100.000% CoExistence(A_FINALIZED, A_ACCEPTED)                             conf.:   0.420;  int'f:   0.176; 
+  100.000% NotSuccession(A_FINALIZED, A_ACCEPTED)                           conf.:   0.420;  int'f:   0.176; 
+  100.000% NotChainSuccession(A_FINALIZED, A_DECLINED)                      conf.:   0.420;  int'f:   0.218; 
+  100.000% NotSuccession(A_FINALIZED, A_PARTLYSUBMITTED)                    conf.:   0.420;  int'f:   0.420; 
+  100.000% NotSuccession(A_FINALIZED, A_PREACCEPTED)                        conf.:   0.420;  int'f:   0.277; 
+  100.000% NotSuccession(A_FINALIZED, A_SUBMITTED)                          conf.:   0.420;  int'f:   0.420; 
+  100.000% Succession(A_FINALIZED, O_CREATED)                               conf.:   0.420;  int'f:   0.176; 
+  100.000% AlternateResponse(A_FINALIZED, O_CREATED)                        conf.:   0.420;  int'f:   0.176; 
+  100.000% CoExistence(A_FINALIZED, O_SELECTED)                             conf.:   0.420;  int'f:   0.176; 
+  100.000% Succession(A_FINALIZED, O_SENT)                                  conf.:   0.420;  int'f:   0.176; 
+  100.000% AlternateResponse(A_FINALIZED, O_SENT)                           conf.:   0.420;  int'f:   0.176; 
+  100.000% NotChainSuccession(A_FINALIZED, O_SENT)                          conf.:   0.420;  int'f:   0.176; 
+  100.000% NotSuccession(A_FINALIZED, W_Afhandelen leads)                   conf.:   0.300;  int'f:   0.126; 
+  100.000% AlternateResponse(A_FINALIZED, W_Completeren aanvraag)           conf.:   0.420;  int'f:   0.277; 
+  100.000% NotChainSuccession(A_FINALIZED, W_Completeren aanvraag)          conf.:   0.420;  int'f:   0.277; 
+  100.000% Succession(A_FINALIZED, W_Nabellen offertes)                     conf.:   0.420;  int'f:   0.176; 
+  100.000% AlternateResponse(A_FINALIZED, W_Nabellen offertes)              conf.:   0.420;  int'f:   0.176; 
+  100.000% NotChainSuccession(A_FINALIZED, W_Nabellen offertes)             conf.:   0.420;  int'f:   0.176; 
+  100.000% AlternatePrecedence(A_PARTLYSUBMITTED, A_FINALIZED)              conf.:   1.000;  int'f:   0.420; 
+  100.000% AlternatePrecedence(A_PREACCEPTED, A_FINALIZED)                  conf.:   0.660;  int'f:   0.277; 
+  100.000% AlternatePrecedence(A_SUBMITTED, A_FINALIZED)                    conf.:   1.000;  int'f:   0.420; 
+  100.000% AlternatePrecedence(W_Completeren aanvraag, A_FINALIZED)         conf.:   0.660;  int'f:   0.277; 
+  
+ }
+
+ [A_PARTLYSUBMITTED] => {
+  100.000% AtLeast1(A_PARTLYSUBMITTED)                                      conf.:   1.000;  int'f:   1.000; 
+  100.000% AtMost1(A_PARTLYSUBMITTED)                                       conf.:   1.000;  int'f:   1.000; 
+  100.000% NotChainSuccession(A_PARTLYSUBMITTED, A_ACCEPTED)                conf.:   0.420;  int'f:   0.420; 
+  100.000% NotChainSuccession(A_PARTLYSUBMITTED, A_CANCELLED)               conf.:   0.280;  int'f:   0.280; 
+  100.000% NotChainSuccession(A_PARTLYSUBMITTED, A_FINALIZED)               conf.:   0.420;  int'f:   0.420; 
+  100.000% CoExistence(A_PARTLYSUBMITTED, A_SUBMITTED)                      conf.:   1.000;  int'f:   1.000; 
+  100.000% NotSuccession(A_PARTLYSUBMITTED, A_SUBMITTED)                    conf.:   1.000;  int'f:   1.000; 
+  100.000% NotChainSuccession(A_PARTLYSUBMITTED, O_CREATED)                 conf.:   0.420;  int'f:   0.420; 
+  100.000% NotChainSuccession(A_PARTLYSUBMITTED, O_SELECTED)                conf.:   0.420;  int'f:   0.420; 
+  100.000% NotChainSuccession(A_PARTLYSUBMITTED, O_SENT)                    conf.:   0.420;  int'f:   0.420; 
+  100.000% NotChainSuccession(A_PARTLYSUBMITTED, W_Completeren aanvraag)    conf.:   0.660;  int'f:   0.660; 
+  100.000% NotChainSuccession(A_PARTLYSUBMITTED, W_Nabellen offertes)       conf.:   0.420;  int'f:   0.420; 
+  
+ }
+
+[A_PREACCEPTED] => {
+  100.000% AtMost1(A_PREACCEPTED)                                           conf.:   0.660;  int'f:   0.436; 
+  100.000% AlternatePrecedence(A_PARTLYSUBMITTED, A_PREACCEPTED)            conf.:   1.000;  int'f:   0.660; 
+  100.000% NotChainSuccession(A_PREACCEPTED, A_ACCEPTED)                    conf.:   0.420;  int'f:   0.277; 
+  100.000% NotChainSuccession(A_PREACCEPTED, A_CANCELLED)                   conf.:   0.280;  int'f:   0.185; 
+  100.000% NotChainSuccession(A_PREACCEPTED, A_DECLINED)                    conf.:   0.520;  int'f:   0.343; 
+  100.000% NotChainSuccession(A_PREACCEPTED, A_FINALIZED)                   conf.:   0.420;  int'f:   0.277; 
+  100.000% NotSuccession(A_PREACCEPTED, A_PARTLYSUBMITTED)                  conf.:   0.660;  int'f:   0.660; 
+  100.000% NotSuccession(A_PREACCEPTED, A_SUBMITTED)                        conf.:   0.660;  int'f:   0.660; 
+  100.000% NotChainSuccession(A_PREACCEPTED, O_CREATED)                     conf.:   0.420;  int'f:   0.277; 
+  100.000% NotChainSuccession(A_PREACCEPTED, O_SELECTED)                    conf.:   0.420;  int'f:   0.277; 
+  100.000% NotChainSuccession(A_PREACCEPTED, O_SENT)                        conf.:   0.420;  int'f:   0.277; 
+  100.000% NotChainSuccession(A_PREACCEPTED, W_Afhandelen leads)            conf.:   0.300;  int'f:   0.198; 
+  100.000% Succession(A_PREACCEPTED, W_Completeren aanvraag)                conf.:   0.660;  int'f:   0.436; 
+  100.000% ChainResponse(A_PREACCEPTED, W_Completeren aanvraag)             conf.:   0.660;  int'f:   0.436; 
+  100.000% NotChainSuccession(A_PREACCEPTED, W_Nabellen offertes)           conf.:   0.420;  int'f:   0.277; 
+  100.000% AlternatePrecedence(A_SUBMITTED, A_PREACCEPTED)                  conf.:   1.000;  int'f:   0.660; 
+  
+ }
+
+ [A_REGISTERED] => {
+  100.000% AlternatePrecedence(A_PARTLYSUBMITTED, A_REGISTERED)             conf.:   1.000;  int'f:   0.200; 
+  100.000% AlternatePrecedence(A_PREACCEPTED, A_REGISTERED)                 conf.:   0.660;  int'f:   0.132; 
+  100.000% AlternatePrecedence(A_SUBMITTED, A_REGISTERED)                   conf.:   1.000;  int'f:   0.200; 
+  100.000% AlternatePrecedence(W_Completeren aanvraag, A_REGISTERED)        conf.:   0.660;  int'f:   0.132; 
+  
+ }
+
+ [A_SUBMITTED] => {
+  100.000% AtMost1(A_SUBMITTED)                                             conf.:   1.000;  int'f:   1.000; 
+  100.000% Init(A_SUBMITTED)                                                conf.:   1.000;  int'f:   1.000; 
+  100.000% NotChainSuccession(A_SUBMITTED, A_ACCEPTED)                      conf.:   0.420;  int'f:   0.420; 
+  100.000% NotChainSuccession(A_SUBMITTED, A_CANCELLED)                     conf.:   0.280;  int'f:   0.280; 
+  100.000% NotChainSuccession(A_SUBMITTED, A_DECLINED)                      conf.:   0.520;  int'f:   0.520; 
+  100.000% NotChainSuccession(A_SUBMITTED, A_FINALIZED)                     conf.:   0.420;  int'f:   0.420; 
+  100.000% ChainSuccession(A_SUBMITTED, A_PARTLYSUBMITTED)                  conf.:   1.000;  int'f:   1.000; 
+  100.000% NotChainSuccession(A_SUBMITTED, A_PREACCEPTED)                   conf.:   0.660;  int'f:   0.660; 
+  100.000% NotChainSuccession(A_SUBMITTED, O_CREATED)                       conf.:   0.420;  int'f:   0.420; 
+  100.000% NotChainSuccession(A_SUBMITTED, O_SELECTED)                      conf.:   0.420;  int'f:   0.420; 
+  100.000% NotChainSuccession(A_SUBMITTED, O_SENT)                          conf.:   0.420;  int'f:   0.420; 
+  100.000% NotChainSuccession(A_SUBMITTED, W_Afhandelen leads)              conf.:   0.300;  int'f:   0.300; 
+  100.000% NotChainSuccession(A_SUBMITTED, W_Completeren aanvraag)          conf.:   0.660;  int'f:   0.660; 
+  100.000% NotChainSuccession(A_SUBMITTED, W_Nabellen offertes)             conf.:   0.420;  int'f:   0.420; 
+  
+ }
+
+[O_ACCEPTED] => {
+  100.000% AlternatePrecedence(A_PARTLYSUBMITTED, O_ACCEPTED)               conf.:   1.000;  int'f:   0.200; 
+  100.000% AlternatePrecedence(A_PREACCEPTED, O_ACCEPTED)                   conf.:   0.660;  int'f:   0.132; 
+  100.000% AlternatePrecedence(A_SUBMITTED, O_ACCEPTED)                     conf.:   1.000;  int'f:   0.200; 
+  100.000% AlternatePrecedence(W_Completeren aanvraag, O_ACCEPTED)          conf.:   0.660;  int'f:   0.132; 
+  
+ }
+
+ [O_CANCELLED] => {
+  100.000% Precedence(A_PARTLYSUBMITTED, O_CANCELLED)                       conf.:   1.000;  int'f:   0.220; 
+  100.000% Precedence(A_PREACCEPTED, O_CANCELLED)                           conf.:   0.660;  int'f:   0.145; 
+  100.000% Precedence(A_SUBMITTED, O_CANCELLED)                             conf.:   1.000;  int'f:   0.220; 
+  100.000% Precedence(W_Completeren aanvraag, O_CANCELLED)                  conf.:   0.660;  int'f:   0.145; 
+  
+ }
+
+ [O_CREATED] => {
+  100.000% AtMost3(O_CREATED)                                               conf.:   0.420;  int'f:   0.176; 
+  100.000% Precedence(A_PARTLYSUBMITTED, O_CREATED)                         conf.:   1.000;  int'f:   0.420; 
+  100.000% Precedence(A_PREACCEPTED, O_CREATED)                             conf.:   0.660;  int'f:   0.277; 
+  100.000% Precedence(A_SUBMITTED, O_CREATED)                               conf.:   1.000;  int'f:   0.420; 
+  100.000% CoExistence(O_CREATED, A_ACCEPTED)                               conf.:   0.420;  int'f:   0.176; 
+  100.000% NotSuccession(O_CREATED, A_ACCEPTED)                             conf.:   0.420;  int'f:   0.176; 
+  100.000% NotChainSuccession(O_CREATED, A_DECLINED)                        conf.:   0.420;  int'f:   0.218; 
+  100.000% CoExistence(O_CREATED, A_FINALIZED)                              conf.:   0.420;  int'f:   0.176; 
+  100.000% NotSuccession(O_CREATED, A_FINALIZED)                            conf.:   0.420;  int'f:   0.176; 
+  100.000% NotSuccession(O_CREATED, A_PARTLYSUBMITTED)                      conf.:   0.420;  int'f:   0.420; 
+  100.000% NotSuccession(O_CREATED, A_PREACCEPTED)                          conf.:   0.420;  int'f:   0.277; 
+  100.000% NotSuccession(O_CREATED, A_SUBMITTED)                            conf.:   0.420;  int'f:   0.420; 
+  100.000% CoExistence(O_CREATED, O_SELECTED)                               conf.:   0.420;  int'f:   0.176; 
+  100.000% NotChainSuccession(O_CREATED, O_SELECTED)                        conf.:   0.420;  int'f:   0.176; 
+  100.000% ChainSuccession(O_CREATED, O_SENT)                               conf.:   0.420;  int'f:   0.176; 
+  100.000% NotSuccession(O_CREATED, W_Afhandelen leads)                     conf.:   0.300;  int'f:   0.126; 
+  100.000% NotChainSuccession(O_CREATED, W_Completeren aanvraag)            conf.:   0.420;  int'f:   0.277; 
+  100.000% CoExistence(O_CREATED, W_Nabellen offertes)                      conf.:   0.420;  int'f:   0.176; 
+  100.000% NotChainSuccession(O_CREATED, W_Nabellen offertes)               conf.:   0.420;  int'f:   0.176; 
+  100.000% Precedence(W_Completeren aanvraag, O_CREATED)                    conf.:   0.660;  int'f:   0.277; 
+  
+ }
+
+ [O_DECLINED] => {
+  
+ }
+
+[O_SELECTED] => {
+  100.000% AtMost3(O_SELECTED)                                              conf.:   0.420;  int'f:   0.176; 
+  100.000% Precedence(A_PARTLYSUBMITTED, O_SELECTED)                        conf.:   1.000;  int'f:   0.420; 
+  100.000% Precedence(A_PREACCEPTED, O_SELECTED)                            conf.:   0.660;  int'f:   0.277; 
+  100.000% Precedence(A_SUBMITTED, O_SELECTED)                              conf.:   1.000;  int'f:   0.420; 
+  100.000% CoExistence(O_SELECTED, A_ACCEPTED)                              conf.:   0.420;  int'f:   0.176; 
+  100.000% NotSuccession(O_SELECTED, A_ACCEPTED)                            conf.:   0.420;  int'f:   0.176; 
+  100.000% NotChainSuccession(O_SELECTED, A_DECLINED)                       conf.:   0.420;  int'f:   0.218; 
+  100.000% CoExistence(O_SELECTED, A_FINALIZED)                             conf.:   0.420;  int'f:   0.176; 
+  100.000% NotSuccession(O_SELECTED, A_PARTLYSUBMITTED)                     conf.:   0.420;  int'f:   0.420; 
+  100.000% NotSuccession(O_SELECTED, A_PREACCEPTED)                         conf.:   0.420;  int'f:   0.277; 
+  100.000% NotSuccession(O_SELECTED, A_SUBMITTED)                           conf.:   0.420;  int'f:   0.420; 
+  100.000% AlternateSuccession(O_SELECTED, O_CREATED)                       conf.:   0.420;  int'f:   0.176; 
+  100.000% AlternateSuccession(O_SELECTED, O_SENT)                          conf.:   0.420;  int'f:   0.176; 
+  100.000% NotChainSuccession(O_SELECTED, O_SENT)                           conf.:   0.420;  int'f:   0.176; 
+  100.000% NotSuccession(O_SELECTED, W_Afhandelen leads)                    conf.:   0.300;  int'f:   0.126; 
+  100.000% NotChainSuccession(O_SELECTED, W_Completeren aanvraag)           conf.:   0.420;  int'f:   0.277; 
+  100.000% CoExistence(O_SELECTED, W_Nabellen offertes)                     conf.:   0.420;  int'f:   0.176; 
+  100.000% NotChainSuccession(O_SELECTED, W_Nabellen offertes)              conf.:   0.420;  int'f:   0.176; 
+  100.000% Precedence(W_Completeren aanvraag, O_SELECTED)                   conf.:   0.660;  int'f:   0.277; 
+  
+ }
+
+ [O_SENT] => {
+  100.000% AtMost3(O_SENT)                                                  conf.:   0.420;  int'f:   0.176; 
+  100.000% Precedence(A_PARTLYSUBMITTED, O_SENT)                            conf.:   1.000;  int'f:   0.420; 
+  100.000% Precedence(A_PREACCEPTED, O_SENT)                                conf.:   0.660;  int'f:   0.277; 
+  100.000% Precedence(A_SUBMITTED, O_SENT)                                  conf.:   1.000;  int'f:   0.420; 
+  100.000% CoExistence(O_SENT, A_ACCEPTED)                                  conf.:   0.420;  int'f:   0.176; 
+  100.000% NotSuccession(O_SENT, A_ACCEPTED)                                conf.:   0.420;  int'f:   0.176; 
+  100.000% NotChainSuccession(O_SENT, A_DECLINED)                           conf.:   0.420;  int'f:   0.218; 
+  100.000% CoExistence(O_SENT, A_FINALIZED)                                 conf.:   0.420;  int'f:   0.176; 
+  100.000% NotSuccession(O_SENT, A_FINALIZED)                               conf.:   0.420;  int'f:   0.176; 
+  100.000% NotSuccession(O_SENT, A_PARTLYSUBMITTED)                         conf.:   0.420;  int'f:   0.420; 
+  100.000% NotSuccession(O_SENT, A_PREACCEPTED)                             conf.:   0.420;  int'f:   0.277; 
+  100.000% NotSuccession(O_SENT, A_SUBMITTED)                               conf.:   0.420;  int'f:   0.420; 
+  100.000% CoExistence(O_SENT, O_CREATED)                                   conf.:   0.420;  int'f:   0.176; 
+  100.000% NotChainSuccession(O_SENT, O_CREATED)                            conf.:   0.420;  int'f:   0.176; 
+  100.000% CoExistence(O_SENT, O_SELECTED)                                  conf.:   0.420;  int'f:   0.176; 
+  100.000% NotChainSuccession(O_SENT, O_SELECTED)                           conf.:   0.420;  int'f:   0.176; 
+  100.000% NotSuccession(O_SENT, W_Afhandelen leads)                        conf.:   0.300;  int'f:   0.126; 
+  100.000% NotChainSuccession(O_SENT, W_Completeren aanvraag)               conf.:   0.420;  int'f:   0.277; 
+  100.000% CoExistence(O_SENT, W_Nabellen offertes)                         conf.:   0.420;  int'f:   0.176; 
+  100.000% Precedence(W_Completeren aanvraag, O_SENT)                       conf.:   0.660;  int'f:   0.277; 
+  
+ }
+
+
+[O_SENT_BACK] => {
+  100.000% AlternatePrecedence(A_PARTLYSUBMITTED, O_SENT_BACK)              conf.:   1.000;  int'f:   0.240; 
+  100.000% AlternatePrecedence(A_PREACCEPTED, O_SENT_BACK)                  conf.:   0.660;  int'f:   0.158; 
+  100.000% AlternatePrecedence(A_SUBMITTED, O_SENT_BACK)                    conf.:   1.000;  int'f:   0.240; 
+  100.000% AlternatePrecedence(W_Completeren aanvraag, O_SENT_BACK)         conf.:   0.660;  int'f:   0.158; 
+  
+ }
+
+ [W_Afhandelen leads] => {
+  100.000% Precedence(A_PARTLYSUBMITTED, W_Afhandelen leads)                conf.:   1.000;  int'f:   0.300; 
+  100.000% Precedence(A_SUBMITTED, W_Afhandelen leads)                      conf.:   1.000;  int'f:   0.300; 
+  100.000% NotChainSuccession(W_Afhandelen leads, A_ACCEPTED)               conf.:   0.300;  int'f:   0.126; 
+  100.000% NotChainSuccession(W_Afhandelen leads, A_FINALIZED)              conf.:   0.300;  int'f:   0.126; 
+  100.000% NotSuccession(W_Afhandelen leads, A_PARTLYSUBMITTED)             conf.:   0.300;  int'f:   0.300; 
+  100.000% NotSuccession(W_Afhandelen leads, A_SUBMITTED)                   conf.:   0.300;  int'f:   0.300; 
+  100.000% NotChainSuccession(W_Afhandelen leads, O_CREATED)                conf.:   0.300;  int'f:   0.126; 
+  100.000% NotChainSuccession(W_Afhandelen leads, O_SELECTED)               conf.:   0.300;  int'f:   0.126; 
+  100.000% NotChainSuccession(W_Afhandelen leads, O_SENT)                   conf.:   0.300;  int'f:   0.126; 
+  100.000% NotChainSuccession(W_Afhandelen leads, W_Nabellen offertes)      conf.:   0.300;  int'f:   0.126; 
+  
+ }
+
+ [W_Beoordelen fraude] => {
+  
+ }
+
+ [W_Completeren aanvraag] => {
+  100.000% Precedence(A_PARTLYSUBMITTED, W_Completeren aanvraag)            conf.:   1.000;  int'f:   0.660; 
+  100.000% Precedence(A_SUBMITTED, W_Completeren aanvraag)                  conf.:   1.000;  int'f:   0.660; 
+  100.000% NotChainSuccession(W_Completeren aanvraag, A_FINALIZED)          conf.:   0.420;  int'f:   0.277; 
+  100.000% NotSuccession(W_Completeren aanvraag, A_PARTLYSUBMITTED)         conf.:   0.660;  int'f:   0.660; 
+  100.000% CoExistence(W_Completeren aanvraag, A_PREACCEPTED)               conf.:   0.660;  int'f:   0.436; 
+  100.000% NotSuccession(W_Completeren aanvraag, A_PREACCEPTED)             conf.:   0.660;  int'f:   0.436; 
+  100.000% NotSuccession(W_Completeren aanvraag, A_SUBMITTED)               conf.:   0.660;  int'f:   0.660; 
+  100.000% NotChainSuccession(W_Completeren aanvraag, O_CREATED)            conf.:   0.420;  int'f:   0.277; 
+  100.000% NotChainSuccession(W_Completeren aanvraag, O_SELECTED)           conf.:   0.420;  int'f:   0.277; 
+  100.000% NotChainSuccession(W_Completeren aanvraag, O_SENT)               conf.:   0.420;  int'f:   0.277; 
+  
+ }
+
+ [W_Nabellen incomplete dossiers] => {
+  
+ }
+
+[W_Nabellen offertes] => {
+  100.000% Precedence(A_PARTLYSUBMITTED, W_Nabellen offertes)               conf.:   1.000;  int'f:   0.420; 
+  100.000% Precedence(A_PREACCEPTED, W_Nabellen offertes)                   conf.:   0.660;  int'f:   0.277; 
+  100.000% Precedence(A_SUBMITTED, W_Nabellen offertes)                     conf.:   1.000;  int'f:   0.420; 
+  100.000% Precedence(O_CREATED, W_Nabellen offertes)                       conf.:   0.420;  int'f:   0.176; 
+  100.000% Precedence(O_SELECTED, W_Nabellen offertes)                      conf.:   0.420;  int'f:   0.176; 
+  100.000% Precedence(O_SENT, W_Nabellen offertes)                          conf.:   0.420;  int'f:   0.176; 
+  100.000% Precedence(W_Completeren aanvraag, W_Nabellen offertes)          conf.:   0.660;  int'f:   0.277; 
+  100.000% CoExistence(W_Nabellen offertes, A_ACCEPTED)                     conf.:   0.420;  int'f:   0.176; 
+  100.000% NotSuccession(W_Nabellen offertes, A_ACCEPTED)                   conf.:   0.420;  int'f:   0.176; 
+  100.000% NotChainSuccession(W_Nabellen offertes, A_DECLINED)              conf.:   0.420;  int'f:   0.218; 
+  100.000% CoExistence(W_Nabellen offertes, A_FINALIZED)                    conf.:   0.420;  int'f:   0.176; 
+  100.000% NotSuccession(W_Nabellen offertes, A_FINALIZED)                  conf.:   0.420;  int'f:   0.176; 
+  100.000% NotSuccession(W_Nabellen offertes, A_PARTLYSUBMITTED)            conf.:   0.420;  int'f:   0.420; 
+  100.000% NotSuccession(W_Nabellen offertes, A_PREACCEPTED)                conf.:   0.420;  int'f:   0.277; 
+  100.000% NotSuccession(W_Nabellen offertes, A_SUBMITTED)                  conf.:   0.420;  int'f:   0.420; 
+  100.000% CoExistence(W_Nabellen offertes, O_CREATED)                      conf.:   0.420;  int'f:   0.176; 
+  100.000% NotChainSuccession(W_Nabellen offertes, O_CREATED)               conf.:   0.420;  int'f:   0.176; 
+  100.000% CoExistence(W_Nabellen offertes, O_SELECTED)                     conf.:   0.420;  int'f:   0.176; 
+   97.059% NotChainSuccession(W_Nabellen offertes, O_SELECTED)              conf.:   0.408;  int'f:   0.171; 
+  100.000% CoExistence(W_Nabellen offertes, O_SENT)                         conf.:   0.420;  int'f:   0.176; 
+  100.000% NotChainSuccession(W_Nabellen offertes, O_SENT)                  conf.:   0.420;  int'f:   0.176; 
+  100.000% NotSuccession(W_Nabellen offertes, W_Afhandelen leads)           conf.:   0.300;  int'f:   0.126; 
+  
+ }
+
+ [W_Valideren aanvraag] => {
+  100.000% Precedence(A_PARTLYSUBMITTED, W_Valideren aanvraag)              conf.:   1.000;  int'f:   0.240; 
+  100.000% Precedence(A_PREACCEPTED, W_Valideren aanvraag)                  conf.:   0.660;  int'f:   0.158; 
+  100.000% Precedence(A_SUBMITTED, W_Valideren aanvraag)                    conf.:   1.000;  int'f:   0.240; 
+  100.000% Precedence(W_Completeren aanvraag, W_Valideren aanvraag)         conf.:   0.660;  int'f:   0.158; 
+  
+ }
+
+Discovered process automaton written in DOT format on automaton.png
