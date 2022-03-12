@@ -104,6 +104,10 @@ section a:hover
         
 }
 
+pre
+{
+    max-height: 750px;
+}
 
 code
 {

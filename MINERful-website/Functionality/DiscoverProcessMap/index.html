@@ -211,7 +211,7 @@
 
                     <p>
                         Discover Process Map consists of several steps, coming from the import of a particular event log, analyze
-                        and adjust the process map, to save and temporarily export the final
+                        and adjust the process map, to possibly save and temporarily export the final
                         result.
                     </p>
 
@@ -241,41 +241,82 @@
                     <br>
 
                     <p>
-                        Suppose you have a declarative process specification as follows:
+                        Suppose you have a declarative process specification downloaded of 
+                        <a target="_blank" title="Visit the BPI site for download the log" href="https://www.win.tue.nl/bpi/doku.php?id=2012:challenge"><i class="fas fa-external-link-alt"></i>BPI</a>
+                        
+                        in <a target="_blank" title="Visit the XES standard portal" href="http://www.xes-standard.org/"><i class="fas fa-external-link-alt"></i>XES</a> format.
+                        
                     </p>
 
-                    <!--JSON Code Container-->
-                    <div class="container bg-dark">
-                        
-                        <pre>
-                            {   name: "Scientific paper evaluation process",
-                                constraints: [
-                                    {template: "respondedexistence", parameters: [["Submit abstract"],["Write new paper"]]},
-                                    {template: "response", parameters: [["Submit paper"],["Send confirmation email"]]},
-                                    {template: "succession", parameters: [["Submit paper"],["Review paper"]]},
-                                    {template: "precedence", parameters: [["Review paper"],["Accept paper"]]},
-                                    {template: "notsuccession", parameters: [["Reject paper"],["Submit paper"]]},
-                                    {template: "notcoexistence", parameters: [["Accept paper"],["Reject paper"]]}
-                                            ] 
-                            }
+                    <p>
+                        Let us assume this file is saved in 
 
-                        </pre>
+                        <code>/home/claudio/Desktop/log.xes</code>.
+                        
+                        To discover process map run the following command:
+
+                    </p>
+
+                   <!--Code Container-->
+                   <div class="container bg-dark">
+                            
+                        <pre><p id="c1"></p></pre>
 
                     </div>
+
+                    <!--start script read file-->
+                    <script>readFile("Discover1.txt","c1")</script>
 
                     <br>
                     <br>
 
                     <p>
-                        Let us assume this file is saved in 
-
-                        <code>/home/claudio/Desktop/exampleprocess.json</code>.
-                        
-                        .....
-                        
-                        run the following command
-
+                        The result starts:
                     </p>
+
+                    <!--Code Container-->
+                    <div class="container bg-dark">
+                            
+                        <pre><p id="c2"></p></pre>
+
+                    </div>
+
+                    <!--start script read file-->
+                    <script>readFile("Discover2.txt","c2")</script>
+
+                    <br>
+                    <br>
+
+                    <p>
+                        and continue:
+                    </p>
+
+                    <!--Code Container-->
+                    <div class="container bg-dark">
+                            
+                        <pre><p id="c3"></p></pre>
+
+                    </div>
+
+                    <!--start script read file-->
+                    <script>readFile("Discover3.txt","c3")</script>
+
+                    <br>
+                    <br>
+
+                    <p>
+                        The execution of the help command is very useful:
+                    </p>
+
+                    <!--Code Container-->
+                    <div class="container bg-dark">
+                            
+                        <pre><p id="c4"></p></pre>
+
+                    </div>
+
+                    <!--start script read file-->
+                    <script>readFile("Discover4.txt","c4")</script>
 
                 </div>
 

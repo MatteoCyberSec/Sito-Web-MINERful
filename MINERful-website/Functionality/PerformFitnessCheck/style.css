@@ -109,6 +109,11 @@ section a:hover
     padding-right: 50px;
 }
 
+pre
+{
+    max-height: 750px;
+}
+
 code
 {
     background-color: #80808080;

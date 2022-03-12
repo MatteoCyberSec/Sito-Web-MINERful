@@ -252,24 +252,15 @@
                         Suppose you have a declarative process specification as follows:
                     </p>
 
-                    <!--JSON Code Container-->
+                    <!--Code Container-->
                     <div class="container bg-dark">
-                        
-                        <pre>
-                            {   name: "Scientific paper evaluation process",
-                                constraints: [
-                                    {template: "respondedexistence", parameters: [["Submit abstract"],["Write new paper"]]},
-                                    {template: "response", parameters: [["Submit paper"],["Send confirmation email"]]},
-                                    {template: "succession", parameters: [["Submit paper"],["Review paper"]]},
-                                    {template: "precedence", parameters: [["Review paper"],["Accept paper"]]},
-                                    {template: "notsuccession", parameters: [["Reject paper"],["Submit paper"]]},
-                                    {template: "notcoexistence", parameters: [["Accept paper"],["Reject paper"]]}
-                                            ] 
-                            }
-
-                        </pre>
+                            
+                        <pre><p id="c1"></p></pre>
 
                     </div>
+
+                    <!--start script read file-->
+                    <script>readFile("Create1.txt","c1")</script>
 
                     <br>
                     <br>
@@ -292,12 +283,15 @@
 
                     </p>
 
-                    <!--Code Container -->
+                    <!--Code Container-->
                     <div class="container bg-dark">
-                        
-                        <pre><p>run-MINERfulEventLogMaker.sh --input-model-file '/home/claudio/Desktop/exampleprocess.json' --input-model-encoding json  --size 2000 --minlen 2 --maxlen 24 --out-log-encoding xes --out-log-file '/home/claudio/Desktop/examplelog.xes'</p></pre>
+                            
+                        <pre><p id="c2"></p></pre>
 
                     </div>
+
+                    <!--start script read file-->
+                    <script>readFile("Create2.txt","c2")</script>
 
                     <br>
                     <br>
@@ -308,13 +302,39 @@
 
                     <!--Code Container-->
                     <div class="container bg-dark">
-                        
-                        <pre><p>run-MINERfulEventLogMaker.sh -iMF '/home/claudio/Desktop/exampleprocess.json' -iME json -oLL 2000 -oLm 2 -oLM 24 -oLE xes -oLF '/home/claudio/Desktop/examplelog.xes'</p></pre>
+                            
+                        <pre><p id="c3"></p></pre>
 
                     </div>
 
+                    <!--start script read file-->
+                    <script>readFile("Create3.txt","c3")</script>
+
                     <br>
                     <br>
+
+                    <p>
+                        The result is:
+                    </p>
+
+                    <!--Code Container-->
+                    <div class="container bg-dark">
+                            
+                        <pre><p id="c4"></p></pre>
+
+                    </div>
+
+                    <!--start script read file-->
+                    <script>readFile("Create4.txt","c4")</script>
+
+                    <br>
+                    <br>
+
+                    <p>
+                        The generate file is :
+
+                        <a href="../../Code/examplelog.xes" download="examplelog.xes"><i class="fas fa-file-download"></i> examplelog.xes</a>
+                    </p>
 
                     <p>
                         The rationale for those abbreviations is that the parameter prefixes pertain to the context: -iM for the input Model, -oL for the output (event) Log. As usual, 
@@ -323,10 +343,13 @@
 
                     <!--Code Container-->
                     <div class="container bg-dark">
-                        
-                        <pre><p>run-MINERfulEventLogMaker.sh -h</p></pre>
+                            
+                        <pre><p id="c5"></p></pre>
 
                     </div>
+
+                    <!--start script read file-->
+                    <script>readFile("Create5.txt","c5")</script>
 
                     <br>
                     <br>
@@ -337,26 +360,13 @@
 
                     <!--Code Container-->
                     <div class="container bg-dark">
-                        
-                        <pre>usage: cmd_name [-d &lt;debug_level&gt;] [-h] [-iME &lt;language&gt;] [-iMF &lt;path&gt;] [-oLE &lt;language&gt;] [-oLF &lt;file path&gt;] [-oLL &lt;number of traces>] [-oLm &lt;min-length>] [-oLM &lt;max-length>]
-
-                            -d,--debug &lt;debug_level&gt;                 debug level {'none','info','debug','trace','all'}.
-                                                                     Default is: 'info'
-                            -h,--help                                print help
-                            -iME,--input-model-encoding &lt;language&gt;   input model encoding language {'declare-map','minerful','json'} (default: 'minerful')
-                            -iMF,--input-model-file &lt;path&gt;           path of the file from which the process model should be read
-                            -oLE,--out-log-encoding &lt;language&gt;       encoding language for the output log {'xes','mxml','strings'}.
-                                                                     Default is: 'xes'
-                            -oLF,--out-log-file &lt;file path&gt;          path of the file in which the log should be written
-                            -oLL,--size &lt;number of traces&gt;           number of traces to simulate.
-                                                                     Default is: '100'
-                            -oLm,--minlen &lt;min-length&gt;               minimum length of the generated traces. It must be greater than or equal to 0.
-                                                                     Default is: '0'
-                            -oLM,--maxlen &lt;max-length&gt;               maximum length of the generated traces. It must be greater than or equal to 0.
-                                                                     Default is: '100'
-                        </pre>
+                            
+                        <pre><p id="c6"></p></pre>
 
                     </div>
+
+                    <!--start script read file-->
+                    <script>readFile("Create6.txt","c6")</script>
 
                     <br>
                     <br>
@@ -380,10 +390,13 @@
 
                     <!--Code Container-->
                     <div class="container bg-dark">
-                        
-                        <pre><p>run-MINERful.sh -iLF '/home/claudio/Desktop/examplelog.xes'</p></pre>
+                            
+                        <pre><p id="c7"></p></pre>
 
                     </div>
+
+                    <!--start script read file-->
+                    <script>readFile("Create7.txt","c7")</script>
 
                 </div>
 
