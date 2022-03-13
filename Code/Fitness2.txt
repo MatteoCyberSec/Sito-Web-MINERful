@@ -1,1 +1,0 @@
-./run-MINERfulFitnessChecker.sh -iMF '/home/claudio/Desktop/example.json' -iME 'json' -iLF '/home/claudio/Desktop/log.xes'

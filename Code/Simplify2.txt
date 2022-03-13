@@ -1,1 +1,0 @@
-./run-MINERfulSimplifier.sh -iMF '/home/claudio/Desktop/example.json' -iME 'json'
