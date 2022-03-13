@@ -1,0 +1,24 @@
+INFO [main] core.MinerFulQueryingCore (massageConstraints:50) - Post-processing the discovered model...
+INFO [main] core.MinerFulQueryingCore (markConstraintsBelowThresholds:70) - Pruning constraints below thresholds...
+INFO [main] pruning.ThresholdsMarker (printComputationStats:88) - 
+
+Thresholds-based pruning: 
+'Operation code';'Input constraints';'Marked constraints';'Time'
+'Th-check';6;6;1
+INFO [main] core.MinerFulQueryingCore (markRedundancyBySubsumptionHierarchy:124) - Pruning redundancy, on the basis of hierarchy subsumption...
+INFO [main] lang.String (info:141) - 
+
+Subsumption-hierarchy-based pruning: 
+'Operation code';'Input constraints';'Marked constraints';'Time'
+'SH-check';0;0;0
+Unknown extension: http://www.xes-standard.org/meta_time.xesext
+Unknown extension: http://www.xes-standard.org/meta_life.xesext
+Unknown extension: http://www.xes-standard.org/meta_org.xesext
+Unknown extension: http://www.xes-standard.org/meta_concept.xesext
+Unknown extension: http://www.xes-standard.org/meta_3TU.xesext
+Unknown extension: http://www.xes-standard.org/meta_general.xesext
+Parsing log: |||||||||||||||||||||||||||||||||||||||||||||||||
+Done.
+WARN [main] minerful.MinerFulFitnessCheckLauncher (warn:147) - The passed declarative process specification is not fully fitting with the input traces. Summary:
+{"Avg.fitness":NaN;"Trace-fit-ratio":1}
+See below for further details.
