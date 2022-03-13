@@ -1,0 +1,5 @@
+NikeFS2: Allocating new swap file. (#1: 67108864 bytes)
+NikeFS2: cleaned up 0 stale swap files (from 0 sessions).
+NikeFS2: Populating shadow map 1 (of 4 max.)
+start serializing log to XES.XML
+finished serializing log (1516 msec.)

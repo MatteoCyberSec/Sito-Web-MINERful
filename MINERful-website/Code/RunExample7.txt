@@ -1,0 +1,133 @@
+[A] => {
+  
+ }
+
+ [B] => {
+  100.000% NotChainSuccession(B, E)     conf.:   0.375;  int'f:   0.211; 
+  100.000% NotCoExistence(B, d)         conf.:   0.375;  int'f:   0.141; 
+  100.000% NotCoExistence(B, f)         conf.:   0.375;  int'f:   0.141; 
+  100.000% RespondedExistence(B, i)     conf.:   0.375;  int'f:   0.234; 
+  
+ }
+
+ [C] => {
+  100.000% RespondedExistence(C, E)     conf.:   0.250;  int'f:   0.141; 
+  100.000% NotChainSuccession(C, E)     conf.:   0.250;  int'f:   0.141; 
+  100.000% RespondedExistence(C, a)     conf.:   0.250;  int'f:   0.219; 
+  100.000% RespondedExistence(C, i)     conf.:   0.250;  int'f:   0.156; 
+  
+ }
+
+ [E] => {
+  100.000% AtMost3(E)                   conf.:   0.563;  int'f:   0.316; 
+  100.000% NotChainSuccession(E, a)     conf.:   0.563;  int'f:   0.492; 
+  100.000% NotCoExistence(E, b)         conf.:   0.250;  int'f:   0.141; 
+  100.000% NotCoExistence(E, c)         conf.:   0.250;  int'f:   0.141; 
+  100.000% NotCoExistence(E, d)         conf.:   0.375;  int'f:   0.211; 
+  100.000% NotChainSuccession(E, e)     conf.:   0.500;  int'f:   0.281; 
+  100.000% NotCoExistence(E, f)         conf.:   0.375;  int'f:   0.211; 
+  100.000% NotChainSuccession(E, i)     conf.:   0.563;  int'f:   0.352; 
+  100.000% NotChainSuccession(E, o)     conf.:   0.250;  int'f:   0.141; 
+  100.000% Precedence(i, E)             conf.:   0.625;  int'f:   0.352; 
+  
+ }
+
+ [I] => {
+  
+ }
+
+ [O] => {
+  
+ }
+
+ [U] => {
+  
+ }
+[a] => {
+  100.000% AtMost1(a)                   conf.:   0.875;  int'f:   0.766; 
+  100.000% NotSuccession(a, E)          conf.:   0.563;  int'f:   0.492; 
+  100.000% NotChainSuccession(a, f)     conf.:   0.375;  int'f:   0.328; 
+  100.000% NotChainSuccession(a, i)     conf.:   0.625;  int'f:   0.547; 
+  100.000% NotChainSuccession(a, o)     conf.:   0.250;  int'f:   0.219; 
+  
+ }
+
+ [b] => {
+  100.000% AlternatePrecedence(a, b)    conf.:   0.875;  int'f:   0.219; 
+  100.000% NotCoExistence(b, E)         conf.:   0.250;  int'f:   0.141; 
+  100.000% NotSuccession(b, a)          conf.:   0.250;  int'f:   0.219; 
+  100.000% NotCoExistence(b, e)         conf.:   0.250;  int'f:   0.125; 
+  100.000% NotCoExistence(b, i)         conf.:   0.250;  int'f:   0.156; 
+  
+ }
+
+ [c] => {
+  100.000% AlternatePrecedence(a, c)    conf.:   0.875;  int'f:   0.219; 
+  100.000% NotCoExistence(c, E)         conf.:   0.250;  int'f:   0.141; 
+  100.000% NotSuccession(c, a)          conf.:   0.250;  int'f:   0.219; 
+  100.000% NotCoExistence(c, e)         conf.:   0.250;  int'f:   0.125; 
+  100.000% NotCoExistence(c, i)         conf.:   0.250;  int'f:   0.156; 
+  
+ }
+
+ [d] => {
+  100.000% AtMost1(d)                   conf.:   0.375;  int'f:   0.141; 
+  100.000% AlternatePrecedence(a, d)    conf.:   0.875;  int'f:   0.328; 
+  100.000% NotCoExistence(d, B)         conf.:   0.375;  int'f:   0.141; 
+  100.000% NotCoExistence(d, E)         conf.:   0.375;  int'f:   0.211; 
+  100.000% NotSuccession(d, a)          conf.:   0.375;  int'f:   0.328; 
+  100.000% AlternateSuccession(d, f)    conf.:   0.375;  int'f:   0.141; 
+  100.000% NotCoExistence(d, i)         conf.:   0.375;  int'f:   0.234; 
+  
+ }
+
+ [e] => {
+  100.000% AtMost2(e)                   conf.:   0.500;  int'f:   0.250; 
+  100.000% NotChainSuccession(e, E)     conf.:   0.500;  int'f:   0.281; 
+  100.000% RespondedExistence(e, a)     conf.:   0.500;  int'f:   0.438; 
+  100.000% NotChainSuccession(e, a)     conf.:   0.500;  int'f:   0.438; 
+  100.000% NotCoExistence(e, b)         conf.:   0.250;  int'f:   0.125; 
+  100.000% NotCoExistence(e, c)         conf.:   0.250;  int'f:   0.125; 
+  100.000% NotChainSuccession(e, i)     conf.:   0.500;  int'f:   0.313; 
+  100.000% NotChainSuccession(e, o)     conf.:   0.250;  int'f:   0.125; 
+  
+ }
+[f] => {
+  100.000% AtMost1(f)                   conf.:   0.375;  int'f:   0.141; 
+  100.000% AlternatePrecedence(a, f)    conf.:   0.875;  int'f:   0.328; 
+  100.000% NotCoExistence(f, B)         conf.:   0.375;  int'f:   0.141; 
+  100.000% NotCoExistence(f, E)         conf.:   0.375;  int'f:   0.211; 
+  100.000% NotSuccession(f, a)          conf.:   0.375;  int'f:   0.328; 
+  100.000% CoExistence(f, d)            conf.:   0.375;  int'f:   0.141; 
+  100.000% NotSuccession(f, d)          conf.:   0.375;  int'f:   0.141; 
+  100.000% NotSuccession(f, e)          conf.:   0.375;  int'f:   0.188; 
+  100.000% NotCoExistence(f, i)         conf.:   0.375;  int'f:   0.234; 
+  
+ }
+
+ [i] => {
+  100.000% AtMost3(i)                   conf.:   0.625;  int'f:   0.391; 
+  100.000% NotChainSuccession(i, a)     conf.:   0.625;  int'f:   0.547; 
+  100.000% NotCoExistence(i, b)         conf.:   0.250;  int'f:   0.156; 
+  100.000% NotCoExistence(i, c)         conf.:   0.250;  int'f:   0.156; 
+  100.000% NotCoExistence(i, d)         conf.:   0.375;  int'f:   0.234; 
+  100.000% NotChainSuccession(i, e)     conf.:   0.500;  int'f:   0.313; 
+  100.000% NotCoExistence(i, f)         conf.:   0.375;  int'f:   0.234; 
+  100.000% NotChainSuccession(i, o)     conf.:   0.250;  int'f:   0.156; 
+  
+ }
+
+ [o] => {
+  100.000% AlternatePrecedence(a, o)    conf.:   0.875;  int'f:   0.219; 
+  100.000% AlternatePrecedence(e, o)    conf.:   0.500;  int'f:   0.125; 
+  100.000% AlternatePrecedence(i, o)    conf.:   0.625;  int'f:   0.156; 
+  100.000% NotSuccession(o, E)          conf.:   0.250;  int'f:   0.141; 
+  100.000% NotSuccession(o, a)          conf.:   0.250;  int'f:   0.219; 
+  100.000% NotSuccession(o, e)          conf.:   0.250;  int'f:   0.125; 
+  100.000% NotSuccession(o, i)          conf.:   0.250;  int'f:   0.156; 
+  
+ }
+
+ [u] => {
+  
+ }
