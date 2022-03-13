@@ -1,1 +1,0 @@
-run-MINERfulEventLogMaker.sh -h

@@ -1,1 +1,0 @@
-run-MINERful.sh -d all -iLF '/home/user/file.xes' -CSV '/home/user/output.csv'
