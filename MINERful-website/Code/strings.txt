@@ -1,0 +1,7 @@
+abcdf
+acbdf
+abdcf
+acdbf
+adef
+aedf
+
