@@ -27,6 +27,20 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 
+        <!--Script JQuery-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+        <!--Run Function when the page has been loaded correctly-->
+        <script>
+            //run the function after a timeout
+            window.onload=setTimeout(function(){showBox("dSpecification")}, 2000);
+
+            window.onload=setTimeout(function(){showBox("dSpecificationD")}, 2500);
+
+            window.onload=setTimeout(function(){showBox("dSpecificationS")}, 3000);
+
+        </script>
+
 
     </head>
 
@@ -207,9 +221,9 @@
                 </div>
 
                 <!--Grey Column-->
-                <div class="col-sm-12 col-md-8 " >
+                <div class="col-sm-12 col-md-8 " id="dSpecification" style="display: none; text-align: center;">
 
-                    <p style="text-align: center;">
+                    <p>
                         A <strong>description</strong> consists in exposing in natural language the reality to be modeled. Given a description you can proceed by creating a 
                         <strong>specification</strong>, which will have to respect and model in a logical and precise way the reality exposed by the description, minimizing ambiguities.
                         It is represented through 
@@ -236,7 +250,7 @@
 
                     <br>
 
-                    <ul>
+                    <ul id="dSpecificationD" style="display: none;">
                         <li>
                             <p>
                                 Every process instance starts with receiving an invoice.  --> <strong>Receive invoice</strong>
@@ -292,7 +306,7 @@
 
                     <br>
                     
-                    <img src="../../Contents/examples1.png" class="img-fluid" alt="Responsive image" >
+                    <img src="../../Contents/examples1.png" class="img-fluid" alt="Responsive image" id="dSpecificationS" style="display: none;">
 
                 </div>
 

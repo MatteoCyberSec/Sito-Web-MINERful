@@ -26,7 +26,30 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+        
+        <!--Script JQuery-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 
+        <!--Run Function when the page has been loaded correctly-->
+        <script>
+            //run the function after a timeout
+            window.onload=setTimeout(function(){showBox("img1")}, 1000);
+
+            window.onload=setTimeout(function(){showBox("text1")}, 1500);
+
+            window.onload=setTimeout(function(){showBox("img2")}, 2000);
+
+            window.onload=setTimeout(function(){showBox("text2")}, 2500);
+
+            window.onload=setTimeout(function(){showBox("img3")}, 3000);
+
+            window.onload=setTimeout(function(){showBox("text3")}, 3500);
+
+            window.onload=setTimeout(function(){showBox("img4")}, 4000);
+
+            window.onload=setTimeout(function(){showBox("text4")}, 4500);
+
+        </script>
         
     </head>
 
@@ -213,19 +236,16 @@
             
 
                 <!--Column-->
-                <div class="col-sm-12 col-md-1  ">
+                <div class="col-sm-12 col-md-1 " id="img1" style="display: none;">
 
                     <img src="../../Contents/template1.png" class="img-fluid" alt="Responsive image" >
 
                 </div>
 
                 <!--Column-->
-                <div class="col-sm-12 col-md-3 ">
+                <div class="col-sm-12 col-md-3 " id="text1" style="display: none;">
 
                     <p>
-
-                        <br>
-                        <br>
                         <strong>Init(a)</strong>: Every process instance starts with activity <strong>a</strong>.
 
                         <br>
@@ -270,19 +290,16 @@
                
 
                 <!--Column-->
-                <div class="col-sm-12 col-md-1 ">
+                <div class="col-sm-12 col-md-1 " id="img2" style="display: none;">
 
                     <img src="../../Contents/template2.png" class="img-fluid" alt="Responsive image" >
 
                 </div>
 
                 <!--Column-->
-                <div class="col-sm-12 col-md-3 ">
+                <div class="col-sm-12 col-md-3 " id="text2" style="display: none;">
 
                     <p>
-
-                        <br>
-                        <br>
                         <strong>End(a)</strong>: Every process instance ends with activity <strong>a</strong>.
 
                         <br>
@@ -327,19 +344,16 @@
                 </div>
 
                 <!--Column-->
-                <div class="col-sm-12 col-md-1">
+                <div class="col-sm-12 col-md-1" id="img3" style="display: none;">
  
                     <img src="../../Contents/template3.png" class="img-fluid" alt="Responsive image" >
 
                 </div>
 
                 <!--Column-->
-                <div class="col-sm-12 col-md-3 ">
+                <div class="col-sm-12 col-md-3 " id="text3" style="display: none;">
 
                     <p>
-
-                        <br>
-                        <br>
                         <strong>Participation(a)</strong>: Activity <strong>a</strong> occurs at least once.
 
                         <br>
@@ -383,19 +397,16 @@
 
                 
                 <!--Column-->
-                <div class="col-sm-12 col-md-1 ">
+                <div class="col-sm-12 col-md-1 " id="img4" style="display: none;">
 
                     <img src="../../Contents/template4.png" class="img-fluid" alt="Responsive image" >
 
                 </div>
 
                 <!--Column-->
-                <div class="col-sm-12 col-md-3 ">
+                <div class="col-sm-12 col-md-3 " id="text4" style="display: none;">
 
                     <p>
-
-                        <br>
-                        <br>
                         <strong>AtMostOne(a)</strong>: Activity <strong>a</strong> occurs at most once.
 
                         <br>

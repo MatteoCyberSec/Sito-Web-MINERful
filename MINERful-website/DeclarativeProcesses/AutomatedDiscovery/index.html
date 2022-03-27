@@ -27,6 +27,16 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 
+        <!--Script JQuery-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+        <!--Run Function when the page has been loaded correctly-->
+        <script>
+            //run the function after a timeout
+            window.onload=setTimeout(function(){showBox("automated")}, 2000);
+
+        </script>
+
 
     </head>
 
@@ -206,9 +216,9 @@
                 </div>
 
                 <!--Column-->
-                <div class="col-sm-12 col-md-8">
+                <div class="col-sm-12 col-md-8" id="automated" style="display: none; text-align: center;">
 
-                    <p style="text-align: center;">
+                    <p>
                         Automated process discovery techniques enable users to generate business process models from event logs extracted from enterprise information systems. 
                         Traditional techniques in this field generate procedural process models (e.g., in the BPMN notation). When dealing with highly variable processes, 
                         the resulting procedural models are often too complex to be practically usable. An alternative approach is to discover declarative process models, 
