@@ -27,6 +27,16 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 
+        <!--Script JQuery-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+        <!--Run Function when the page has been loaded correctly-->
+        <script>
+            //run the function after a timeout
+            window.onload=setTimeout(function(){showBox("boxG")}, 2000);
+
+        </script>
+
         
     </head>
 
@@ -203,7 +213,7 @@
                 </div>
 
                 <!--Grey Column-->
-                <div class="col-sm-12 col-md-4 " id="boxG">
+                <div class="col-sm-12 col-md-4 " id="boxG" style="display: none;">
 
                     <h3>Where to contact me?</h3>
 
@@ -220,26 +230,29 @@
                         <br>
                         <i class="fas fa-envelope"></i>
                         <a target="_blank" title="Click to send an email to claudio di ciccio" href="mailto:diciccio@di.uniroma1.it">dc.claudio@gmail.com</a>.
-                    </p>
+                    
+                        <br>
+                        <br>
 
-                    <p>
                         <i class="fas fa-landmark"></i>
                         <a target="_blank" title="Visit the Sapienza website" href="https://www.uniroma1.it/en">Sapienza University of Rome</a>
 
                         <br>
                         <a target="_blank" title="Visit the Department of Computer Science website" href="https://www.di.uniroma1.it/en">Department of Computer Science</a>
-                    </p>
+                    
+                        <br>
+                        <br>
 
-                    <p>
                         <i class="fas fa-map-marked-alt"></i>
                         <a target="_blank" title="visit the institutional headquarters of claudio di ciccio on Goggole maps" href="https://www.google.com/maps/place/Viale+Regina+Elena,+295,+00161+Roma+RM/@41.905063,12.515481,17z/data=!3m1!4b1!4m5!3m4!1s0x132f6177f1f7a17f:0x400485c29d998b04!8m2!3d41.905063!4d12.5176697">Viale Regina Elena 295, 00161 Rome, Italy</a>
 
                         <br>
                         <i class="fas fa-building"></i>
                         Building E (RM113), Room E104
-                    </p>
+                    
+                        <br>
+                        <br>
 
-                    <p>
                         <i class="fas fa-phone-alt"></i>
                         +39 06 4925 5465
                     </p>
@@ -252,7 +265,7 @@
                 </div>
 
                 <!--Grey Column-->
-                <div class="col-sm-12 col-md-4 " id="boxG">
+                <div class="col-sm-12 col-md-4 " id="boxG" >
 
                     <img src="../../Contents/contact1.png" class="img-fluid" alt="Responsive image">
 
