@@ -76,4 +76,11 @@ function copy(text)
     //remove dummy input from the body
     document.body.removeChild(aux);
 }
+ 
+//shows in slow mode the container given id in input 
+function showBox(name) 
+{
+    name = "#" + name ;
     
+    $(name).show("slow");
+} 

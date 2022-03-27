@@ -27,6 +27,14 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 
+        <!--Script JQuery-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+        <!--Run Function when the page has been loaded correctly-->
+        <script>
+            //run the function after a timeout
+            window.onload=setTimeout(function(){showBox("boxG")}, 1000);;
+        </script>
         
     </head>
 
@@ -206,7 +214,7 @@
                 </div>
 
                 <!--Grey Column-->
-                <div class="col-sm-12 col-md-4 " id="boxG">
+                <div class="col-sm-12 col-md-4 " id="boxG" style="display: none;">
 
                     <h2>How to install?</h2>
 

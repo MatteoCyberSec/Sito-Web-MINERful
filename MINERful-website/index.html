@@ -27,6 +27,18 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 
+        <!--Script JQuery-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+        <!--Run Function when the page has been loaded correctly-->
+        <script>
+            //run the function after a timeout
+            window.onload=setTimeout(function(){showBox("img")}, 1000);
+
+            window.onload=setTimeout(function(){showBox("homeDiscover")}, 1500);
+
+        </script>
+
 
     </head> 
 
@@ -195,7 +207,6 @@
             
         </div>
         
-         
 
         <!--Grey Container-->
         <div class="container-fluid" id="boxG" >
@@ -209,29 +220,33 @@
                 </div>
 
                 <!--Column-->
-                <div class="col-sm-12 col-md-4 ">
+                <div class="col-sm-12 col-md-4 " id="img" style="display: none;">
 
                     <img src="Contents/home1.svg" class="img-fluid" alt="Responsive image" >
 
                 </div>
 
                 <!--Column-->
-                <div class="col-sm-12 col-md-4 ">
+                <div class="col-sm-12 col-md-4 " >
 
                     <h2>What is MINERful?</h2>
                     
-                    <p>
+                    <p id="homeDiscover" style="display:none;">
                         MINERful is a process mining, simulation, and analysis tool for 
                         
                         <a title="Visit the page about declarative process specifications" href="DeclarativeProcesses/DeclareProcessSpecification/index.html">
                             
                             declarative process specifications
                         </a>.
-                    </p>
+                    
+                        <br>
+                        <br>
         
-                    <p>The main functionalities of MINERful are:</p>
+                        The main functionalities of MINERful are:
 
-                    <p>
+                        <br>
+                        <br>
+
                         <a title="Visit the page about discover process map" href="Functionality/DiscoverProcessMap/index.html">
                             
                             Discovery of declarative specifications of process control-flows
@@ -245,9 +260,10 @@
                         <a target="_blank" title="Visit the MXML description page" href="http://processmining.org/old-version/mxml.html"><i class="fas fa-external-link-alt"></i>MXML</a>,
 
                         or text files (a collection of strings, in which every character is considered as an event, every line as a trace);
-                    </p>
 
-                    <p>
+                        <br>
+                        <br>
+                    
                         Simulation of declarative specifications of process control-flows and 
 
                         <a title="Visit the page about Create Event Logs"  href="Functionality/CreateEventLogs/index.html">creation of synthetic event logs</a>. 
@@ -261,26 +277,27 @@
                         <a target="_blank" title="Visit the XES standard portal" href="http://www.xes-standard.org/"><i class="fas fa-external-link-alt"></i>XES</a> or
                     
                         <a target="_blank" title="Visit the MXML description page" href="http://processmining.org/old-version/mxml.html"><i class="fas fa-external-link-alt"></i>MXML</a> files;
-                    </p>
+                    
+                        <br>
+                        <br>
 
-                    <p>
                         <a title="Visit the page about perform fitness check" href="Functionality/PerformFitnessCheck/index.html">Perform Fitness Check</a>
                         
                         starting from the process map, in addition to the event log, analyzing them and exporting the result.
-                    </p>
+                    
+                        <br>
+                        <br>
 
-                    <p>
                         <a title="Visit the page about generate automaton" href="Functionality/GenerateAutomaton/index.html">Generate Automaton</a>
                         
                         is starting from a process map.
-                    </p>
+                    
+                        <br>
+                        <br>
 
-                    <p>
                         <a title="Visit the page about Simplify Model" href="Functionality/SimplifyModel/index.html">Simplification</a>
                         , and inconsistency removal, of declarative specifications of process control-flows.
                     </p>
-
-                    
 
                 </div>
 
@@ -307,7 +324,7 @@
                 <!--Column-->
                 <div class="col-sm-12 col-md-4 ">
 
-                    <img src="Contents/icona1.png" class="img-fluid" alt="Responsive image" width="100" >
+                    <img src="Contents/icona1.png" class="img-fluid" alt="Responsive image" width="100">
 
                     <h3>Mine Declarative Processes</h3>
 
