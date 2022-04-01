@@ -219,9 +219,12 @@
                 <div class="col-sm-12 col-md-8" id="automated" style="display: none; text-align: center;">
 
                     <p>
-                        Automated process discovery techniques enable users to generate business process models from event logs extracted from enterprise information systems. 
+                        Automated process discovery techniques enable users to generate 
+                        <a target="_blank" title="Visit the page about business process models" href="https://en.wikipedia.org/wiki/Business_process_modeling"><i class="fas fa-external-link-alt"></i>business process models</a>
+                        from event logs extracted from enterprise information systems. 
                         Traditional techniques in this field generate procedural process models (e.g., in the BPMN notation). When dealing with highly variable processes, 
-                        the resulting procedural models are often too complex to be practically usable. An alternative approach is to discover declarative process models, 
+                        the resulting procedural models are often too complex to be practically usable. An alternative approach is to discover 
+                        <a target="_blank" title="Visit the page about declarative process specification" href="../DeclareProcessSpecification/index.html">declarative process models</a>,
                         which represent the behavior of the process as a set of constraints. Declarative process discovery techniques have been shown to produce simpler 
                         models than procedural ones, particularly for processes with high variability. However, the bulk of approaches for automated discovery of declarative 
                         process models focus on the control-flow perspective, ignoring the data perspective.
@@ -263,7 +266,9 @@
                         with low variability (i.e., relatively low number of variants), whereas declarative languages are suitable for processes with high variability.
 
                         <br>
-                        We find two approaches for automated discovery of declarative process models with correlated data conditions. Both techniques start by discovering a 
+                        We find two approaches for automated discovery of 
+                        <a target="_blank" title="Visit the page about declarative process specification" href="../DeclareProcessSpecification/index.html">declarative process models</a>
+                        with correlated data conditions. Both techniques start by discovering a 
                         set of frequent constraints from an event log. A frequent constraint is a constraint having a high number of constraint instances, i.e., pairs of 
                         events (one activation and one target) satisfying it. In the first approach, we cluster the target payloads to find groups of targets with similar 
                         payloads. These groups are used as labels for rule mining. In particular, the labels together with the features extracted from the activation 
