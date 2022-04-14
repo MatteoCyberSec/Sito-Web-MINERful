@@ -96,6 +96,8 @@
                             <li ><a class="nav-link" href="../../Guide/RunWithShellScripts/index.html" >Run with Shell Scripts</a></li>
 
                             <li ><a class="nav-link" href="../../Guide/RunExample/index.html" >Run Example</a></li>
+
+                            <li ><a class="nav-link" href="../../Guide/AutomatedDiscovery/index.html" >Automated Discovery</a></li>
                            
                         </ul>
 
@@ -143,10 +145,6 @@
 
                             <li ><a class="nav-link" href="../DeclareTemplates/index.html" >Declare Templates</a></li>
 
-                            <li ><a class="nav-link" href="../AutomatedDiscovery/index.html" >Automated Discovery</a></li>
-
-
-
                         </ul>
 
                     </li>
@@ -178,7 +176,7 @@
                     </li>
 
                     <!--Click Button-->
-                    <button type="button" title="Download MINERful package on github" id=b1 class="btn btn-outline-secondary" onclick="apriSchedaNuova()">Download</button>
+                    <button type="button" title="Download MINERful package on github" id=b1 class="btn btn-secondary" onclick="apriSchedaNuova()">Download</button>
             
                 </ul>
 
@@ -507,7 +505,9 @@
         </div>
 
 
-        <!--Grey Column-->
+
+
+        <!--White Column-->
         <div class="container-fluid" id="boxG" >
 
             <!--Table-->
@@ -515,167 +515,6 @@
 
                 <!--Column-->
                 <div class="col-sm-12 col-md-12 " id="boxG">
-
-                    <h2 style="text-align: center;">Compliance checking</h2>
-
-                </div>
-
-                <!--Grey Column-->
-                <div class="col-sm-12 col-md-8 " >
-
-                    <p style="text-align: center;">
-                        Starting from the construction of a <strong>model</strong> in this case a <strong>Workflow net</strong> verifies the consistency of it with the 
-                        <strong>constraints</strong> defined by the modeling of the reality in question by the <strong>specifications</strong>.
-                        In this example is used a <strong>Workflow net</strong> that is a particular 
-                        
-                        <a target="_blank" title="Visit the pdf about Petri net and Workflow net" href="https://www.researchgate.net/publication/347240375_Conformance_checking_of_mixed-paradigm_process_models">
-                            
-                            <i class="fas fa-external-link-alt"></i>
-                            Petri net
-
-                        </a>
-                        
-                        (P,T,F) where : 
-
-                        <!--Container to align to the center-->
-                        <div style="display: block; text-align: center;">
-
-                            <ol type="i" style="text-align: left; display: inline-block;">
-
-                                <li>
-                                    <!--use unicode mathematical symbols and formulas through tag i-->
-                                    <p>
-                                        there exists one and only one input place <i>p<sub>i</sub> &isin; P</i> such that <i>p<sub>i</sub> = &empty;</i>
-                                    </p>
-                                </li>
-
-                                <li>
-                                    <!--use unicode mathematical symbols and formulas through tag i-->
-                                    <p>
-                                        there exists one and only one output place <i>p<sub>o</sub> &isin; O</i> such that <i>p<sub>o</sub> = &empty;</i>
-                                    </p>
-                                </li>
-
-                                <li>
-                                    <!--use unicode mathematical symbols and formulas through tag i-->
-                                    <p>
-                                        every node <i>x &isin; P &cup; T is on a walk from p<sub>i</sub> to p<sub>o</sub></i>
-                                    </p>
-                                </li>
-
-                                <li>
-                                    <!--use unicode mathematical symbols and formulas through tag i-->
-                                    <p>
-                                        the initial marking <i>&micro;<sub>0</sub></i> is such that <i>&micro;<sub>0</sub>(p<sub>i</sub>) = 1</i> and 
-                                        <i>&micro;<sub>0</sub>(p<sub>i</sub>) = 0</i>  for every <i>p &isin; P\{p<sub>i</sub>}</i>
-                                    </p>
-                                </li>
-
-                                <li>
-                                    <!--use unicode mathematical symbols and formulas through tag i-->
-                                    <p>
-                                        the final marking set is a singleton <i>M<sub>F</sub> = {&micro;<sub>F</sub>}</i> where <i>&micro;<sub>F</sub>(p<sub>o</sub>) = 1</i> and
-                                        <i>&micro;<sub>F</sub>(p<sup>'</sup>) = 0</i>  for every <i>p<sup>'</sup>&isin; P\{p<sub>o</sub>}</i>
-                                    </p>
-                                </li>
-
-                            </ol> 
-                        </div>
-                    
-                    </p>
-
-                    <br>
-
-                </div>
-
-
-                <!--Empty Column-->
-                <div class="col-sm-12 col-md-12 ">
-
-                </div>
-
-
-                <!--Column-->
-                <div class="col-sm-12 col-md-5 ">
-
-                    <h3>Model</h3>
-
-                    <br>
-
-                    <img src="../../Contents/examples3.png" class="img-fluid" alt="Responsive image" >
-                    
-                </div>
-
-                <!--Column-->
-                <div class="col-sm-12 col-md-3 ">
-
-                    <h3>Constraints</h3>
-
-                    <br>
-
-                    <p style="font-variant: small-caps;">
-                        
-
-                        <i class="far fa-check-circle"></i>
-                        Init(a)
-                        
-                
-                        <br>
-                        <i class="far fa-times-circle"></i>
-                        Participation(d)
-                        
-                        
-                        <br>
-                        <i class="far fa-times-circle"></i>
-                        NotSuccession(d,e)
-                        
-
-                        <br>
-                        <i class="far fa-check-circle"></i>
-                        NotChainSuccession(a,d)
-                        
-
-                        <br>
-                        <i class="far fa-times-circle"></i>
-                        End(d)
-                        
-                        
-                        <br>
-                        <i class="far fa-check-circle"></i>
-                        Precedence(b,d)
-                        
-
-                        <br>
-                        <i class="far fa-check-circle"></i>
-                        CoExistence(b,c)
-                        
-
-                        <br>
-                        <i class="far fa-check-circle"></i>
-                        Response(a,c)
-                        
-                    </p>
-                    
-                </div>
-
-                <!--Empty Column-->
-                <div class="col-sm-12 col-md-12" id="boxG">
-
-                </div>
-
-            </div>
-                
-        </div>
-
-
-        <!--White Column-->
-        <div class="container-fluid" id="boxW" >
-
-            <!--Table-->
-            <div class="row justify-content-center" >
-
-                <!--Column-->
-                <div class="col-sm-12 col-md-12 " id="boxW">
 
                     <h2 style="text-align: center;">Modelling of a specification</h2>
 
@@ -756,7 +595,7 @@
                 </div>
 
                 <!--Empty Column-->
-                <div class="col-sm-12 col-md-12" id="boxW">
+                <div class="col-sm-12 col-md-12" id="boxG">
 
                 </div>
 
@@ -781,17 +620,6 @@
                         <i class="fab fa-github"></i>
                     </a>
                     
-                    <!-- Linkedin -->
-                    <a target="_blank" class="btn btn-outline-light btn-floating m-1" href="https://it.linkedin.com/in/claudiodiciccio" role="button">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
-
-                    <!-- Google -->
-                    <a target="_blank" class="btn btn-outline-light btn-floating m-1" href="mailto:diciccio@di.uniroma1.it" role="button">
-                        <i class="fab fa-google"></i>
-                    </a>
-            
-
                 </section>
             
         
@@ -836,6 +664,10 @@
 
                                 <li>
                                     <a href="../../Guide/RunExample/index.html">Run Examples</a>
+                                </li>
+
+                                <li>
+                                    <a href="../../Guide/AutomatedDiscovery/index.html">Automated Discovery</a>
                                 </li>
 
                             </ul>
@@ -896,10 +728,6 @@
 
                                 <li>
                                     <a href="../DeclareTemplates/index.html">Declare Templates</a>
-                                </li>
-
-                                <li>
-                                    <a href="../AutomatedDiscovery/index.html">Automated Discovery</a>
                                 </li>
 
                             </ul>

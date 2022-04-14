@@ -1,0 +1,320 @@
+<html>
+    <head>
+
+        <title>Discard</title>
+
+        <!-- Meta tag -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!--Link style sheet css Bootstrap online-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        
+        <!--Link javascript Bootstrap online-->
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        
+        <!--Link style sheet local css-->
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+
+        <!--Link style sheet icon font-awesome online-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+
+        <!--Script JavaScript-->
+        <script type="text/javascript" lang="javascript" src="main.js"></script>
+
+        <!--Link Google Font style Roboto-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+        <!--Script JQuery-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+        
+
+
+    </head> 
+
+    <body>
+
+        
+
+        
+
+                
+                
+        <!--Grey Column-->
+        <div class="container-fluid" id="boxG" >
+
+            <!--Table-->
+            <div class="row justify-content-center" >
+
+                <!--Column-->
+                <div class="col-sm-12 col-md-12 " id="boxG">
+
+                    <h2 style="text-align: center;">Compliance checking</h2>
+
+                </div>
+
+                <!--Grey Column-->
+                <div class="col-sm-12 col-md-8 " >
+
+                    <p style="text-align: center;">
+                        Starting from the construction of a <strong>model</strong> in this case a <strong>Workflow net</strong> verifies the consistency of it with the 
+                        <strong>constraints</strong> defined by the modeling of the reality in question by the <strong>specifications</strong>.
+                        In this example is used a <strong>Workflow net</strong> that is a particular 
+                        
+                        <a target="_blank" title="Visit the pdf about Petri net and Workflow net" href="https://www.researchgate.net/publication/347240375_Conformance_checking_of_mixed-paradigm_process_models">
+                            
+                            <i class="fas fa-external-link-alt"></i>
+                            Petri net
+
+                        </a>
+                        
+                        (P,T,F) where : 
+
+                        <!--Container to align to the center-->
+                        <div style="display: block; text-align: center;">
+
+                            <ol type="i" style="text-align: left; display: inline-block;">
+
+                                <li>
+                                    <!--use unicode mathematical symbols and formulas through tag i-->
+                                    <p>
+                                        there exists one and only one input place <i>p<sub>i</sub> &isin; P</i> such that <i>p<sub>i</sub> = &empty;</i>
+                                    </p>
+                                </li>
+
+                                <li>
+                                    <!--use unicode mathematical symbols and formulas through tag i-->
+                                    <p>
+                                        there exists one and only one output place <i>p<sub>o</sub> &isin; O</i> such that <i>p<sub>o</sub> = &empty;</i>
+                                    </p>
+                                </li>
+
+                                <li>
+                                    <!--use unicode mathematical symbols and formulas through tag i-->
+                                    <p>
+                                        every node <i>x &isin; P &cup; T is on a walk from p<sub>i</sub> to p<sub>o</sub></i>
+                                    </p>
+                                </li>
+
+                                <li>
+                                    <!--use unicode mathematical symbols and formulas through tag i-->
+                                    <p>
+                                        the initial marking <i>&micro;<sub>0</sub></i> is such that <i>&micro;<sub>0</sub>(p<sub>i</sub>) = 1</i> and 
+                                        <i>&micro;<sub>0</sub>(p<sub>i</sub>) = 0</i>  for every <i>p &isin; P\{p<sub>i</sub>}</i>
+                                    </p>
+                                </li>
+
+                                <li>
+                                    <!--use unicode mathematical symbols and formulas through tag i-->
+                                    <p>
+                                        the final marking set is a singleton <i>M<sub>F</sub> = {&micro;<sub>F</sub>}</i> where <i>&micro;<sub>F</sub>(p<sub>o</sub>) = 1</i> and
+                                        <i>&micro;<sub>F</sub>(p<sup>'</sup>) = 0</i>  for every <i>p<sup>'</sup>&isin; P\{p<sub>o</sub>}</i>
+                                    </p>
+                                </li>
+
+                            </ol> 
+                        </div>
+                    
+                    </p>
+
+                    <br>
+
+                </div>
+
+
+                <!--Empty Column-->
+                <div class="col-sm-12 col-md-12 ">
+
+                </div>
+
+
+                <!--Column-->
+                <div class="col-sm-12 col-md-5 ">
+
+                    <h3>Model</h3>
+
+                    <br>
+
+                    <img src="../../Contents/examples3.png" class="img-fluid" alt="Responsive image" >
+                    
+                </div>
+
+                <!--Column-->
+                <div class="col-sm-12 col-md-3 ">
+
+                    <h3>Constraints</h3>
+
+                    <br>
+
+                    <p style="font-variant: small-caps;">
+                        
+
+                        <i class="far fa-check-circle"></i>
+                        Init(a)
+                        
+                
+                        <br>
+                        <i class="far fa-times-circle"></i>
+                        Participation(d)
+                        
+                        
+                        <br>
+                        <i class="far fa-times-circle"></i>
+                        NotSuccession(d,e)
+                        
+
+                        <br>
+                        <i class="far fa-check-circle"></i>
+                        NotChainSuccession(a,d)
+                        
+
+                        <br>
+                        <i class="far fa-times-circle"></i>
+                        End(d)
+                        
+                        
+                        <br>
+                        <i class="far fa-check-circle"></i>
+                        Precedence(b,d)
+                        
+
+                        <br>
+                        <i class="far fa-check-circle"></i>
+                        CoExistence(b,c)
+                        
+
+                        <br>
+                        <i class="far fa-check-circle"></i>
+                        Response(a,c)
+                        
+                    </p>
+                    
+                </div>
+
+                <!--Empty Column-->
+                <div class="col-sm-12 col-md-12" id="boxG">
+
+                </div>
+
+            </div>
+                
+        </div>
+
+
+        <!--Grey Container-->
+        <div class="container-fluid" id="boxW" >
+
+            <!--Table-->
+            <div class="row justify-content-center" >
+
+                <!--Column-->
+                <div class="col-sm-12 col-md-12 " id="boxW">
+
+                    <h2 style="text-align: center;">Declarative specification of a process model</h2>
+
+                    <br>
+
+                </div>
+                
+                <!--Column-->
+                <div class="col-sm-12 col-md-9 ">
+
+                    <!--Numered List-->
+                    <ol>
+                        <li>
+                            <p>
+                                <strong>Check stock availability</strong> must occur right after the start.
+                            </p>
+
+                            <ol type="i">
+                                <li>
+                                    <p>
+                                        Right after Check stock availability, either <strong>Manufacture product</strong>.
+                                    </p>
+                                </li>
+
+                                <br>
+
+                                <li>
+                                    <p>
+                                        Right after Check stock availability, <strong>Retrieve product from the warehouse</strong> will occur.
+                                    </p>
+                                </li>
+                            </ol>
+                        </li>
+
+                        <br>
+
+                        <li>
+                            <p>
+                                <strong>Confirm order</strong> may occur once only after Manufacture product or Retrieve product from the warehouse. 
+                            </p>
+
+                            <br>
+
+                            <ol type="i">
+                                <li>
+                                    <p>
+                                        <strong>Emit invoice</strong> must occur once after Confirm order.
+                                    </p>
+                                </li>
+
+                                <ol style="list-style:lower-alpha;">
+                                    <li>
+                                        <p>
+                                            <strong>Receive payment</strong> will occur once after Emit invoice.
+                                        </p>
+                                    </li>
+                                </ol>
+                                
+                                
+                                <br>
+
+                                <li>
+                                    <p>
+                                        <strong>Ship product</strong> must occur once after Confirm order.
+                                    </p>
+                                </li>
+                            </ol>
+                        </li>
+
+                        <br>
+
+                        <li>
+                            <p>
+                                <strong>Archive order</strong> may occur once only after Emit invoice and Confirm order. Archive order must occur right before the end.
+                            </p>
+                        </li>
+
+                    </ol>
+                    
+                </div>
+
+                <!--Column-->
+                <div class="col-sm-12 col-md-12 text-center">
+
+                    <br>
+
+                    <img src="../../Contents/declarative4.png" class="img-fluid" alt="Responsive image" >
+
+                </div>
+
+                <!--Empty Grey Column-->
+                <div class="col-sm-12 col-md-12" id="boxW">
+
+                </div>
+
+            </div>
+                
+        </div>
+
+
+        
+
+
+    </body>
+    
+</html>

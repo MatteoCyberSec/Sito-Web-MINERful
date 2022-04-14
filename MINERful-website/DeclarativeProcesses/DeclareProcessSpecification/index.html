@@ -92,6 +92,8 @@
                             <li ><a class="nav-link" href="../../Guide/RunWithShellScripts/index.html" >Run with Shell Scripts</a></li>
 
                             <li ><a class="nav-link" href="../../Guide/RunExample/index.html" >Run Example</a></li>
+
+                            <li ><a class="nav-link" href="../../Guide/AutomatedDiscovery/index.html" >Automated Discovery</a></li>
                            
                         </ul>
 
@@ -139,10 +141,6 @@
 
                             <li ><a class="nav-link" href="../DeclareTemplates/index.html" >Declare Templates</a></li>
 
-                            <li ><a class="nav-link" href="../AutomatedDiscovery/index.html" >Automated Discovery</a></li>
-
-
-
                         </ul>
 
                     </li>
@@ -174,7 +172,7 @@
                     </li>
 
                     <!--v-->
-                    <button type="button" title="Download MINERful package on github" id=b1 class="btn btn-outline-secondary" onclick="apriSchedaNuova()">Download</button>
+                    <button type="button" title="Download MINERful package on github" id=b1 class="btn btn-secondary" onclick="apriSchedaNuova()">Download</button>
             
                 </ul>
 
@@ -303,7 +301,7 @@
                         Declarative process models consist of a set of constraints exerted over the execution of process activities. DECLARE is a declarative process modelling
                         language that specifies a set of constraint templates along with their graphical notation. The 
                         
-                        <a title="Visit the page about automated discovery" href="../AutomatedDiscovery/index.html">automated discovery</a>
+                        <a title="Visit the page about automated discovery" href="../../Guide/AutomatedDiscovery/index.html">automated discovery</a>
                         
                         of DECLARE models aims at finding those constraints that are verified throughout a given event log. 
 
@@ -434,7 +432,7 @@
                 <!--Column-->
                 <div class="col-sm-12 col-md-4 " id="boxW">
 
-                    <h2>Declarative Model</h2>  <!--modelli imperativi vs modelli dichiarativi-->
+                    <h2>Declarative Model</h2>  
 
                     <br>
 
@@ -512,122 +510,16 @@
         </div>
 
 
-        <!--Grey Container-->
+        
+
+        <!--White Container-->
         <div class="container-fluid" id="boxG" >
 
             <!--Table-->
             <div class="row justify-content-center" >
 
                 <!--Column-->
-                <div class="col-sm-12 col-md-12 " id="boxG">
-
-                    <h2 style="text-align: center;">Declarative specification of a process model</h2>
-
-                    <br>
-
-                </div>
-                
-                <!--Column-->
-                <div class="col-sm-12 col-md-9 ">
-
-                    <!--Numered List-->
-                    <ol>
-                        <li>
-                            <p>
-                                <strong>Check stock availability</strong> must occur right after the start.
-                            </p>
-
-                            <ol type="i">
-                                <li>
-                                    <p>
-                                        Right after Check stock availability, either <strong>Manufacture product</strong>.
-                                    </p>
-                                </li>
-
-                                <br>
-
-                                <li>
-                                    <p>
-                                        Right after Check stock availability, <strong>Retrieve product from the warehouse</strong> will occur.
-                                    </p>
-                                </li>
-                            </ol>
-                        </li>
-
-                        <br>
-
-                        <li>
-                            <p>
-                                <strong>Confirm order</strong> may occur once only after Manufacture product or Retrieve product from the warehouse. 
-                            </p>
-
-                            <br>
-
-                            <ol type="i">
-                                <li>
-                                    <p>
-                                        <strong>Emit invoice</strong> must occur once after Confirm order.
-                                    </p>
-                                </li>
-
-                                <ol style="list-style:lower-alpha;">
-                                    <li>
-                                        <p>
-                                            <strong>Receive payment</strong> will occur once after Emit invoice.
-                                        </p>
-                                    </li>
-                                </ol>
-                                
-                                
-                                <br>
-
-                                <li>
-                                    <p>
-                                        <strong>Ship product</strong> must occur once after Confirm order.
-                                    </p>
-                                </li>
-                            </ol>
-                        </li>
-
-                        <br>
-
-                        <li>
-                            <p>
-                                <strong>Archive order</strong> may occur once only after Emit invoice and Confirm order. Archive order must occur right before the end.
-                            </p>
-                        </li>
-
-                    </ol>
-                    
-                </div>
-
-                <!--Column-->
-                <div class="col-sm-12 col-md-12 text-center">
-
-                    <br>
-
-                    <img src="../../Contents/declarative4.png" class="img-fluid" alt="Responsive image" >
-
-                </div>
-
-                <!--Empty Grey Column-->
                 <div class="col-sm-12 col-md-12" id="boxG">
-
-                </div>
-
-            </div>
-                
-        </div>
-
-
-        <!--White Container-->
-        <div class="container-fluid" id="boxW" >
-
-            <!--Table-->
-            <div class="row justify-content-center" >
-
-                <!--Column-->
-                <div class="col-sm-12 col-md-12" id="boxW">
 
                     <h2 style="text-align: center;">A declarative process specification in Declare</h2>
 
@@ -649,7 +541,7 @@
 
                     <p>
                         <br>
-                        <br>
+                        
                         If an abstract is submitted, a new paper had been written or will be written
 
                         <strong>RespondedExistence(Submit abstract, Write new paper)</strong>
@@ -658,7 +550,7 @@
                 </div>
 
                 <!--Empty White Column-->
-                <div class="col-sm-12 col-md-12 " id=boxW>
+                <div class="col-sm-12 col-md-12 " id=boxG>
 
                 </div>
 
@@ -674,7 +566,7 @@
 
                     <p>
                         <br>
-                        <br>
+                        
                         After the paper submission, a confirmation email is sent
 
                         <strong>Response(Submit papers, Send confirmation email)</strong>
@@ -683,7 +575,7 @@
                 </div>
 
                 <!--Empty White Column-->
-                <div class="col-sm-12 col-md-12 " id=boxW>
+                <div class="col-sm-12 col-md-12 " id=boxG>
 
                 </div>
 
@@ -699,7 +591,7 @@
 
                     <p>
                         <br>
-                        <br>
+                        
                         Only after the paper submission, the paper will be reviewed
 
                         <strong>Succession(Submit papers, Review paper)</strong>
@@ -709,7 +601,7 @@
                 </div>
 
                 <!--Empty White Column-->
-                <div class="col-sm-12 col-md-12 " id=boxW>
+                <div class="col-sm-12 col-md-12 " id=boxG>
 
                 </div>
 
@@ -725,7 +617,7 @@
 
                     <p>
                         <br>
-                        <br>
+                        
                         A paper can be accepted only after it has been reviewed
 
                         <strong>Precedence(Review paper, Accept paper)</strong>
@@ -735,7 +627,7 @@
                 </div>
 
                 <!--Empty White Column-->
-                <div class="col-sm-12 col-md-12 " id=boxW>
+                <div class="col-sm-12 col-md-12 " id=boxG>
 
                 </div>
 
@@ -751,7 +643,7 @@
 
                     <p>
                         <br>
-                        <br>
+                        
                         After the rejection, no further submission follows
 
                         <strong>NotSuccession(Reject paper, Submit paper)</strong>
@@ -761,7 +653,7 @@
                 </div>
 
                 <!--Empty White Column-->
-                <div class="col-sm-12 col-md-12 " id=boxW>
+                <div class="col-sm-12 col-md-12 " id=boxG>
 
                 </div>
 
@@ -789,7 +681,7 @@
                 
 
                 <!--Empty White Column-->
-                <div class="col-sm-12 col-md-12" id=boxW>
+                <div class="col-sm-12 col-md-12" id=boxG>
 
 
                 </div>
@@ -800,13 +692,13 @@
 
 
         <!--Grey Container-->
-        <div class="container-fluid" id="boxG" >
+        <div class="container-fluid" id="boxW" >
 
             <!--Table-->
             <div class="row justify-content-center" >
 
                 <!--Column-->
-                <div class="col-sm-12 col-md-12" id="boxG">
+                <div class="col-sm-12 col-md-12" id="boxW">
 
                     <h2 style="text-align: center;">An example of declarative process specification</h2>
 
@@ -823,7 +715,7 @@
                 </div>
 
                 <!--Empty Grey Column-->
-                <div class="col-sm-12 col-md-12" id="boxG">
+                <div class="col-sm-12 col-md-12" id="boxW">
 
                 </div>
 
@@ -848,17 +740,6 @@
                     <a target="_blank" class="btn btn-outline-light btn-floating m-1" href="https://github.com/cdc08x/MINERful" role="button">
                         <i class="fab fa-github"></i>
                     </a>
-                    
-                    <!-- Linkedin -->
-                    <a target="_blank" class="btn btn-outline-light btn-floating m-1" href="https://it.linkedin.com/in/claudiodiciccio" role="button">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
-
-                    <!-- Google -->
-                    <a target="_blank" class="btn btn-outline-light btn-floating m-1" href="mailto:diciccio@di.uniroma1.it" role="button">
-                        <i class="fab fa-google"></i>
-                    </a>
-            
 
                 </section>
             
@@ -904,6 +785,10 @@
 
                                 <li>
                                     <a href="../../Guide/RunExample/index.html">Run Examples</a>
+                                </li>
+
+                                <li>
+                                    <a href="../../Guide/AutomatedDiscovery/index.html">Automated Discovery</a>
                                 </li>
 
                             </ul>
@@ -964,10 +849,6 @@
 
                                 <li>
                                     <a href="../DeclareTemplates/index.html">Declare Templates</a>
-                                </li>
-
-                                <li>
-                                    <a href="../AutomatedDiscovery/index.html">Automated Discovery</a>
                                 </li>
 
                             </ul>
