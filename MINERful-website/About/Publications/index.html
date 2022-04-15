@@ -1,0 +1,604 @@
+<html>
+    <head>
+
+        <title>Publications</title>
+
+        <!-- Meta tag -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!--Link style sheet css Bootstrap online-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        
+        <!--Link javascript Bootstrap online-->
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        
+        <!--Link style sheet local css-->
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+
+        <!--Link style sheet icon font-awesome online-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+
+        <!--Script JavaScript-->
+        <script type="text/javascript" lang="javascript" src="../../main.js"></script>
+
+        <!--Link Google Font style Roboto-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+
+    </head>
+
+    <body>
+
+        <!--Navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+
+            <!--Brand-->
+            <a class="navbar-brand mx-5" href="../../index.html">
+
+                <img src="../../Contents/logo.svg"  class="d-inline-block align-top img-fluid" alt="" >
+
+            </a>
+
+            <!--Menu button collapsible according to page size-->
+            <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        
+                <!--Collapsible Button Icon-->
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+            <!--Container collapse menu navbar-->
+            <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+
+                <!--Menu-->
+                <ul class="navbar-nav">
+
+                    <li class="nav-item mx-1">
+
+                        <a class="nav-link" href="../../index.html">
+                            <i class="fas fa-home"></i> Home
+                        </a>
+                        
+                    </li>
+
+                    <!--Submenu-->
+                    <li class="nav-item dropdown mx-1" >
+
+                        <a class="nav-link dropdown-toggle "  id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-hourglass-start"></i> Guide
+                        </a>
+
+                        <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown" >
+
+                            <li ><a class="nav-link" href="../../Guide/Installation/index.html">Installation</a></li>
+
+                            <li><a class="nav-link" href="../../Guide/MINERfulAPIs/index.html" >MINERful APIs</a></li>
+
+                            <li><a class="nav-link" href="../../Guide/RunTheJAR/index.html" >Run the JAR</a></li>
+
+                            <li ><a class="nav-link" href="../../Guide/RunWithShellScripts/index.html" >Run with Shell Scripts</a></li>
+
+                            <li ><a class="nav-link" href="../../Guide/RunExample/index.html" >Run Example</a></li>
+
+                            <li ><a class="nav-link" href="../../Guide/AutomatedDiscovery/index.html" >Automated Discovery</a></li>
+                           
+                        </ul>
+
+                    </li>
+
+                    
+
+                    <!--Submenu-->
+                    <li class="nav-item dropdown mx-1" >
+
+                        <a class="nav-link dropdown-toggle "  id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-star"></i> Functionality
+                        </a>
+
+                        <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown" >
+
+                            <li ><a class="nav-link" href="../../Functionality/DiscoverProcessMap/index.html">Discover Process Map</a></li>
+
+                            <li ><a class="nav-link" href="../../Functionality/CreateEventLogs/index.html">Create Event Logs</a></li>
+
+                            <li ><a class="nav-link" href="../../Functionality/PerformFitnessCheck/index.html">Perform Fitness Check</a></li>
+
+                            <li ><a class="nav-link" href="../../Functionality/GenerateAutomaton/index.html">Generate Automaton</a></li>
+
+                            <li ><a class="nav-link" href="../../Functionality/SimplifyModel/index.html">Simplify Model</a></li>
+                           
+                        </ul>
+
+                    </li>
+
+                    
+
+                    <!--Submenu-->
+                    <li class="nav-item dropdown mx-1" >
+
+                        <a class="nav-link dropdown-toggle "  id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-book"></i> Declarative Processes
+                        </a>
+
+                        <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown" >
+
+                            <li ><a class="nav-link" href="../../DeclarativeProcesses/DeclareProcessSpecification/index.html" >Declare Process Specification</a></li>
+
+                            <li ><a class="nav-link" href="../../DeclarativeProcesses/Examples/index.html" >Examples</a></li>
+
+                            <li ><a class="nav-link" href="../../DeclarativeProcesses/DeclareTemplates/index.html" >Declare Templates</a></li>
+
+                        </ul>
+
+                    </li>
+
+                    
+
+                    <!--Submenu-->
+                    <li class="nav-item dropdown mx-1" >
+
+                        <a class="nav-link dropdown-toggle "  id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-info-circle"></i> About
+                        </a>
+
+                        <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown" >
+
+                            <li><a class="nav-link" href="index.html">Publications</a></li>
+
+                            <li><a class="nav-link" href="../RelatedProjects/index.html">Related Projects</a></li>
+
+                            <li><a class="nav-link" href="../License/index.html">License</a></li>
+
+                            <li><a class="nav-link" href="../Contact/index.html">Contact</a></li>
+
+                            <li><a class="nav-link" href="../WorkInProgress/index.html">Work in Progress</a></li>
+  
+                            
+                        </ul>
+
+                    </li>
+
+                    <!--Click Button-->
+                    <button type="button" title="Download MINERful package on github" id=b1 class="btn btn-secondary" onclick="apriSchedaNuova()">Download</button>
+            
+                </ul>
+
+            </div>
+
+        </nav>
+
+       
+
+        <!--Main Image Container-->
+        <div class="container-fluid" id="boxS">
+
+            <!--Table-->
+            <div class="row justify-content-center" >
+
+                <!--Image Column -->
+                <div class="col-sm-12 col-md-12">
+
+                   <h2 style="color: white; font-size: 24px;">Publications</h2>
+
+                </div>
+
+            </div>
+                
+        </div>
+        
+
+        <!--Container-->
+        <div class="container" >
+
+            <!--Table-->
+            <div class="row justify-content-center" >
+
+                <!--Empty White Column-->
+                <div class="col-sm-12 col-md-12 " id=boxW>
+
+                </div>
+
+                <!--Grey Column-->
+                <div class="col-sm-12 col-md-4 " id="boxG">
+
+                    <h3>The main discovery algorithm:</h3>
+
+                    <br>
+
+                    <p>
+                        Claudio Di Ciccio, Massimo Mecella: On the Discovery of Declarative Control Flows for Artful Processes. ACM Trans. Management Inf. Syst. 5(4): 24:1-24:37 (2015)
+                    
+                        <br>
+                        <br>
+                    
+                        <!--Dot List-->
+                        <ul>
+                            <li>
+                                DOI: 
+                                <a target="_blank" title="Visit the paper about the Discovery of Declarative Control Flows for Artful Processes" href="https://dl.acm.org/doi/10.1145/2629447">
+                                    
+                                    <i class="fas fa-external-link-alt"></i>
+                                    10.1145/2629447
+                                
+                                </a>
+                            </li>
+
+                            <br>
+
+                            <li>
+                                Presentation: 
+                                <a target="_blank" title="Visit the slides about Automated Discovery of Declarative Process Models" href="https://www.slideshare.net/cdc08x/automated-discovery-of-declarative-process-models">
+                                    
+                                    <i class="fas fa-external-link-alt"></i>
+                                    https://www.slideshare.net/cdc08x/automated-discovery-of-declarative-process-models
+                                
+                                </a>
+                            </li>
+                        </ul>
+                </div>
+
+                <!--Empty White Column-->
+                <div class="col-sm-12 col-md-1 " id=boxW>
+
+                </div>
+
+                <!--Grey Column-->
+                <div class="col-sm-12 col-md-4 " id=boxG>
+
+                    <h3>Discovery of more target-branched (read: more complex) declarative models:</h3>
+
+                    <br>
+
+                    <p>
+                        Claudio Di Ciccio, Fabrizio Maria Maggi, Jan Mendling: Efficient discovery of Target-Branched Declare constraints. Inf. Syst. 56: 258-283 (2016)
+                    
+                        <br>
+                        <br>
+
+                        <!--Dot List-->
+                        <ul>
+                            <li>
+                                DOI: 
+                                <a target="_blank" title="Visit the paper about Efficient discovery of Target-Branched Declare constraints" href="https://www.sciencedirect.com/science/article/abs/pii/S0306437915001271?via%3Dihub">
+                                    
+                                    <i class="fas fa-external-link-alt"></i>
+                                    10.1016/j.is.2015.06.009
+                                
+                                </a>
+                            </li>
+                        </ul>
+                    </p>
+
+                </div>
+
+                <!--Empty White Column-->
+                <div class="col-sm-12 col-md-12 " id=boxW>
+
+                </div>
+
+                <!--Grey Column-->
+                <div class="col-sm-12 col-md-4 " id=boxG>
+
+                    <h3>Getting rid of redundancies and inconsistencies:</h3>
+
+                    <br>
+
+                    <p>
+                        Claudio Di Ciccio, Fabrizio Maria Maggi, Marco Montali, Jan Mendling: Resolving inconsistencies and redundancies in declarative process models. Inf. Syst. 64: 425-446 (2017)
+                    
+                        <br>
+                        <br>
+
+
+                        <!--Dot List-->
+                        <ul>
+                            <li>
+                                DOI: 
+                                <a target="_blank" title="Visit the paper about Resolving inconsistencies and redundancies in declarative process models" href="https://www.sciencedirect.com/science/article/abs/pii/S0306437915302052?via%3Dihub">
+                                    
+                                    <i class="fas fa-external-link-alt"></i>
+                                    10.1016/j.is.2016.09.005
+                                
+                                </a>
+                            </li>
+
+                            <br>
+
+                            <li>
+                                Presentation: 
+                                <a target="_blank" title="Visit the slides about Resolving Inconsistencies and Redundancies in Declarative Process Models" href="https://www.slideshare.net/cdc08x/resolving-inconsistencies-and-redundancies-in-declarative-process-models">
+                                    
+                                    <i class="fas fa-external-link-alt"></i>
+                                    https://www.slideshare.net/cdc08x/resolving-inconsistencies-and-redundancies-in-declarative-process-models
+                                
+                                </a>
+                            </li>
+                        </ul>
+                    </p>
+                    
+                </div>
+
+                <!--Empty White Column-->
+                <div class="col-sm-12 col-md-1 " id=boxW>
+
+                </div>
+
+                <!--Grey Column-->
+                <div class="col-sm-12 col-md-4 " id=boxG>
+
+                    <h3>Retaining only non-vacuously satisfied (read: relevant) constraints:</h3>
+
+                    <br>
+
+                    <p>
+                        Claudio Di Ciccio, Fabrizio Maria Maggi, Marco Montali, JanMendling: On the relevance of a business constraint to an event log. Inf. Syst. 78: 144-161 (2018)
+                    
+                        <br>
+                        <br>
+
+                        <!--Dot List-->
+                        <ul>
+                            <li>
+                                DOI: 
+                                <a target="_blank" title="Visit the paper about the relevance of a business constraint to an event log" href="https://www.sciencedirect.com/science/article/abs/pii/S0306437916306457?via%3Dihub">
+                                    
+                                    <i class="fas fa-external-link-alt"></i>
+                                    10.1016/j.is.2018.01.011
+                                
+                                </a>
+                            </li>
+
+                            <br>
+
+                            <li>
+                                Presentation: 
+                                <a target="_blank" title="Visit the slides about Semantical Vacuity Detection in Declarative Process Mining" href="https://www.slideshare.net/cdc08x/semantical-vacuity-detection-in-declarative-process-mining">
+                                    
+                                    <i class="fas fa-external-link-alt"></i>
+                                    https://www.slideshare.net/cdc08x/semantical-vacuity-detection-in-declarative-process-mining
+                                
+                                </a>
+                            </li>
+                        </ul>
+                    </p>
+
+                </div>
+
+                <!--Empty White Column-->
+                <div class="col-sm-12 col-md-12 " id=boxW>
+
+                </div>
+
+                <!--Grey Column-->
+                <div class="col-sm-12 col-md-4 " id=boxG>
+
+                    <h3>Simulation declarative models:</h3>
+
+                    <p>
+                        Claudio Di Ciccio, Mario Luca Bernardi, Marta Cimitile, Fabrizio Maria Maggi: Generating Event Logs Through the Simulation Declare Models. EOMAS@CAiSE 2015: 20-36
+                    
+                        <br>
+                        <br>
+
+
+                        <!--Dot List-->
+                        <ul>
+                            <li>
+                                DOI: 
+                                <a target="_blank" title="Visit the paper about Generating Event Logs Through the Simulation of Declare Models" href="https://link.springer.com/chapter/10.1007%2F978-3-319-24626-0_2">
+                                    
+                                    <i class="fas fa-external-link-alt"></i>
+                                    10.1007/978-3-319-24626-0_2
+                                
+                                </a> 
+                            </li>
+                        </ul>
+                    </p>
+                    
+                </div>
+
+                <!--Empty White Column-->
+                <div class="col-sm-12 col-md-12 " id=boxW>
+
+                </div>
+
+            </div>
+                
+        </div>
+
+        
+
+        <!-- Footer -->
+        <footer class="bg-dark text-center text-white">
+            
+            <!--Social Container-->
+            <div class="container p-4">
+
+                <!-- Section: Social media -->
+                <section class="mb-4">
+
+                    <!-- Github -->
+                    <a target="_blank" class="btn btn-outline-light btn-floating m-1" href="https://github.com/cdc08x/MINERful" role="button">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    
+                </section>
+            
+        
+                <!-- Section: Text -->
+                <section class="mb-4">
+                    
+                    <p>
+                        MINERful is a process mining, simulation, and analysis tool for declarative process specifications.
+                    </p>
+
+                </section>
+
+                
+                <!-- Section: Links -->
+                <section>
+
+                    <!--Table-->
+                    <div class="row">
+                        
+                        <!--Guide Column-->
+                        <div class="col-sm-12 col-md-3">
+
+                            <h5>Guide</h5>
+                
+                            <ul class="list-unstyled mb-0">
+
+                                <li>
+                                    <a href="../../Guide/Installation/index.html">Installation</a>
+                                </li>
+
+                                <li>
+                                    <a href="../../Guide/MINERfulAPIs/index.html">MINERful APIs</a>
+                                </li>
+
+                                <li>
+                                    <a href="../../Guide/RunTheJAR/index.html">Run the JAR</a>
+                                </li>
+
+                                <li>
+                                    <a href="../../Guide/RunWithShellScripts/index.html">Run with Shell Scripts</a>
+                                </li>
+
+                                <li>
+                                    <a href="../../Guide/RunExample/index.html">Run Examples</a>
+                                </li>
+
+                                <li>
+                                    <a href="../../Guide/AutomatedDiscovery/index.html">Automated Discovery</a>
+                                </li>
+
+                            </ul>
+
+                            <br>
+
+                        </div>
+                    
+            
+                        <!--Functionality Column-->
+                        <div class="col-sm-12 col-md-3">
+
+                            <h5>Functionality</h5>
+                
+                            <ul class="list-unstyled mb-0">
+
+                                <li>
+                                    <a href="../../Functionality/DiscoverProcessMap/index.html">Discover Process Map</a>
+                                </li>
+
+                                <li>
+                                    <a href="../../Functionality/CreateEventLogs/index.html">Create Event Logs</a>
+                                </li>
+
+                                <li>
+                                    <a href="../../Functionality/PerformFitnessCheck/index.html">Perform Fitness Check</a>
+                                </li>
+
+                                <li>
+                                    <a href="../../Functionality/GenerateAutomaton/index.html">Generate Automaton</a>
+                                </li>
+
+                                <li>
+                                    <a href="../../Functionality/SimplifyModel/index.html">Simplify Model</a>
+                                </li>
+
+                            </ul>
+
+                            <br>
+
+                        </div>
+                    
+            
+                        <!--Declarative Processes Column-->
+                        <div class="col-sm-12 col-md-3">
+
+                            <h5>Declarative Processes</h5>
+                
+                            <ul class="list-unstyled mb-0">
+
+                                <li>
+                                    <a href="../../DeclarativeProcesses/DeclareProcessSpecification/index.html">Declare Process Specification</a>
+                                </li>
+
+                                <li>
+                                    <a href="../../DeclarativeProcesses/Examples/index.html">Examples</a>
+                                </li>
+
+                                <li>
+                                    <a href="../../DeclarativeProcesses/DeclareTemplates/index.html">Declare Templates</a>
+                                </li>
+
+                            </ul>
+
+                            <br>
+
+                        </div>
+                    
+            
+                        <!--About Column-->
+                        <div class="col-sm-12 col-md-3">
+
+                            <h5>About</h5>
+                
+                            <ul class="list-unstyled mb-0">
+
+                                <li>
+                                    <a href="../../index.html">Home</a>
+                                </li>
+
+                                <li>
+                                    <a href="index.html">Publications</a>
+                                </li>
+
+                                <li>
+                                    <a href="../RelatedProjects/index.html">Related Projects</a>
+                                </li>
+
+                                <li>
+                                    <a href="../License/index.html">License</a>
+                                </li>
+
+                                <li>
+                                    <a href="../Contact/index.html">Contact</a>
+                                </li>
+
+                                <li>
+                                    <a href="../WorkInProgress/index.html">Work in Progress</a>
+                                </li>
+
+                                <li>
+                                    <a href="../Disclaimer/index.html">Disclaimer</a>
+                                </li>
+
+                            </ul>
+
+                        </div>
+                    
+                    </div>
+                    
+                </section>
+            
+            </div>
+            
+        
+            <!-- Copyright -->
+            <div class="text-center p-3" id="Copyright">
+            
+                <p>MINERful | Webdesign by Matteo Missanelli</p>
+
+            </div>
+            
+        </footer>
+
+        
+        
+    </body>
+    
+</html>

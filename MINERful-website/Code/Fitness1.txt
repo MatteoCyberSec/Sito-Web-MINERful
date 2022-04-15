@@ -1,0 +1,12 @@
+{   name: "Scientific paper evaluation process",
+                                constraints: [
+                                    {template: "respondedexistence", parameters: [["Submit abstract"],["Write new paper"]]},
+                                    {template: "response", parameters: [["Submit paper"],["Send confirmation email"]]},
+                                    {template: "succession", parameters: [["Submit paper"],["Review paper"]]},
+                                    {template: "precedence", parameters: [["Review paper"],["Accept paper"]]},
+                                    {template: "notsuccession", parameters: [["Reject paper"],["Submit paper"]]},
+                                    {template: "notcoexistence", parameters: [["Accept paper"],["Reject paper"]]}
+                                    
+                                     
+                                            ] 
+}

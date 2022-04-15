@@ -1,0 +1,27 @@
+[Accept paper] => {
+  
+ }
+
+ [Reject paper] => {
+  
+ }
+
+ [Review paper] => {
+  
+ }
+
+ [Send confirmation email] => {
+  
+ }
+
+ [Submit abstract] => {
+  
+ }
+
+ [Submit paper] => {
+  
+ }
+
+ [Write new paper] => {
+  
+ }

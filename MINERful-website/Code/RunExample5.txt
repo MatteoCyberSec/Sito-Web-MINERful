@@ -1,0 +1,1 @@
+./run-MINERful.sh -iLE 'strings' -iLF '/home/claudio/Desktop/example.txt'
