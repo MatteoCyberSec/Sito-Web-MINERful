@@ -1,0 +1,1589 @@
+<html>
+    <head>
+
+        <title>Declarative Template</title>
+
+        <!-- Meta tag -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!--Link style sheet css Bootstrap online-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        
+        <!--Link javascript Bootstrap online-->
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        
+        <!--Link style sheet local css-->
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+
+        <!--Link style sheet icon font-awesome online-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+
+        <!--Script JavaScript-->
+        <script type="text/javascript" lang="javascript" src="../../main.js"></script>
+
+        <!--Link Google Font style Roboto-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+        
+        <!--Script JQuery-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+        <!--Run Function when the page has been loaded correctly-->
+        <script>
+            //run the function after a timeout
+            window.onload=setTimeout(function(){showBox("img1")}, 1000);
+
+            window.onload=setTimeout(function(){showBox("text1")}, 1500);
+
+            window.onload=setTimeout(function(){showBox("img2")}, 2000);
+
+            window.onload=setTimeout(function(){showBox("text2")}, 2500);
+
+            window.onload=setTimeout(function(){showBox("img3")}, 3000);
+
+            window.onload=setTimeout(function(){showBox("text3")}, 3500);
+
+            window.onload=setTimeout(function(){showBox("img4")}, 4000);
+
+            window.onload=setTimeout(function(){showBox("text4")}, 4500);
+
+        </script>
+        
+    </head>
+
+    <body>
+
+        <!--Navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+
+            <!--Logo-->
+            <a class="navbar-brand mx-5" href="../../index.html">
+
+                <img src="../../Contents/logo.svg"  class="d-inline-block align-top img-fluid" alt="" >
+
+            </a>
+
+            <!--Menu button collapsible according to page size-->
+            <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        
+                <!--Collapsible Button Icon-->
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+            <!--Container collapse menu navbar-->
+            <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+
+                <!--Voci nella navbar-->
+                <ul class="navbar-nav">
+
+                    <li class="nav-item mx-1">
+
+                        <a class="nav-link" href="../../index.html">
+                            <i class="fas fa-home"></i> Home
+                        </a>
+                        
+                    </li>
+
+                    <!--Submenu-->
+                    <li class="nav-item dropdown mx-1" >
+
+                        <a class="nav-link dropdown-toggle "  id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-hourglass-start"></i> Guide
+                        </a>
+
+                        <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown" >
+
+                            <li ><a class="nav-link" href="../../Guide/Installation/index.html">Installation</a></li>
+
+                            <li><a class="nav-link" href="../../Guide/MINERfulAPIs/index.html" >MINERful APIs</a></li>
+
+                            <li><a class="nav-link" href="../../Guide/RunTheJAR/index.html" >Run the JAR</a></li>
+
+                            <li ><a class="nav-link" href="../../Guide/RunWithShellScripts/index.html" >Run with Shell Scripts</a></li>
+
+                            <li ><a class="nav-link" href="../../Guide/RunExample/index.html" >Run Example</a></li>
+
+                            <li ><a class="nav-link" href="../../Guide/AutomatedDiscovery/index.html" >Automated Discovery</a></li>
+                           
+                        </ul>
+
+                    </li>
+
+                    
+
+                    <!--Submenu-->
+                    <li class="nav-item dropdown mx-1" >
+
+                        <a class="nav-link dropdown-toggle "  id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-star"></i> Functionality
+                        </a>
+
+                        <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown" >
+
+                            <li ><a class="nav-link" href="../../Functionality/DiscoverProcessMap/index.html">Discover Process Map</a></li>
+
+                            <li ><a class="nav-link" href="../../Functionality/CreateEventLogs/index.html">Create Event Logs</a></li>
+
+                            <li ><a class="nav-link" href="../../Functionality/PerformFitnessCheck/index.html">Perform Fitness Check</a></li>
+
+                            <li ><a class="nav-link" href="../../Functionality/GenerateAutomaton/index.html">Generate Automaton</a></li>
+
+                            <li ><a class="nav-link" href="../../Functionality/SimplifyModel/index.html">Simplify Model</a></li>
+                           
+                        </ul>
+
+                    </li>
+
+                    
+
+                    <!--Submenu-->
+                    <li class="nav-item dropdown mx-1" >
+
+                        <a class="nav-link dropdown-toggle "  id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-book"></i> Declarative Processes
+                        </a>
+
+                        <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown" >
+
+                            <li ><a class="nav-link" href="../DeclareProcessSpecification/index.html" >Declare Process Specification</a></li>
+
+                            <li ><a class="nav-link" href="../Examples/index.html" >Examples</a></li>
+
+                            <li ><a class="nav-link" href="index.html" >Declare Templates</a></li>
+
+                        </ul>
+
+                    </li>
+
+                    
+
+                    <!--Submenu-->
+                    <li class="nav-item dropdown mx-1" >
+
+                        <a class="nav-link dropdown-toggle "  id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-info-circle"></i> About
+                        </a>
+
+                        <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown" >
+
+                            <li><a class="nav-link" href="../../About/Publications/index.html">Publications</a></li>
+
+                            <li><a class="nav-link" href="../../About/RelatedProjects/index.html">Related Projects</a></li>
+
+                            <li><a class="nav-link" href="../../About/License/index.html">License</a></li>
+
+                            <li><a class="nav-link" href="../../About/Contact/index.html">Contact</a></li>
+
+                            <li><a class="nav-link" href="../../About/WorkInProgress/index.html">Work in Progress</a></li>
+  
+                            
+                        </ul>
+
+                    </li>
+
+                    <!--Click Button-->
+                    <button type="button" title="Download MINERful package on github" id=b1 class="btn btn-secondary" onclick="apriSchedaNuova()">Download</button>
+            
+                </ul>
+
+            </div>
+
+        </nav>
+
+
+        <!--Main Image Container-->
+        <div class="container-fluid" id="boxS">
+
+            <!--Table-->
+            <div class="row justify-content-center" >
+
+                <!--Image Column -->
+                <div class="col-sm-12 col-md-12">
+
+                   <h2 style="color: white; font-size: 24px;">Declare Templates</h2>
+
+                </div>
+
+            </div>
+                
+        </div>
+        
+        
+        <!--Grey Container-->
+        <div class="container-fluid" id="boxG" >
+
+            <!--Table-->
+            <div class="row justify-content-center" >
+
+                <!--Column-->
+                <div class="col-sm-12 col-md-12" id="boxG">
+                
+                    <h2 style="text-align: center;">Declare templates: Existence constraints</h2>
+
+                    <br>
+
+                </div>
+
+                <!--Empty Column-->
+                <div class="col-sm-12 col-md-12 ">
+                
+                </div>
+            
+
+                <!--Column-->
+                <div class="col-sm-12 col-md-1 " id="img1" style="display: none;">
+
+                    <img src="../../Contents/template1.png" class="img-fluid" alt="Responsive image" >
+
+                </div>
+
+                <!--Column-->
+                <div class="col-sm-12 col-md-3 " id="text1" style="display: none;">
+
+                    <p>
+                        <strong>Init(a)</strong>: Every process instance starts with activity <strong>a</strong>.
+
+                        <br>
+                        <br>
+
+                        <i class="far fa-times-circle"></i>
+                        bcaad
+
+                        <!--4 spaces-->
+                        &emsp;
+
+                        <i class="far fa-check-circle"></i>
+                        adcac
+
+                        <!--4 spaces-->
+                        &emsp;
+
+                        <i class="far fa-times-circle"></i>
+                        dabce
+
+                        <!--4 spaces-->
+                        &emsp;
+
+                        <i class="far fa-check-circle"></i>
+                        aeb
+
+                        <!--4 spaces-->
+                        &emsp;
+
+                        <i class="far fa-check-circle"></i>
+                        aabde
+
+                    </p>
+                    
+                </div>
+
+                <!--Empty Column-->
+                <div class="col-sm-12 col-md-1 ">
+   
+                </div>
+
+               
+
+                <!--Column-->
+                <div class="col-sm-12 col-md-1 " id="img2" style="display: none;">
+
+                    <img src="../../Contents/template2.png" class="img-fluid" alt="Responsive image" >
+
+                </div>
+
+                <!--Column-->
+                <div class="col-sm-12 col-md-3 " id="text2" style="display: none;">
+
+                    <p>
+                        <strong>End(a)</strong>: Every process instance ends with activity <strong>a</strong>.
+
+                        <br>
+                        <br>
+
+                        <i class="far fa-times-circle"></i>
+                        abcde
+
+                        <!--4 spaces-->
+                        &emsp;
+
+                        <i class="far fa-check-circle"></i>
+                        cedea
+
+                        <!--4 spaces-->
+                        &emsp;
+
+                        <i class="far fa-check-circle"></i>
+                        aacbaa
+
+                        <!--4 spaces-->
+                        &emsp;
+
+                        <i class="far fa-times-circle"></i>
+                        ababac
+
+                        <!--4 spaces-->
+                        &emsp;
+
+                        <i class="far fa-times-circle"></i>
+                        aabde
+
+
+                    </p>
+                    
+                </div>
+
+            
+                <!--Empty Grey Column-->
+                <div class="col-sm-12 col-md-12 " id="BoxG">
+ 
+                </div>
+
+                <!--Column-->
+                <div class="col-sm-12 col-md-1" id="img3" style="display: none;">
+ 
+                    <img src="../../Contents/template3.png" class="img-fluid" alt="Responsive image" >
+
+                </div>
+
+                <!--Column-->
+                <div class="col-sm-12 col-md-3 " id="text3" style="display: none;">
+
+                    <p>
+                        <strong>Participation(a)</strong>: Activity <strong>a</strong> occurs at least once.
+
+                        <br>
+                        <br>
+
+                        <i class="far fa-times-circle"></i>
+                        bbcd
+
+                        <!--4 spaces-->
+                        &emsp;
+
+                        <i class="far fa-check-circle"></i>
+                        bedcca
+
+                        <!--4 spaces-->
+                        &emsp;
+
+                        <i class="far fa-check-circle"></i>
+                        bcaeda
+
+                        <!--4 spaces-->
+                        &emsp;
+
+                        <i class="far fa-times-circle"></i>
+                        dbdeb
+
+                        <!--4 spaces-->
+                        &emsp;
+
+                        <i class="far fa-check-circle"></i>
+                        aabde
+
+                    </p>
+                    
+                </div>
+
+                <!--Empty Column-->
+                <div class="col-sm-12 col-md-1 ">
+  
+                </div>
+
+                
+                <!--Column-->
+                <div class="col-sm-12 col-md-1 " id="img4" style="display: none;">
+
+                    <img src="../../Contents/template4.png" class="img-fluid" alt="Responsive image" >
+
+                </div>
+
+                <!--Column-->
+                <div class="col-sm-12 col-md-3 " id="text4" style="display: none;">
+
+                    <p>
+                        <strong>AtMostOne(a)</strong>: Activity <strong>a</strong> occurs at most once.
+
+                        <br>
+                        <br>
+
+                        <i class="far fa-times-circle"></i>
+                        baea
+
+                        <!--4 spaces-->
+                        &emsp;
+
+                        <i class="far fa-check-circle"></i>
+                        beed
+
+                        <!--4 spaces-->
+                        &emsp;
+
+                        <i class="far fa-check-circle"></i>
+                        acccd
+
+                        <!--4 spaces-->
+                        &emsp;
+
+                        <i class="far fa-check-circle"></i>
+                        edbcd
+
+                        <!--4 spaces-->
+                        &emsp;
+
+                        <i class="far fa-times-circle"></i>
+                        aabde
+
+                    </p>
+                    
+                </div>
+
+                <!--Empty Column-->
+                <div class="col-sm-12 col-md-12" id="boxG">
+
+                </div>
+  
+
+            </div>
+                
+        </div>
+
+
+        <!--White Container-->
+        <div class="container-fluid" id="boxW" >
+
+            <!--Table-->
+            <div class="row justify-content-center" >
+
+                <!--Column-->
+                <div class="col-sm-12 col-md-12" id="boxW">
+                
+                    <h2 style="text-align: center;">Declare templates: Relation constraints I</h2>
+
+                    <br>
+
+                </div>
+
+                <!--Empty Column-->
+                <div class="col-sm-12 col-md-12">
+                
+                </div>
+                
+
+                <!--Column-->
+                <div class="col-sm-12 col-md-4 ">
+
+                    <img src="../../Contents/template5.png" class="img-fluid" alt="Responsive image" >
+
+                </div>
+
+                <!--Column-->
+                <div class="col-sm-12 col-md-5 ">
+   
+                    <p>
+                        <br>
+                        
+                        <strong>RespondedExistence(a, b)</strong>: If <strong>a</strong> occurs, <strong>b</strong> has to occur at some point, no matter when.
+
+                        <br>
+                        <br>
+
+                        <i class="far fa-check-circle"></i>
+                        bcdd
+
+                        <!--4 spaces-->
+                        &emsp;
+
+                        <i class="far fa-check-circle"></i>
+                        bdca
+
+                        <!--4 spaces-->
+                        &emsp;
+
+                        <i class="far fa-times-circle"></i>
+                        addcd
+
+                        <!--4 spaces-->
+                        &emsp;
+
+                        <i class="far fa-check-circle"></i>
+                        adaab
+
+                        <!--4 spaces-->
+                        &emsp;
+
+                        <i class="far fa-check-circle"></i>
+                        bdaacb
+                    </p>
+                    
+                </div>
+
+                <!--Empty White Column-->
+                <div class="col-sm-12 col-md-12 " id=boxW>  
+
+                </div>
+
+                <!--Column-->
+                <div class="col-sm-12 col-md-4 ">
+                    
+                    <img src="../../Contents/template6.png" class="img-fluid" alt="Responsive image" >
+
+                </div>
+
+                <!--Column-->
+                <div class="col-sm-12 col-md-5 ">
+   
+                    <p>
+                        <br>
+                        
+                        <strong>Response(a, b)</strong>: if <strong>a</strong> occurs, <strong>b</strong> has to occur after <strong>a</strong>.
+
+                        <br>
+                        <br>
+
+                        <i class="far fa-times-circle"></i>
+                        bdaac
+
+                        <!--4 spaces-->
+                        &emsp;
+
+                        <i class="far fa-check-circle"></i>
+                        adbbc
+
+                        <!--4 spaces-->
+                        &emsp;
+
+                        <i class="far fa-check-circle"></i>
+                        cddce
+
+                        <!--4 spaces-->
+                        &emsp;
+
+                        <i class="far fa-times-circle"></i>
+                        aadccba
+
+                        <!--4 spaces-->
+                        &emsp;
+
+                        <i class="far fa-check-circle"></i>
+                        bdaacb
+                    </p>
+                    
+                </div>
+
+                <!--Empty White Column-->
+                <div class="col-sm-12 col-md-12 " id=boxW>  
+
+                </div>
+
+
+                <!--Column-->
+                <div class="col-sm-12 col-md-4 ">
+
+                    <img src="../../Contents/template7.png" class="img-fluid" alt="Responsive image" >
+
+                </div>
+
+                <!--Column-->
+                <div class="col-sm-12 col-md-5 ">
+   
+                    <p>
+                        <br>
+                        
+                        <strong>AlternateResponse(a, b)</strong>: If <strong>a</strong> occurs, <strong>b</strong> has to occur after <strong>a</strong>, with no a in-between.
+
+                        <br>
+                        <br>
+
+                        <i class="far fa-times-circle"></i>
+                        abbbd
+
+                        <!--4 spaces-->
+                        &emsp;
+
+                        <i class="far fa-check-circle"></i>
+                        aedbab
+
+                        <!--4 spaces-->
+                        &emsp;
+
+                        <i class="far fa-check-circle"></i>
+                        beedcd
+
+                        <!--4 spaces-->
+                        &emsp;
+
+                        <i class="far fa-times-circle"></i>
+                        abababa
+
+                        <!--4 spaces-->
+                        &emsp;
+
+                        <i class="far fa-times-circle"></i>
+                        bdaacb
+
+                    </p>
+                    
+                </div>
+
+                <!--Empty White Column-->
+                <div class="col-sm-12 col-md-12 " id=boxW>  
+
+                </div>
+
+                <!--Column-->
+                <div class="col-sm-12 col-md-4 ">
+
+                    <img src="../../Contents/template8.png" class="img-fluid" alt="Responsive image" >
+
+                </div>
+
+                <!--Column-->
+                <div class="col-sm-12 col-md-5 ">
+   
+                    <p>
+                        <br>
+                        
+                        <strong>ChainResponse(a, b)</strong>: <strong>b</strong> has to occur immediately after <strong>a</strong>.
+
+                        <br>
+                        <br>
+
+                        <i class="far fa-times-circle"></i>
+                        cbaab
+
+                        <!--4 spaces-->
+                        &emsp;
+
+                        <i class="far fa-check-circle"></i>
+                        dabbab
+
+                        <!--4 spaces-->
+                        &emsp;
+
+                        <i class="far fa-times-circle"></i>
+                        aba
+
+                        <!--4 spaces-->
+                        &emsp;
+
+                        <i class="far fa-check-circle"></i>
+                        bdbababb
+
+                        <!--4 spaces-->
+                        &emsp;
+
+                        <i class="far fa-times-circle"></i>
+                        bdaacb
+                    </p>
+                    
+                </div>
+
+                <!--Empty Column-->
+                <div class="col-sm-12 col-md-12" id="boxW">
+
+                </div>
+
+    
+            </div>
+                
+        </div>
+
+
+        <!--Grey Container-->
+        <div class="container-fluid" id="boxG" >
+
+            <!--Table-->
+            <div class="row justify-content-center" >
+
+                <!--Column-->
+                <div class="col-sm-12 col-md-12" id="boxG">
+                
+                    <h2 style="text-align: center;">Declare templates: Relation constraints II</h2>
+
+                    <br>
+
+                </div>
+
+                <!--Empty Column-->
+                <div class="col-sm-12 col-md-12">
+                
+                </div>
+
+                <!--Column-->
+                <div class="col-sm-12 col-md-4">
+
+                    <img src="../../Contents/template9.png" class="img-fluid" alt="Responsive image" >
+
+                </div>
+
+                <!--Column-->
+                <div class="col-sm-12 col-md-5">
+
+                    <p>
+                        <br>
+
+                        <strong>RespondedExistence(b, a)</strong>: If <strong>b</strong> occurs, <strong>a</strong> has to occur at some point, no matter when
+
+                        <br>
+                        <br>
+
+                        <i class="far fa-check-circle"></i>
+                        acdd
+
+                        <!--4 spaces-->
+                        &emsp;
+
+                        <i class="far fa-check-circle"></i>
+                        bdca
+
+                        <!--4 spaces-->
+                        &emsp;
+
+                        <i class="far fa-times-circle"></i>
+                        bddcd
+
+                        <!--4 spaces-->
+                        &emsp;
+
+                        <i class="far fa-check-circle"></i>
+                        adabb
+
+                        <!--4 spaces-->
+                        &emsp;
+
+                        <i class="far fa-check-circle"></i>
+                        acbeead
+                    </p>
+
+                </div>
+
+                <!--Empty Grey Column-->
+                <div class="col-sm-12 col-md-12 " id=boxG>
+
+                </div>
+
+                <!--Column-->
+                <div class="col-sm-12 col-md-4">
+
+                    <img src="../../Contents/template10.png" class="img-fluid" alt="Responsive image" >
+
+                </div>
+
+                <!--Column-->
+                <div class="col-sm-12 col-md-5">
+
+                    <p>
+                        <br>
+
+                        <strong>Precedence(a, b)</strong>: If b occurs, then <strong>a</strong> has to occur before <strong>b</strong>
+
+                        <br>
+                        <br>
+
+                        <i class="far fa-times-circle"></i>
+                        cbdac
+
+                        <!--4 spaces-->
+                        &emsp;
+
+                        <i class="far fa-check-circle"></i>
+                        adbbc
+
+                        <!--4 spaces-->
+                        &emsp;
+
+                        <i class="far fa-check-circle"></i>
+                        cddcea
+
+                        <!--4 spaces-->
+                        &emsp;
+
+                        <i class="far fa-check-circle"></i>
+                        aadccba
+
+                        <!--4 spaces-->
+                        &emsp;
+
+                        <i class="far fa-check-circle"></i>
+                        acbeead
+                    </p>
+
+                </div>
+
+                <!--Empty Grey Column-->
+                <div class="col-sm-12 col-md-12 " id=boxG>
+
+                </div>
+
+
+                <!--Column-->
+                <div class="col-sm-12 col-md-4">
+
+                    <img src="../../Contents/template11.png" class="img-fluid" alt="Responsive image" >
+                
+                </div>
+
+                <!--Column-->
+                <div class="col-sm-12 col-md-5">
+
+                    <p>
+                        <br>
+
+                        <strong>AlternatePrecedence(a, b)</strong>: Each time <strong>b</strong> occurs, it is preceded by <strong>a</strong>, with no <strong>b</strong> in-between
+
+                        <br>
+                        <br>
+
+                        <i class="far fa-check-circle"></i>
+                        aabd
+
+                        <!--4 spaces-->
+                        &emsp;
+
+                        <i class="far fa-times-circle"></i>
+                        adbbab
+
+                        <!--4 spaces-->
+                        &emsp;
+
+                        <i class="far fa-times-circle"></i>
+                        beead
+
+                        <!--4 spaces-->
+                        &emsp;
+
+                        <i class="far fa-check-circle"></i>
+                        abababa
+
+                        <!--4 spaces-->
+                        &emsp;
+
+                        <i class="far fa-check-circle"></i>
+                        acbeead
+                    </p>
+
+                </div>
+
+                <!--Empty Grey Column-->
+                <div class="col-sm-12 col-md-12 " id=boxG>
+
+                </div>
+
+                <!--Column-->
+                <div class="col-sm-12 col-md-4">
+
+                    <img src="../../Contents/template12.png" class="img-fluid" alt="Responsive image" >
+
+                </div>
+
+                <!--Column-->
+                <div class="col-sm-12 col-md-5">
+
+                    <p>
+                        <br>
+
+                        <strong>ChainPrecedence(a, b)</strong>: If <strong>b</strong> occurs, then <strong>a</strong> has to occur immediately beforehand
+
+                        <br>
+                        <br>
+
+                        <i class="far fa-times-circle"></i>
+                        ccbab
+
+                        <!--4 spaces-->
+                        &emsp;
+
+                        <i class="far fa-times-circle"></i>
+                        abbab
+
+                        <!--4 spaces-->
+                        &emsp;
+
+                        <i class="far fa-check-circle"></i>
+                        aba
+
+                        <!--4 spaces-->
+                        &emsp;
+
+                        <i class="far fa-check-circle"></i>
+                        abaab
+
+                        <!--4 spaces-->
+                        &emsp;
+
+                        <i class="far fa-times-circle"></i>
+                        acbeead
+                    </p>
+
+                </div>
+
+                <!--Empty Column-->
+                <div class="col-sm-12 col-md-12" id="boxG">
+
+                </div>
+
+            </div>
+                
+        </div>
+
+
+        <!--White Container-->
+        <div class="container-fluid" id="boxW" >
+
+            <!--Table-->
+            <div class="row justify-content-center" >
+
+                <!--Column-->
+                <div class="col-sm-12 col-md-12" id="boxW">
+                
+                    <h2 style="text-align: center;">Declare templates: Mutual relation constraints</h2>
+
+                    <br>
+
+                </div>
+
+                <!--Empty Column-->
+                <div class="col-sm-12 col-md-12">
+                
+                </div>
+
+                <!--Column-->
+                <div class="col-sm-12 col-md-4">
+
+                    <img src="../../Contents/template13.png" class="img-fluid" alt="Responsive image" >
+
+                </div>
+
+                <!--Column-->
+                <div class="col-sm-12 col-md-5">
+
+                    <p>
+                        <br>
+
+                        <strong>CoExistence(a, b)</strong>: RespondedExistence <strong>(a, b)</strong> and RespondedExistence <strong>(b, a)</strong> hold
+
+                        <br>
+                        <br>
+
+                        <i class="far fa-times-circle"></i>
+                        bcdd
+
+                        <!--4 spaces-->
+                        &emsp;
+
+                        <i class="far fa-check-circle"></i>
+                        cddc
+
+                        <!--4 spaces-->
+                        &emsp;
+
+                        <i class="far fa-times-circle"></i>
+                        addcd
+
+                        <!--4 spaces-->
+                        &emsp;
+
+                        <i class="far fa-check-circle"></i>
+                        adaab
+
+                        <!--4 spaces-->
+                        &emsp;
+
+                        <i class="far fa-check-circle"></i>
+                        dbdaacb
+                        
+                    </p>
+
+                </div>
+
+                <!--Empty White Column-->
+                <div class="col-sm-12 col-md-12 " id=boxW>
+
+                </div>
+                
+
+                <!--Column-->
+                <div class="col-sm-12 col-md-4">
+
+                    <img src="../../Contents/template14.png" class="img-fluid" alt="Responsive image" >
+
+                </div>
+
+                <!--Column-->
+                <div class="col-sm-12 col-md-5">
+
+                    <p>
+                        <br>
+
+                        <strong>Succession(a, b)</strong>: Response <strong>(a, b)</strong> and Precedence <strong>(b, a)</strong> hold
+
+                        <br>
+                        <br>
+
+                        <i class="far fa-times-circle"></i>
+                        bdaac
+
+                        <!--4 spaces-->
+                        &emsp;
+
+                        <i class="far fa-check-circle"></i>
+                        adbbc
+
+                        <!--4 spaces-->
+                        &emsp;
+
+                        <i class="far fa-check-circle"></i>
+                        cddce
+
+                        <!--4 spaces-->
+                        &emsp;
+
+                        <i class="far fa-times-circle"></i>
+                        aadccba
+
+                        <!--4 spaces-->
+                        &emsp;
+
+                        <i class="far fa-times-circle"></i>
+                        dbdaacb
+                        
+                    </p>
+
+                </div>
+
+                <!--Empty White Column-->
+                <div class="col-sm-12 col-md-12 " id=boxW>
+
+                </div>
+
+
+                <!--Column-->
+                <div class="col-sm-12 col-md-4">
+
+                    <img src="../../Contents/template15.png" class="img-fluid" alt="Responsive image" >
+
+                </div>
+
+                <!--Column-->
+                <div class="col-sm-12 col-md-5">
+
+                    <p>
+                        <br>
+
+                        <strong>AlternateSuccession(a, b)</strong>: AlternateResponse <strong>(a, b)</strong> and AlternatePrecedence <strong>(b, a)</strong> hold
+
+                        <br>
+                        <br>
+
+                        <i class="far fa-times-circle"></i>
+                        aabbd
+
+                        <!--4 spaces-->
+                        &emsp;
+
+                        <i class="far fa-check-circle"></i>
+                        addbab
+
+                        <!--4 spaces-->
+                        &emsp;
+
+                        <i class="far fa-times-circle"></i>
+                        beedcd
+
+                        <!--4 spaces-->
+                        &emsp;
+
+                        <i class="far fa-check-circle"></i>
+                        ababab
+
+                        <!--4 spaces-->
+                        &emsp;
+
+                        <i class="far fa-times-circle"></i>
+                        dbdaacb
+                    </p>
+
+                </div>
+
+                <!--Empty White Column-->
+                <div class="col-sm-12 col-md-12 " id=boxW>
+
+                </div>
+
+                <!--Column-->
+                <div class="col-sm-12 col-md-4">
+
+                    <img src="../../Contents/template16.png" class="img-fluid" alt="Responsive image" >
+
+                </div>
+
+                <!--Column-->
+                <div class="col-sm-12 col-md-5">
+
+                    <p>
+                        <br>
+
+                        <strong>ChainSuccession(a, b)</strong>: ChainResponse <strong>(a, b)</strong> and ChainPrecedence <strong>(b, a)</strong> hold
+
+                        <br>
+                        <br>
+
+                        <i class="far fa-times-circle"></i>
+                        ccbab
+
+                        <!--4 spaces-->
+                        &emsp;
+
+                        <i class="far fa-times-circle"></i>
+                        dabbab
+
+                        <!--4 spaces-->
+                        &emsp;
+
+                        <i class="far fa-check-circle"></i>
+                        dabab
+
+                        <!--4 spaces-->
+                        &emsp;
+
+                        <i class="far fa-times-circle"></i>
+                        babab
+
+                        <!--4 spaces-->
+                        &emsp;
+
+                        <i class="far fa-times-circle"></i>
+                        dbdaacb
+                    </p>
+
+                </div>
+
+                <!--Empty Column-->
+                <div class="col-sm-12 col-md-12" id="boxW">
+
+                </div>
+
+            </div>
+                
+        </div>
+
+
+        <!--Grey Container-->
+        <div class="container-fluid" id="boxG" >
+
+            <!--Table-->
+            <div class="row justify-content-center" >
+
+                <!--Column-->
+                <div class="col-sm-12 col-md-12" id="boxG">
+                
+                    <h2 style="text-align: center;">Declare templates: Negative relation constraints</h2>
+
+                    <br>
+
+                </div>
+
+                <!--Empty Column-->
+                <div class="col-sm-12 col-md-12">
+                
+                </div>
+
+                <!--Column-->
+                <div class="col-sm-12 col-md-4">
+
+                    <img src="../../Contents/template17.png" class="img-fluid" alt="Responsive image" >
+
+                </div>
+
+                <!--Column-->
+                <div class="col-sm-12 col-md-5">
+
+                    <p>
+                        <br>
+
+                        <strong>NotCoExistence(a, b)</strong>: <strong>a</strong> and <strong>b</strong> cannot co-occur
+
+                        <br>
+                        <br>
+
+                        <i class="far fa-times-circle"></i>
+                        bdaac
+
+                        <!--4 spaces-->
+                        &emsp;
+
+                        <i class="far fa-check-circle"></i>
+                        adeec
+
+                        <!--4 spaces-->
+                        &emsp;
+
+                        <i class="far fa-check-circle"></i>
+                        cddce
+
+                        <!--4 spaces-->
+                        &emsp;
+
+                        <i class="far fa-check-circle"></i>
+                        cbdcb
+
+                        <!--4 spaces-->
+                        &emsp;
+
+                        <i class="far fa-times-circle"></i>
+                        aadccba
+                    </p>
+
+                </div>
+
+                <!--Empty Grey Column-->
+                <div class="col-sm-12 col-md-12 " id=boxG>
+
+                </div>
+
+                <!--Column-->
+                <div class="col-sm-12 col-md-4">
+
+                    <img src="../../Contents/template18.png" class="img-fluid" alt="Responsive image" >
+
+                </div>
+
+                <!--Column-->
+                <div class="col-sm-12 col-md-5">
+
+                    <p>
+                        <br>
+
+                        <strong>NotSuccession(a, b)</strong>: <strong>b</strong> cannot occur after <strong>a</strong> and <strong>a</strong> cannot occur before <strong>b</strong>
+
+                        <br>
+                        <br>
+
+                        <i class="far fa-times-circle"></i>
+                        aabad
+
+                        <!--4 spaces-->
+                        &emsp;
+
+                        <i class="far fa-check-circle"></i>
+                        adccda
+
+                        <!--4 spaces-->
+                        &emsp;
+
+                        <i class="far fa-check-circle"></i>
+                        bcdaed
+
+                        <!--4 spaces-->
+                        &emsp;
+
+                        <i class="far fa-times-circle"></i>
+                        dbabc
+
+                        <!--4 spaces-->
+                        &emsp;
+
+                        <i class="far fa-times-circle"></i>
+                        aadccba
+                    </p>
+
+                </div>
+
+                <!--Empty Grey Column-->
+                <div class="col-sm-12 col-md-12 " id=boxG>
+
+                </div>
+
+
+                <!--Column-->
+                <div class="col-sm-12 col-md-4">
+
+                    <img src="../../Contents/template19.png" class="img-fluid" alt="Responsive image" >
+
+                </div>
+
+                <!--Column-->
+                <div class="col-sm-12 col-md-5">
+
+                    <p>
+                        <br>
+
+                        <strong>NotChainSuccession(a, b)</strong>: <strong>b</strong> cannot occur immediately after <strong>a</strong>
+
+                        <br>
+                        <br>
+
+                        <i class="far fa-times-circle"></i>
+                        cbbab
+
+                        <!--4 spaces-->
+                        &emsp;
+
+                        <i class="far fa-check-circle"></i>
+                        adadbb
+
+                        <!--4 spaces-->
+                        &emsp;
+
+                        <i class="far fa-times-circle"></i>
+                        aba
+
+                        <!--4 spaces-->
+                        &emsp;
+
+                        <i class="far fa-check-circle"></i>
+                        aaadbbb
+
+                        <!--4 spaces-->
+                        &emsp;
+
+                        <i class="far fa-check-circle"></i>
+                        aadccba
+                    </p>
+
+                </div>
+
+                <!--Empty Column-->
+                <div class="col-sm-12 col-md-12" id="boxG">
+
+                </div>
+
+            </div>
+                
+        </div>
+
+        <!--White Container-->
+        <div class="container-fluid" id="boxW" >
+
+            <!--Table-->
+            <div class="row justify-content-center" >
+
+                <!--Column-->
+                <div class="col-sm-12 col-md-12" id="boxW">
+                
+                    <h2 style="text-align: center;">Constraints subsumption (strictness) hierarchy</h2>
+
+                    <br>
+
+                </div>
+
+                <!--Empty Column-->
+                <div class="col-sm-12 col-md-12">
+                
+                </div>
+
+                <!--Column-->
+                <div class="col-sm-12 col-md-6">
+                
+                    <img src="../../Contents/template20.png" class="img-fluid" alt="Responsive image" >
+
+                </div>
+
+                <!--Empty Column-->
+                <div class="col-sm-12 col-md-12" id="boxW">
+
+                </div>
+
+            </div>
+                
+        </div>
+
+
+
+
+
+        <!-- Footer -->
+        <footer class="bg-dark text-center text-white">
+            
+            <!--Social Container-->
+            <div class="container p-4">
+
+                <!-- Section: Social media -->
+                <section class="mb-4">
+
+                    <!-- Github -->
+                    <a target="_blank" class="btn btn-outline-light btn-floating m-1" href="https://github.com/cdc08x/MINERful" role="button">
+                        <i class="fab fa-github"></i>
+                    </a>
+
+                </section>
+            
+        
+                <!-- Section: Text -->
+                <section class="mb-4">
+                    
+                    <p>
+                        MINERful is a process mining, simulation, and analysis tool for declarative process specifications.
+                    </p>
+
+                </section>
+
+                
+                <!-- Section: Links -->
+                <section>
+
+                    <!--Table-->
+                    <div class="row">
+                        
+                        <!--Guide Column-->
+                        <div class="col-sm-12 col-md-3">
+
+                            <h5>Guide</h5>
+                
+                            <ul class="list-unstyled mb-0">
+
+                                <li>
+                                    <a href="../../Guide/Installation/index.html">Installation</a>
+                                </li>
+
+                                <li>
+                                    <a href="../../Guide/MINERfulAPIs/index.html">MINERful APIs</a>
+                                </li>
+
+                                <li>
+                                    <a href="../../Guide/RunTheJAR/index.html">Run the JAR</a>
+                                </li>
+
+                                <li>
+                                    <a href="../../Guide/RunWithShellScripts/index.html">Run with Shell Scripts</a>
+                                </li>
+
+                                <li>
+                                    <a href="../../Guide/RunExample/index.html">Run Examples</a>
+                                </li>
+
+                                <li>
+                                    <a href="../../Guide/AutomatedDiscovery/index.html">Automated Discovery</a>
+                                </li>
+
+                            </ul>
+
+                            <br>
+
+                        </div>
+                    
+            
+                        <!--Functionality Column-->
+                        <div class="col-sm-12 col-md-3">
+
+                            <h5>Functionality</h5>
+                
+                            <ul class="list-unstyled mb-0">
+
+                                <li>
+                                    <a href="../../Functionality/DiscoverProcessMap/index.html">Discover Process Map</a>
+                                </li>
+
+                                <li>
+                                    <a href="../../Functionality/CreateEventLogs/index.html">Create Event Logs</a>
+                                </li>
+
+                                <li>
+                                    <a href="../../Functionality/PerformFitnessCheck/index.html">Perform Fitness Check</a>
+                                </li>
+
+                                <li>
+                                    <a href="../../Functionality/GenerateAutomaton/index.html">Generate Automaton</a>
+                                </li>
+
+                                <li>
+                                    <a href="../../Functionality/SimplifyModel/index.html">Simplify Model</a>
+                                </li>
+
+                            </ul>
+
+                            <br>
+
+                        </div>
+                    
+            
+                        <!--Declarative Processes Column-->
+                        <div class="col-sm-12 col-md-3">
+
+                            <h5>Declarative Processes</h5>
+                
+                            <ul class="list-unstyled mb-0">
+
+                                <li>
+                                    <a href="../DeclareProcessSpecification/index.html">Declare Process Specification</a>
+                                </li>
+
+                                <li>
+                                    <a href="../Examples/index.html">Examples</a>
+                                </li>
+
+                                <li>
+                                    <a href="index.html">Declare Templates</a>
+                                </li>
+
+                            </ul>
+
+                            <br>
+
+                        </div>
+                    
+            
+                        <!--About Column-->
+                        <div class="col-sm-12 col-md-3">
+
+                            <h5>About</h5>
+                
+                            <ul class="list-unstyled mb-0">
+
+                                <li>
+                                    <a href="../../index.html">Home</a>
+                                </li>
+
+                                <li>
+                                    <a href="../../About/Publications/index.html">Publications</a>
+                                </li>
+
+                                <li>
+                                    <a href="../../About/RelatedProjects/index.html">Related Projects</a>
+                                </li>
+
+                                <li>
+                                    <a href="../../About/License/index.html">License</a>
+                                </li>
+
+                                <li>
+                                    <a href="../../About/Contact/index.html">Contact</a>
+                                </li>
+
+                                <li>
+                                    <a href="../../About/WorkInProgress/index.html">Work in Progress</a>
+                                </li>
+
+                                <li>
+                                    <a href="../../About/Disclaimer/index.html">Disclaimer</a>
+                                </li>
+
+                            </ul>
+
+                        </div>
+                    
+                    </div>
+                    
+                </section>
+            
+            </div>
+            
+        
+            <!-- Copyright -->
+            <div class="text-center p-3" id="Copyright">
+            
+                <p>MINERful | Webdesign by Matteo Missanelli</p>
+
+            </div>
+            
+        </footer>
+
+
+
+    </body>
+
+</html>

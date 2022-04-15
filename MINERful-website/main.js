@@ -22,30 +22,10 @@ function readFile(name,div)
         }
     };
 
-    //get current directory
-    var dir =  location.pathname.split(`/`) ;
+    //specific path
+    var path = "../../Code/" + name;
 
-    var path = "" ;
 
-    
-    //start from the parent directory of index.html
-    for(var i = (dir.length)-2; i > 0; i--)
-    {
-        //if dir is empty I have the root
-        if(dir[i] == "")
-        {
-            break;
-        }
-        else
-        {
-            //update path with ../ for to go up the directory
-            path += "../" ;
-        }
-    }
-    
-    //update path file name 
-    path += "Code/" + name ;
-    
     //read and open the file
     xhttp.open("GET", path , true);
     

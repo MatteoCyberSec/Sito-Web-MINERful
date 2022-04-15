@@ -1,0 +1,556 @@
+<html>
+    <head>
+
+        <title>Generate Automaton</title>
+
+        <!-- Meta tag -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!--Link style sheet css Bootstrap online-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        
+        <!--Link javascript Bootstrap online-->
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        
+        <!--Link style sheet local css-->
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+
+        <!--Link style sheet icon font-awesome online-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+
+        <!--Script JavaScript-->
+        <script type="text/javascript" lang="javascript" src="../../main.js"></script>
+
+        <!--Link Google Font style Roboto-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+        <!--Script JQuery-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+        <!--Run Function when the page has been loaded correctly-->
+        <script>
+            //run the function after a timeout
+            window.onload=setTimeout(function(){showBox("boxG")}, 2000);;
+        </script>
+        
+        
+    </head>
+
+    <body>
+
+        <!--Navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+
+            <!--Brand-->
+            <a class="navbar-brand mx-5" href="../../index.html">
+
+                <img src="../../Contents/logo.svg"  class="d-inline-block align-top img-fluid" alt="" >
+
+            </a>
+
+            <!--Menu button collapsible according to page size-->
+            <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        
+                <!--Collapsible Button Icon-->
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+            <!--Container collapse menu navbar-->
+            <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+
+                <!--Menu-->
+                <ul class="navbar-nav">
+
+                    <li class="nav-item mx-1">
+
+                        <a class="nav-link" href="../../index.html">
+                            <i class="fas fa-home"></i> Home
+                        </a>
+                        
+                    </li>
+
+                    <!--Submenu-->
+                    <li class="nav-item dropdown mx-1" >
+
+                        <a class="nav-link dropdown-toggle "  id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-hourglass-start"></i> Guide
+                        </a>
+
+                        <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown" >
+
+                            <li ><a class="nav-link" href="../../Guide/Installation/index.html">Installation</a></li>
+
+                            <li><a class="nav-link" href="../../Guide/MINERfulAPIs/index.html" >MINERful APIs</a></li>
+
+                            <li><a class="nav-link" href="../../Guide/RunTheJAR/index.html" >Run the JAR</a></li>
+
+                            <li ><a class="nav-link" href="../../Guide/RunWithShellScripts/index.html" >Run with Shell Scripts</a></li>
+
+                            <li ><a class="nav-link" href="../../Guide/RunExample/index.html" >Run Example</a></li>
+
+                            <li ><a class="nav-link" href="../../Guide/AutomatedDiscovery/index.html" >Automated Discovery</a></li>
+                           
+                        </ul>
+
+                    </li>
+
+                    
+
+                    <!--Submenu-->
+                    <li class="nav-item dropdown mx-1" >
+
+                        <a class="nav-link dropdown-toggle "  id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-star"></i> Functionality
+                        </a>
+
+                        <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown" >
+
+                            <li ><a class="nav-link" href="../DiscoverProcessMap/index.html">Discover Process Map</a></li>
+
+                            <li ><a class="nav-link" href="../CreateEventLogs/index.html">Create Event Logs</a></li>
+
+                            <li ><a class="nav-link" href="../PerformFitnessCheck/index.html">Perform Fitness Check</a></li>
+
+                            <li ><a class="nav-link" href="index.html">Generate Automaton</a></li>
+
+                            <li ><a class="nav-link" href="../SimplifyModel/index.html">Simplify Model</a></li>
+                           
+                        </ul>
+
+                    </li>
+
+                    
+
+                    <!--Submenu-->
+                    <li class="nav-item dropdown mx-1" >
+
+                        <a class="nav-link dropdown-toggle "  id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-book"></i> Declarative Processes
+                        </a>
+
+                        <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown" >
+
+                            <li ><a class="nav-link" href="../../DeclarativeProcesses/DeclareProcessSpecification/index.html" >Declare Process Specification</a></li>
+
+                            <li ><a class="nav-link" href="../../DeclarativeProcesses/Examples/index.html" >Examples</a></li>
+
+                            <li ><a class="nav-link" href="../../DeclarativeProcesses/DeclareTemplates/index.html" >Declare Templates</a></li>
+
+                        </ul>
+
+                    </li>
+
+                    
+
+                    <!--Submenu-->
+                    <li class="nav-item dropdown mx-1" >
+
+                        <a class="nav-link dropdown-toggle "  id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-info-circle"></i> About
+                        </a>
+
+                        <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown" >
+
+                            <li><a class="nav-link" href="../../About/Publications/index.html">Publications</a></li>
+
+                            <li><a class="nav-link" href="../../About/RelatedProjects/index.html">Related Projects</a></li>
+
+                            <li><a class="nav-link" href="../../About/License/index.html">License</a></li>
+
+                            <li><a class="nav-link" href="../../About/Contact/index.html">Contact</a></li>
+
+                            <li><a class="nav-link" href="../../About/WorkInProgress/index.html">Work in Progress</a></li>
+  
+                            
+                        </ul>
+
+                    </li>
+
+                    <!--Click Button-->
+                    <button type="button" title="Download MINERful package on github" id=b1 class="btn btn-secondary" onclick="apriSchedaNuova()">Download</button>
+            
+                </ul>
+
+            </div>
+
+        </nav>
+
+        
+        <!--Main Image Container-->
+        <div class="container-fluid" id="boxS">
+
+            <!--Table-->
+            <div class="row justify-content-center" >
+
+                <!--Image Column -->
+                <div class="col-sm-12 col-md-12">
+
+                   <h2 style="color: white; font-size: 24px;">Generate Automaton</h2>
+
+                </div>
+
+            </div>
+                
+        </div>
+
+
+
+        <!--Container-->
+        <div class="container" >
+
+            <!--Table-->
+            <div class="row justify-content-center" >
+
+                <!--Empty white column-->
+                <div class="col-sm-12 col-md-12 " id=boxW>
+
+                </div>
+
+                <!--Grey Column-->
+                <div class="col-sm-12 col-md-4 " id="boxG" style="display: none;">
+
+                    <h2>What does it do?</h2>
+
+                    <br>
+
+                    <p>
+                        Generate Automaton consists in making the user able to select a process map, which is then transformed into an automaton. After that, a graphical 
+                        representation of the result is displayed in the application, which can be analyzed and further adjusted by the user, using the detection parameters.
+                        The final result should therefore be exportable.
+                    </p>
+
+                </div>
+
+            </div>
+                
+        </div>
+
+        
+        <!--Container-->
+        <div class="container" >
+
+            <!--Table-->
+            <div class="row justify-content-center" >
+
+                <!--Empty white column-->
+                <div class="col-sm-12 col-md-12 " id=boxW>
+
+                </div>
+
+                <!--Grey Column-->
+                <div class="col-sm-12 col-md-12 " id="boxG">
+
+                    <h2>Generate automaton through command line</h2>
+
+                    <br>
+
+                    <p>
+                        Suppose you have a 
+                        <a title="Visit the page about declarative process specification" href="../../DeclarativeProcesses/DeclareProcessSpecification/index.html">declarative process specification</a> 
+                        downloaded of 
+                        <a target="_blank" title="Visit the BPI site for download the log" href="https://www.win.tue.nl/bpi/doku.php?id=2012:challenge"><i class="fas fa-external-link-alt"></i>BPI</a>
+                        
+                        in <a target="_blank" title="Visit the XES standard portal" href="http://www.xes-standard.org/"><i class="fas fa-external-link-alt"></i>XES</a> format.
+                        
+                    </p>
+
+                    <p>
+                        Let us assume this file is saved in 
+
+                        <code>/home/claudio/Desktop/log.xes</code>.
+                        
+                        To generate automaton run the following command:
+
+                    </p>
+
+                    <!--Code Container-->
+                    <div class="container bg-dark">
+                            
+                        <button id="copy" title="copy raw content" onclick="copy('c1')"><i class="fa fa-clone"></i></button>
+
+                        <pre><p id="c1"></p></pre>
+
+                    </div>
+
+                    <!--start script read file-->
+                    <script>readFile("Automaton1.txt","c1");</script>
+
+                    <br>
+                    <br>
+
+                    <p>
+                        The result starts:
+                    </p>
+
+                    <!--Code Container-->
+                    <div class="container bg-dark">
+                            
+                        <button id="copy" title="copy raw content" onclick="copy('c2')"><i class="fa fa-clone"></i></button>
+
+                        <pre><p id="c2"></p></pre>
+
+                    </div>
+
+                    <!--start script read file-->
+                    <script>readFile("Automaton2.txt","c2");</script>
+
+                    <br>
+                    <br>
+
+                    <p>
+                        and continue:
+                    </p>
+
+                    <!--Code Container-->
+                    <div class="container bg-dark">
+                            
+                        <button id="copy" title="copy raw content" onclick="copy('c3')"><i class="fa fa-clone"></i></button>
+
+                        <pre><p id="c3"></p></pre>
+
+                    </div>
+
+                    <!--start script read file-->
+                    <script>readFile("Automaton3.txt","c3");</script>
+
+                    <br>
+                    <br>
+
+                    <p>
+                        Finally the automaton is generated: <a href="../../Code/automaton.dot" download="automaton.dot" title="Download automaton.dot"><i class="fas fa-file-download"></i> automaton.dot</a>
+                    
+                        viewable through <a target="_blank" title="Visit the XDot page" href="http://manpages.ubuntu.com/manpages/bionic/man1/xdot.1.html"><i class="fas fa-external-link-alt"></i>XDot</a> by installing it on linux 
+                        through the command <code>sudo apt install xdot</code> .
+                    </p>
+
+                    <br>
+
+                    <p>
+                        For greater clarity and understanding, the image below is the automaton generated by the smaller custom file 
+
+                        <a href="../../Code/strings.txt" download="strings.txt" title="Download strings.txt"><i class="fas fa-file-download"></i> strings.txt</a>
+                    </p>
+
+                    
+                    
+
+                    <!--Table-->
+                    <div class="row justify-content-center" >
+
+                        <!--Image Column -->
+                        <div class="col-sm-12 col-md-10 offset-md-2">
+
+                            <img src="../../Contents/automaton1.png" class="img-fluid" alt="Responsive image">
+
+                        </div>
+
+                    </div>
+
+                    
+                </div>
+
+                <!--Empty white column-->
+                <div class="col-sm-12 col-md-12 " id=boxW>
+
+                </div>
+
+            </div>
+
+        </div>
+         
+
+        <!-- Footer -->
+        <footer class="bg-dark text-center text-white">
+                    
+            <!--Social Container-->
+            <div class="container p-4">
+
+                <!-- Section: Social media -->
+                <section class="mb-4">
+
+                    <!-- Github -->
+                    <a target="_blank" class="btn btn-outline-light btn-floating m-1" href="https://github.com/cdc08x/MINERful" role="button">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    
+                </section>
+            
+
+                <!-- Section: Text -->
+                <section class="mb-4">
+                    
+                    <p>
+                        MINERful is a process mining, simulation, and analysis tool for declarative process specifications.
+                    </p>
+
+                </section>
+
+                
+                <!-- Section: Links -->
+                <section>
+
+                    <!--Table-->
+                    <div class="row">
+                        
+                        <!--Guide Column-->
+                        <div class="col-sm-12 col-md-3">
+
+                            <h5>Guide</h5>
+                
+                            <ul class="list-unstyled mb-0">
+
+                                <li>
+                                    <a href="../../Guide/Installation/index.html">Installation</a>
+                                </li>
+
+                                <li>
+                                    <a href="../../Guide/MINERfulAPIs/index.html">MINERful APIs</a>
+                                </li>
+
+                                <li>
+                                    <a href="../../Guide/RunTheJAR/index.html">Run the JAR</a>
+                                </li>
+
+                                <li>
+                                    <a href="../../Guide/RunWithShellScripts/index.html">Run with Shell Scripts</a>
+                                </li>
+
+                                <li>
+                                    <a href="../../Guide/RunExample/index.html">Run Examples</a>
+                                </li>
+
+                                <li>
+                                    <a href="../../Guide/AutomatedDiscovery/index.html">Automated Discovery</a>
+                                </li>
+
+                            </ul>
+
+                            <br>
+
+                        </div>
+                    
+            
+                        <!--Functionality Column-->
+                        <div class="col-sm-12 col-md-3">
+
+                            <h5>Functionality</h5>
+                
+                            <ul class="list-unstyled mb-0">
+
+                                <li>
+                                    <a href="../DiscoverProcessMap/index.html">Discover Process Map</a>
+                                </li>
+
+                                <li>
+                                    <a href="../CreateEventLogs/index.html">Create Event Logs</a>
+                                </li>
+
+                                <li>
+                                    <a href="../PerformFitnessCheck/index.html">Perform Fitness Check</a>
+                                </li>
+
+                                <li>
+                                    <a href="index.html">Generate Automaton</a>
+                                </li>
+
+                                <li>
+                                    <a href="../SimplifyModel/index.html">Simplify Model</a>
+                                </li>
+
+                            </ul>
+
+                            <br>
+
+                        </div>
+                    
+            
+                        <!--Declarative Processes Column-->
+                        <div class="col-sm-12 col-md-3">
+
+                            <h5>Declarative Processes</h5>
+                
+                            <ul class="list-unstyled mb-0">
+
+                                <li>
+                                    <a href="../../DeclarativeProcesses/DeclareProcessSpecification/index.html">Declare Process Specification</a>
+                                </li>
+
+                                <li>
+                                    <a href="../../DeclarativeProcesses/Examples/index.html">Examples</a>
+                                </li>
+
+                                <li>
+                                    <a href="../../DeclarativeProcesses/DeclareTemplates/index.html">Declare Templates</a>
+                                </li>
+
+                            </ul>
+
+                            <br>
+
+                        </div>
+                    
+            
+                        <!--About Column-->
+                        <div class="col-sm-12 col-md-3">
+
+                            <h5>About</h5>
+                
+                            <ul class="list-unstyled mb-0">
+
+                                <li>
+                                    <a href="../../index.html">Home</a>
+                                </li>
+
+                                <li>
+                                    <a href="../../About/Publications/index.html">Publications</a>
+                                </li>
+
+                                <li>
+                                    <a href="../../About/RelatedProjects/index.html">Related Projects</a>
+                                </li>
+
+                                <li>
+                                    <a href="../../About/License/index.html">License</a>
+                                </li>
+
+                                <li>
+                                    <a href="../../About/Contact/index.html">Contact</a>
+                                </li>
+
+                                <li>
+                                    <a href="../../About/WorkInProgress/index.html">Work in Progress</a>
+                                </li>
+
+                                <li>
+                                    <a href="../../About/Disclaimer/index.html">Disclaimer</a>
+                                </li>
+
+                            </ul>
+
+                        </div>
+                    
+                    </div>
+                    
+                </section>
+            
+            </div>
+            
+
+            <!-- Copyright -->
+            <div class="text-center p-3" id="Copyright">
+            
+                <p>MINERful | Webdesign by Matteo Missanelli</p>
+
+            </div>
+            
+        </footer>
+  
+
+
+    </body>
+    
+</html>

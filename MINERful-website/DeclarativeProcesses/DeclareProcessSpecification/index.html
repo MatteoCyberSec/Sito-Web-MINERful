@@ -1,0 +1,919 @@
+<html>
+    <head>
+
+        <title>Declarative Processes Specification</title>
+
+        <!-- Meta tag -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!--Link style sheet css Bootstrap online-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        
+        <!--Link javascript Bootstrap online-->
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        
+        <!--Link style sheet local css-->
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+
+        <!--Link style sheet icon font-awesome online-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+
+        <!--Script JavaScript-->
+        <script type="text/javascript" lang="javascript" src="../../main.js"></script>
+
+        <!--Link Google Font style Roboto-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+        <!--Script JQuery-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+        <!--Run Function when the page has been loaded correctly-->
+        <script>
+            //run the function after a timeout
+            window.onload=setTimeout(function(){showBox("processMining")}, 2000);
+
+        </script>
+
+
+    </head>
+
+    <body>
+
+        <!--Navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+
+            <!--Logo-->
+            <a class="navbar-brand mx-5" href="../../index.html">
+
+                <img src="../../Contents/logo.svg"  class="d-inline-block align-top img-fluid" alt="" >
+                
+            </a>
+
+            <!--Menu button collapsible according to page size-->
+            <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        
+                <!--Collapsible Button Icon-->
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+            <!--Container collapse menu navbar-->
+            <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+
+                <!--Menu-->
+                <ul class="navbar-nav">
+
+                    <li class="nav-item mx-1">
+
+                        <a class="nav-link" href="../../index.html">
+                            <i class="fas fa-home"></i> Home
+                        </a>
+                        
+                    </li>
+
+                    <!--Submenu-->
+                    <li class="nav-item dropdown mx-1" >
+
+                        <a class="nav-link dropdown-toggle "  id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-hourglass-start"></i> Guide
+                        </a>
+
+                        <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown" >
+
+                            <li ><a class="nav-link" href="../../Guide/Installation/index.html">Installation</a></li>
+
+                            <li><a class="nav-link" href="../../Guide/MINERfulAPIs/index.html" >MINERful APIs</a></li>
+
+                            <li><a class="nav-link" href="../../Guide/RunTheJAR/index.html" >Run the JAR</a></li>
+
+                            <li ><a class="nav-link" href="../../Guide/RunWithShellScripts/index.html" >Run with Shell Scripts</a></li>
+
+                            <li ><a class="nav-link" href="../../Guide/RunExample/index.html" >Run Example</a></li>
+
+                            <li ><a class="nav-link" href="../../Guide/AutomatedDiscovery/index.html" >Automated Discovery</a></li>
+                           
+                        </ul>
+
+                    </li>
+
+                    
+
+                    <!--Submenu-->
+                    <li class="nav-item dropdown mx-1" >
+
+                        <a class="nav-link dropdown-toggle "  id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-star"></i> Functionality
+                        </a>
+
+                        <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown" >
+
+                            <li ><a class="nav-link" href="../../Functionality/DiscoverProcessMap/index.html">Discover Process Map</a></li>
+
+                            <li ><a class="nav-link" href="../../Functionality/CreateEventLogs/index.html">Create Event Logs</a></li>
+
+                            <li ><a class="nav-link" href="../../Functionality/PerformFitnessCheck/index.html">Perform Fitness Check</a></li>
+
+                            <li ><a class="nav-link" href="../../Functionality/GenerateAutomaton/index.html">Generate Automaton</a></li>
+
+                            <li ><a class="nav-link" href="../../Functionality/SimplifyModel/index.html">Simplify Model</a></li>
+                           
+                        </ul>
+
+                    </li>
+
+                    
+
+                    <!--Submenu-->
+                    <li class="nav-item dropdown mx-1" >
+
+                        <a class="nav-link dropdown-toggle "  id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-book"></i> Declarative Processes
+                        </a>
+
+                        <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown" >
+
+                            <li ><a class="nav-link" href="index.html" >Declare Process Specification</a></li>
+
+                            <li ><a class="nav-link" href="../Examples/index.html" >Examples</a></li>
+
+                            <li ><a class="nav-link" href="../DeclareTemplates/index.html" >Declare Templates</a></li>
+
+                        </ul>
+
+                    </li>
+
+                    
+
+                    <!--Submenu-->
+                    <li class="nav-item dropdown mx-1" >
+
+                        <a class="nav-link dropdown-toggle "  id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-info-circle"></i> About
+                        </a>
+
+                        <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown" >
+
+                            <li><a class="nav-link" href="../../About/Publications/index.html">Publications</a></li>
+
+                            <li><a class="nav-link" href="../../About/RelatedProjects/index.html">Related Projects</a></li>
+
+                            <li><a class="nav-link" href="../../About/License/index.html">License</a></li>
+
+                            <li><a class="nav-link" href="../../About/Contact/index.html">Contact</a></li>
+
+                            <li><a class="nav-link" href="../../About/WorkInProgress/index.html">Work in Progress</a></li>
+  
+                            
+                        </ul>
+
+                    </li>
+
+                    <!--v-->
+                    <button type="button" title="Download MINERful package on github" id=b1 class="btn btn-secondary" onclick="apriSchedaNuova()">Download</button>
+            
+                </ul>
+
+            </div>
+
+        </nav>
+
+
+        <!--Main Image Container-->
+        <div class="container-fluid" id="boxS">
+
+            <!--Table-->
+            <div class="row justify-content-center" >
+
+                <!--Image Column -->
+                <div class="col-sm-12 col-md-12">
+
+                   <h2 style="color: white; font-size: 24px;">Declare Process Specification</h2>
+
+                </div>
+
+            </div>
+                
+        </div>
+
+    
+
+        <!--Grey Container-->
+        <div class="container-fluid" id="boxG" >
+
+            <!--Table-->
+            <div class="row justify-content-center" >
+
+                <!--Column-->
+                <div class="col-sm-12 col-md-12 " id="boxG">
+
+                    <h2 style="text-align: center;">Process Mining</h2>
+
+                    <br>
+
+                </div>
+                
+                <!--Column-->
+                <div class="col-sm-12 col-md-9 " id="processMining" style="display: none;">
+
+                    <p>
+                        Process mining aims at discovering, monitoring and improving real processes by extracting
+                        knowledge from event logs readily available in today's information systems as described by Wil Van Der Aalst. There are several process mining 
+                        techniques but all of them have an event log as a starting point. Each technique assumes that it is possible to record events sequentially so 
+                        that each of them relates to a particular activity and is associated with a particular process instance. A process instance is a single process execution. Logs can store additional information about events such as
+                        the resource (i.e. the person or device) executing Task, the timestamp of the event (i.e. an initial process value e.g. start time), or data 
+                        elements recorded with the event.   
+
+                        <br>
+                        <br>
+                        Event logs can be used to conduct three types of process mining:
+
+                        <!--Dot List-->
+                        <ul>
+                            <li>
+                                <p>
+                                    <strong>Process Discovery</strong>: The process discovery technique takes a log of events as input and outputs a model without using any a priori 
+                                    information. This is the most widely used and important technique in process mining.
+                                </p>
+                            </li>
+
+                            <br>
+
+                            <li>
+                                <p>
+                                    <strong>Conformance Checking</strong>: The conformance checking technique takes as input an existing process model and compares it with 
+                                    an event log of the same process. Conformance checking can be used to check whether reality, as recorded in the log, conforms to the 
+                                    model and vice versa.
+                                </p>
+                            </li>
+
+                            <br>
+
+                            <li>
+                                <p>
+                                    <strong>Enhancement</strong>: The enhancement technique exploits the idea of extending or improving an existing process model taken as 
+                                    input, using information about the actual process recorded in some event log. The main difference between conformance checking and 
+                                    enhancement is that in this technique the alignment between model and reality is measured, aiming to change or extend the model a prior.
+                                </p>
+                            </li>
+                        </ul>
+
+                        <br>
+                        Unlike existing analysis approaches, process mining is process-centred (not data-centred), truly intelligent (learning from historical data) 
+                        and fact-based (relying on event data).
+                    </p>
+                    
+                    
+                </div>
+
+                
+                <!--Empty Grey Column-->
+                <div class="col-sm-12 col-md-12" id="boxG">
+
+                </div>
+
+            </div>
+                
+        </div>
+
+        <!--White Container-->
+        <div class="container-fluid" id="boxW" >
+
+            <!--Table-->
+            <div class="row justify-content-center" >
+
+                
+                <!--Column-->
+                <div class="col-sm-12 col-md-12 " id="boxW">
+
+                    <h2 style="text-align: center;">What is a declarative process?</h2>
+
+                    <br>
+
+                </div>
+
+                <!--Column-->
+                <div class="col-sm-12 col-md-4 " >
+
+                    <p>  
+                        Declarative process models consist of a set of constraints exerted over the execution of process activities. DECLARE is a declarative process modelling
+                        language that specifies a set of constraint templates along with their graphical notation. The 
+                        
+                        <a title="Visit the page about automated discovery" href="../../Guide/AutomatedDiscovery/index.html">automated discovery</a>
+                        
+                        of DECLARE models aims at finding those constraints that are verified throughout a given event log. 
+
+                        <br>
+                        <br>
+                        There are three important focuses :
+
+                        <ul>
+                            <li>
+                                <p>
+                                    Open model
+                                </p>
+                            </li>
+
+                            <br>
+
+                            <li>
+                                <p>
+                                    Specify constraints for permitted behaviour
+                                </p>
+                            </li>
+
+                            <br>
+
+                            <li>
+                                <p>
+                                    Every execution that complies with them is acceptable.
+                                </p>
+                            </li>
+                        </ul>
+
+                        <br>
+                        The Declarative Process Miner is a process mining technique based on declarative process modelling languages. It 
+                        takes a process model as input in addition to the event log. Furthermore The Declarative Process Miner take advantage of declarative process models
+                        like Declare, unlike traditional process mining techniques, they exploit 
+                        <a target="_blank" title="Visit the page about petri nets" href="https://en.wikipedia.org/wiki/Petri_net"><i class="fas fa-external-link-alt"></i>Petri nets</a>
+                        based on procedural modelling languages where all possible 
+                        ordering of events must be made explicit.
+
+                        <br>
+                        An important feature of Declare is precisely its definition of relationships between activities through models of constraints. Each of these 
+                        models has its own semantics described in LTL terms, a unique name and a graphical representation.
+                    </p>
+
+                </div>
+
+                <!--Empty Column-->
+                <div class="col-sm-12 col-md-1 ">
+
+                </div>
+
+                <!--Column-->
+                <div class="col-sm-12 col-md-4 ">
+
+                    <img src="../../Contents/declarative1.png" class="img-fluid" alt="Responsive image" >
+
+                </div>
+
+                <!--Empty White Column-->
+                <div class="col-sm-12 col-md-12" id="boxW">
+
+                </div>
+
+            </div>
+                
+        </div>
+
+        
+
+        <!--Grey Container-->
+        <div class="container-fluid" id="boxG" >
+
+            <!--Table-->
+            <div class="row justify-content-center" >
+
+                <!--Column-->
+                <div class="col-sm-12 col-md-12 " id="boxG">
+
+                    <h2 style="text-align: center;">Examples of declarative specifications</h2>
+
+                    <br>
+                    
+                </div>
+
+                <!--Column-->
+                <div class="col-sm-12 col-md-5 ">
+
+                    <img src="../../Contents/declarative2.png" class="img-fluid" alt="Responsive image" >
+                    
+                </div>
+
+                
+                <!--Column-->
+                <div class="col-sm-12 col-md-4 ">
+
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+
+                    <br>
+                    <br>
+
+                    <img src="../../Contents/declarative3.png" class="img-fluid" alt="Responsive image" >
+                    
+                </div>
+
+                <!--Empty Grey Column-->
+                <div class="col-sm-12 col-md-12" id="boxG">
+
+                </div>
+
+            </div>
+                
+        </div>
+
+        <!--White Container-->
+        <div class="container-fluid" id="boxW" >
+
+            <!--Table-->
+            <div class="row justify-content-center" >
+
+                <!--Column-->
+                <div class="col-sm-12 col-md-4 " id="boxW">
+
+                    <h2>Declarative Model</h2>  
+
+                    <br>
+
+                    <p>
+                        Declarative Process Modeling is a process modelling approach that specifies the order and alternative ways of execution for a workflow in an implicit
+                        manner through the use of constraints. Furthere the Declarative Process Modeling allow modelers to capture constraints on the allowed activity flows,
+                        meaning that all flows are allowed provided that they do not violate the specified constraints.
+
+                        <br>
+                        (Open Model).
+                    </p>
+                    
+                </div>
+
+                <!--Column-->
+                <div class="col-sm-12 col-md-1 " id="boxW">
+
+                    <h2>vs</h2>
+
+                </div>
+
+                <!--Column-->
+                <div class="col-sm-12 col-md-4 " id="boxW">
+
+                    <h2>Imperative Model</h2>
+
+                    <br>
+
+                    <p>
+                        The classical approach is called “imperative” (or also “procedural”) because it explicitly represents every step allowed by the process model at hand, 
+                        by means of transitions (the possible actions to do) among places/states (the legal situations where the process can wait or terminate). This leads 
+                        to the likely increase of graphical objects as the process allows more alternative executions. The size of the model, though, has undesirable effects on
+                        understandability and likelihood of errors. Further Imperative Process Modeling is also defined like A process modelling approach that specifies the 
+                        order and alternative ways of execution for a workflow in an explicit manner through the use of graphical constructs. In the end every flow that is 
+                        not specified is implicitly disallowed
+
+                        <br>
+                        (Closed Model).
+                    </p>
+
+                    
+                </div>
+
+                <!--Column-->
+                <div class="col-sm-12 col-md-12 " >
+
+                </div>
+
+                <!--Column-->
+                <div class="col-sm-12 col-md-4 ">
+
+                    <img src="../../Contents/declarative2-1.png" class="img-fluid" alt="Responsive image" > 
+
+                </div>
+
+                <!--Column-->
+                <div class="col-sm-12 col-md-1 " >
+
+                </div>
+
+                <!--Column-->
+                <div class="col-sm-12 col-md-4 ">
+
+                    <img src="../../Contents/declarative2-2.png" class="img-fluid" alt="Responsive image" >
+                    
+                </div>
+
+                <!--Empty White Column-->
+                <div class="col-sm-12 col-md-12" id="boxW">
+
+                </div>
+
+            </div>
+                
+        </div>
+
+
+        
+
+        <!--White Container-->
+        <div class="container-fluid" id="boxG" >
+
+            <!--Table-->
+            <div class="row justify-content-center" >
+
+                <!--Column-->
+                <div class="col-sm-12 col-md-12" id="boxG">
+
+                    <h2 style="text-align: center;">A declarative process specification in Declare</h2>
+
+                    <br>
+
+                </div>
+
+
+                <!--Column-->
+                <div class="col-sm-12 col-md-3 ">
+
+                
+                    <img src="../../Contents/declarative5.png" class="img-fluid" alt="Responsive image">
+
+                </div>
+
+                <!--Column-->
+                <div class="col-sm-12 col-md-6 ">
+
+                    <p>
+                        <br>
+                        
+                        If an abstract is submitted, a new paper had been written or will be written
+
+                        <strong>RespondedExistence(Submit abstract, Write new paper)</strong>
+                    </p>
+                    
+                </div>
+
+                <!--Empty White Column-->
+                <div class="col-sm-12 col-md-12 " id=boxG>
+
+                </div>
+
+                <!--Column-->
+                <div class="col-sm-12 col-md-3 ">
+
+                    <img src="../../Contents/declarative6.png" class="img-fluid" alt="Responsive image">
+ 
+                </div>
+
+                <!--Column-->
+                <div class="col-sm-12 col-md-6 ">
+
+                    <p>
+                        <br>
+                        
+                        After the paper submission, a confirmation email is sent
+
+                        <strong>Response(Submit papers, Send confirmation email)</strong>
+                    </p>
+                    
+                </div>
+
+                <!--Empty White Column-->
+                <div class="col-sm-12 col-md-12 " id=boxG>
+
+                </div>
+
+                <!--Column-->
+                <div class="col-sm-12 col-md-3 ">
+
+                    <img src="../../Contents/declarative7.png" class="img-fluid" alt="Responsive image">
+ 
+                </div>
+
+                <!--Column-->
+                <div class="col-sm-12 col-md-6 ">
+
+                    <p>
+                        <br>
+                        
+                        Only after the paper submission, the paper will be reviewed
+
+                        <strong>Succession(Submit papers, Review paper)</strong>
+                        
+                    </p>
+                    
+                </div>
+
+                <!--Empty White Column-->
+                <div class="col-sm-12 col-md-12 " id=boxG>
+
+                </div>
+
+                <!--Column-->
+                <div class="col-sm-12 col-md-3 ">
+
+                    <img src="../../Contents/declarative8.png" class="img-fluid" alt="Responsive image">
+                    
+                </div>
+
+                <!--Column-->
+                <div class="col-sm-12 col-md-6 ">
+
+                    <p>
+                        <br>
+                        
+                        A paper can be accepted only after it has been reviewed
+
+                        <strong>Precedence(Review paper, Accept paper)</strong>
+                        
+                    </p>
+                    
+                </div>
+
+                <!--Empty White Column-->
+                <div class="col-sm-12 col-md-12 " id=boxG>
+
+                </div>
+
+                <!--Column-->
+                <div class="col-sm-12 col-md-3 ">
+
+                    <img src="../../Contents/declarative9.png" class="img-fluid" alt="Responsive image">
+ 
+                </div>
+
+                <!--Column-->
+                <div class="col-sm-12 col-md-6 ">
+
+                    <p>
+                        <br>
+                        
+                        After the rejection, no further submission follows
+
+                        <strong>NotSuccession(Reject paper, Submit paper)</strong>
+                        
+                    </p>
+                    
+                </div>
+
+                <!--Empty White Column-->
+                <div class="col-sm-12 col-md-12 " id=boxG>
+
+                </div>
+
+                <!--Column-->
+                <div class="col-sm-12 col-md-3 ">
+
+                    <img src="../../Contents/declarative10.png" class="img-fluid" alt="Responsive image">
+                    
+                </div>
+
+                <!--Column-->
+                <div class="col-sm-12 col-md-6 ">
+
+                    <p>
+                        <br>
+                        <br>
+                        Paper cannot be both accepted and rejected
+
+                        <strong>NotCoExistence(Accept paper, Reject paper)</strong>
+                        
+                    </p>
+                    
+                </div>
+
+                
+
+                <!--Empty White Column-->
+                <div class="col-sm-12 col-md-12" id=boxG>
+
+
+                </div>
+
+            </div>
+                
+        </div>
+
+
+        <!--Grey Container-->
+        <div class="container-fluid" id="boxW" >
+
+            <!--Table-->
+            <div class="row justify-content-center" >
+
+                <!--Column-->
+                <div class="col-sm-12 col-md-12" id="boxW">
+
+                    <h2 style="text-align: center;">An example of declarative process specification</h2>
+
+                    <br>
+
+                </div>
+
+               
+                <!--Column-->
+                <div class="col-sm-12 col-md-7">
+
+                    <img src="../../Contents/declarative11.png" class="img-fluid" alt="Responsive image">
+
+                </div>
+
+                <!--Empty Grey Column-->
+                <div class="col-sm-12 col-md-12" id="boxW">
+
+                </div>
+
+            </div>
+
+        </div>
+
+        
+        
+
+        
+        <!-- Footer -->
+        <footer class="bg-dark text-center text-white">
+            
+            <!--Social Container-->
+            <div class="container p-4">
+
+                <!-- Section: Social media -->
+                <section class="mb-4">
+
+                    <!-- Github -->
+                    <a target="_blank" class="btn btn-outline-light btn-floating m-1" href="https://github.com/cdc08x/MINERful" role="button">
+                        <i class="fab fa-github"></i>
+                    </a>
+
+                </section>
+            
+        
+                <!-- Section: Text -->
+                <section class="mb-4">
+                    
+                    <p>
+                        MINERful is a process mining, simulation, and analysis tool for declarative process specifications.
+                    </p>
+
+                </section>
+
+                
+                <!-- Section: Links -->
+                <section>
+
+                    <!--Table-->
+                    <div class="row">
+                        
+                        <!--Guide Column-->
+                        <div class="col-sm-12 col-md-3">
+
+                            <h5>Guide</h5>
+                
+                            <ul class="list-unstyled mb-0">
+
+                                <li>
+                                    <a href="../../Guide/Installation/index.html">Installation</a>
+                                </li>
+
+                                <li>
+                                    <a href="../../Guide/MINERfulAPIs/index.html">MINERful APIs</a>
+                                </li>
+
+                                <li>
+                                    <a href="../../Guide/RunTheJAR/index.html">Run the JAR</a>
+                                </li>
+
+                                <li>
+                                    <a href="../../Guide/RunWithShellScripts/index.html">Run with Shell Scripts</a>
+                                </li>
+
+                                <li>
+                                    <a href="../../Guide/RunExample/index.html">Run Examples</a>
+                                </li>
+
+                                <li>
+                                    <a href="../../Guide/AutomatedDiscovery/index.html">Automated Discovery</a>
+                                </li>
+
+                            </ul>
+
+                            <br>
+
+                        </div>
+                    
+            
+                        <!--Functionality Column-->
+                        <div class="col-sm-12 col-md-3">
+
+                            <h5>Functionality</h5>
+                
+                            <ul class="list-unstyled mb-0">
+
+                                <li>
+                                    <a href="../../Functionality/DiscoverProcessMap/index.html">Discover Process Map</a>
+                                </li>
+
+                                <li>
+                                    <a href="../../Functionality/CreateEventLogs/index.html">Create Event Logs</a>
+                                </li>
+
+                                <li>
+                                    <a href="../../Functionality/PerformFitnessCheck/index.html">Perform Fitness Check</a>
+                                </li>
+
+                                <li>
+                                    <a href="../../Functionality/GenerateAutomaton/index.html">Generate Automaton</a>
+                                </li>
+
+                                <li>
+                                    <a href="../../Functionality/SimplifyModel/index.html">Simplify Model</a>
+                                </li>
+
+                            </ul>
+
+                            <br>
+
+                        </div>
+                    
+            
+                        <!--Declarative Processes Column-->
+                        <div class="col-sm-12 col-md-3">
+
+                            <h5>Declarative Processes</h5>
+                
+                            <ul class="list-unstyled mb-0">
+
+                                <li>
+                                    <a href="index.html">Declare Process Specification</a>
+                                </li>
+
+                                <li>
+                                    <a href="../Examples/index.html">Examples</a>
+                                </li>
+
+                                <li>
+                                    <a href="../DeclareTemplates/index.html">Declare Templates</a>
+                                </li>
+
+                            </ul>
+
+                            <br>
+
+                        </div>
+                    
+            
+                        <!--About Column-->
+                        <div class="col-sm-12 col-md-3">
+
+                            <h5>About</h5>
+                
+                            <ul class="list-unstyled mb-0">
+
+                                <li>
+                                    <a href="../../index.html">Home</a>
+                                </li>
+
+                                <li>
+                                    <a href="../../About/Publications/index.html">Publications</a>
+                                </li>
+
+                                <li>
+                                    <a href="../../About/RelatedProjects/index.html">Related Projects</a>
+                                </li>
+
+                                <li>
+                                    <a href="../../About/License/index.html">License</a>
+                                </li>
+
+                                <li>
+                                    <a href="../../About/Contact/index.html">Contact</a>
+                                </li>
+
+                                <li>
+                                    <a href="../../About/WorkInProgress/index.html">Work in Progress</a>
+                                </li>
+
+                                <li>
+                                    <a href="../../About/Disclaimer/index.html">Disclaimer</a>
+                                </li>
+
+                            </ul>
+
+                        </div>
+                    
+                    </div>
+                    
+                </section>
+            
+            </div>
+            
+        
+            <!-- Copyright -->
+            <div class="text-center p-3" id="Copyright">
+            
+                <p>MINERful | Webdesign by Matteo Missanelli</p>
+
+            </div>
+            
+        </footer>
+
+
+    </body>
+
+</html>

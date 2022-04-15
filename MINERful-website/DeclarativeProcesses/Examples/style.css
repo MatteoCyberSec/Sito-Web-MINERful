@@ -5,7 +5,6 @@ body
 
 #boxS
 {
-    
     padding-top: 100px;
     
     padding-right: 60px;
@@ -14,14 +13,13 @@ body
     
     padding-left: 60px;
 
-    background-image: URL(Contents/home0.svg);
+    background-image: URL(../../Contents/home0.svg);
 
     background-repeat: no-repeat;
     
-    background-size: cover;
+    background-size: cover ;
     
 }
-
 
 #boxG
 {
@@ -74,6 +72,8 @@ h3
 {
     color:#261a1a;
 }
+
+
 
 section a
 {
