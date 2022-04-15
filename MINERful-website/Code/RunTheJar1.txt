@@ -1,1 +1,0 @@
-java -cp ".\lib\*;MINERful.jar" minerful.&#60;LAUNCHER_CLASS&#62; -h

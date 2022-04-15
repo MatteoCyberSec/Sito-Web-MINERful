@@ -1,1 +1,0 @@
-./run-MINERful.sh -iLF logs/BPIC2012/financial_log.xes.gz -iLClassif 'logspec' -s 0.95 -c 0.5 -i 0.125 -prune 'hierarchyconflictredundancydouble' -oCSV models/bpic2012-declarative-model.csv -oXML models/bpic2012-declarative-model.xml -oJSON models/bpic2012-declarative-model.json

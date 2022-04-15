@@ -1,1 +1,0 @@
-./run-MINERful.sh --in-log-file logs/BPIC2012/financial_log.xes.gz --in-log-evt-classifier 'logspec' --support 0.95 --confidence 0.5 --interest-factor 0.125 --prune-with 'hierarchyconflictredundancydouble' --save-as-csv models/bpic2012-declarative-model.csv --save-as-xml models/bpic2012-declarative-model.xml --save-as-json models/bpic2012-declarative-model.json

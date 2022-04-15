@@ -1,1 +1,0 @@
-./run-MINERful.sh -iLF '/home/claudio/Desktop/examplelog.xes'
