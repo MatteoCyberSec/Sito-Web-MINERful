@@ -84,3 +84,16 @@ function showBox(name)
     
     $(name).show("slow");
 } 
+
+//prevent spam from bots
+function noSpam()
+{
+    //words list
+    var parole = ["gmail", "di", "com", "ciccio", "&#46;", "&#64;", "uniroma1", "it"];
+              
+    //costruction email
+    var email = parole[1] + parole[3] + parole[5] + parole[1] + parole[4] + parole[6] + parole[4] + parole[7];
+                  
+    //show email
+    document.getElementById("email").innerHTML=email;
+}
