@@ -33,11 +33,11 @@
         <!--Run Function when the page has been loaded correctly-->
         <script>
             //run the function after a timeout
-            window.onload=setTimeout(function(){showBox("dSpecification")}, 2000);
+            window.onload=setTimeout(function(){showBox("dSpecification")}, 1000);
 
-            window.onload=setTimeout(function(){showBox("dSpecificationD")}, 2500);
+            window.onload=setTimeout(function(){showBox("dSpecificationD")}, 1500);
 
-            window.onload=setTimeout(function(){showBox("dSpecificationS")}, 3000);
+            window.onload=setTimeout(function(){showBox("dSpecificationS")}, 2000);
 
         </script>
 
@@ -139,7 +139,7 @@
 
                         <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown" >
 
-                            <li ><a class="nav-link" href="../DeclareProcessSpecification/index.html" >Declare Process Specification</a></li>
+                            <li ><a class="nav-link" href="../DeclarativeProcessSpecification/index.html" >Declarative Process Specification</a></li>
 
                             <li ><a class="nav-link" href="index.html" >Examples</a></li>
 
@@ -194,7 +194,7 @@
                 <!--Image Column -->
                 <div class="col-sm-12 col-md-12">
 
-                   <h2 style="color: white; font-size: 24px;">Examples</h2>
+                   <h2 style="color: white; font-size: 24px; margin-left: 150px;">Examples</h2>
 
                 </div>
 
@@ -219,7 +219,7 @@
                 </div>
 
                 <!--Grey Column-->
-                <div class="col-sm-12 col-md-8 " id="dSpecification" style="display: none; text-align: center;">
+                <div class="col-sm-12 col-md-8 " id="dSpecification" style="display: none;">
 
                     <p>
                         A <strong>description</strong> consists in exposing in natural language the reality to be modeled. Given a description you can proceed by creating a 
@@ -334,7 +334,7 @@
                 <!--Grey Column-->
                 <div class="col-sm-12 col-md-8 " >
 
-                    <p style="text-align: center;">
+                    <p>
                         Given a <strong>specification</strong>, then a logical modeling based on declare templates of a reality described above, you get the <strong>cases</strong>
                         that are the possible combinations that may occur from the specifications of the model in question.
 
@@ -523,7 +523,7 @@
                 <!--Grey Column-->
                 <div class="col-sm-12 col-md-8 " >
 
-                    <p style="text-align: center;">
+                    <p>
                         Starting from the construction of a <strong>model</strong> in this case a <strong>Workflow net</strong> is reshaped to respect the 
                         <strong>constraints</strong> introduced by the <strong>specifications</strong>.
                     </p>
@@ -558,40 +558,51 @@
 
                     <br>
 
-                    <p style="font-variant: small-caps;">
-                        
-                        <i class="far fa-check-circle"></i>
-                        Init(a)
+                    <!--Table-->
+                    <div class="row " style="font-variant: small-caps;">
 
-                        <br>
-                        <i class="far fa-check-circle"></i>
-                        Participation(d)
+                        <!--Column-->
+                        <div class="col-sm-12 col-md-12">
+                            <i class="far fa-check-circle"></i> Init(a)
+                        </div>
 
-                        <br>
-                        <i class="far fa-check-circle"></i>
-                        NotSuccession(d,e)
+                        <!--Column-->
+                        <div class="col-sm-12 col-md-12">
+                            <i class="far fa-check-circle"></i>Participation(d)
+                        </div>
 
-                        <br>
-                        <i class="far fa-check-circle"></i>
-                        NotChainSuccession(a,d)
+                        <!--Column-->
+                        <div class="col-sm-12 col-md-12">
+                            <i class="far fa-check-circle"></i> NotSuccession(d,e)
+                        </div>
 
-                        <br>
-                        <i class="far fa-check-circle"></i>
-                        End(d)
-                        
-                        <br>
-                        <i class="far fa-check-circle"></i>
-                        Precedence(b,d)
+                        <!--Column-->
+                        <div class="col-sm-12 col-md-12">
+                            <i class="far fa-check-circle"></i> NotChainSuccession(a,d)
+                        </div>
 
-                        <br>
-                        <i class="far fa-check-circle"></i>
-                        CoExistence(b,c)
+                        <!--Column-->
+                        <div class="col-sm-12 col-md-12">
+                            <i class="far fa-check-circle"></i> End(d)
+                        </div>
 
-                        <br>
-                        <i class="far fa-check-circle"></i>
-                        Response(a,c)
-                    </p>
-                    
+                        <!--Column-->
+                        <div class="col-sm-12 col-md-12">
+                            <i class="far fa-check-circle"></i> Precedence(b,d)
+                        </div>
+
+                        <!--Column-->
+                        <div class="col-sm-12 col-md-12">
+                            <i class="far fa-check-circle"></i> CoExistence(b,c)
+                        </div>
+
+                        <!--Column-->
+                        <div class="col-sm-12 col-md-12">
+                            <i class="far fa-check-circle"></i> Response(a,c)
+                        </div>
+
+                    </div>
+
                 </div>
 
                 <!--Empty Column-->
@@ -719,7 +730,7 @@
                             <ul class="list-unstyled mb-0">
 
                                 <li>
-                                    <a href="../DeclareProcessSpecification/index.html">Declare Process Specification</a>
+                                    <a href="../DeclarativeProcessSpecification/index.html">Declarative Process Specification</a>
                                 </li>
 
                                 <li>
@@ -786,13 +797,16 @@
             <!-- Copyright -->
             <div class="text-center p-3" id="Copyright">
             
-                <p>MINERful | Webdesign by Matteo Missanelli</p>
+                <p>
+                    MINERful | Webdesign by Matteo Missanelli 
 
+                    <!-- LinkedIn -->
+                    <a class="btn btn-outline-light btn-floating m-1" target="_blank" href="https://www.linkedin.com/in/matteo-missanelli-6b85aa238/" role="button"><i class="fab fa-linkedin-in"></i></a>
+                </p>
+               
             </div>
             
         </footer>
-
-        
 
 
     </body>
