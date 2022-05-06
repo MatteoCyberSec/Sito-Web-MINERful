@@ -27,30 +27,6 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
         
-        <!--Script JQuery-->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-
-        <!--Run Function when the page has been loaded correctly-->
-        <script>
-            //run the function after a timeout
-            window.onload=setTimeout(function(){showBox("img1")}, 500);
-
-            window.onload=setTimeout(function(){showBox("text1")}, 1000);
-
-            window.onload=setTimeout(function(){showBox("img2")}, 1500);
-
-            window.onload=setTimeout(function(){showBox("text2")}, 2000);
-
-            window.onload=setTimeout(function(){showBox("img3")}, 2500);
-
-            window.onload=setTimeout(function(){showBox("text3")}, 3000);
-
-            window.onload=setTimeout(function(){showBox("img4")}, 3500);
-
-            window.onload=setTimeout(function(){showBox("text4")}, 4000);
-
-        </script>
-        
     </head>
 
     <body>
@@ -234,17 +210,17 @@
             
 
                 <!--Column-->
-                <div class="col-sm-12 col-md-1 " id="img1" style="display: none;">
+                <div class="col-sm-12 col-md-1 " id="img1">
 
                     <img src="../../Contents/template1.png" class="img-fluid" alt="Responsive image" >
 
                 </div>
 
                 <!--Column-->
-                <div class="col-sm-12 col-md-3 " id="text1" style="display: none;">
+                <div class="col-sm-12 col-md-3 " id="text1">
 
                     <p>
-                        <strong>Init(a)</strong>: Every process instance starts with activity <strong>a</strong>.
+                        <strong class="smallCaps">Init(a)</strong>: Every process instance starts with activity <strong>a</strong>.
                     </p>
 
                     <!--Table-->
@@ -287,17 +263,17 @@
                
 
                 <!--Column-->
-                <div class="col-sm-12 col-md-1 " id="img2" style="display: none;">
+                <div class="col-sm-12 col-md-1 " id="img2" >
 
                     <img src="../../Contents/template2.png" class="img-fluid" alt="Responsive image" >
 
                 </div>
 
                 <!--Column-->
-                <div class="col-sm-12 col-md-3 " id="text2" style="display: none;">
+                <div class="col-sm-12 col-md-3 " id="text2">
 
                     <p>
-                        <strong>End(a)</strong>: Every process instance ends with activity <strong>a</strong>.
+                        <strong class="smallCaps">End(a)</strong>: Every process instance ends with activity <strong>a</strong>.
                     <p>
 
                     <!--Table-->
@@ -340,17 +316,17 @@
                 </div>
 
                 <!--Column-->
-                <div class="col-sm-12 col-md-1" id="img3" style="display: none;">
+                <div class="col-sm-12 col-md-1" id="img3" >
  
                     <img src="../../Contents/template3.png" class="img-fluid" alt="Responsive image" >
 
                 </div>
 
                 <!--Column-->
-                <div class="col-sm-12 col-md-3 " id="text3" style="display: none;">
+                <div class="col-sm-12 col-md-3 " id="text3" >
 
                     <p>
-                        <strong>Participation(a)</strong>: Activity <strong>a</strong> occurs at least once.
+                        <strong class="smallCaps">Participation(a)</strong>: Activity <strong>a</strong> occurs at least once.
 
                     </p>
                         
@@ -394,17 +370,17 @@
 
                 
                 <!--Column-->
-                <div class="col-sm-12 col-md-1 " id="img4" style="display: none;">
+                <div class="col-sm-12 col-md-1 " id="img4" >
 
                     <img src="../../Contents/template4.png" class="img-fluid" alt="Responsive image" >
 
                 </div>
 
                 <!--Column-->
-                <div class="col-sm-12 col-md-3 " id="text4" style="display: none;">
+                <div class="col-sm-12 col-md-3 " id="text4" >
 
                     <p>
-                        <strong>AtMostOne(a)</strong>: Activity <strong>a</strong> occurs at most once.
+                        <strong class="smallCaps">AtMostOne(a)</strong>: Activity <strong>a</strong> occurs at most once.
                     </p>
 
                     <!--Table-->
@@ -482,7 +458,7 @@
                 <div class="col-sm-12 col-md-5 ">
    
                     <p>
-                        <strong>RespondedExistence(a, b)</strong>: If <strong>a</strong> occurs, <strong>b</strong> has to occur at some point, no matter when.
+                        <strong class="smallCaps">RespondedExistence(a, b)</strong>: If <strong>a</strong> occurs, <strong>b</strong> has to occur at some point, no matter when.
                     </p>
 
                     <!--Table-->
@@ -533,7 +509,7 @@
                 <div class="col-sm-12 col-md-5 ">
    
                     <p>
-                        <strong>Response(a, b)</strong>: if <strong>a</strong> occurs, <strong>b</strong> has to occur after <strong>a</strong>.
+                        <strong class="smallCaps">Response(a, b)</strong>: if <strong>a</strong> occurs, <strong>b</strong> has to occur after <strong>a</strong>.
                     </p>
 
                     <!--Table-->
@@ -585,7 +561,7 @@
                 <div class="col-sm-12 col-md-5 ">
    
                     <p>
-                        <strong>AlternateResponse(a, b)</strong>: If <strong>a</strong> occurs, <strong>b</strong> has to occur after <strong>a</strong>, with no a in-between.
+                        <strong class="smallCaps">AlternateResponse(a, b)</strong>: If <strong>a</strong> occurs, <strong>b</strong> has to occur after <strong>a</strong>, with no a in-between.
                     </p>
 
                     <!--Table-->
@@ -636,7 +612,7 @@
                 <div class="col-sm-12 col-md-5 ">
    
                     <p>
-                        <strong>ChainResponse(a, b)</strong>: <strong>b</strong> has to occur immediately after <strong>a</strong>.
+                        <strong class="smallCaps">ChainResponse(a, b)</strong>: <strong>b</strong> has to occur immediately after <strong>a</strong>.
 
                     </p>
                         
@@ -714,7 +690,7 @@
                 <div class="col-sm-12 col-md-5">
 
                     <p>
-                        <strong>RespondedExistence(b, a)</strong>: If <strong>b</strong> occurs, <strong>a</strong> has to occur at some point, no matter when
+                        <strong class="smallCaps">RespondedExistence(b, a)</strong>: If <strong>b</strong> occurs, <strong>a</strong> has to occur at some point, no matter when
                     </p>
 
                     <!--Table-->
@@ -765,7 +741,7 @@
                 <div class="col-sm-12 col-md-5">
 
                     <p>
-                        <strong>Precedence(a, b)</strong>: If b occurs, then <strong>a</strong> has to occur before <strong>b</strong>
+                        <strong class="smallCaps">Precedence(a, b)</strong>: If b occurs, then <strong>a</strong> has to occur before <strong>b</strong>
                     </p>
                         
                     <!--Table-->
@@ -817,7 +793,7 @@
                 <div class="col-sm-12 col-md-5">
 
                     <p>
-                        <strong>AlternatePrecedence(a, b)</strong>: Each time <strong>b</strong> occurs, it is preceded by <strong>a</strong>, with no <strong>b</strong> in-between
+                        <strong class="smallCaps">AlternatePrecedence(a, b)</strong>: Each time <strong>b</strong> occurs, it is preceded by <strong>a</strong>, with no <strong>b</strong> in-between
                     </p>
 
                     <!--Table-->
@@ -868,7 +844,7 @@
                 <div class="col-sm-12 col-md-5">
 
                     <p>
-                        <strong>ChainPrecedence(a, b)</strong>: If <strong>b</strong> occurs, then <strong>a</strong> has to occur immediately beforehand
+                        <strong class="smallCaps">ChainPrecedence(a, b)</strong>: If <strong>b</strong> occurs, then <strong>a</strong> has to occur immediately beforehand
                     </p>
 
                     <!--Table-->
@@ -944,7 +920,8 @@
                 <div class="col-sm-12 col-md-5">
 
                     <p>
-                        <strong>CoExistence(a, b)</strong>: RespondedExistence <strong>(a, b)</strong> and RespondedExistence <strong>(b, a)</strong> hold
+                        <strong class="smallCaps">CoExistence(a, b)</strong>: <strong class="smallCaps">RespondedExistence(a, b)</strong> and 
+                        <strong class="smallCaps">RespondedExistence(b, a)</strong> hold
                     </p>
 
                     <!--Table-->
@@ -996,7 +973,7 @@
                 <div class="col-sm-12 col-md-5">
 
                     <p>   
-                        <strong>Succession(a, b)</strong>: Response <strong>(a, b)</strong> and Precedence <strong>(b, a)</strong> hold
+                        <strong class="smallCaps">Succession(a, b)</strong>: <strong class="smallCaps">Response(a, b)</strong> and <strong class="smallCaps">Precedence(b, a)</strong> hold
                     </p>
 
                     <!--Table-->
@@ -1048,7 +1025,8 @@
                 <div class="col-sm-12 col-md-5">
 
                     <p>      
-                        <strong>AlternateSuccession(a, b)</strong>: AlternateResponse <strong>(a, b)</strong> and AlternatePrecedence <strong>(b, a)</strong> hold
+                        <strong class="smallCaps">AlternateSuccession(a, b)</strong>: <strong class="smallCaps">AlternateResponse(a, b)</strong> and 
+                        <strong class="smallCaps">AlternatePrecedence(b, a)</strong> hold
                     </p>
                         
 
@@ -1100,7 +1078,7 @@
                 <div class="col-sm-12 col-md-5">
 
                     <p>                       
-                        <strong>ChainSuccession(a, b)</strong>: ChainResponse <strong>(a, b)</strong> and ChainPrecedence <strong>(b, a)</strong> hold
+                        <strong class="smallCaps">ChainSuccession(a, b)</strong>: <strong class="smallCaps">ChainResponse(a, b)</strong> and <strong class="smallCaps">ChainPrecedence(b, a)</strong> hold
                     </p>
                         
 
@@ -1177,7 +1155,7 @@
                 <div class="col-sm-12 col-md-5">
 
                     <p>               
-                        <strong>NotCoExistence(a, b)</strong>: <strong>a</strong> and <strong>b</strong> cannot co-occur
+                        <strong class="smallCaps">NotCoExistence(a, b)</strong>: <strong>a</strong> and <strong>b</strong> cannot co-occur
                     </p>
                         
                     <!--Table-->
@@ -1228,7 +1206,7 @@
                 <div class="col-sm-12 col-md-5">
 
                     <p> 
-                        <strong>NotSuccession(a, b)</strong>: <strong>b</strong> cannot occur after <strong>a</strong> and <strong>a</strong> cannot occur before <strong>b</strong>
+                        <strong class="smallCaps">NotSuccession(a, b)</strong>: <strong>b</strong> cannot occur after <strong>a</strong> and <strong>a</strong> cannot occur before <strong>b</strong>
                     </p>
                         
                     <!--Table-->
@@ -1280,7 +1258,7 @@
                 <div class="col-sm-12 col-md-5">
 
                     <p>
-                        <strong>NotChainSuccession(a, b)</strong>: <strong>b</strong> cannot occur immediately after <strong>a</strong>
+                        <strong class="smallCaps">NotChainSuccession(a, b)</strong>: <strong>b</strong> cannot occur immediately after <strong>a</strong>
                     </p>
 
                     <!--Table-->
@@ -1370,14 +1348,14 @@
                                 
                                 <ul>
                                     <li>
-                                        <strong>init(x)</strong> and <strong>end(x)</strong> are considered <strong>Position templates</strong> because they define the 
+                                        <strong class="smallCaps">Init(x)</strong> and <strong class="smallCaps">End(x)</strong> are considered <strong>Position templates</strong> because they define the 
                                         initial and final position of the variable <strong>x</strong>.
                                     </li>
 
                                     <br>
 
                                     <li>
-                                        <strong>Participation(x)</strong> and <strong>atMostOne(x)</strong> are considered <strong>Cardinality templates</strong> because 
+                                        <strong class="smallCaps">Participation(x)</strong> and <strong class="smallCaps">AtMostOne(x)</strong> are considered <strong>Cardinality templates</strong> because 
                                         they define the cardinality with which the variable <strong>x</strong> is referenced.
                                     </li>
                                 </ul>
@@ -1395,8 +1373,8 @@
                                 <ul>
                                     <li>
                                         
-                                        <strong>RespondedExistance(y,x)</strong>, <strong>Precedence(x,y)</strong>, <strong>AlternatePrecedence(x,y)</strong> and 
-                                        <strong>ChainPrecedence(x,y)</strong> are considered <strong>Backward-undirectional relation templates</strong> because 
+                                        <strong class="smallCaps">RespondedExistance(y,x)</strong>, <strong class="smallCaps">Precedence(x,y)</strong>, <strong class="smallCaps">AlternatePrecedence(x,y)</strong> and 
+                                        <strong class="smallCaps">ChainPrecedence(x,y)</strong> are considered <strong>Backward-undirectional relation templates</strong> because 
                                         they define that if the variable <strong>y</strong> occurs then previously must occur the variable <strong>x</strong>.
                                        
                                     </li>
@@ -1404,25 +1382,25 @@
                                     <br>
 
                                     <li>
-                                        <strong>CoExistance(y,x)</strong>, <strong>Succession(x,y)</strong>, <strong>AlternateSuccession(x,y)</strong> and 
-                                        <strong>ChainSuccession(x,y)</strong> are considered <strong>Coupling templates</strong> because 
+                                        <strong class="smallCaps">CoExistance(y,x)</strong>, <strong class="smallCaps">Succession(x,y)</strong>, <strong class="smallCaps">AlternateSuccession(x,y)</strong> and 
+                                        <strong class="smallCaps">ChainSuccession(x,y)</strong> are considered <strong>Coupling templates</strong> because 
                                         they define that if the variable <strong>x</strong> occurs then subsequently must occur the variable <strong>y</strong>.
                                     </li>
 
                                     <br>
 
                                     <li>
-                                        <strong>RespondedExistance(x,y)</strong>, <strong>Response(x,y)</strong>, <strong>AlternateResponse(x,y)</strong> and 
-                                        <strong>ChainResponse(x,y)</strong> are considered <strong>Forward-undirectional relation templates</strong> because 
+                                        <strong class="smallCaps">RespondedExistance(x,y)</strong>, <strong class="smallCaps">Response(x,y)</strong>, <strong class="smallCaps">AlternateResponse(x,y)</strong> and 
+                                        <strong class="smallCaps">ChainResponse(x,y)</strong> are considered <strong>Forward-undirectional relation templates</strong> because 
                                         they define the coexistence between constraints such as <strong>RespondedExistence(x, y)</strong> and 
-                                        <strong>RespondedExistence(y, x)</strong>.
+                                        <strong class="smallCaps">RespondedExistence(y, x)</strong>.
                                     </li>
 
                                     <br>
 
                                     <li>
-                                        <strong>NotCoExistance(x,y)</strong>, <strong>NotSuccession(x,y)</strong> and 
-                                        <strong>NotChainSuccession(x,y)</strong> are considered <strong>Negative templates</strong> because 
+                                        <strong class="smallCaps">NotCoExistance(x,y)</strong>, <strong class="smallCaps">NotSuccession(x,y)</strong> and 
+                                        <strong class="smallCaps">NotChainSuccession(x,y)</strong> are considered <strong>Negative templates</strong> because 
                                         they define the absence in the immediate succession or in the chain of successions of the variable <strong>y</strong> after the 
                                         variable <strong>x</strong>.
                                     </li>

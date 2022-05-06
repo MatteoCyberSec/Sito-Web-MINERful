@@ -341,18 +341,18 @@
                         <br>
                         <br>
                         For example in the first image <strong>specification</strong> we see how each combination should start with <strong>c</strong> because of the template 
-                        <strong>Init(c)</strong> and immediately after an <strong>a</strong> there must be at least one <strong>d</strong> because of the template 
-                        <strong>Chain Response(d,a)</strong> and if there is a <strong>b</strong> then it must take at least one <strong>a</strong> not necessarily following
-                        because of the template <strong>Response(b,a)</strong>.
+                        <strong class="smallCaps">Init(c)</strong> and immediately after an <strong>a</strong> there must be at least one <strong>d</strong> because of the template 
+                        <strong class="smallCaps">ChainResponse(d,a)</strong> and if there is a <strong>b</strong> then it must take at least one <strong>a</strong> not necessarily following
+                        because of the template <strong class="smallCaps">Response(b,a)</strong>.
                         
                         <br>
                         <br>
                         In the second image <strong>specification</strong> we see how each combination should end with <strong>a</strong> because of 
-                        the template <strong>End(a)</strong> and if there is a <strong>b</strong> then it must take at least one <strong>a</strong> not necessarily following 
+                        the template <strong class="smallCaps">End(a)</strong> and if there is a <strong>b</strong> then it must take at least one <strong>a</strong> not necessarily following 
                         but the combination must end with <strong>a</strong> because of the template
-                        <strong>Response(b,a) with cardinal of b is (1..1) and End(a)</strong> template, and it cannot coexist in a combination <strong>d</strong> and <strong>e</strong>
+                        <strong class="smallCaps">Response(b,a)</strong> with cardinal of <strong>b</strong> is (1..1) and <strong class="smallCaps">End(a)</strong> template, and it cannot coexist in a combination <strong>d</strong> and <strong>e</strong>
                         and if the combination must end with <strong>a</strong> then it must be preceded by at least a <strong>c</strong> because of the template
-                        <strong>Chain Precedence(c,a) with End(a)</strong> .
+                        <strong class="smallCaps">ChainPrecedence(c,a)</strong> with <strong class="smallCaps">End(a)</strong> .
                         
                         <br>
                         For clarity visit 

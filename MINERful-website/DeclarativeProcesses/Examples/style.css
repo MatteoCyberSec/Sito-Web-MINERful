@@ -75,7 +75,11 @@ h3
     color:#261a1a;
 }
 
+.smallCaps
+{
+    font-variant: small-caps ;
 
+}
 
 section a
 {
