@@ -152,9 +152,6 @@
                             <li><a class="nav-link" href="../../About/License/index.html">License</a></li>
 
                             <li><a class="nav-link" href="../../About/Contact/index.html">Contact</a></li>
-
-                            <li><a class="nav-link" href="../../About/WorkInProgress/index.html">Work in Progress</a></li>
-  
                             
                         </ul>
 
@@ -188,7 +185,6 @@
         </div>
 
 
-
         <!--Grey Container-->
         <div class="container-fluid" id="boxG" >
 
@@ -197,6 +193,246 @@
 
                 <!--Column-->
                 <div class="col-sm-12 col-md-12 " id="boxG">
+
+                    <h2 style="text-align: center;">Process Mining</h2>
+
+                    <br>
+
+                </div>
+                
+                <!--Column-->
+                <div class="col-sm-12 col-md-9 " id="processMining">
+
+                    <p>
+                        Process mining aims at discovering, monitoring and improving real processes by extracting
+                        knowledge from event logs readily available in today's information systems as described by Wil Van Der Aalst. There are several process mining 
+                        techniques but all of them have an event log as a starting point. Each technique assumes that it is possible to record events sequentially so 
+                        that each of them relates to a particular activity and is associated with a particular process instance. A process instance is a single process execution. Logs can store additional information about events such as
+                        the resource (i.e. the person or device) executing Task, the timestamp of the event (i.e. an initial process value e.g. start time), or data 
+                        elements recorded with the event.   
+
+                        <br>
+                        <br>
+                        Event logs can be used to conduct three types of process mining:
+
+                        <!--Dot List-->
+                        <ul>
+                            <li>
+                                <p>
+                                    <strong>Process Discovery</strong>: The process discovery technique takes a log of events as input and outputs a model without using any a priori 
+                                    information. This is the most widely used and important technique in process mining.
+                                </p>
+                            </li>
+
+                            <br>
+
+                            <li>
+                                <p>
+                                    <strong>Conformance Checking</strong>: The conformance checking technique takes as input an existing process model and compares it with 
+                                    an event log of the same process. Conformance checking can be used to check whether reality, as recorded in the log, conforms to the 
+                                    model and vice versa.
+                                </p>
+                            </li>
+
+                            <br>
+
+                            <li>
+                                <p>
+                                    <strong>Enhancement</strong>: The enhancement technique exploits the idea of extending or improving an existing process model taken as 
+                                    input, using information about the actual process recorded in some event log. The main difference between conformance checking and 
+                                    enhancement is that in this technique the alignment between model and reality is measured, aiming to change or extend the model a prior.
+                                </p>
+                            </li>
+                        </ul>
+
+                        <br>
+                        Unlike existing analysis approaches, process mining is process-centred (not data-centred), truly intelligent (learning from historical data) 
+                        and fact-based (relying on event data). Concretely, we employ the Declare language, but all the presented ideas seamlessly apply any language that 
+                        can be formalized using logics over finite traces which are indeed at the core of Declare.
+
+                        <br>
+                        <br>
+
+                        An example of mining function:
+
+                        <br>
+                        <br>
+
+                        <!--Table-->
+                        <div class="row ">
+
+                            <!--Column-->
+                            <div class="col-sm-12 col-md-5">
+                                
+                                <!--SubTable-->
+                                <div class="row ">
+                                
+                                    <!--SubColumn-->
+                                    <div class="col-sm-12 col-md-12">
+                                        <strong>L = {</strong>
+                                    </div>
+
+                                    <!--SubColumn-->
+                                    <div class="col-sm-12 col-md-4 offset-1">
+
+                                        <i class="far fa-check-circle" style="color: limegreen;"></i> <strong>&#60;</strong><strong style="color: limegreen;">a</strong><strong>,b,c,b,d</strong><strong>&#62;<sup>60</sup></strong>,
+
+                                        <br>
+                                        <i class="far fa-times-circle" style="color: crimson;"></i> <strong>&#60;</strong><strong>c,</strong><strong style="color: crimson;">a</strong><strong>,b,d,b</strong><strong>&#62;<sup>6</sup></strong>,
+                                        
+                                        <br>
+                                        <i class="far fa-check-circle" style="color: limegreen;"></i> <strong>&#60;</strong><strong>c,c,c,d</strong><strong>&#62;<sup>10</sup></strong>,
+                                        
+                                        <br>
+                                        <i class="far fa-times-circle" style="color: crimson;"></i> <strong>&#60;</strong><strong style="color: limegreen;">a</strong><strong>,b,c,</strong><strong style="color: limegreen;">a</strong><strong>,b,</strong><strong style="color: limegreen;">a</strong><strong>,c,</strong><strong style="color: crimson;">a</strong><strong>&#62;<sup>24</sup></strong>
+                                    
+                                        
+                                    </div>
+
+                                    <!--SubColumn-->
+                                    <div class="col-sm-12 col-md-12">
+                                        <strong>}</strong>
+                                    </div>
+                                    
+                                </div>
+
+                            </div>
+
+                            
+                            <!--Column-->
+                            <div class="col-sm-12 col-md-5">
+
+                                <!--Dot List-->
+                                <ul>
+                                    <li>
+                                        Support for <strong class="smallCaps">Response</strong>(a,c):
+
+                                        <ul>
+                                            <br>
+                                            <li>
+                                                <strong>Case-based:</strong>
+
+                                                <br>
+
+                                                where the numerator is the set of all cases, except those that violate the constraint and the denominator is the set of all 
+                                                cases.
+
+                                                <br>
+                                                <br>
+                                                
+                                                <table>
+                                                    <tr> <td>
+                                                    <i>60+10</i> <hr> <i>60+6+10+24</i> <td><i> = </i></td> <td><i>70</i> <hr> <i>100</i></td> <td><i> = 70%</i></td></td>
+                                                    </td></tr>
+                                                </table>
+                                                
+                                            </li>
+
+                                            <br>
+
+                                            <li>
+                                                <strong>Event-based:</strong>
+
+                                                <br>
+                                                where the numerator is the set of all events, except those that violate the constraint and the denominator is the set of all 
+                                                events.
+
+                                                <br>
+                                                <br>
+
+                                                <table>
+                                                    <tr> <td>
+                                                    <i>5*60+(5-1)*6+4*10+(8-1)*24</i> <hr> <i>5*60+5*6+4*10+8*24</i> <td><i> = </i></td> <td><i>532</i> <hr> <i>562</i></td> <td><i> =&#126; 94.66%</i></td></td>
+                                                    </td></tr>
+                                                </table>
+                                            </li>
+
+                                        </ul>
+                                    </li>
+
+                                    <br>
+
+                                    <li>
+                                        Confidence for <strong class="smallCaps">Response</strong>(a,c):
+
+                                        <ul>
+                                            <br>
+
+                                            <li>
+                                                <strong>Case-based:</strong>
+
+                                                <br>
+                                                where the numerator is the set of all cases wherein the activation occurs, except those that violate the constraint and the denominator
+                                                is the set of all cases where the activation occurs.
+
+                                                <br>
+                                                <br>
+
+                                                <table>
+                                                    <tr> <td>
+                                                    <i>60</i> <hr> <i>60+6+24</i> <td><i> = </i></td> <td><i>60</i> <hr> <i>90</i></td> <td><i> =&#126; 66.67%</i></td></td>
+                                                    </td></tr>
+                                                </table>
+                                            </li>
+
+                                            <br>
+
+                                            <li>
+                                                <strong>Event-based:</strong>
+
+                                                <br>
+                                                where the numerator is the set of all activation events, except those that violate the constraint and the denominator is the set
+                                                of all activation events.
+
+                                                <br>
+                                                <br>
+
+                                                <table>
+                                                    <tr> <td>
+                                                    <i>1*60+(1-1)*6+(4-1)*24</i> <hr> <i>1*60+1*6+4*24</i> <td><i> = </i></td> <td><i>132</i> <hr> <i>162</i></td> <td><i> =&#126; 81.48%</i></td></td>
+                                                    </td></tr>
+                                                </table>
+
+                                            </li>
+                                        </ul>
+
+                                    </li>
+
+                                </ul>
+                                
+                            </div>
+
+                            
+
+                           
+                    </div>
+
+
+                    </p>
+                    
+                    
+                </div>
+
+                
+                <!--Empty Grey Column-->
+                <div class="col-sm-12 col-md-12" id="boxG">
+
+                </div>
+
+            </div>
+                
+        </div>
+
+
+
+        <!--Grey Container-->
+        <div class="container-fluid" id="boxW" >
+
+            <!--Table-->
+            <div class="row justify-content-center" >
+
+                <!--Column-->
+                <div class="col-sm-12 col-md-12 " id="boxW">
                 
                     <h2 style="text-align: center;">What is Automated Discovery?</h2>
 
@@ -221,7 +457,7 @@
                 </div>
 
                 <!--Empty Column-->
-                <div class="col-sm-12 col-md-12" id="boxG">
+                <div class="col-sm-12 col-md-12" id="boxW">
 
                 </div>
 
@@ -230,13 +466,13 @@
         </div>
 
         <!--Grey Container-->
-        <div class="container-fluid" id="boxW" >
+        <div class="container-fluid" id="boxG" >
 
             <!--Table-->
             <div class="row justify-content-center" >
 
                 <!--Column-->
-                <div class="col-sm-12 col-md-12 " id="boxW">
+                <div class="col-sm-12 col-md-12 " id="boxG">
                 
                     <h2 style="text-align: center;">How does Automated Discovery work?</h2>
 
@@ -267,7 +503,7 @@
                 </div>
 
                 <!--Empty Column-->
-                <div class="col-sm-12 col-md-12" id="boxW">
+                <div class="col-sm-12 col-md-12" id="boxG">
 
                 </div>
 
@@ -277,7 +513,7 @@
 
 
         <!--Grey Container-->
-        <div class="container-fluid" id="boxG" >
+        <div class="container-fluid" id="boxW" >
 
             <!--Table-->
             <div class="row justify-content-center" >
@@ -285,7 +521,7 @@
                 
 
                 <!--Column-->
-                <div class="col-sm-12 col-md-4 " id="boxG">
+                <div class="col-sm-12 col-md-4 " id="boxW">
                 
                     <h2>Clustering + Rule Mining</h2>
 
@@ -303,7 +539,7 @@
                 </div>
 
                 <!--Column-->
-                <div class="col-sm-12 col-md-1 " id="boxG">
+                <div class="col-sm-12 col-md-1 " id="boxW">
 
                     <h2>vs</h2>
 
@@ -312,7 +548,7 @@
                 
 
                 <!--Column-->
-                <div class="col-sm-12 col-md-4 " id="boxG">
+                <div class="col-sm-12 col-md-4 " id="boxW">
                 
                     <h2>Redescription Mining</h2>
 
@@ -331,19 +567,19 @@
                 </div>
 
                 <!--Empty Column-->
-                <div class="col-sm-12 col-md-12" id="boxG">
+                <div class="col-sm-12 col-md-12" id="boxW">
 
                 </div>
 
                 <!--Empty Column-->
-                <div class="col-sm-12 col-md-6" id="boxG">
+                <div class="col-sm-12 col-md-6" id="boxW">
                     
                     <img src="../../Contents/automated1.png" class="img-fluid" alt="Responsive image" >
 
                 </div>
 
                 <!--Empty Column-->
-                <div class="col-sm-12 col-md-12" id="boxG">
+                <div class="col-sm-12 col-md-12" id="boxW">
 
                 </div>
 
@@ -355,13 +591,13 @@
 
 
         <!--White Container-->
-        <div class="container-fluid" id="boxW" >
+        <div class="container-fluid" id="boxG" >
 
             <!--Table-->
             <div class="row justify-content-center" >
 
                 <!--Column-->
-                <div class="col-sm-12 col-md-12" id="boxW">
+                <div class="col-sm-12 col-md-12" id="boxG">
 
                     <h2 style="text-align: center;">Research Tooling</h2>
 
@@ -379,7 +615,7 @@
             </div>
 
             <!--Empty Column-->
-            <div class="col-sm-12 col-md-12" id="boxW">
+            <div class="col-sm-12 col-md-12" id="boxG">
 
             </div>
                 
@@ -543,10 +779,6 @@
 
                                 <li>
                                     <a href="../../About/Contact/index.html">Contact</a>
-                                </li>
-
-                                <li>
-                                    <a href="../../About/WorkInProgress/index.html">Work in Progress</a>
                                 </li>
 
                                 <li>

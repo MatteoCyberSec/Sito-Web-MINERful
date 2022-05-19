@@ -27,21 +27,6 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 
-        <!--Script JQuery-->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-
-        <!--Run Function when the page has been loaded correctly-->
-        <script>
-            //run the function after a timeout
-            window.onload=setTimeout(function(){showBox("dSpecification")}, 1000);
-
-            window.onload=setTimeout(function(){showBox("dSpecificationD")}, 1500);
-
-            window.onload=setTimeout(function(){showBox("dSpecificationS")}, 2000);
-
-        </script>
-
-
     </head>
 
     <body>
@@ -167,9 +152,6 @@
                             <li><a class="nav-link" href="../../About/License/index.html">License</a></li>
 
                             <li><a class="nav-link" href="../../About/Contact/index.html">Contact</a></li>
-
-                            <li><a class="nav-link" href="../../About/WorkInProgress/index.html">Work in Progress</a></li>
-  
                             
                         </ul>
 
@@ -219,7 +201,7 @@
                 </div>
 
                 <!--Grey Column-->
-                <div class="col-sm-12 col-md-8 " id="dSpecification" style="display: none;">
+                <div class="col-sm-12 col-md-8 ">
 
                     <p>
                         A <strong>description</strong> consists in exposing in natural language the reality to be modeled. Given a description you can proceed by creating a 
@@ -248,7 +230,7 @@
 
                     <br>
 
-                    <ul id="dSpecificationD" style="display: none;">
+                    <ul>
                         <li>
                             <p>
                                 Every process instance starts with receiving an invoice.  --> <strong>Receive invoice</strong>
@@ -304,7 +286,7 @@
 
                     <br>
                     
-                    <img src="../../Contents/examples1.png" class="img-fluid" alt="Responsive image" id="dSpecificationS" style="display: none;">
+                    <img src="../../Contents/examples1.png" class="img-fluid" alt="Responsive image">
 
                 </div>
 
@@ -341,18 +323,18 @@
                         <br>
                         <br>
                         For example in the first image <strong>specification</strong> we see how each combination should start with <strong>c</strong> because of the template 
-                        <strong class="smallCaps">Init(c)</strong> and immediately after an <strong>a</strong> there must be at least one <strong>d</strong> because of the template 
-                        <strong class="smallCaps">ChainResponse(d,a)</strong> and if there is a <strong>b</strong> then it must take at least one <strong>a</strong> not necessarily following
-                        because of the template <strong class="smallCaps">Response(b,a)</strong>.
+                        <strong class="smallCaps">Init</strong>(c) and immediately after an <strong>a</strong> there must be at least one <strong>d</strong> because of the template 
+                        <strong class="smallCaps">ChainResponse</strong>(d,a) and if there is a <strong>b</strong> then it must take at least one <strong>a</strong> not necessarily following
+                        because of the template <strong class="smallCaps">Response</strong>(b,a).
                         
                         <br>
                         <br>
                         In the second image <strong>specification</strong> we see how each combination should end with <strong>a</strong> because of 
-                        the template <strong class="smallCaps">End(a)</strong> and if there is a <strong>b</strong> then it must take at least one <strong>a</strong> not necessarily following 
+                        the template <strong class="smallCaps">End</strong>(a) and if there is a <strong>b</strong> then it must take at least one <strong>a</strong> not necessarily following 
                         but the combination must end with <strong>a</strong> because of the template
-                        <strong class="smallCaps">Response(b,a)</strong> with cardinal of <strong>b</strong> is (1..1) and <strong class="smallCaps">End(a)</strong> template, and it cannot coexist in a combination <strong>d</strong> and <strong>e</strong>
+                        <strong class="smallCaps">Response</strong>(b,a) with cardinal of <strong>b</strong> is (1..1) and <strong class="smallCaps">End</strong>(a) template, and it cannot coexist in a combination <strong>d</strong> and <strong>e</strong>
                         and if the combination must end with <strong>a</strong> then it must be preceded by at least a <strong>c</strong> because of the template
-                        <strong class="smallCaps">ChainPrecedence(c,a)</strong> with <strong class="smallCaps">End(a)</strong> .
+                        <strong class="smallCaps">ChainPrecedence</strong>(c,a) with <strong class="smallCaps">End</strong>(a) .
                         
                         <br>
                         For clarity visit 
@@ -559,46 +541,46 @@
                     <br>
 
                     <!--Table-->
-                    <div class="row " style="font-variant: small-caps;">
+                    <div class="row ">
 
                         <!--Column-->
                         <div class="col-sm-12 col-md-12">
-                            <i class="far fa-check-circle"></i> Init(a)
+                            <i class="far fa-check-circle"></i> <strong class="smallCaps">Init</strong>(a)
                         </div>
 
                         <!--Column-->
                         <div class="col-sm-12 col-md-12">
-                            <i class="far fa-check-circle"></i>Participation(d)
+                            <i class="far fa-check-circle"></i> <strong class="smallCaps">Participation</strong>(d)
                         </div>
 
                         <!--Column-->
                         <div class="col-sm-12 col-md-12">
-                            <i class="far fa-check-circle"></i> NotSuccession(d,e)
+                            <i class="far fa-check-circle"></i> <strong class="smallCaps">NotSuccession</strong>(d,e)
                         </div>
 
                         <!--Column-->
                         <div class="col-sm-12 col-md-12">
-                            <i class="far fa-check-circle"></i> NotChainSuccession(a,d)
+                            <i class="far fa-check-circle"></i> <strong class="smallCaps">NotChainSuccession</strong>(a,d)
                         </div>
 
                         <!--Column-->
                         <div class="col-sm-12 col-md-12">
-                            <i class="far fa-check-circle"></i> End(d)
+                            <i class="far fa-check-circle"></i> <strong class="smallCaps">End</strong>(d)
                         </div>
 
                         <!--Column-->
                         <div class="col-sm-12 col-md-12">
-                            <i class="far fa-check-circle"></i> Precedence(b,d)
+                            <i class="far fa-check-circle"></i> <strong class="smallCaps">Precedence</strong>(b,d)
                         </div>
 
                         <!--Column-->
                         <div class="col-sm-12 col-md-12">
-                            <i class="far fa-check-circle"></i> CoExistence(b,c)
+                            <i class="far fa-check-circle"></i> <strong class="smallCaps">CoExistence</strong>(b,c)
                         </div>
 
                         <!--Column-->
                         <div class="col-sm-12 col-md-12">
-                            <i class="far fa-check-circle"></i> Response(a,c)
+                            <i class="far fa-check-circle"></i> <strong class="smallCaps">Response</strong>(a,c)
                         </div>
 
                     </div>
@@ -773,10 +755,6 @@
 
                                 <li>
                                     <a href="../../About/Contact/index.html">Contact</a>
-                                </li>
-
-                                <li>
-                                    <a href="../../About/WorkInProgress/index.html">Work in Progress</a>
                                 </li>
 
                                 <li>

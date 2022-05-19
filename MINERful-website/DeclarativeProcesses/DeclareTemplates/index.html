@@ -153,9 +153,6 @@
 
                             <li><a class="nav-link" href="../../About/Contact/index.html">Contact</a></li>
 
-                            <li><a class="nav-link" href="../../About/WorkInProgress/index.html">Work in Progress</a></li>
-  
-                            
                         </ul>
 
                     </li>
@@ -200,6 +197,29 @@
                     <h2 style="text-align: center;">Declare templates: Existence constraints</h2>
 
                     <br>
+                    <br>
+
+                    <!--Dot List-->
+                    <ul style="text-align: center; list-style-position: inside;">
+                        
+                        <li style="color: limegreen;">
+                            <strong>The constraint is respected</strong>
+                        </li>
+
+                        <br>
+
+                        <li style="color: crimson;">
+                            <strong>The constraint is not respected</strong>
+                        </li>
+
+                        <br>
+
+                        <li>
+                            <strong>The constraint is vacuously satisfied</strong>
+                        </li>
+                    </ul>
+
+                   
 
                 </div>
 
@@ -220,7 +240,7 @@
                 <div class="col-sm-12 col-md-3 " id="text1">
 
                     <p>
-                        <strong class="smallCaps">Init(a)</strong>: Every process instance starts with activity <strong>a</strong>.
+                        <strong class="smallCaps">Init</strong>(a): Every process instance starts with activity <strong>a</strong>.
                     </p>
 
                     <!--Table-->
@@ -228,27 +248,27 @@
 
                         <!--Column-->
                         <div class="col-sm-12 col-md-4">
-                            <i class="far fa-times-circle"></i> bcaad
+                            <i class="far fa-times-circle" style="color: crimson;"></i> <strong style="color: crimson;">b</strong><strong>caad</strong>
                         </div>
 
                         <!--Column-->
                         <div class="col-sm-12 col-md-4">
-                            <i class="far fa-check-circle"></i> adcac
+                            <i class="far fa-check-circle" style="color: limegreen;"></i> <strong style="color: limegreen;">a</strong><strong>dcac</strong>
                         </div>
 
                         <!--Column-->
                         <div class="col-sm-12 col-md-4">
-                            <i class="far fa-times-circle"></i> dabce
+                            <i class="far fa-times-circle" style="color: crimson;"></i> <strong style="color: crimson;">d</strong><strong>abce</strong>
                         </div>
 
                         <!--Column-->
                         <div class="col-sm-12 col-md-4">
-                            <i class="far fa-check-circle"></i>  aeb
+                            <i class="far fa-check-circle" style="color: limegreen;"></i> <strong style="color: limegreen;">a</strong><strong>eb</strong>
                         </div>
 
                         <!--Column-->
                         <div class="col-sm-12 col-md-4">
-                            <i class="far fa-check-circle"></i> aabde
+                            <i class="far fa-check-circle" style="color: limegreen;"></i> <strong style="color: limegreen;">a</strong><strong>abde</strong>
                         </div>
 
                     </div>
@@ -273,7 +293,7 @@
                 <div class="col-sm-12 col-md-3 " id="text2">
 
                     <p>
-                        <strong class="smallCaps">End(a)</strong>: Every process instance ends with activity <strong>a</strong>.
+                        <strong class="smallCaps">End</strong>(a): Every process instance ends with activity <strong>a</strong>.
                     <p>
 
                     <!--Table-->
@@ -281,27 +301,27 @@
 
                         <!--Column-->
                         <div class="col-sm-12 col-md-4">
-                            <i class="far fa-times-circle"></i> abcde
+                            <i class="far fa-times-circle" style="color: crimson;"></i> <strong>abcd</strong><strong style="color: crimson;">e</strong>
                         </div>
 
                         <!--Column-->
                         <div class="col-sm-12 col-md-4">
-                            <i class="far fa-check-circle"></i> cedea
+                            <i class="far fa-check-circle" style="color: limegreen;"></i> <strong>cede</strong><strong style="color: limegreen;">a</strong>
                         </div>
 
                         <!--Column-->
                         <div class="col-sm-12 col-md-4">
-                            <i class="far fa-check-circle"></i> aacbaa
+                            <i class="far fa-check-circle" style="color: limegreen;"></i> <strong>aacba</strong><strong style="color: limegreen;">a</strong>
                         </div>
 
                         <!--Column-->
                         <div class="col-sm-12 col-md-4">
-                            <i class="far fa-times-circle"></i> ababac
+                            <i class="far fa-times-circle" style="color: crimson;"></i> <strong>ababa</strong><strong style="color: crimson;">c</strong>
                         </div>
 
                         <!--Column-->
                         <div class="col-sm-12 col-md-4">
-                            <i class="far fa-times-circle"></i> aabde
+                            <i class="far fa-times-circle" style="color: crimson;"></i> <strong>aabd</strong><strong style="color: crimson;">e</strong>
                         </div>
 
                     </div>
@@ -326,7 +346,7 @@
                 <div class="col-sm-12 col-md-3 " id="text3" >
 
                     <p>
-                        <strong class="smallCaps">Participation(a)</strong>: Activity <strong>a</strong> occurs at least once.
+                        <strong class="smallCaps">Participation</strong>(a): Activity <strong>a</strong> occurs at least once.
 
                     </p>
                         
@@ -336,27 +356,27 @@
 
                         <!--Column-->
                         <div class="col-sm-12 col-md-4">
-                            <i class="far fa-times-circle"></i> bbcd
+                            <i class="far fa-times-circle" style="color: crimson;"></i> <strong>bbcd</strong>
                         </div>
 
                         <!--Column-->
                         <div class="col-sm-12 col-md-4">
-                            <i class="far fa-check-circle"></i> bedcca
+                            <i class="far fa-check-circle" style="color: limegreen;"></i> <strong>bedcc</strong><strong style="color: limegreen;">a</strong>
                         </div>
 
                         <!--Column-->
                         <div class="col-sm-12 col-md-4">
-                            <i class="far fa-check-circle"></i> bcaeda
+                            <i class="far fa-check-circle" style="color: limegreen;"></i> <strong>bc</strong><strong style="color: limegreen;">a</strong><strong>eda</strong>
                         </div>
 
                         <!--Column-->
                         <div class="col-sm-12 col-md-4">
-                            <i class="far fa-times-circle"></i> dbdeb
+                            <i class="far fa-times-circle" style="color: crimson;"></i> <strong>dbdeb</strong>
                         </div>
 
                         <!--Column-->
                         <div class="col-sm-12 col-md-4">
-                            <i class="far fa-check-circle"></i> aabde
+                            <i class="far fa-check-circle" style="color: limegreen;"></i> <strong style="color: limegreen;">a</strong><strong>abde</strong>
                         </div>
 
                     </div>
@@ -380,7 +400,7 @@
                 <div class="col-sm-12 col-md-3 " id="text4" >
 
                     <p>
-                        <strong class="smallCaps">AtMostOne(a)</strong>: Activity <strong>a</strong> occurs at most once.
+                        <strong class="smallCaps">AtMostOne</strong>(a): Activity <strong>a</strong> occurs at most once.
                     </p>
 
                     <!--Table-->
@@ -388,27 +408,27 @@
 
                         <!--Column-->
                         <div class="col-sm-12 col-md-4">
-                            <i class="far fa-times-circle"></i> baea
+                            <i class="far fa-times-circle" style="color: crimson;"></i> <strong>b</strong><strong style="color: crimson;">a</strong><strong>e</strong><strong style="color: crimson;">a</strong>
                         </div>
 
                         <!--Column-->
                         <div class="col-sm-12 col-md-4">
-                            <i class="far fa-check-circle"></i> beed
+                            <i class="far fa-check-circle" style="color: limegreen;"></i> <strong>beed</strong>
                         </div>
 
                         <!--Column-->
                         <div class="col-sm-12 col-md-4">
-                            <i class="far fa-check-circle"></i> acccd
+                            <i class="far fa-check-circle" style="color: limegreen;"></i> <strong style="color: limegreen;">a</strong><strong>cccd</strong>
                         </div>
 
                         <!--Column-->
                         <div class="col-sm-12 col-md-4">
-                            <i class="far fa-check-circle"></i> edbcd
+                            <i class="far fa-check-circle" style="color: limegreen;"></i> <strong>edbcd</strong>
                         </div>
 
                         <!--Column-->
                         <div class="col-sm-12 col-md-4">
-                            <i class="far fa-times-circle"></i> aabde
+                            <i class="far fa-times-circle" style="color: crimson;"></i> <strong style="color: crimson;">a</strong><strong style="color: crimson;">a</strong><strong>bde</strong>
                         </div>
 
                     </div>
@@ -458,7 +478,7 @@
                 <div class="col-sm-12 col-md-5 ">
    
                     <p>
-                        <strong class="smallCaps">RespondedExistence(a, b)</strong>: If <strong>a</strong> occurs, <strong>b</strong> has to occur at some point, no matter when.
+                        <strong class="smallCaps">RespondedExistence</strong>(a, b): If <strong>a</strong> occurs, <strong>b</strong> has to occur at some point, no matter when.
                     </p>
 
                     <!--Table-->
@@ -466,27 +486,27 @@
 
                         <!--Column-->
                         <div class="col-sm-12 col-md-4">
-                            <i class="far fa-check-circle"></i> bcdd
+                            <i class="far fa-check-circle" style="color: limegreen;"></i> <strong>bcdd</strong>
                         </div>
 
                         <!--Column-->
                         <div class="col-sm-12 col-md-4">
-                            <i class="far fa-check-circle"></i> bdca
+                            <i class="far fa-check-circle" style="color: limegreen;"></i> <strong style="color: limegreen;">b</strong><strong>dc</strong><strong style="color: limegreen;">a</strong>
                         </div>
 
                         <!--Column-->
                         <div class="col-sm-12 col-md-4">
-                            <i class="far fa-times-circle"></i> addcd
+                            <i class="far fa-times-circle" style="color: crimson;"></i> <strong style="color: limegreen;">a</strong><strong>ddcd</strong>
                         </div>
 
                         <!--Column-->
                         <div class="col-sm-12 col-md-4">
-                            <i class="far fa-check-circle"></i> adaab
+                            <i class="far fa-check-circle" style="color: limegreen;"></i> <strong style="color: limegreen;">a</strong><strong>daa</strong><strong style="color: limegreen;">b</strong>
                         </div>
 
                         <!--Column-->
                         <div class="col-sm-12 col-md-4">
-                            <i class="far fa-check-circle"></i> bdaacb
+                            <i class="far fa-check-circle" style="color: limegreen;"></i> <strong style="color: limegreen;">b</strong><strong>d</strong><strong style="color: limegreen;">a</strong><strong>acb</strong>
                         </div>
 
                     </div>
@@ -509,7 +529,7 @@
                 <div class="col-sm-12 col-md-5 ">
    
                     <p>
-                        <strong class="smallCaps">Response(a, b)</strong>: if <strong>a</strong> occurs, <strong>b</strong> has to occur after <strong>a</strong>.
+                        <strong class="smallCaps">Response</strong>(a, b): if <strong>a</strong> occurs, <strong>b</strong> has to occur after <strong>a</strong>.
                     </p>
 
                     <!--Table-->
@@ -517,27 +537,27 @@
 
                         <!--Column-->
                         <div class="col-sm-12 col-md-4">
-                            <i class="far fa-times-circle"></i> bdaac
+                            <i class="far fa-times-circle" style="color: crimson;"></i> <strong>bd</strong><strong style="color: limegreen;">a</strong><strong style="color: crimson;">ac</strong>
                         </div>
 
                         <!--Column-->
                         <div class="col-sm-12 col-md-4">
-                            <i class="far fa-check-circle"></i> adbbc
+                            <i class="far fa-check-circle" style="color: limegreen;"></i> <strong style="color: limegreen;">a</strong><strong>d</strong><strong style="color: limegreen;">b</strong><strong>bc</strong>
                         </div>
 
                         <!--Column-->
                         <div class="col-sm-12 col-md-4">
-                            <i class="far fa-check-circle"></i> cddce
+                            <i class="far fa-check-circle" style="color: limegreen;"></i> <strong>cddce</strong>
                         </div>
 
                         <!--Column-->
                         <div class="col-sm-12 col-md-4">
-                            <i class="far fa-times-circle"></i> aadccba
+                            <i class="far fa-times-circle" style="color: crimson;"></i> <strong style="color: limegreen;">a</strong><strong>adcc</strong><strong style="color: limegreen;">b</strong><strong style="color: limegreen;">a</strong>
                         </div>
 
                         <!--Column-->
                         <div class="col-sm-12 col-md-4">
-                            <i class="far fa-check-circle"></i> bdaacb
+                            <i class="far fa-check-circle" style="color: limegreen;"></i> <strong>bd</strong><strong style="color: limegreen;">a</strong><strong>ac</strong><strong style="color: limegreen;">b</strong>
                         </div>
 
                     </div>
@@ -561,7 +581,7 @@
                 <div class="col-sm-12 col-md-5 ">
    
                     <p>
-                        <strong class="smallCaps">AlternateResponse(a, b)</strong>: If <strong>a</strong> occurs, <strong>b</strong> has to occur after <strong>a</strong>, with no a in-between.
+                        <strong class="smallCaps">AlternateResponse</strong>(a, b): If <strong>a</strong> occurs, <strong>b</strong> has to occur after <strong>a</strong>, with no <strong>a</strong> in-between.
                     </p>
 
                     <!--Table-->
@@ -569,27 +589,27 @@
 
                         <!--Column-->
                         <div class="col-sm-12 col-md-4">
-                            <i class="far fa-times-circle"></i> abbbd
+                            <i class="far fa-times-circle" style="color: crimson;"></i> <strong style="color: limegreen;">a</strong><strong style="color: crimson;">a</strong><strong style="color: limegreen;">b</strong><strong>bd</strong>
                         </div>
 
                         <!--Column-->
                         <div class="col-sm-12 col-md-4">
-                            <i class="far fa-check-circle"></i> aedbab
+                            <i class="far fa-check-circle" style="color: limegreen;"></i> <strong style="color: limegreen;">a</strong><strong>edb</strong><strong style="color: limegreen;">a</strong><strong style="color: limegreen;">b</strong>
                         </div>
 
                         <!--Column-->
                         <div class="col-sm-12 col-md-4">
-                            <i class="far fa-check-circle"></i> beedcd
+                            <i class="far fa-check-circle" style="color: limegreen;"></i> <strong>beedcd</strong>
                         </div>
 
                         <!--Column-->
                         <div class="col-sm-12 col-md-4">
-                            <i class="far fa-times-circle"></i> abababa
+                            <i class="far fa-times-circle" style="color: crimson;"></i> <strong style="color: limegreen;">a</strong><strong style="color: limegreen;">b</strong><strong style="color: limegreen;">a</strong><strong style="color: limegreen;">b</strong><strong style="color: limegreen;">a</strong><strong style="color: limegreen;">b</strong><strong style="color: crimson;">a</strong>
                         </div>
 
                         <!--Column-->
                         <div class="col-sm-12 col-md-4">
-                            <i class="far fa-times-circle"></i> bdaacb
+                            <i class="far fa-times-circle" style="color: crimson;"></i> <strong>bd</strong><strong style="color: limegreen;">aa</strong><strong style="color:crimson;">c</strong><strong>b</strong>
                         </div>
 
                     </div>
@@ -612,7 +632,7 @@
                 <div class="col-sm-12 col-md-5 ">
    
                     <p>
-                        <strong class="smallCaps">ChainResponse(a, b)</strong>: <strong>b</strong> has to occur immediately after <strong>a</strong>.
+                        <strong class="smallCaps">ChainResponse</strong>(a, b): If <strong>a</strong> occurs, <strong>b</strong> has to occur immediately after <strong>a</strong>.
 
                     </p>
                         
@@ -621,27 +641,27 @@
 
                         <!--Column-->
                         <div class="col-sm-12 col-md-4">
-                            <i class="far fa-times-circle"></i> cbaab
+                            <i class="far fa-times-circle" style="color: crimson;"></i> <strong>cb</strong><strong style="color: limegreen;">a</strong><strong style="color: crimson;">a</strong><strong style="color: limegreen;">b</strong>
                         </div>
 
                         <!--Column-->
                         <div class="col-sm-12 col-md-4">
-                            <i class="far fa-check-circle"></i> dabbab
+                            <i class="far fa-check-circle" style="color: limegreen;"></i> <strong>d</strong><strong style="color: limegreen;">a</strong><strong style="color: limegreen;">b</strong><strong>b</strong><strong style="color: limegreen;">a</strong><strong style="color: limegreen;">b</strong>
                         </div>
 
                         <!--Column-->
                         <div class="col-sm-12 col-md-4">
-                            <i class="far fa-times-circle"></i> aba
+                            <i class="far fa-times-circle" style="color: crimson;"></i> <strong style="color: limegreen;">a</strong><strong style="color: limegreen;">b</strong><strong style="color: crimson;">a</strong>
                         </div>
 
                         <!--Column-->
                         <div class="col-sm-12 col-md-4">
-                            <i class="far fa-check-circle"></i> bdbababb
+                            <i class="far fa-check-circle" style="color: limegreen;"></i> <strong>bdb</strong><strong style="color: limegreen;">a</strong><strong style="color: limegreen;">b</strong><strong style="color: limegreen;">a</strong><strong style="color: limegreen;">b</strong><strong>b</strong>
                         </div>
 
                         <!--Column-->
                         <div class="col-sm-12 col-md-4">
-                            <i class="far fa-times-circle"></i> bdaacb
+                            <i class="far fa-times-circle" style="color: crimson;"></i> <strong>bd</strong><strong style="color: limegreen;">a</strong><strong style="color: crimson;">a</strong><strong>cb</strong>
                         </div>
 
                     </div>
@@ -690,7 +710,7 @@
                 <div class="col-sm-12 col-md-5">
 
                     <p>
-                        <strong class="smallCaps">RespondedExistence(b, a)</strong>: If <strong>b</strong> occurs, <strong>a</strong> has to occur at some point, no matter when
+                        <strong class="smallCaps">RespondedExistence</strong>(b, a): If <strong>b</strong> occurs, <strong>a</strong> has to occur at some point, no matter when
                     </p>
 
                     <!--Table-->
@@ -698,27 +718,27 @@
 
                         <!--Column-->
                         <div class="col-sm-12 col-md-4">
-                            <i class="far fa-check-circle"></i> acdd
+                            <i class="far fa-check-circle" style="color: limegreen;"></i> <strong>acdd</strong>
                         </div>
 
                         <!--Column-->
                         <div class="col-sm-12 col-md-4">
-                            <i class="far fa-check-circle"></i> bdca
+                            <i class="far fa-check-circle" style="color: limegreen;"></i> <strong style="color: limegreen;">b</strong><strong>dc</strong><strong style="color: limegreen;">a</strong>
                         </div>
 
                         <!--Column-->
                         <div class="col-sm-12 col-md-4">
-                            <i class="far fa-times-circle"></i> bddcd
+                            <i class="far fa-times-circle" style="color: crimson;"></i> <strong style="color: limegreen;">b</strong><strong>ddcd</strong>
                         </div>
 
                         <!--Column-->
                         <div class="col-sm-12 col-md-4">
-                            <i class="far fa-check-circle"></i> adabb
+                            <i class="far fa-check-circle" style="color: limegreen;"></i> <strong style="color: limegreen;">a</strong><strong>d</strong><strong style="color: limegreen;">a</strong><strong style="color: limegreen;">bb</strong>
                         </div>
 
                         <!--Column-->
                         <div class="col-sm-12 col-md-4">
-                            <i class="far fa-check-circle"></i> acbeead
+                            <i class="far fa-check-circle" style="color: limegreen;"></i> <strong style="color: limegreen;">a</strong><strong>c</strong><strong style="color: limegreen;">b</strong><strong>ee</strong><strong style="color: limegreen;">a</strong><strong>d</strong>
                         </div>
 
                     </div>
@@ -741,7 +761,7 @@
                 <div class="col-sm-12 col-md-5">
 
                     <p>
-                        <strong class="smallCaps">Precedence(a, b)</strong>: If b occurs, then <strong>a</strong> has to occur before <strong>b</strong>
+                        <strong class="smallCaps">Precedence</strong>(a, b): If <strong>b</strong> occurs, then <strong>a</strong> has to occur before <strong>b</strong>
                     </p>
                         
                     <!--Table-->
@@ -749,27 +769,27 @@
 
                         <!--Column-->
                         <div class="col-sm-12 col-md-4">
-                            <i class="far fa-times-circle"></i> cbdac
+                            <i class="far fa-times-circle" style="color: crimson;"></i> <strong style="color: crimson;">c</strong><strong style="color: limegreen;">b</strong><strong>dac</strong>
                         </div>
 
                         <!--Column-->
                         <div class="col-sm-12 col-md-4">
-                            <i class="far fa-check-circle"></i> adbbc
+                            <i class="far fa-check-circle" style="color: limegreen;"></i> <strong style="color: limegreen;">a</strong><strong>d</strong><strong style="color: limegreen;">bb</strong><strong>c</strong>
                         </div>
 
                         <!--Column-->
                         <div class="col-sm-12 col-md-4">
-                            <i class="far fa-check-circle"></i> cddcea
+                            <i class="far fa-check-circle" style="color: limegreen;"></i> <strong>cddcea</strong>
                         </div>
 
                         <!--Column-->
                         <div class="col-sm-12 col-md-4">
-                            <i class="far fa-check-circle"></i> aadccba
+                            <i class="far fa-check-circle" style="color: limegreen;"></i> <strong style="color: limegreen;">aa</strong><strong>dcc</strong><strong style="color: limegreen;">b</strong><strong>a</strong>
                         </div>
 
                         <!--Column-->
                         <div class="col-sm-12 col-md-4">
-                            <i class="far fa-check-circle"></i> acbeead
+                            <i class="far fa-check-circle" style="color: limegreen;"></i> <strong style="color: limegreen;">a</strong><strong>c</strong><strong style="color: limegreen;">b</strong><strong>eead</strong>
                         </div>
 
                     </div>
@@ -793,7 +813,7 @@
                 <div class="col-sm-12 col-md-5">
 
                     <p>
-                        <strong class="smallCaps">AlternatePrecedence(a, b)</strong>: Each time <strong>b</strong> occurs, it is preceded by <strong>a</strong>, with no <strong>b</strong> in-between
+                        <strong class="smallCaps">AlternatePrecedence</strong>(a, b): Each time <strong>b</strong> occurs, it is preceded by <strong>a</strong>, with no <strong>b</strong> in-between
                     </p>
 
                     <!--Table-->
@@ -801,27 +821,27 @@
 
                         <!--Column-->
                         <div class="col-sm-12 col-md-4">
-                            <i class="far fa-check-circle"></i> aabd
+                            <i class="far fa-check-circle" style="color: limegreen;"></i> <strong style="color: limegreen;">aab</strong><strong>d</strong>
                         </div>
 
                         <!--Column-->
                         <div class="col-sm-12 col-md-4">
-                            <i class="far fa-times-circle"></i> adbbab
+                            <i class="far fa-times-circle" style="color: crimson;"></i> <strong style="color: limegreen;">a</strong><strong>d</strong><strong style="color: crimson;">b</strong><strong style="color: limegreen;">b</strong><strong style="color: limegreen;">ab</strong>
                         </div>
 
                         <!--Column-->
                         <div class="col-sm-12 col-md-4">
-                            <i class="far fa-times-circle"></i> beead
+                            <i class="far fa-times-circle" style="color: crimson;"></i> <strong style="color: crimson;">b</strong><strong>eead</strong>
                         </div>
 
                         <!--Column-->
                         <div class="col-sm-12 col-md-4">
-                            <i class="far fa-check-circle"></i> abababa
+                            <i class="far fa-check-circle" style="color: limegreen;"></i> <strong style="color: limegreen;">ababab</strong><strong>a</strong>
                         </div>
 
                         <!--Column-->
                         <div class="col-sm-12 col-md-4">
-                            <i class="far fa-check-circle"></i> acbeead
+                            <i class="far fa-check-circle" style="color: limegreen;"></i> <strong style="color: limegreen;">a</strong><strong>c</strong><strong style="color: limegreen;">b</strong><strong>eead</strong>
                         </div>
 
                     </div>
@@ -844,7 +864,7 @@
                 <div class="col-sm-12 col-md-5">
 
                     <p>
-                        <strong class="smallCaps">ChainPrecedence(a, b)</strong>: If <strong>b</strong> occurs, then <strong>a</strong> has to occur immediately beforehand
+                        <strong class="smallCaps">ChainPrecedence</strong>(a, b): If <strong>b</strong> occurs, then <strong>a</strong> has to occur immediately beforehand
                     </p>
 
                     <!--Table-->
@@ -852,27 +872,27 @@
 
                         <!--Column-->
                         <div class="col-sm-12 col-md-4">
-                            <i class="far fa-times-circle"></i> ccbab
+                            <i class="far fa-times-circle" style="color: crimson;"></i> <strong>c</strong><strong style="color: crimson;">c</strong><strong style="color: limegreen;">b</strong><strong style="color: crimson;">a</strong><strong style="color: limegreen;">b</strong>
                         </div>
 
                         <!--Column-->
                         <div class="col-sm-12 col-md-4">
-                            <i class="far fa-times-circle"></i> abbab
+                            <i class="far fa-times-circle" style="color: crimson;"></i> <strong style="color: limegreen;">a</strong><strong style="color: crimson;">b</strong><strong style="color: limegreen;">bab</strong>
                         </div>
 
                         <!--Column-->
                         <div class="col-sm-12 col-md-4">
-                            <i class="far fa-check-circle"></i> aba
+                            <i class="far fa-check-circle" style="color: limegreen;"></i> <strong style="color: limegreen;">ab</strong><strong>a</strong>
                         </div>
 
                         <!--Column-->
                         <div class="col-sm-12 col-md-4">
-                            <i class="far fa-check-circle"></i> abaab
+                            <i class="far fa-check-circle" style="color: limegreen;"></i> <strong style="color: limegreen;">ab</strong><strong>a</strong><strong style="color: limegreen;">ab</strong>
                         </div>
 
                         <!--Column-->
                         <div class="col-sm-12 col-md-4">
-                            <i class="far fa-times-circle"></i> acbeead
+                            <i class="far fa-times-circle" style="color: crimson;"></i> <strong>a</strong><strong style="color: crimson;">c</strong><strong style="color: limegreen;">b</strong><strong>eead</strong>
                         </div>
 
                     </div>
@@ -920,8 +940,8 @@
                 <div class="col-sm-12 col-md-5">
 
                     <p>
-                        <strong class="smallCaps">CoExistence(a, b)</strong>: <strong class="smallCaps">RespondedExistence(a, b)</strong> and 
-                        <strong class="smallCaps">RespondedExistence(b, a)</strong> hold
+                        <strong class="smallCaps">CoExistence</strong>(a, b): <strong class="smallCaps">RespondedExistence</strong>(a, b) and 
+                        <strong class="smallCaps">RespondedExistence</strong>(b, a) hold
                     </p>
 
                     <!--Table-->
@@ -929,27 +949,27 @@
 
                         <!--Column-->
                         <div class="col-sm-12 col-md-4">
-                            <i class="far fa-times-circle"></i> bcdd
+                            <i class="far fa-times-circle" style="color: crimson;"></i> <strong style="color: limegreen;">b</strong><strong>cdd</strong>
                         </div>
 
                         <!--Column-->
                         <div class="col-sm-12 col-md-4">
-                            <i class="far fa-check-circle"></i> cddc
+                            <i class="far fa-check-circle" style="color: limegreen;"></i> <strong>cddc</strong>
                         </div>
 
                         <!--Column-->
                         <div class="col-sm-12 col-md-4">
-                            <i class="far fa-times-circle"></i> addcd
+                            <i class="far fa-times-circle" style="color: crimson;"></i> <strong style="color: limegreen;">a</strong><strong>ddcd</strong>
                         </div>
 
                         <!--Column-->
                         <div class="col-sm-12 col-md-4">
-                            <i class="far fa-check-circle"></i> adaab
+                            <i class="far fa-check-circle" style="color: limegreen;"></i> <strong style="color: limegreen;">a</strong><strong>d</strong><strong style="color: limegreen;">aab</strong>
                         </div>
 
                         <!--Column-->
                         <div class="col-sm-12 col-md-4">
-                            <i class="far fa-check-circle"></i> dbdaacb
+                            <i class="far fa-check-circle" style="color: limegreen;"></i> <strong>d</strong><strong style="color: limegreen;">b</strong><strong>d</strong><strong style="color: limegreen;">aa</strong><strong>c</strong><strong style="color: limegreen;">b</strong>
                         </div>
 
                     </div>
@@ -973,7 +993,7 @@
                 <div class="col-sm-12 col-md-5">
 
                     <p>   
-                        <strong class="smallCaps">Succession(a, b)</strong>: <strong class="smallCaps">Response(a, b)</strong> and <strong class="smallCaps">Precedence(b, a)</strong> hold
+                        <strong class="smallCaps">Succession</strong>(a, b): <strong class="smallCaps">Response</strong>(a, b) and <strong class="smallCaps">Precedence</strong>(b, a) hold
                     </p>
 
                     <!--Table-->
@@ -981,27 +1001,27 @@
 
                         <!--Column-->
                         <div class="col-sm-12 col-md-4">
-                            <i class="far fa-times-circle"></i> bdaac
+                            <i class="far fa-times-circle" style="color: crimson;"></i> <strong style="color: crimson;">b</strong><strong>d</strong><strong style="color: limegreen;">a</strong><strong style="color: crimson;">a</strong><strong>c</strong>
                         </div>
 
                         <!--Column-->
                         <div class="col-sm-12 col-md-4">
-                            <i class="far fa-check-circle"></i> adbbc
+                            <i class="far fa-check-circle" style="color: limegreen;"></i> <strong style="color: limegreen;">a</strong><strong>d</strong><strong style="color: limegreen;">bb</strong><strong>c</strong>
                         </div>
 
                         <!--Column-->
                         <div class="col-sm-12 col-md-4">
-                            <i class="far fa-check-circle"></i> cddce
+                            <i class="far fa-check-circle" style="color: limegreen;"></i> <strong>cddce</strong>
                         </div>
 
                         <!--Column-->
                         <div class="col-sm-12 col-md-4">
-                            <i class="far fa-times-circle"></i> aadccba
+                            <i class="far fa-times-circle" style="color: crimson;"></i> <strong style="color: limegreen;">aa</strong><strong>dcc</strong><strong style="color: limegreen;">b</strong><strong style="color: crimson;">a</strong>
                         </div>
 
                         <!--Column-->
                         <div class="col-sm-12 col-md-4">
-                            <i class="far fa-times-circle"></i> dbdaacb
+                            <i class="far fa-times-circle" style="color: crimson;"></i> <strong>d</strong><strong style="color: crimson;">b</strong><strong>d</strong><strong style="color: limegreen;">aa</strong><strong>c</strong><strong style="color: limegreen;">b</strong>
                         </div>
 
                     </div>
@@ -1025,8 +1045,8 @@
                 <div class="col-sm-12 col-md-5">
 
                     <p>      
-                        <strong class="smallCaps">AlternateSuccession(a, b)</strong>: <strong class="smallCaps">AlternateResponse(a, b)</strong> and 
-                        <strong class="smallCaps">AlternatePrecedence(b, a)</strong> hold
+                        <strong class="smallCaps">AlternateSuccession</strong>(a, b): <strong class="smallCaps">AlternateResponse</strong>(a, b) and 
+                        <strong class="smallCaps">AlternatePrecedence</strong>(b, a) hold
                     </p>
                         
 
@@ -1035,27 +1055,27 @@
 
                         <!--Column-->
                         <div class="col-sm-12 col-md-4">
-                            <i class="far fa-times-circle"></i> aabbd
+                            <i class="far fa-times-circle" style="color: crimson;"></i> <strong style="color: limegreen;">a</strong><strong style="color: crimson;">a</strong><strong style="color: limegreen;">b</strong><strong>bd</strong>
                         </div>
 
                         <!--Column-->
                         <div class="col-sm-12 col-md-4">
-                            <i class="far fa-check-circle"></i> addbab
+                            <i class="far fa-check-circle" style="color: limegreen;"></i> <strong style="color: limegreen;">a</strong><strong>dd</strong><strong style="color: limegreen;">bab</strong>
                         </div>
 
                         <!--Column-->
                         <div class="col-sm-12 col-md-4">
-                            <i class="far fa-times-circle"></i> beedcd
+                            <i class="far fa-times-circle" style="color: crimson;"></i> <strong style="color: crimson;">b</strong><strong>eedcd</strong>
                         </div>
 
                         <!--Column-->
                         <div class="col-sm-12 col-md-4">
-                            <i class="far fa-check-circle"></i> ababab
+                            <i class="far fa-check-circle" style="color: limegreen;"></i> <strong style="color: limegreen;">ababab</strong>
                         </div>
 
                         <!--Column-->
                         <div class="col-sm-12 col-md-4">
-                            <i class="far fa-times-circle"></i> dbdaacb
+                            <i class="far fa-times-circle" style="color: crimson;"></i> <strong style="color: crimson;">d</strong><strong style="color: limegreen;">b</strong><strong>d</strong><strong style="color: limegreen;">a</strong><strong style="color: crimson;">a</strong><strong>c</strong><strong style="color: limegreen;">b</strong>
                         </div>
 
                     </div>
@@ -1078,7 +1098,7 @@
                 <div class="col-sm-12 col-md-5">
 
                     <p>                       
-                        <strong class="smallCaps">ChainSuccession(a, b)</strong>: <strong class="smallCaps">ChainResponse(a, b)</strong> and <strong class="smallCaps">ChainPrecedence(b, a)</strong> hold
+                        <strong class="smallCaps">ChainSuccession</strong>(a, b): <strong class="smallCaps">ChainResponse</strong>(a, b) and <strong class="smallCaps">ChainPrecedence</strong>(b, a) hold
                     </p>
                         
 
@@ -1087,27 +1107,27 @@
 
                         <!--Column-->
                         <div class="col-sm-12 col-md-4">
-                            <i class="far fa-times-circle"></i> ccbab
+                            <i class="far fa-times-circle" style="color: crimson;"></i> <strong>c</strong><strong style="color: crimson;">c</strong ><strong style="color: limegreen;">bab</strong>
                         </div>
 
                         <!--Column-->
                         <div class="col-sm-12 col-md-4">
-                            <i class="far fa-times-circle"></i> dabbab
+                            <i class="far fa-times-circle" style="color: crimson;"></i> <strong>d</strong><strong style="color: limegreen;">a</strong><strong style="color: crimson;">b</strong><strong style="color: limegreen;">b</strong><strong style="color: limegreen;">ab</strong>
                         </div>
 
                         <!--Column-->
                         <div class="col-sm-12 col-md-4">
-                            <i class="far fa-check-circle"></i> dabab
+                            <i class="far fa-check-circle" style="color: limegreen;"></i> <strong>d</strong><strong style="color: limegreen;">abab</strong>
                         </div>
 
                         <!--Column-->
                         <div class="col-sm-12 col-md-4">
-                            <i class="far fa-times-circle"></i> babab
+                            <i class="far fa-times-circle" style="color: crimson;"></i> <strong style="color: crimson;">b</strong><strong style="color: limegreen;">abab</strong>
                         </div>
 
                         <!--Column-->
                         <div class="col-sm-12 col-md-4">
-                            <i class="far fa-times-circle"></i> dbdaacb
+                            <i class="far fa-times-circle" style="color: crimson;"></i> <strong style="color: crimson;">d</strong><strong style="color: limegreen;">b</strong><strong style="color: limegreen;">a</strong><strong style="color: crimson;">ac</strong><strong style="color: limegreen;">b</strong>
                         </div>
 
                     </div>
@@ -1155,7 +1175,7 @@
                 <div class="col-sm-12 col-md-5">
 
                     <p>               
-                        <strong class="smallCaps">NotCoExistence(a, b)</strong>: <strong>a</strong> and <strong>b</strong> cannot co-occur
+                        <strong class="smallCaps">NotCoExistence</strong>(a, b): <strong>a</strong> and <strong>b</strong> cannot co-occur
                     </p>
                         
                     <!--Table-->
@@ -1163,27 +1183,27 @@
 
                         <!--Column-->
                         <div class="col-sm-12 col-md-4">
-                            <i class="far fa-times-circle"></i> bdaac
+                            <i class="far fa-times-circle" style="color: crimson;"></i> <strong style="color: crimson;">b</strong><strong>d</strong><strong style="color: crimson;">aa</strong><strong>c</strong>
                         </div>
 
                         <!--Column-->
                         <div class="col-sm-12 col-md-4">
-                            <i class="far fa-check-circle"></i> adeec
+                            <i class="far fa-check-circle" style="color: limegreen;"></i> <strong style="color: limegreen;">a</strong><strong>deec</strong>
                         </div>
 
                         <!--Column-->
                         <div class="col-sm-12 col-md-4">
-                            <i class="far fa-check-circle"></i> cddce
+                            <i class="far fa-check-circle" style="color: limegreen;"></i> <strong>cddce</strong>
                         </div>
 
                         <!--Column-->
                         <div class="col-sm-12 col-md-4">
-                            <i class="far fa-check-circle"></i> cbdcb
+                            <i class="far fa-check-circle" style="color: limegreen;"></i> <strong>c</strong style="color: limegreen;"><strong>b</strong><strong>dc</strong><strong style="color: limegreen;">b</strong>
                         </div>
 
                         <!--Column-->
                         <div class="col-sm-12 col-md-4">
-                            <i class="far fa-times-circle"></i> aadccba
+                            <i class="far fa-times-circle" style="color: crimson;"></i> <strong style="color: crimson;">aa</strong><strong>dcc</strong><strong style="color: crimson;">ba</strong>
                         </div>
 
                     </div>
@@ -1206,7 +1226,7 @@
                 <div class="col-sm-12 col-md-5">
 
                     <p> 
-                        <strong class="smallCaps">NotSuccession(a, b)</strong>: <strong>b</strong> cannot occur after <strong>a</strong> and <strong>a</strong> cannot occur before <strong>b</strong>
+                        <strong class="smallCaps">NotSuccession</strong>(a, b): <strong>b</strong> cannot occur after <strong>a</strong> and <strong>a</strong> cannot occur before <strong>b</strong>
                     </p>
                         
                     <!--Table-->
@@ -1214,27 +1234,27 @@
 
                         <!--Column-->
                         <div class="col-sm-12 col-md-4">
-                            <i class="far fa-times-circle"></i> aabad
+                            <i class="far fa-times-circle" style="color: crimson;"></i> <strong style="color: crimson;">aab</strong><strong style="color: limegreen;">a</strong><strong>d</strong>
                         </div>
 
                         <!--Column-->
                         <div class="col-sm-12 col-md-4">
-                            <i class="far fa-check-circle"></i> adccda
+                            <i class="far fa-check-circle" style="color: limegreen;"></i> <strong style="color: limegreen;">a</strong><strong>dccd</strong><strong style="color: limegreen;">a</strong>
                         </div>
 
                         <!--Column-->
                         <div class="col-sm-12 col-md-4">
-                            <i class="far fa-check-circle"></i> bcdaed
+                            <i class="far fa-check-circle" style="color: limegreen;"></i> <strong style="color: limegreen;">b</strong><strong>cd</strong><strong style="color: limegreen;">a</strong><strong>ed</strong>
                         </div>
 
                         <!--Column-->
                         <div class="col-sm-12 col-md-4">
-                            <i class="far fa-times-circle"></i> dbabc
+                            <i class="far fa-times-circle" style="color: crimson;"></i> <strong>d</strong><strong style="color: limegreen;">ba</strong><strong style="color: crimson;">b</strong><strong>c</strong>
                         </div>
 
                         <!--Column-->
                         <div class="col-sm-12 col-md-4">
-                            <i class="far fa-times-circle"></i> aadccba
+                            <i class="far fa-times-circle" style="color: crimson;"></i> <strong style="color: crimson;">aa</strong><strong>dcc</strong><strong style="color: limegreen;">ba</strong>
                         </div>
 
                     </div>
@@ -1258,7 +1278,7 @@
                 <div class="col-sm-12 col-md-5">
 
                     <p>
-                        <strong class="smallCaps">NotChainSuccession(a, b)</strong>: <strong>b</strong> cannot occur immediately after <strong>a</strong>
+                        <strong class="smallCaps">NotChainSuccession</strong>(a, b): <strong>b</strong> cannot occur immediately after <strong>a</strong>
                     </p>
 
                     <!--Table-->
@@ -1266,27 +1286,27 @@
 
                         <!--Column-->
                         <div class="col-sm-12 col-md-4">
-                            <i class="far fa-times-circle"></i> cbbab
+                            <i class="far fa-times-circle" style="color: crimson;"></i> <strong>cbb</strong><strong style="color: limegreen;">a</strong><strong style="color: crimson;">b</strong>
                         </div>
 
                         <!--Column-->
                         <div class="col-sm-12 col-md-4">
-                            <i class="far fa-check-circle"></i> adadbb
+                            <i class="far fa-check-circle" style="color: limegreen;"></i> <strong style="color: limegreen;">adad</strong><strong>bb</strong>
                         </div>
 
                         <!--Column-->
                         <div class="col-sm-12 col-md-4">
-                            <i class="far fa-times-circle"></i> aba
+                            <i class="far fa-times-circle" style="color: crimson;"></i> <strong style="color: limegreen;">a</strong><strong style="color: crimson;">b</strong><strong>a</strong>
                         </div>
 
                         <!--Column-->
                         <div class="col-sm-12 col-md-4">
-                            <i class="far fa-check-circle"></i> aaadbbb
+                            <i class="far fa-check-circle" style="color: limegreen;"></i> <strong>aaad</strong><strong>bbb</strong>
                         </div>
 
                         <!--Column-->
                         <div class="col-sm-12 col-md-4">
-                            <i class="far fa-check-circle"></i> aadccba
+                            <i class="far fa-check-circle" style="color: limegreen;"></i> <strong style="color: limegreen;">aad</strong><strong>ccb</strong><strong style="color: limegreen;">a</strong>
                         </div>
 
                     </div>
@@ -1348,14 +1368,14 @@
                                 
                                 <ul>
                                     <li>
-                                        <strong class="smallCaps">Init(x)</strong> and <strong class="smallCaps">End(x)</strong> are considered <strong>Position templates</strong> because they define the 
+                                        <strong class="smallCaps">Init</strong>(x) and <strong class="smallCaps">End</strong>(x) are considered <strong>Position templates</strong> because they define the 
                                         initial and final position of the variable <strong>x</strong>.
                                     </li>
 
                                     <br>
 
                                     <li>
-                                        <strong class="smallCaps">Participation(x)</strong> and <strong class="smallCaps">AtMostOne(x)</strong> are considered <strong>Cardinality templates</strong> because 
+                                        <strong class="smallCaps">Participation</strong>(x) and <strong class="smallCaps">AtMostOne</strong>(x) are considered <strong>Cardinality templates</strong> because 
                                         they define the cardinality with which the variable <strong>x</strong> is referenced.
                                     </li>
                                 </ul>
@@ -1373,8 +1393,8 @@
                                 <ul>
                                     <li>
                                         
-                                        <strong class="smallCaps">RespondedExistance(y,x)</strong>, <strong class="smallCaps">Precedence(x,y)</strong>, <strong class="smallCaps">AlternatePrecedence(x,y)</strong> and 
-                                        <strong class="smallCaps">ChainPrecedence(x,y)</strong> are considered <strong>Backward-undirectional relation templates</strong> because 
+                                        <strong class="smallCaps">RespondedExistance</strong>(y,x), <strong class="smallCaps">Precedence</strong>(x,y), <strong class="smallCaps">AlternatePrecedence</strong>(x,y) and 
+                                        <strong class="smallCaps">ChainPrecedence</strong>(x,y) are considered <strong>Backward-undirectional relation templates</strong> because 
                                         they define that if the variable <strong>y</strong> occurs then previously must occur the variable <strong>x</strong>.
                                        
                                     </li>
@@ -1382,25 +1402,25 @@
                                     <br>
 
                                     <li>
-                                        <strong class="smallCaps">CoExistance(y,x)</strong>, <strong class="smallCaps">Succession(x,y)</strong>, <strong class="smallCaps">AlternateSuccession(x,y)</strong> and 
-                                        <strong class="smallCaps">ChainSuccession(x,y)</strong> are considered <strong>Coupling templates</strong> because 
+                                        <strong class="smallCaps">CoExistance</strong>(y,x), <strong class="smallCaps">Succession</strong>(x,y), <strong class="smallCaps">AlternateSuccession</strong>(x,y) and 
+                                        <strong class="smallCaps">ChainSuccession</strong>(x,y) are considered <strong>Coupling templates</strong> because 
                                         they define that if the variable <strong>x</strong> occurs then subsequently must occur the variable <strong>y</strong>.
                                     </li>
 
                                     <br>
 
                                     <li>
-                                        <strong class="smallCaps">RespondedExistance(x,y)</strong>, <strong class="smallCaps">Response(x,y)</strong>, <strong class="smallCaps">AlternateResponse(x,y)</strong> and 
-                                        <strong class="smallCaps">ChainResponse(x,y)</strong> are considered <strong>Forward-undirectional relation templates</strong> because 
-                                        they define the coexistence between constraints such as <strong>RespondedExistence(x, y)</strong> and 
-                                        <strong class="smallCaps">RespondedExistence(y, x)</strong>.
+                                        <strong class="smallCaps">RespondedExistance</strong>(x,y), <strong class="smallCaps">Response</strong>(x,y), <strong class="smallCaps">AlternateResponse</strong>(x,y) and 
+                                        <strong class="smallCaps">ChainResponse</strong>(x,y) are considered <strong>Forward-undirectional relation templates</strong> because 
+                                        they define the coexistence between constraints such as <strong>RespondedExistence</strong>(x, y) and 
+                                        <strong class="smallCaps">RespondedExistence</strong>(y, x).
                                     </li>
 
                                     <br>
 
                                     <li>
-                                        <strong class="smallCaps">NotCoExistance(x,y)</strong>, <strong class="smallCaps">NotSuccession(x,y)</strong> and 
-                                        <strong class="smallCaps">NotChainSuccession(x,y)</strong> are considered <strong>Negative templates</strong> because 
+                                        <strong class="smallCaps">NotCoExistance</strong>(x,y), <strong class="smallCaps">NotSuccession</strong>(x,y) and 
+                                        <strong class="smallCaps">NotChainSuccession</strong>(x,y) are considered <strong>Negative templates</strong> because 
                                         they define the absence in the immediate succession or in the chain of successions of the variable <strong>y</strong> after the 
                                         variable <strong>x</strong>.
                                     </li>
@@ -1583,10 +1603,6 @@
 
                                 <li>
                                     <a href="../../About/Contact/index.html">Contact</a>
-                                </li>
-
-                                <li>
-                                    <a href="../../About/WorkInProgress/index.html">Work in Progress</a>
                                 </li>
 
                                 <li>
