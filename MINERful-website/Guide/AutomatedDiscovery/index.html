@@ -107,7 +107,7 @@
 
                             <li ><a class="nav-link" href="../../Functionality/GenerateAutomaton/index.html">Generate Automaton</a></li>
 
-                            <li ><a class="nav-link" href="../../Functionality/SimplifyModel/index.html">Simplify Model</a></li>
+                            <li ><a class="nav-link" href="../../Functionality/SimplifySpecification/index.html">Simplify Specification</a></li>
                            
                         </ul>
 
@@ -253,159 +253,7 @@
                         <br>
                         <br>
 
-                        An example of mining function:
-
-                        <br>
-                        <br>
-
-                        <!--Table-->
-                        <div class="row ">
-
-                            <!--Column-->
-                            <div class="col-sm-12 col-md-5">
-                                
-                                <!--SubTable-->
-                                <div class="row ">
-                                
-                                    <!--SubColumn-->
-                                    <div class="col-sm-12 col-md-12">
-                                        <strong>L = {</strong>
-                                    </div>
-
-                                    <!--SubColumn-->
-                                    <div class="col-sm-12 col-md-4 offset-1">
-
-                                        <i class="far fa-check-circle" style="color: limegreen;"></i> <strong>&#60;</strong><strong style="color: limegreen;">a</strong><strong>,b,c,b,d</strong><strong>&#62;<sup>60</sup></strong>,
-
-                                        <br>
-                                        <i class="far fa-times-circle" style="color: crimson;"></i> <strong>&#60;</strong><strong>c,</strong><strong style="color: crimson;">a</strong><strong>,b,d,b</strong><strong>&#62;<sup>6</sup></strong>,
-                                        
-                                        <br>
-                                        <i class="far fa-check-circle" style="color: limegreen;"></i> <strong>&#60;</strong><strong>c,c,c,d</strong><strong>&#62;<sup>10</sup></strong>,
-                                        
-                                        <br>
-                                        <i class="far fa-times-circle" style="color: crimson;"></i> <strong>&#60;</strong><strong style="color: limegreen;">a</strong><strong>,b,c,</strong><strong style="color: limegreen;">a</strong><strong>,b,</strong><strong style="color: limegreen;">a</strong><strong>,c,</strong><strong style="color: crimson;">a</strong><strong>&#62;<sup>24</sup></strong>
-                                    
-                                        
-                                    </div>
-
-                                    <!--SubColumn-->
-                                    <div class="col-sm-12 col-md-12">
-                                        <strong>}</strong>
-                                    </div>
-                                    
-                                </div>
-
-                            </div>
-
-                            
-                            <!--Column-->
-                            <div class="col-sm-12 col-md-5">
-
-                                <!--Dot List-->
-                                <ul>
-                                    <li>
-                                        Support for <strong class="smallCaps">Response</strong>(a,c):
-
-                                        <ul>
-                                            <br>
-                                            <li>
-                                                <strong>Case-based:</strong>
-
-                                                <br>
-
-                                                where the numerator is the set of all cases, except those that violate the constraint and the denominator is the set of all 
-                                                cases.
-
-                                                <br>
-                                                <br>
-                                                
-                                                <table>
-                                                    <tr> <td>
-                                                    <i>60+10</i> <hr> <i>60+6+10+24</i> <td><i> = </i></td> <td><i>70</i> <hr> <i>100</i></td> <td><i> = 70%</i></td></td>
-                                                    </td></tr>
-                                                </table>
-                                                
-                                            </li>
-
-                                            <br>
-
-                                            <li>
-                                                <strong>Event-based:</strong>
-
-                                                <br>
-                                                where the numerator is the set of all events, except those that violate the constraint and the denominator is the set of all 
-                                                events.
-
-                                                <br>
-                                                <br>
-
-                                                <table>
-                                                    <tr> <td>
-                                                    <i>5*60+(5-1)*6+4*10+(8-1)*24</i> <hr> <i>5*60+5*6+4*10+8*24</i> <td><i> = </i></td> <td><i>532</i> <hr> <i>562</i></td> <td><i> =&#126; 94.66%</i></td></td>
-                                                    </td></tr>
-                                                </table>
-                                            </li>
-
-                                        </ul>
-                                    </li>
-
-                                    <br>
-
-                                    <li>
-                                        Confidence for <strong class="smallCaps">Response</strong>(a,c):
-
-                                        <ul>
-                                            <br>
-
-                                            <li>
-                                                <strong>Case-based:</strong>
-
-                                                <br>
-                                                where the numerator is the set of all cases wherein the activation occurs, except those that violate the constraint and the denominator
-                                                is the set of all cases where the activation occurs.
-
-                                                <br>
-                                                <br>
-
-                                                <table>
-                                                    <tr> <td>
-                                                    <i>60</i> <hr> <i>60+6+24</i> <td><i> = </i></td> <td><i>60</i> <hr> <i>90</i></td> <td><i> =&#126; 66.67%</i></td></td>
-                                                    </td></tr>
-                                                </table>
-                                            </li>
-
-                                            <br>
-
-                                            <li>
-                                                <strong>Event-based:</strong>
-
-                                                <br>
-                                                where the numerator is the set of all activation events, except those that violate the constraint and the denominator is the set
-                                                of all activation events.
-
-                                                <br>
-                                                <br>
-
-                                                <table>
-                                                    <tr> <td>
-                                                    <i>1*60+(1-1)*6+(4-1)*24</i> <hr> <i>1*60+1*6+4*24</i> <td><i> = </i></td> <td><i>132</i> <hr> <i>162</i></td> <td><i> =&#126; 81.48%</i></td></td>
-                                                    </td></tr>
-                                                </table>
-
-                                            </li>
-                                        </ul>
-
-                                    </li>
-
-                                </ul>
-                                
-                            </div>
-
-                            
-
-                           
-                    </div>
+                        
 
 
                     </p>
@@ -588,8 +436,7 @@
         </div>
 
 
-
-
+        
         <!--White Container-->
         <div class="container-fluid" id="boxG" >
 
@@ -598,6 +445,185 @@
 
                 <!--Column-->
                 <div class="col-sm-12 col-md-12" id="boxG">
+
+                    <h2 style="text-align: center;">An Example of mining function</h2>
+
+                    <br>
+
+                </div>
+
+                <!--Column-->
+                <div class="col-sm-12 col-md-6 ">
+                
+                    <p>
+                        <!--Table-->
+                        <div class="row ">
+
+                            <!--Column-->
+                            <div class="col-sm-12 col-md-5">
+                                
+                                <!--SubTable-->
+                                <div class="row ">
+                                
+                                    <!--SubColumn-->
+                                    <div class="col-sm-12 col-md-12">
+                                        <strong>L = {</strong>
+                                    </div>
+
+                                    <!--SubColumn-->
+                                    <div class="col-sm-12 col-md-4 offset-1">
+
+                                        <i class="far fa-check-circle" style="color: limegreen;"></i> <strong>&#60;</strong><strong style="color: limegreen;">a</strong><strong>,b,c,b,d</strong><strong>&#62;<sup>60</sup></strong>,
+
+                                        <br>
+                                        <i class="far fa-times-circle" style="color: crimson;"></i> <strong>&#60;</strong><strong>c,</strong><strong style="color: crimson;">a</strong><strong>,b,d,b</strong><strong>&#62;<sup>6</sup></strong>,
+                                        
+                                        <br>
+                                        <i class="far fa-check-circle" style="color: limegreen;"></i> <strong>&#60;</strong><strong>c,c,c,d</strong><strong>&#62;<sup>10</sup></strong>,
+                                        
+                                        <br>
+                                        <i class="far fa-times-circle" style="color: crimson;"></i> <strong>&#60;</strong><strong style="color: limegreen;">a</strong><strong>,b,c,</strong><strong style="color: limegreen;">a</strong><strong>,b,</strong><strong style="color: limegreen;">a</strong><strong>,c,</strong><strong style="color: crimson;">a</strong><strong>&#62;<sup>24</sup></strong>
+                                    
+                                        
+                                    </div>
+
+                                    <!--SubColumn-->
+                                    <div class="col-sm-12 col-md-12">
+                                        <strong>}</strong>
+                                    </div>
+                                    
+                                </div>
+
+                            </div>
+
+                            
+                            <!--Column-->
+                            <div class="col-sm-12 col-md-5">
+
+                                <!--Dot List-->
+                                <ul>
+                                    <li>
+                                        Support for <strong class="smallCaps">Response</strong>(a,c):
+
+                                        <ul>
+                                            <br>
+                                            <li>
+                                                <strong>Case-based:</strong>
+
+                                                <br>
+
+                                                where the numerator is the set of all cases, except those that violate the constraint and the denominator is the set of all 
+                                                cases.
+
+                                                <br>
+                                                <br>
+                                                
+                                                <table>
+                                                    <tr> <td>
+                                                    <i>60+10</i> <hr> <i>60+6+10+24</i> <td><i> = </i></td> <td><i>70</i> <hr> <i>100</i></td> <td><i> = 70%</i></td></td>
+                                                    </td></tr>
+                                                </table>
+                                                
+                                            </li>
+
+                                            <br>
+
+                                            <li>
+                                                <strong>Event-based:</strong>
+
+                                                <br>
+                                                where the numerator is the set of all events, except those that violate the constraint and the denominator is the set of all 
+                                                events.
+
+                                                <br>
+                                                <br>
+
+                                                <table>
+                                                    <tr> <td>
+                                                    <i>5*60+(5-1)*6+4*10+(8-1)*24</i> <hr> <i>5*60+5*6+4*10+8*24</i> <td><i> = </i></td> <td><i>532</i> <hr> <i>562</i></td> <td><i> =&#126; 94.66%</i></td></td>
+                                                    </td></tr>
+                                                </table>
+                                            </li>
+
+                                        </ul>
+                                    </li>
+
+                                    <br>
+
+                                    <li>
+                                        Confidence for <strong class="smallCaps">Response</strong>(a,c):
+
+                                        <ul>
+                                            <br>
+
+                                            <li>
+                                                <strong>Case-based:</strong>
+
+                                                <br>
+                                                where the numerator is the set of all cases wherein the activation occurs, except those that violate the constraint and the denominator
+                                                is the set of all cases where the activation occurs.
+
+                                                <br>
+                                                <br>
+
+                                                <table>
+                                                    <tr> <td>
+                                                    <i>60</i> <hr> <i>60+6+24</i> <td><i> = </i></td> <td><i>60</i> <hr> <i>90</i></td> <td><i> =&#126; 66.67%</i></td></td>
+                                                    </td></tr>
+                                                </table>
+                                            </li>
+
+                                            <br>
+
+                                            <li>
+                                                <strong>Event-based:</strong>
+
+                                                <br>
+                                                where the numerator is the set of all activation events, except those that violate the constraint and the denominator is the set
+                                                of all activation events.
+
+                                                <br>
+                                                <br>
+
+                                                <table>
+                                                    <tr> <td>
+                                                    <i>1*60+(1-1)*6+(4-1)*24</i> <hr> <i>1*60+1*6+4*24</i> <td><i> = </i></td> <td><i>132</i> <hr> <i>162</i></td> <td><i> =&#126; 81.48%</i></td></td>
+                                                    </td></tr>
+                                                </table>
+
+                                            </li>
+                                        </ul>
+
+                                    </li>
+
+                                </ul>
+                                
+                            </div>
+
+                        </div>
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!--Empty Column-->
+            <div class="col-sm-12 col-md-12" id="boxG">
+
+            </div>
+                
+        </div>
+
+
+
+        <!--White Container-->
+        <div class="container-fluid" id="boxW" >
+
+            <!--Table-->
+            <div class="row justify-content-center" >
+
+                <!--Column-->
+                <div class="col-sm-12 col-md-12" id="boxW">
 
                     <h2 style="text-align: center;">Research Tooling</h2>
 
@@ -615,7 +641,7 @@
             </div>
 
             <!--Empty Column-->
-            <div class="col-sm-12 col-md-12" id="boxG">
+            <div class="col-sm-12 col-md-12" id="boxW">
 
             </div>
                 
@@ -718,7 +744,7 @@
                                 </li>
 
                                 <li>
-                                    <a href="../../Functionality/SimplifyModel/index.html">Simplify Model</a>
+                                    <a href="../../Functionality/SimplifySpecification/index.html">Simplify Specification</a>
                                 </li>
 
                             </ul>
