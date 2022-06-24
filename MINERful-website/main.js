@@ -1,5 +1,5 @@
 //opens a link in a new tab
-function apriSchedaNuova() 
+function openNewTab() 
 { 
     window.open("https://github.com/cdc08x/MINERful", "_blank"); 
 } 
