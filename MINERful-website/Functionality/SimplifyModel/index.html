@@ -27,6 +27,16 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 
+        <!--Script JQuery-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+        <!--Run Function when the page has been loaded correctly-->
+        <script>
+            //run the function after a timeout
+            window.onload=setTimeout(function(){showBox("boxG")}, 2000);;
+        </script>
+
+
     </head>
 
     <body>
@@ -125,7 +135,7 @@
 
                         <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown" >
 
-                            <li ><a class="nav-link" href="../../DeclarativeProcesses/DeclarativeProcessSpecification/index.html" >Declarative Process Specification</a></li>
+                            <li ><a class="nav-link" href="../../DeclarativeProcesses/DeclareProcessSpecification/index.html" >Declare Process Specification</a></li>
 
                             <li ><a class="nav-link" href="../../DeclarativeProcesses/Examples/index.html" >Examples</a></li>
 
@@ -154,6 +164,9 @@
 
                             <li><a class="nav-link" href="../../About/Contact/index.html">Contact</a></li>
 
+                            <li><a class="nav-link" href="../../About/WorkInProgress/index.html">Work in Progress</a></li>
+  
+                            
                         </ul>
 
                     </li>
@@ -177,7 +190,7 @@
                 <!--Image Column -->
                 <div class="col-sm-12 col-md-12">
 
-                   <h2 style="color: white; font-size: 24px; margin-left: 150px;">Simplify Model</h2>
+                   <h2 style="color: white; font-size: 24px;">Simplify Model</h2>
 
                 </div>
 
@@ -198,7 +211,7 @@
                 </div>
 
                 <!--Grey Column-->
-                <div class="col-sm-12 col-md-4 " id="boxG">
+                <div class="col-sm-12 col-md-4 " id="boxG" style="display: none;">
 
                     <h2>What does it do?</h2>
 
@@ -237,7 +250,7 @@
 
                     <p>
                         Suppose you have a 
-                        <a title="Visit the page about declarative process specification" href="../../DeclarativeProcesses/DeclarativeProcessSpecification/index.html">declarative process specification</a> 
+                        <a title="Visit the page about declarative process specification" href="../../DeclarativeProcesses/DeclareProcessSpecification/index.html">declarative process specification</a> 
                         as follows:
                     </p>
 
@@ -461,7 +474,7 @@
                             <ul class="list-unstyled mb-0">
 
                                 <li>
-                                    <a href="../../DeclarativeProcesses/DeclarativeProcessSpecification/index.html">Declarative Process Specification</a>
+                                    <a href="../../DeclarativeProcesses/DeclareProcessSpecification/index.html">Declare Process Specification</a>
                                 </li>
 
                                 <li>
@@ -507,6 +520,10 @@
                                 </li>
 
                                 <li>
+                                    <a href="../../About/WorkInProgress/index.html">Work in Progress</a>
+                                </li>
+
+                                <li>
                                     <a href="../../About/Disclaimer/index.html">Disclaimer</a>
                                 </li>
 
@@ -524,17 +541,14 @@
             <!-- Copyright -->
             <div class="text-center p-3" id="Copyright">
             
-                <p>
-                    MINERful | Webdesign by Matteo Missanelli 
+                <p>MINERful | Webdesign by Matteo Missanelli</p>
 
-                    <!-- LinkedIn -->
-                    <a class="btn btn-outline-light btn-floating m-1" target="_blank" href="https://www.linkedin.com/in/matteo-missanelli-6b85aa238/" role="button"><i class="fab fa-linkedin-in"></i></a>
-                </p>
-               
             </div>
             
         </footer>
   
+
+
     </body>
     
 </html>

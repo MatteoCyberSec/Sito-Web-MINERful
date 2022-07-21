@@ -1,12 +1,7 @@
-body
-{
-    font-family: 'Roboto', sans-serif;
-
-    text-align: justify;
-}
-
 #boxS
 {
+    
+    
     padding-top: 100px;
     
     padding-right: 60px;
@@ -66,14 +61,24 @@ a
 }
 
 
+p
+{
+    font-family: 'Roboto', sans-serif;
+}
+
+
 h2
 {
     color:#261a1a;
+
+    font-family: 'Roboto', sans-serif;
 }
 
 h3
 {
     color:#261a1a;
+
+    font-family: 'Roboto', sans-serif;
 }
 
 
